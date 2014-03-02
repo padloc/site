@@ -17,7 +17,7 @@
                 background: #59c6ff url(lock-white.svg) no-repeat center 350px;
                 background-size: 400px 400px;
                 height: 550px;
-                padding: 100px 50px 50px 50px;
+                padding: 100px 20px 50px 20px;
                 text-align: center;
                 color: #fff;
             }
@@ -28,6 +28,7 @@
             }
 
             h2 {
+                font-size: 150%;
                 font-weight: 300;
             }
 
@@ -55,6 +56,23 @@
             .hero-btn.alt {
                 background: transparent;
                 color: #fff;
+            }
+
+            @media (max-width: 500px) {
+                h1 {
+                    font-size: 300%;
+                }
+
+                .hero {
+                    padding-top: 70px;
+                    background-image: none;
+                    height: auto;
+                }
+
+                .hero-btn {
+                    font-size: 100%;
+                    min-width: 80px;
+                }
             }
         </style>
         <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
