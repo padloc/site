@@ -17,6 +17,12 @@ body, input, button {
     -webkit-font-smoothing: antialiased;
 }
 
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+}
+
 *:focus {
     outline: none;
 }
