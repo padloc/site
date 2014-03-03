@@ -1,0 +1,160 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
+    font-weight: 300;
+    -webkit-tap-highlight-color: transparent;
+    padding-bottom: 100px;
+}
+
+strong {
+    font-weight: 400;
+}
+
+body, input, button {
+    -webkit-font-smoothing: antialiased;
+}
+
+*:focus {
+    outline: none;
+}
+
+.hero {
+    background: #59c6ff url(lock-white.svg) no-repeat center 350px;
+    background-size: 400px 400px;
+    height: 550px;
+    padding: 100px 20px 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 500%;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.hero h1 {
+    margin: 0 0 20px 0;
+}
+
+.hero h2 {
+    font-weight: 300;
+    margin: 0 0 50px 0;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    font-family: inherit;
+    font-size: 120%;
+    margin: 10px 0;
+    padding: 0.5em 1em;
+    color: #59c6ff;
+    min-width: 120px;
+    border: solid 2px #fff;
+    font-weight: 400;
+}
+
+.hero-btn.alt {
+    background: transparent;
+    color: #fff;
+}
+
+a {
+    color: #59c6ff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 300%;
+    }
+
+    .hero {
+        padding-top: 70px;
+        background-image: none;
+        height: auto;
+    }
+
+    .hero-btn {
+        font-size: 100%;
+        min-width: 80px;
+    }
+
+    .subscribe .email {
+        width: 100%;
+    }
+
+    .subscribe .button {
+        width: 100%;
+    }
+}
+
+.section {
+    padding: 100px 20px 0 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.questions p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.subscribe {
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.subscribe form {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.subscribe .email {
+    display: block;
+    background-color: #fff;
+    width: 270px;
+    border: solid 2px #59c6ff;
+    font-size: 110%;
+    font-family: inherit;
+    padding: 10px;
+    margin: 0;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.subscribe .email::-webkit-input-placeholder {
+    color: #59c6ff;
+}
+
+.subscribe .button {
+    display: block;
+    width: 120px;
+    font-size: 110%;
+    font-family: inherit;
+    background: #59c6ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    border: solid 2px #59c6ff;
+}
+
+.subscribe-text {
+    font-size: 130%;
+    font-weight: 300;
+    padding: 20px 0;
+    line-height: 150%;
+}
