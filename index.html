@@ -8,9 +8,24 @@
             body {
                 padding: 0;
                 margin: 0;
-                -webkit-font-smoothing: antialiased;
                 font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
                 font-size: 18px;
+                color: #333;
+                font-weight: 300;
+                -webkit-tap-highlight-color: transparent;
+                padding-bottom: 100px;
+            }
+
+            strong {
+                font-weight: 400;
+            }
+
+            body, input, button {
+                -webkit-font-smoothing: antialiased;
+            }
+
+            *:focus {
+                outline: none;
             }
 
             .hero {
@@ -29,7 +44,7 @@
 
             h2 {
                 font-size: 150%;
-                font-weight: 300;
+                font-weight: 400;
             }
 
             .hero h1 {
@@ -37,6 +52,7 @@
             }
 
             .hero h2 {
+                font-weight: 300;
                 margin: 0 0 50px 0;
             }
 
@@ -46,16 +62,23 @@
                 background: #fff;
                 font-family: inherit;
                 font-size: 120%;
-                margin: 10px;
+                margin: 10px 0;
                 padding: 0.5em 1em;
                 color: #59c6ff;
                 min-width: 120px;
                 border: solid 2px #fff;
+                font-weight: 400;
             }
 
             .hero-btn.alt {
                 background: transparent;
                 color: #fff;
+            }
+
+            a {
+                color: #59c6ff;
+                text-decoration: none;
+                font-weight: 400;
             }
 
             @media (max-width: 500px) {
@@ -73,6 +96,73 @@
                     font-size: 100%;
                     min-width: 80px;
                 }
+
+                .subscribe .email {
+                    width: 100%;
+                }
+
+                .subscribe .button {
+                    width: 100%;
+                }
+            }
+
+            .section {
+                padding: 100px 20px 0 20px;
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .questions p {
+                text-align: justify;
+                line-height: 1.5em;
+            }
+
+            .subscribe {
+                text-align: center;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+
+            .subscribe form {
+                display: -webkit-box;
+            }
+
+            .subscribe .email {
+                display: block;
+                background-color: #fff;
+                width: 270px;
+                border: solid 2px #59c6ff;
+                font-size: 110%;
+                font-family: inherit;
+                padding: 10px;
+                margin: 0;
+                -webkit-box-flex: 1;
+            }
+
+            .subscribe .email::-webkit-input-placeholder {
+                color: #59c6ff;
+            }
+
+            .subscribe .button {
+                display: block;
+                width: 120px;
+                font-size: 110%;
+                font-family: inherit;
+                background: #59c6ff;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                margin: 0;
+                cursor: pointer;
+                border: solid 2px #59c6ff;
+            }
+
+            .subscribe-text {
+                font-size: 130%;
+                font-weight: 300;
+                padding: 20px 0;
+                line-height: 150%;
             }
         </style>
         <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
@@ -80,8 +170,34 @@
     <body>
         <div class="hero">
             <h1>Padlock</h1>
-            <h2>A minimalistic open source password manager</h2>
-            <a class="hero-btn alt" href="http://github.com/maklesoft/padlock" target="_blank">Code</a><a class="hero-btn" href="http://maklesoft.github.io/padlock" target="_blank">Try It</a>
+            <h2>A minimalist open source password manager.</h2>
+            <a class="hero-btn alt" href="http://github.com/maklesoft/padlock" target="_blank">Source</a><a class="hero-btn" href="http://maklesoft.github.io/padlock" target="_blank">Try It</a>
+        </div>
+        <div class="section subscribe" id="mc_embed_signup">
+            <div class="subscribe-text">Want to stay up to date with the development of Padlock? <strong>Subscribe to our newsletter!</strong></div>
+            <form action="http://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter email address"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_156fa42cf0f141436c20b06b2_58a9450e8b" value=""></div>
+            </form>
+        </div>
+        <div class="section questions">
+            <h2>Why use a password manager?</h2>
+            <p>
+                Passwords are everywhere. You need them to access your computer, your email account and a ton of other services that you depend on. Unfortunately, passwords are a poor way of authentication. Strong passwords are hard to remember and the sheer number of different services makes it practially impossible to keep track of all of your credentials. Most people try to mitigate this by composing their passwords out of familiar things like names or birthdays, but these can be guessed easily and do not provide sufficient protection. Password reuse, which, is also wide-spread, is even more dangerous and makes a lot of people easy targets for hackers. Password managers help you keep track of your passwords by providing a secure storage that is protected by a single master password. Good password managers keep your data safe by encrypting it with a strong cipher like AES.
+            </p>
+            <h2>What's so cool about Padlock?</h2>
+            <p>
+                We believe that software should not only be useful but also simple and fun to use. Padlock is all about simplicity and usability. We deliberately left out features that make other password managers unnecessarily complex and potentially confusing. Padlock focusses only on the most essential functionality. <strong>No clutter, no destractions</strong>. We also put a high value on transparency and actively encourage inspection and contributions by other developers.
+            </p>
+            <h2>How can I use it?</h2>
+            <p>
+                Padlock is based on web technologies so you can simply run it in your browser. There is a live demo available <a href="http://maklesoft.github.io/padlock" target="_blank">here</a>. However, be aware that Padlock is still in alpha phase, so use it at your own risk! If you want to run your own version or simply play around with the source code, the project is available on <a href="http://github.com/maklesoft/padlock" target="_blank">Github</a>. Padlock will also be available as an installable App for various platforms soon.
+            </p>
+            <h2>Why should I trust you?</h2>
+            <p>
+                <strong>You don't have to!</strong> Padlock is completely open source and we actively encourage developers to inspect the source code and offer contributions. This no only makes it impossible for us to build in backdoors but also helps to identify and eliminate possible security flaws quickly and efficiently.
+            </p>
         </div>
     </body>
 </html>
