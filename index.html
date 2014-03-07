@@ -7,16 +7,38 @@
         <link rel="shortcut icon" type="image/png" href="favicon.png"/>
         <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
         <link href="styles.css" rel="stylesheet" type="text/css">
+        <!-- start Mixpanel -->
+        <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);mixpanel.init("1e4f4510418f9b490bbc34e70e22cf57");</script>
+        <!-- end Mixpanel -->
+        <script>
+            window.onload = function() {
+                // Calculate page load metrics
+                var t = window.performance && window.performance.timing,
+                    latency = t ? t.responseEnd - t.fetchStart : "N/A",
+                    renderingTime = t ? t.loadEventStart - t.responseEnd : "N/A";
+
+                // Setup mixpanel tracking
+                mixpanel.track("load page", {
+                    referrer: document.referrer,
+                    latency: latency,
+                    rendering_time: renderingTime
+                });
+                mixpanel.track_links(".source-link", "open source");
+                mixpanel.track_links(".demo-link", "open demo");
+                mixpanel.track_links(".maklesoft-link", "open maklesoft website");
+                mixpanel.track_forms("#mc-embedded-subscribe-form", "subscribe to newsletter");
+            }
+        </script>
     </head>
     <body>
         <div class="hero">
             <h1>Padlock</h1>
             <h2>A minimalist open source password manager.</h2>
-            <a class="hero-btn alt" href="http://github.com/maklesoft/padlock" target="_blank">Source</a><a class="hero-btn" href="http://maklesoft.github.io/padlock" target="_blank">Try It</a>
+            <a class="hero-btn alt source-link" href="http://github.com/maklesoft/padlock" target="_blank">Source</a><a class="hero-btn demo-link" href="http://maklesoft.github.io/padlock" target="_blank">Try It</a>
         </div>
         <div class="section subscribe" id="mc_embed_signup">
             <div class="subscribe-text">Want to stay up to date? <strong>Subscribe to our newsletter!</strong></div>
-            <form action="http://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="http://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter email address"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_156fa42cf0f141436c20b06b2_58a9450e8b" value=""></div>
@@ -33,7 +55,7 @@
             </p>
             <h2>How can I use it?</h2>
             <p>
-                Padlock is based on web technologies so you can simply run it in your browser. There is a live demo available <a href="http://maklesoft.github.io/padlock" target="_blank">here</a>. However, be aware that Padlock is still in alpha phase, so use it at your own risk! If you want to run your own version or simply play around with the source code, the project is available on <a href="http://github.com/maklesoft/padlock" target="_blank">Github</a>. Padlock will also be available as an installable app for various platforms soon.
+                Padlock is based on web technologies so you can simply run it in your browser. There is a live demo available <a href="http://maklesoft.github.io/padlock" target="_blank" class="demo-link">here</a>. However, be aware that Padlock is still in alpha phase, so use it at your own risk! If you want to run your own version or simply play around with the source code, the project is available on <a href="http://github.com/maklesoft/padlock" target="_blank" class="source-link">Github</a>. Padlock will also be available as an installable app for various platforms soon.
             </p>
             <h2>Why should I trust you?</h2>
             <p>
@@ -41,7 +63,7 @@
             </p>
         </div>
         <div class="footer">
-            Developed and maintained by <a href="http://maklesoft.com" target="_blank">MaKleSoft</a>
+            Developed and maintained by <a href="http://maklesoft.com" target="_blank" class="maklesoft-link">MaKleSoft</a>
         </div>
     </body>
 </html>
