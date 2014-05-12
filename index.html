@@ -24,7 +24,7 @@
                     rendering_time: renderingTime
                 });
                 mixpanel.track_links(".source-link", "open source");
-                mixpanel.track_links(".chrome-link", "open chrome");
+                mixpanel.track_links(".download-link", "open chrome");
                 mixpanel.track_links(".maklesoft-link", "open maklesoft website");
                 mixpanel.track_forms("#mc-embedded-subscribe-form", "subscribe to newsletter");
             }
@@ -34,7 +34,46 @@
         <div class="hero">
             <h1>Padlock</h1>
             <h2>A minimalist open source password manager.</h2>
-            <a class="hero-btn alt source-link" href="http://github.com/maklesoft/padlock" target="_blank">Source</a><a class="hero-btn chrome-link" href="https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif" target="_blank">Get It</a>
+            <a class="hero-btn download-link" target="_blank" id="downloadButton"></a>
+        </div>
+        <script>
+            (function(){
+                var iDevices = ["iPad", "iPhone", "iPod"];
+                function isIOS() {
+                    return iDevices.reduce(function(match, dev) {
+                        return match || navigator.platform.indexOf(dev) !== -1;
+                    }, false);
+                };
+
+                function isAndroid() {
+                    return navigator.userAgent.toLowerCase().indexOf("android") !== -1;
+                }
+
+                var downloadUrls = {
+                    "ios": "https://itunes.apple.com/app/id871710139",
+                    "android": "",
+                    "other": "https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif"
+                }
+
+                var buttonCaptions = {
+                    "ios": "Available on the App Store",
+                    "android": "Available on Google Play",
+                    "other": "Add to Chrome"
+                }
+
+                var button = document.getElementById("downloadButton");
+                var platform = isIOS() ? "ios" : "other";
+
+                button.innerHTML = buttonCaptions[platform];
+                button.href = downloadUrls[platform];
+                document.body.classList.add(platform);
+            })()
+        </script>
+        <div class="section platforms">
+            <p>Also available on</p>
+            <a href="https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif" target="_blank" class="platform chrome"></a>
+            <div class="platform android"></div>
+            <a href="https://itunes.apple.com/app/id871710139" target="_blank" class="platform ios"></a>
         </div>
         <div class="section subscribe" id="mc_embed_signup">
             <div class="subscribe-text">Want to stay up to date? <strong>Subscribe to our newsletter!</strong></div>
@@ -62,6 +101,7 @@
                 <strong>You don't have to!</strong> Padlock is completely open source and we actively encourage developers to inspect the source code and offer contributions. This not only makes it impossible for us to build in back doors but also helps to identify and eliminate possible security flaws quickly and efficiently.
             </p>
         </div>
+        <a class="source-btn source-link" href="http://github.com/maklesoft/padlock" target="_blank">Get the Source</a>
         <div class="footer">
             Developed and maintained by <a href="http://maklesoft.com" target="_blank" class="maklesoft-link">MaKleSoft</a>
         </div>

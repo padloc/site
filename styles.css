@@ -57,18 +57,13 @@ h2 {
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    background: #fff;
     font-family: inherit;
     font-size: 120%;
     margin: 10px 0;
     padding: 0.5em 1em;
-    color: #59c6ff;
     min-width: 120px;
     border: solid 2px #fff;
     font-weight: 400;
-}
-
-.hero-btn.alt {
     background: transparent;
     color: #fff;
 }
@@ -105,7 +100,7 @@ a {
 }
 
 .section {
-    padding: 100px 20px 0 20px;
+    padding: 80px 20px 0 20px;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -177,4 +172,68 @@ a {
 .footer a {
     color: #fff;
     font-weight: 700;
+}
+
+.platforms {
+    text-align: center;
+}
+
+.platforms p {
+    color: #59c6ff;
+    font-size: 110%;
+}
+
+.platform {
+    display: inline-block;
+    width: 135px;
+    height: 135px;
+    background: url() no-repeat center center;
+    background-size: contain;
+}
+
+.platform.android {
+    background-image: url(android.svg);
+    position: relative;
+    opacity: 0.5;
+}
+
+.platform.android::after {
+    content: "soon";
+    font-weight: 700;
+    display: block;
+    height: 1em;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.platform.chrome {
+    background-image: url(chrome.svg);
+}
+
+.platform.ios {
+    background-image: url(apple.svg);
+}
+
+.android .platform.android,
+.ios .platform.ios,
+.other .platform.chrome {
+    display: none;
+}
+
+.source-btn {
+    display: block;
+    font-size: 110%;
+    font-family: inherit;
+    background: #59c6ff;
+    color: #fff;
+    padding: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
 }
