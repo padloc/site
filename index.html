@@ -51,18 +51,24 @@
 
                 var downloadUrls = {
                     "ios": "https://itunes.apple.com/app/id871710139",
-                    "android": "",
+                    "android": "https://play.google.com/store/apps/details?id=com.maklesoft.padlock",
                     "other": "https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif"
-                }
+                };
 
                 var buttonCaptions = {
                     "ios": "Available on the App Store",
                     "android": "Available on Google Play",
                     "other": "Add to Chrome"
+                };
+
+                var platform = "other";
+                if (isIOS()) {
+                    platform = "ios";
+                } else if (isAndroid()) {
+                    platform = "android";
                 }
 
                 var button = document.getElementById("downloadButton");
-                var platform = isIOS() ? "ios" : "other";
 
                 button.innerHTML = buttonCaptions[platform];
                 button.href = downloadUrls[platform];
@@ -72,7 +78,7 @@
         <div class="section platforms">
             <p>Also available on</p>
             <a href="https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif" target="_blank" class="platform chrome"></a>
-            <div class="platform android"></div>
+            <a href="https://play.google.com/store/apps/details?id=com.maklesoft.padlock" target="_blank" class="platform android"></a>
             <a href="https://itunes.apple.com/app/id871710139" target="_blank" class="platform ios"></a>
         </div>
         <div class="section subscribe" id="mc_embed_signup">

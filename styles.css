@@ -193,22 +193,6 @@ a {
 
 .platform.android {
     background-image: url(android.svg);
-    position: relative;
-    opacity: 0.5;
-}
-
-.platform.android::after {
-    content: "soon";
-    font-weight: 700;
-    display: block;
-    height: 1em;
-    color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
 }
 
 .platform.chrome {
