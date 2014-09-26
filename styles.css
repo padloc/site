@@ -160,6 +160,7 @@ a {
 }
 
 .footer {
+    display: block;
     background: #59c6ff;
     color: #fff;
     padding: 10px;
@@ -169,8 +170,7 @@ a {
     font-size: 90%;
 }
 
-.footer a {
-    color: #fff;
+.footer strong {
     font-weight: 700;
 }
 
@@ -220,4 +220,15 @@ a {
     cursor: pointer;
     width: 250px;
     text-align: center;
+}
+
+table {
+    margin-bottom: 100px;
+    font-size: 90%;
+}
+
+th {
+    text-align: left;
+    vertical-align: top;
+    width: 150px;
 }
