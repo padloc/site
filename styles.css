@@ -31,8 +31,8 @@ button {
 }
 
 .hero {
-    background: #59c6ff url(lock-white.svg) no-repeat center 350px;
-    background-size: 400px 400px;
+    background: #59c6ff url(padlock.svg) no-repeat center 430px;
+    background-size: 385px;
     height: 550px;
     padding: 100px 20px 50px 20px;
     text-align: center;
