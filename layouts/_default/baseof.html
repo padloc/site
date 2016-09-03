@@ -14,12 +14,21 @@
         <link rel="shortcut icon" type="image/png" href="/img/logo.png"/>
         {{ end }}
 
-        {{ block "css" . }}
+        {{ define "basecss" }}
         <link href="/css/fonts.css" rel="stylesheet" type="text/css">
-        <link href="/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="/css/base.css" rel="stylesheet" type="text/css">
+        {{ end }}
+
+        {{ block "css" . }}
+            {{ template "basecss" . }}
+        {{ end }}
+
+        {{ define "basejs" }}
+        <script src="/js/mp.js"></script>
         {{ end }}
 
         {{ block "js" . }}
+            {{ template "basejs" . }}
         {{ end }}
     </head>
     <body>
