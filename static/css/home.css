@@ -1,3 +1,16 @@
+header {
+    background: #59c6ff;
+    border: none;
+}
+
+header, header a {
+    color: #fff;
+}
+
+header .type {
+    display: none;
+}
+
 .hero {
     background: #59c6ff url(../img/padlock.svg) no-repeat center 430px;
     background-size: 385px;
@@ -32,6 +45,7 @@
     margin: 0 auto;
     background: #000;
     display: none;
+    z-index: 1;
 }
 
 .preview iframe {

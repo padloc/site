@@ -52,5 +52,6 @@ window.onload = function() {
 
     previewCloseButton.addEventListener("click", function() {
         previewEl.style.display = "";
+        iframe.src = "";
     });
 }

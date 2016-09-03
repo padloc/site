@@ -1,0 +1,26 @@
+<header>
+    <a href="/" class="home">
+        {{ partial "padlock.svg" }}
+        <div class="type">Padlock</div>
+    </a>
+    <div class="spacer"></div>
+    <div class="links">
+        <a href="{{ $.Param "chromeUrl" }}" target="_blank">
+            {{ partial "chrome.svg" }}
+        </a>
+        <a href="{{ $.Param "iosUrl" }}" target="_blank">
+            {{ partial "apple.svg" }}
+        </a>
+        <a href="{{ $.Param "androidUrl" }}" target="_blank">
+            {{ partial "android.svg" }}
+        </a>
+        <a href="{{ $.Param "githubUrl" }}" target="_blank">
+            {{ partial "github.svg" }}
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/news/">News</a></li>
+        </ul>
+    </nav>
+</header>

@@ -58,7 +58,7 @@ section {
     margin-bottom: 100px;
 }
 
-.footer {
+footer {
     display: block;
     background: #59c6ff;
     color: #fff;
@@ -69,7 +69,12 @@ section {
     font-size: 90%;
 }
 
-.footer strong {
+footer .maklesoft-link {
+    display: block;
+    color: #fff;
+}
+
+footer  strong {
     font-weight: 700;
 }
 
@@ -82,4 +87,58 @@ th {
     text-align: left;
     vertical-align: top;
     width: 150px;
+}
+
+svg.icon {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 50px;
+    display: flex;
+    align-items: stretch;
+    border-bottom: solid 1px #ccc;
+}
+
+header .home, header .links, header nav, header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header .icon.padlock {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+header .spacer {
+    flex: 1;
+}
+
+header .links a {
+    line-height: 0;
+    margin-left: 10px;
+}
+
+header .links .icon {
+    width: 25px;
+    height: 25px;
 }
