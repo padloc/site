@@ -31,7 +31,7 @@ button {
 }
 
 .hero {
-    background: #59c6ff url(padlock.svg) no-repeat center 430px;
+    background: #59c6ff url(../img/padlock.svg) no-repeat center 430px;
     background-size: 385px;
     height: 550px;
     padding: 100px 20px 50px 20px;
@@ -42,7 +42,7 @@ button {
 }
 
 .hero .preview-button {
-    background: #fff url(play2.svg) no-repeat center center;
+    background: #fff url(../img/play2.svg) no-repeat center center;
     background-size: contain;
     width: 100px;
     height: 100px;
@@ -249,15 +249,15 @@ a {
 }
 
 .platform.android {
-    background-image: url(android.svg);
+    background-image: url(../img/android.svg);
 }
 
 .platform.chrome {
-    background-image: url(chrome.svg);
+    background-image: url(../img/chrome.svg);
 }
 
 .platform.ios {
-    background-image: url(apple.svg);
+    background-image: url(../img/apple.svg);
 }
 
 .android .platform.android,
