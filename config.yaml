@@ -2,6 +2,7 @@
 baseurl: "https://padlock.io/"
 title: "Padlock - A Minimalist Password Manager"
 languageCode: "en-us"
+metaDataFormat: "yaml"
 params:
     androidUrl: https://play.google.com/store/apps/details?id=com.maklesoft.padlock
     iosUrl: https://itunes.apple.com/app/id871710139

@@ -1,9 +1,9 @@
 {{ define "main" }}
 <section>
-    <h1 id="title">{{ .Title }}</h1>
-    <ul id="list">
+    <h1>{{ .Title }}</h1>
+    <ul class="content">
         {{ range .Data.Pages }}
-            {{ .Title }}
+            {{ .Render "li" }}
         {{ end }}
     </ul>
 </section>
