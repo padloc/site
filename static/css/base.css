@@ -166,6 +166,16 @@ li article {
     margin: 0;
 }
 
+li article .title {
+    display: flex;
+    align-items: center;
+}
+
+li article h2 {
+    flex: 1;
+    margin: 0;
+}
+
 @media (max-width: 500px) {
     header .links {
         display: none;
