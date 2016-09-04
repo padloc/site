@@ -12,14 +12,18 @@ header .type {
 }
 
 .hero {
-    background: #59c6ff url(../img/padlock.svg) no-repeat center 430px;
-    background-size: 385px;
+    background: #59c6ff;
     height: 550px;
     padding: 100px 20px 50px 20px;
     text-align: center;
     color: #fff;
     position: relative;
     overflow: visible;
+    margin-bottom: 150px;
+}
+
+.hero h1 {
+    font-size: 500%;
 }
 
 .hero .preview-button {
@@ -33,6 +37,19 @@ header .type {
     bottom: -50px;
     margin: 0 auto;
     border: none;
+    border-radius: 100%;
+}
+
+.hero .logo {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -100px;
+    margin: auto;
+    background: inherit;
     border-radius: 100%;
 }
 
@@ -102,10 +119,12 @@ header .type {
     }
 
     .hero {
-        padding-top: 70px;
-        background-image: none;
         height: auto;
-        padding-bottom: 90px;
+        margin-bottom: 0;
+    }
+
+    .hero .logo {
+        display: none;
     }
 
     .hero-btn {
@@ -136,7 +155,6 @@ header .type {
 .subscribe .email {
     display: block;
     background-color: #fff;
-    width: 270px;
     border: solid 2px #59c6ff;
     font-size: 110%;
     font-family: inherit;
@@ -174,35 +192,26 @@ header .type {
     text-align: center;
 }
 
-.platforms p {
+.platforms h2 {
     color: #59c6ff;
-    font-size: 110%;
 }
 
-.platform {
+.platforms .icon {
     display: inline-block;
-    width: 135px;
-    height: 135px;
-    background: url() no-repeat center center;
-    background-size: contain;
+    width: 100px;
+    height: 100px;
 }
 
-.platform.android {
-    background-image: url(../img/android.svg);
-}
+/* .android .platform.android, */
+/* .ios .platform.ios, */
+/* .other .platform.chrome { */
+/*     display: none; */
+/* } */
 
-.platform.chrome {
-    background-image: url(../img/chrome.svg);
-}
-
-.platform.ios {
-    background-image: url(../img/apple.svg);
-}
-
-.android .platform.android,
-.ios .platform.ios,
-.other .platform.chrome {
-    display: none;
+.about p {
+    text-align: justify;
+    line-height: 1.5em;
+    margin-bottom: 80px;
 }
 
 .source-btn {

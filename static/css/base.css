@@ -31,12 +31,12 @@ button {
 }
 
 h1 {
-    font-size: 500%;
+    font-size: 250%;
     font-weight: 100;
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 120%;
     font-weight: 400;
 }
 
@@ -47,15 +47,9 @@ a {
 }
 
 section {
-    padding: 80px 20px 0 20px;
+    padding: 0 20px;
     max-width: 600px;
-    margin: 0 auto;
-}
-
-.about p {
-    text-align: justify;
-    line-height: 1.5em;
-    margin-bottom: 100px;
+    margin: 80px auto;
 }
 
 footer {
@@ -95,11 +89,12 @@ svg.icon {
 }
 
 header {
+    background: #ffffff;
     position: fixed;
     top: 0; 
     width: 100%;
     z-index: 1;
-    padding: 0 20px;
+    padding: 0 10px;
     box-sizing: border-box;
     height: 50px;
     display: flex;
@@ -126,7 +121,7 @@ header nav ul li {
 header .icon.padlock {
     width: 35px;
     height: 35px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 header .spacer {
