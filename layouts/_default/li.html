@@ -1,9 +1,11 @@
 <li>
-    <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a>
-    <p>
-        {{ .Summary }}
-        {{- if .Truncated -}}
-            ... <a href="{{ .RelPermalink }}">Read More</a>
-        {{ end }}
-    </p>
+    <article>
+        <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a>
+        <p>
+            {{ .Summary }}
+            {{- if .Truncated -}}
+                ... <a href="{{ .RelPermalink }}">Read More</a>
+            {{ end }}
+        </p>
+    </article>
 </li>

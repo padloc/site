@@ -113,34 +113,6 @@ header .type {
     color: #fff;
 }
 
-@media (max-width: 500px) {
-    h1 {
-        font-size: 300%;
-    }
-
-    .hero {
-        height: auto;
-        margin-bottom: 0;
-    }
-
-    .hero .logo {
-        display: none;
-    }
-
-    .hero-btn {
-        font-size: 100%;
-        min-width: 80px;
-    }
-
-    .subscribe .email {
-        width: 100%;
-    }
-
-    .subscribe .button {
-        width: 100%;
-    }
-}
-
 .subscribe {
     text-align: center;
     box-sizing: border-box;
@@ -225,4 +197,33 @@ header .type {
     cursor: pointer;
     width: 250px;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 300%;
+    }
+
+    .hero {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .hero .logo {
+        display: none;
+    }
+
+    .hero-btn {
+        font-size: 100%;
+        min-width: 80px;
+    }
+
+    .subscribe .email {
+        min-width: 0;
+    }
+
+    .platforms .icon {
+        width: 50px;
+        height: 50px;
+    }
 }

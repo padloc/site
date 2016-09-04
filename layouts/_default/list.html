@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section>
     <h1>{{ .Title }}</h1>
-    <ul class="content">
+    <ul class="articles">
         {{ range .Data.Pages }}
             {{ .Render "li" }}
         {{ end }}

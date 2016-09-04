@@ -33,6 +33,7 @@ button {
 h1 {
     font-size: 250%;
     font-weight: 100;
+    margin: 20px 0;
 }
 
 h2 {
@@ -122,6 +123,7 @@ header .icon.padlock {
     width: 35px;
     height: 35px;
     margin-right: 10px;
+    margin-left: 3px;
 }
 
 header .spacer {
@@ -138,12 +140,34 @@ header .links .icon {
     height: 25px;
 }
 
-ul.content {
+ul.articles {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul.content li:not(:last-item) {
-    border-bottom: solid 1px #ccc;
+ul.articles li {
+    margin: 40px 0;
+}
+
+article {
+    padding: 80px 20px;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+article .publish-date {
+    color: #aaa;
+}
+
+li article {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    header .links {
+        display: none;
+    }
 }
