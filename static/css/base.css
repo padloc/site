@@ -55,22 +55,19 @@ section {
 
 footer {
     display: block;
-    background: #59c6ff;
-    color: #fff;
     padding: 10px;
     margin-top: 100px;
     text-align: center;
-    font-weight: 400;
-    font-size: 90%;
+    font-size: 80%;
+    border-top: solid 1px #ccc;
 }
 
-footer .maklesoft-link {
-    display: block;
-    color: #fff;
+footer .copyright {
+    color: #ccc;
 }
 
-footer  strong {
-    font-weight: 700;
+footer a {
+    margin: 0 5px;
 }
 
 table {
