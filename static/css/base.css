@@ -173,6 +173,46 @@ li article h2 {
     margin: 0;
 }
 
+.newsletter-signup {
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.newsletter-signup form {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.newsletter-signup .email {
+    display: block;
+    background-color: #fff;
+    border: solid 2px #59c6ff;
+    font-size: 110%;
+    font-family: inherit;
+    padding: 10px;
+    margin: 0;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.newsletter-signup .email::-webkit-input-placeholder {
+    color: #59c6ff;
+}
+
+.newsletter-signup .button {
+    display: block;
+    width: 120px;
+    font-size: 110%;
+    font-family: inherit;
+    background: #59c6ff;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    border: solid 2px #59c6ff;
+}
+
 @media (max-width: 500px) {
     header .links {
         display: none;

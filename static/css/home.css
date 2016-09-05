@@ -113,46 +113,6 @@ header .type {
     color: #fff;
 }
 
-.subscribe {
-    text-align: center;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-.subscribe form {
-    display: -webkit-flex;
-    display: flex;
-}
-
-.subscribe .email {
-    display: block;
-    background-color: #fff;
-    border: solid 2px #59c6ff;
-    font-size: 110%;
-    font-family: inherit;
-    padding: 10px;
-    margin: 0;
-    -webkit-flex: 1;
-    flex: 1;
-}
-
-.subscribe .email::-webkit-input-placeholder {
-    color: #59c6ff;
-}
-
-.subscribe .button {
-    display: block;
-    width: 120px;
-    font-size: 110%;
-    font-family: inherit;
-    background: #59c6ff;
-    color: #fff;
-    padding: 10px;
-    margin: 0;
-    cursor: pointer;
-    border: solid 2px #59c6ff;
-}
-
 .subscribe-text {
     font-size: 130%;
     font-weight: 300;

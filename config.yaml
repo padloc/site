@@ -9,3 +9,4 @@ params:
     chromeUrl: https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif
     githubUrl: http://github.com/maklesoft/padlock/
     mixpanelToken: 1e4f4510418f9b490bbc34e70e22cf57
+    mailchimpSignupUrl: https://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b

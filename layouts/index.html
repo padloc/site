@@ -17,13 +17,9 @@
         <h2>Get it now:</h2>
         {{ partial "download-links" . }}
     </section>
-    <section class="subscribe" id="mc_embed_signup">
+    <section class="subscribe">
         <div class="subscribe-text">Want to stay up to date? <strong>Subscribe to our newsletter!</strong></div>
-        <form action="https://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter email address"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_156fa42cf0f141436c20b06b2_58a9450e8b" value=""></div>
-        </form>
+        {{ partial "newsletter-signup" . }}
     </section>
     <section class="about">
         {{ range where .Data.Pages "Title" "About Padlock" }}
