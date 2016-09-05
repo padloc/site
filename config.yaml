@@ -7,6 +7,7 @@ params:
     androidUrl: https://play.google.com/store/apps/details?id=com.maklesoft.padlock
     iosUrl: https://itunes.apple.com/app/id871710139
     chromeUrl: https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif
-    githubUrl: http://github.com/maklesoft/padlock/
+    githubUrl: https://github.com/maklesoft/padlock/
+    twitterUrl: https://twitter.com/padlockapp/
     mixpanelToken: 1e4f4510418f9b490bbc34e70e22cf57
     mailchimpSignupUrl: https://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b

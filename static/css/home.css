@@ -24,6 +24,11 @@ header .type {
 
 .hero h1 {
     font-size: 500%;
+    margin: 0 0 20px 0;
+}
+
+.hero h2 {
+    font-weight: 300;
 }
 
 .hero .preview-button {
@@ -51,6 +56,20 @@ header .type {
     margin: auto;
     background: inherit;
     border-radius: 100%;
+}
+
+.get-it {
+    margin: 45px 0;
+}
+
+.get-it h2 {
+    font-weight: bold;
+}
+
+.get-it .icon {
+    color: #fff;
+    width: 80px;
+    height: 80px;
 }
 
 .preview {
@@ -90,15 +109,6 @@ header .type {
     background: rgb(0, 173, 239);
 }
 
-.hero h1 {
-    margin: 0 0 20px 0;
-}
-
-.hero h2 {
-    font-weight: 300;
-    margin: 0 0 35px 0;
-}
-
 .hero-btn {
     display: inline-block;
     text-decoration: none;
@@ -113,27 +123,6 @@ header .type {
     color: #fff;
 }
 
-.subscribe-text {
-    font-size: 130%;
-    font-weight: 300;
-    padding: 20px 0;
-    line-height: 150%;
-}
-
-.platforms {
-    text-align: center;
-}
-
-.platforms h2 {
-    color: #59c6ff;
-}
-
-.platforms .icon {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-}
-
 /* .android .platform.android, */
 /* .ios .platform.ios, */
 /* .other .platform.chrome { */
@@ -143,7 +132,7 @@ header .type {
 .about p {
     text-align: justify;
     line-height: 1.5em;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .source-btn {
@@ -178,11 +167,7 @@ header .type {
         min-width: 80px;
     }
 
-    .subscribe .email {
-        min-width: 0;
-    }
-
-    .platforms .icon {
+    .get-it .icon {
         width: 50px;
         height: 50px;
     }

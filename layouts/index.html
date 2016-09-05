@@ -7,26 +7,25 @@
     <div class="hero">
         <h1>Padlock</h1>
         <h2>A minimalist open source password manager.</h2>
-        <a class="hero-btn get-app" target="_blank" id="downloadButton">Get it Now!</a>
+        <a class="hero-btn get-app" target="_blank" id="downloadButton" style="display: none">Get it Now!</a>
+        <div class="get-it">
+            {{ partial "download-links" . }}
+        </div>
         <div class="logo">
             {{ partial "padlock.svg" . }}
         </div>
         <button class="preview-button" style="display: none"></button>
     </div>
-    <section class="platforms">
-        <h2>Get it now:</h2>
-        {{ partial "download-links" . }}
-    </section>
-    <section class="subscribe">
-        <div class="subscribe-text">Want to stay up to date? <strong>Subscribe to our newsletter!</strong></div>
-        {{ partial "newsletter-signup" . }}
-    </section>
+
     <section class="about">
         {{ range where .Data.Pages "Title" "About Padlock" }}
             {{ .Content }}
         {{ end }}
     </section>
-    <a class="source-btn padlock-github" href="https://github.com/maklesoft/padlock" target="_blank">Get the Source</a>
+
+    <section>
+        {{ partial "newsletter-signup" . }}
+    </section>
 
     <div class="preview">
         <button class="close-button">x</button>
