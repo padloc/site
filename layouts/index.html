@@ -7,14 +7,12 @@
     <div class="hero">
         <h1>Padlock</h1>
         <h2>A minimalist open source password manager.</h2>
-        <a class="hero-btn get-app" target="_blank" id="downloadButton" style="display: none">Get it Now!</a>
         <div class="get-it">
             {{ partial "download-links" . }}
         </div>
         <div class="logo">
             {{ partial "padlock.svg" . }}
         </div>
-        <button class="preview-button" style="display: none"></button>
     </div>
 
     <section class="about">
@@ -26,12 +24,4 @@
     <section>
         {{ partial "newsletter-signup" . }}
     </section>
-
-    <div class="preview">
-        <button class="close-button">x</button>
-        <iframe src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-
-    <script src="/js/home.js"></script>
-
 {{ end }}
