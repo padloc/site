@@ -1,15 +1,17 @@
 <header>
-    <a href="/" class="home">
-        {{ partial "padlock.svg" }}
-        <div class="type">Padlock</div>
-    </a>
-    <div class="spacer"></div>
-    <div class="links">
-        {{ partial "social-links" . }}
+    <div class="inner">
+        <a href="/" class="home">
+            {{ partial "padlock.svg" }}
+            <div class="type">Padlock</div>
+        </a>
+        <div class="spacer"></div>
+        <div class="links">
+            {{ partial "social-links" . }}
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/news/">News</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-        <ul>
-            <li><a href="/news/">News</a></li>
-        </ul>
-    </nav>
 </header>

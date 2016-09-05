@@ -3,7 +3,9 @@
     <link href="/css/home.css" rel="stylesheet" type="text/css">
 {{ end }}
 
-{{ define "main" }}
+{{ define "header" }}
+    {{ partial "header" . }}
+
     <div class="hero">
         <h1>Padlock</h1>
         <h2>A minimalist open source password manager.</h2>
@@ -14,7 +16,9 @@
             {{ partial "padlock.svg" . }}
         </div>
     </div>
+{{ end }}
 
+{{ define "main" }}
     <section class="about">
         {{ range where .Data.Pages "Title" "About Padlock" }}
             {{ .Content }}

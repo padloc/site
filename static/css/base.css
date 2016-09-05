@@ -52,9 +52,8 @@ a:hover {
 }
 
 section {
-    padding: 0 20px;
-    max-width: 600px;
-    margin: 80px auto;
+    padding: 0 40px;
+    margin: 80px 0;
 }
 
 footer {
@@ -98,10 +97,15 @@ header {
     z-index: 1;
     padding: 0 10px;
     box-sizing: border-box;
+    border-bottom: solid 1px #ccc;
+}
+
+header .inner {
     height: 50px;
     display: flex;
     align-items: stretch;
-    border-bottom: solid 1px #ccc;
+    width: 100%;
+    margin: 0 auto;
 }
 
 header .home, header .links, header nav, header nav ul {
@@ -152,10 +156,8 @@ ul.articles li {
 }
 
 article {
-    padding: 80px 20px;
-    max-width: 600px;
+    padding: 80px 40px;
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
 article .publish-date {
@@ -175,6 +177,11 @@ li article .title {
 li article h2 {
     flex: 1;
     margin: 0;
+}
+
+header .inner, main {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .newsletter-signup {
@@ -218,7 +225,8 @@ li article h2 {
 }
 
 @media (max-width: 500px) {
-    header .links {
-        display: none;
+    section, article {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

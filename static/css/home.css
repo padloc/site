@@ -59,7 +59,6 @@ header .type {
 }
 
 .about p {
-    text-align: justify;
     line-height: 1.5em;
     margin-bottom: 50px;
 }
@@ -71,7 +70,8 @@ header .type {
 
     .hero {
         height: auto;
-        margin-bottom: 0;
+        padding: 80px 20px 20px 20px;
+        margin-bottom: -40px;
     }
 
     .hero .logo {
