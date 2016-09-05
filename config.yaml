@@ -8,3 +8,4 @@ params:
     iosUrl: https://itunes.apple.com/app/id871710139
     chromeUrl: https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif
     githubUrl: http://github.com/maklesoft/padlock/
+    mixpanelToken: 1e4f4510418f9b490bbc34e70e22cf57

@@ -24,7 +24,6 @@
         {{ end }}
 
         {{ define "basejs" }}
-        <script src="/js/mp.js"></script>
         {{ end }}
 
         {{ block "js" . }}
@@ -42,6 +41,9 @@
         {{ block "footer" . }}
             {{ partial "footer" . }}
         {{ end }}
+
+        {{ partial "mixpanel" . }}
+        <script src="/js/analytics.js"></script>
     </body>
 </html>
 
