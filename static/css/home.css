@@ -28,6 +28,7 @@ header .type {
 }
 
 .hero h2 {
+    font-size: 150%;
     font-weight: 300;
 }
 
@@ -65,6 +66,10 @@ header .type {
 @media (max-width: 500px) {
     .hero h1 {
         font-size: 300%;
+    }
+
+    .hero h2 {
+        font-size: 120%;
     }
 
     .hero {
