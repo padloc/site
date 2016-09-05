@@ -8,10 +8,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-strong {
-    font-weight: 400;
-}
-
 body, input, button {
     -webkit-font-smoothing: antialiased;
 }
@@ -38,6 +34,11 @@ h1 {
 
 h2 {
     font-size: 120%;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 110%;
     font-weight: 400;
 }
 
@@ -222,6 +223,20 @@ header .inner, main {
     margin: 0;
     cursor: pointer;
     border: solid 2px #59c6ff;
+}
+
+.note {
+    background: rgba(89, 198, 255, 0.1);
+    padding: 20px;
+    border: solid 1px #59c6ff;
+}
+
+.note p:first-child {
+    margin-top: 0;
+}
+
+.note p:last-child {
+    margin-bottom: 0;
 }
 
 @media (max-width: 500px) {
