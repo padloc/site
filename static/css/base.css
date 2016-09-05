@@ -229,4 +229,9 @@ header .inner, main {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    li article .title {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }

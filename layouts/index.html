@@ -19,13 +19,23 @@
 {{ end }}
 
 {{ define "main" }}
+    <section>
+        <h1>News</h1>
+        <ul class="articles">
+            {{ range first 2 (where .Data.Pages ".Type" "news") }}
+                {{ .Render "li" }}
+            {{ end }}
+        </ul>
+
+        <a href="/news/"><h2>More News...</h2></a>
+
+        {{ partial "newsletter-signup" . }}
+    </section>
+
     <section class="about">
+        <h1>About Padlock</h1>
         {{ range where .Data.Pages "Title" "About Padlock" }}
             {{ .Content }}
         {{ end }}
-    </section>
-
-    <section>
-        {{ partial "newsletter-signup" . }}
     </section>
 {{ end }}
