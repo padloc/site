@@ -3,16 +3,11 @@
     <link href="/css/home.css" rel="stylesheet" type="text/css">
 {{ end }}
 
-{{ define "js" }}
-    {{ template "basejs" . }}
-    <script src="/js/home.js"></script>
-{{ end }}
-
 {{ define "main" }}
     <div class="hero">
         <h1>Padlock</h1>
         <h2>A minimalist open source password manager.</h2>
-        <a class="hero-btn download-link" target="_blank" id="downloadButton"></a>
+        <a class="hero-btn get-app" target="_blank" id="downloadButton">Get it Now!</a>
         <div class="logo">
             {{ partial "padlock.svg" . }}
         </div>
@@ -35,11 +30,13 @@
             {{ .Content }}
         {{ end }}
     </section>
-    <a class="source-btn source-link" href="https://github.com/maklesoft/padlock" target="_blank">Get the Source</a>
+    <a class="source-btn padlock-github" href="https://github.com/maklesoft/padlock" target="_blank">Get the Source</a>
 
     <div class="preview">
         <button class="close-button">x</button>
         <iframe src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
+
+    <script src="/js/home.js"></script>
 
 {{ end }}

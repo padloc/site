@@ -1,12 +1,12 @@
-<a href="{{ $.Param "chromeUrl" }}" target="_blank">
+<a href="{{ $.Param "chromeUrl" }}" class="get-app" data-platform="chrome" target="_blank">
     {{ partial "chrome.svg" }}
 </a>
-<a href="{{ $.Param "iosUrl" }}" target="_blank">
+<a href="{{ $.Param "iosUrl" }}" class="get-app" data-platform="ios" target="_blank">
     {{ partial "apple.svg" }}
 </a>
-<a href="{{ $.Param "androidUrl" }}" target="_blank">
+<a href="{{ $.Param "androidUrl" }}" class="get-app" data-platform="android" target="_blank">
     {{ partial "android.svg" }}
 </a>
-<a href="{{ $.Param "githubUrl" }}" target="_blank">
+<a href="{{ $.Param "githubUrl" }}" class="padlock-github" target="_blank">
     {{ partial "github.svg" }}
 </a>
