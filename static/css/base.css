@@ -188,6 +188,25 @@ header .inner, main {
     max-width: 800px;
 }
 
+figure {
+    margin: 20px;
+    text-align: center;
+}
+
+figure img {
+    max-height: 400px;
+}
+
+figure.float.right {
+    float: right;
+    margin: 0 0 0 20px;
+}
+
+figure.float.left {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
 .newsletter-signup {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -251,5 +270,10 @@ header .inner, main {
     li article .title {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    figure.float.left, figure.float.right {
+        float: none;
+        margin: 20px;
     }
 }
