@@ -7,4 +7,7 @@
     <div class="publish-date">{{ dateFormat "Monday, Jan 2, 2006" .PublishDate }}</div>
     {{ .Content }}
 </article>
+<section>
+    {{ partial "newsletter-signup" . }}
+</section>
 {{ end }}
