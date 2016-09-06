@@ -54,13 +54,12 @@ a:hover {
 
 section {
     padding: 0 40px;
-    margin: 80px 0;
+    margin: 40px 0;
 }
 
 footer {
     display: block;
     padding: 10px;
-    margin-top: 100px;
     text-align: center;
     font-size: 80%;
     border-top: solid 1px #ccc;
@@ -153,11 +152,12 @@ ul.articles {
 }
 
 ul.articles li {
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 article {
-    padding: 80px 40px;
+    padding: 0 40px;
+    margin: 40px 0;
     box-sizing: border-box;
 }
 
@@ -180,9 +180,12 @@ li article h2 {
     margin: 0;
 }
 
+main {
+    margin: 80px auto;
+}
+
 header .inner, main {
     max-width: 800px;
-    margin: 0 auto;
 }
 
 .newsletter-signup {
