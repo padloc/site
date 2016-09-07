@@ -21,6 +21,10 @@ header .type {
     overflow: visible;
 }
 
+.hero a {
+    color: #fff;
+}
+
 .hero h1 {
     font-size: 500%;
     margin: 0 0 20px 0;
@@ -46,14 +50,11 @@ header .type {
 
 .get-it {
     margin: 45px 0;
-}
-
-.get-it h2 {
-    font-weight: bold;
+    color: inherit;
+    text-align: center;
 }
 
 .get-it .icon {
-    color: #fff;
     width: 80px;
     height: 80px;
 }
