@@ -1,0 +1,15 @@
+<li>
+    <article>
+        <a class="title" href="{{ .RelPermalink }}">
+            <h2>{{ .Title }}</h2>
+            <div class="publish-date">{{ dateFormat "Monday, Jan 2, 2006" .PublishDate }}</div>
+        </a>
+        </div>
+        <p>
+            {{ .Summary }}
+            {{- if .Truncated -}}
+                ... <a href="{{ .RelPermalink }}">Read More</a>
+            {{ end }}
+        </p>
+    </article>
+</li>

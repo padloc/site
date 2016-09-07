@@ -1,0 +1,89 @@
+header {
+    background: #59c6ff;
+    border: none;
+}
+
+header, header a {
+    color: #fff;
+}
+
+header .type {
+    display: none;
+}
+
+.hero {
+    background: #59c6ff;
+    height: 550px;
+    padding: 100px 20px 50px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: visible;
+}
+
+.hero a {
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 500%;
+    margin: 0 0 20px 0;
+}
+
+.hero h2 {
+    font-size: 150%;
+    font-weight: 300;
+}
+
+.hero .logo {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -100px;
+    margin: auto;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.get-it {
+    margin: 45px 0;
+    color: inherit;
+    text-align: center;
+}
+
+.get-it .icon {
+    width: 80px;
+    height: 80px;
+}
+
+.about p {
+    line-height: 1.5em;
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 300%;
+    }
+
+    .hero h2 {
+        font-size: 120%;
+    }
+
+    .hero {
+        height: auto;
+        padding: 80px 20px 20px 20px;
+        margin-bottom: -40px;
+    }
+
+    .hero .logo {
+        display: none;
+    }
+
+    .get-it .icon {
+        width: 50px;
+        height: 50px;
+    }
+}

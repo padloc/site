@@ -1,0 +1,46 @@
+{{ define "css" }}
+    {{ template "basecss" . }}
+    <link href="/css/home.css" rel="stylesheet" type="text/css">
+{{ end }}
+
+{{ define "header" }}
+    {{ partial "header" . }}
+
+    <div class="hero">
+        <h1>Padlock</h1>
+        <h2>A minimalist open source password manager.</h2>
+        <div class="get-it">
+            {{ partial "download-links" . }}
+        </div>
+        <div class="logo">
+            {{ partial "padlock.svg" . }}
+        </div>
+    </div>
+{{ end }}
+
+{{ define "main" }}
+    <section>
+        <h1>News</h1>
+        <ul class="articles">
+            {{ range first 2 (where .Data.Pages ".Type" "news") }}
+                {{ .Render "li" }}
+            {{ end }}
+        </ul>
+
+        <a href="/news/"><h2>More News...</h2></a>
+
+        {{ partial "newsletter-signup" . }}
+    </section>
+
+    <section class="about">
+        <h1>About Padlock</h1>
+        {{ range where .Data.Pages "Title" "About Padlock" }}
+            {{ .Content }}
+        {{ end }}
+    </section>
+
+    <div class="get-it">
+        <h2>Get it Now!</h2>
+        {{ partial "download-links" . }}
+    </div>
+{{ end }}

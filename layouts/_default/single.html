@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article>
+    <a href="/{{ .Section }}">&hookleftarrow; Back to {{ humanize .Section }}</a>
+    <h1>
+        <span>{{ .Title }}</span>
+    </h1>
+    <div class="publish-date">{{ dateFormat "Monday, Jan 2, 2006" .PublishDate }}</div>
+    {{ .Content }}
+</article>
+<section>
+    {{ partial "newsletter-signup" . }}
+</section>
+{{ end }}
