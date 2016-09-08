@@ -21,3 +21,8 @@ this, simply go to **Settings > Padlock Cloud** and select **Connect**.
 
 We apologize for any inconvenience this might cause. If you have any questions
 or concerns, don't hesitate to [contact us](mailto:support@padlock.io)!
+
+{{% note %}}
+**Note:** The Google Chrome version will update itself automatically but you
+might have to restart Chrome for the update to take effect!
+{{% /note %}}

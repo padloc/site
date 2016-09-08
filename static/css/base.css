@@ -258,6 +258,7 @@ figure.float.left {
     background: rgba(89, 198, 255, 0.1);
     padding: 20px;
     border: solid 1px #59c6ff;
+    clear: both;
 }
 
 .note p:first-child {
