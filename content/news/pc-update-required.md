@@ -1,6 +1,6 @@
 ---
-date: 2016-09-07
-publishdate: 2016-09-07
+date: 2016-09-08
+publishdate: 2016-09-08
 title: "Update to v1.0 to Keep Using Padlock Cloud!"
 ---
 
