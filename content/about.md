@@ -31,7 +31,7 @@ developers.
 ## How can I use it?
 
 Padlock is now available in the
-[Chrome Web Store](https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadf)
+[Chrome Web Store](https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif)
 and on [iOS](https://itunes.apple.com/app/id871710139") and
 [Android](https://play.google.com/store/apps/details?id=com.maklesoft.padlock).
 If you want to run your own version or simply play around with the source code,
