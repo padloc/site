@@ -46,18 +46,13 @@ identify and eliminate possible security flaws quickly and efficiently.
 
 ## What is Padlock Cloud?
 
-Padlock Cloud is a service that allows you to synchronize your Padlock data
-between multiple devices quickly and easily. You can connect to Padlock Cloud
-through the Padlock app simply by providing your email address. This address
-will then be used for authentication by sending you a confirmation link every
-time you want to connect one of your devices to Padlock Cloud. Padlock Cloud
-keeps an encrypted version of your data on our servers which can then be
-accessed from any device that has the Padlock app installed. Your data is
-encrypted and decrypted offline and never leaves your device in plain text. The
-encryption key used is derived from your master password which is only known by
-you. This means that we do not have access to your plain text data at any time.
-Just like Padlock, Padlock Cloud is free and completely open source. You can
-find the source code [here](https://github.com/maklesoft/padlock-cloud). For
-more information on how we handle your personal information, please read the
-[Padlock Cloud privacy policy.](/privacy/)
-
+Padlock Cloud is an online storage service for Padlock that allows you to
+securely store your data in the cloud where you can access it conveniently from
+all your different devices. You can connect to Padlock Cloud easily through the
+Padlock app using nothing but your email address. Before being sent to our
+servers, your data is always encrypted locally using your master password to
+make sure no one can read it - not even we! Just like Padlock, Padlock Cloud is
+completely open source. You can find the source code
+[here](https://github.com/maklesoft/padlock-cloud). For more information on how
+we handle your personal information, please read the [Padlock Cloud privacy
+policy](/privacy/).
