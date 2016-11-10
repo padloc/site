@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Padlock Newsletter</title>
+    <link>https://padlock.io/news/</link>
+    <description>Recent news about Padlock and Padlock Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://padlock.io/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Padlock v1.0 Released</title>
+      <link>https://padlock.io/news/v1.0-released/</link>
+      <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://padlock.io/news/v1.0-released/</guid>
+      <description>We&amp;rsquo;re pleased to announce that Padlock v1.0 has been released! This is the biggest release yet, and apart from the usual bug fixes and polish we have a couple of neat additions for you (see below)! Most the changes, though, have been &amp;ldquo;under the hood&amp;rdquo; and even though they are not directly visible to most users they will bring great improvements in stability, reliability and security. Security, of course, has always been our main priority when building Padlock and we&amp;rsquo;re happy to tell you that we have been working with the Open Technology Fund and the security experts at cure53 to identify and eliminate possible vulnerabilities and further strengthen the security of the app!</description>
+      <content:encoded>
+
+&lt;p&gt;We&amp;rsquo;re pleased to announce that &lt;strong&gt;Padlock v1.0 has been released&lt;/strong&gt;! This is the
+biggest release yet, and apart from the usual bug fixes and polish we have a
+couple of neat additions for you (see below)! Most the changes, though, have
+been &amp;ldquo;under the hood&amp;rdquo; and even though they are not directly visible to most
+users they will bring great improvements in stability, reliability and
+security. Security, of course, has always been our main priority when building
+Padlock and we&amp;rsquo;re happy to tell you that we have been working with the
+&lt;a href=&#34;https://www.opentech.fund/&#34;&gt;Open Technology Fund&lt;/a&gt; and the security experts at
+&lt;a href=&#34;https://cure53.de/&#34;&gt;cure53&lt;/a&gt; to identify and eliminate possible vulnerabilities
+and further strengthen the security of the app! We&amp;rsquo;ll be releasing the full
+report soon so stay tuned!&lt;/p&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+    &lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; Along with this release, we&amp;rsquo;re also rolling out a major update
+to the Padlock Cloud service. As a result, &lt;strong&gt;older version of the Padlock
+app will no longer work with Padlock Cloud&lt;/strong&gt;! See our
+&lt;a href=&#34;https://padlock.io/news/pc-update-required/&#34;&gt;announcement&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;auto-lock&#34;&gt;Auto Lock&lt;/h2&gt;
+
+
+&lt;figure class=&#34;float right&#34;&gt;
+    
+        &lt;img src=&#34;https://padlock.io/img/auto-lock.gif&#34; alt=&#34;Auto Lock&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Previously the iOS and Android versions of the app would lock instantly the
+moment you put the app in the background.  This proved to be a major
+inconvenience for many users since you had to re-enter your master password
+every time you switched apps in order to copy &amp;amp; paste user names and
+passwords into webpages or other applications. On the other hand, the desktop
+app did not have any form of auto-locking at all. With the latest release, both
+mobile and desktop apps now automatically detect if they haven&amp;rsquo;t received any
+input from the user in a while and &lt;strong&gt;will automatically lock after a
+configurable period of inactivity&lt;/strong&gt;. This not only means that your data will be
+safe in case you forget to close the app on your computer or phone - copying
+and pasting will now also be a lot easier since the app will no longer lock
+instantly the moment you switch to another app.&lt;/p&gt;
+
+&lt;h2 id=&#34;improved-padlock-cloud-pairing-process&#34;&gt;Improved Padlock Cloud Pairing Process&lt;/h2&gt;
+
+&lt;p&gt;We put a lot of working into making pairing your devices with Padlock
+Cloud easier and more intuitive. At the same time, we added some features to
+make the process more secure and give you more control over your data.&lt;/p&gt;
+
+
+&lt;figure class=&#34;float left&#34;&gt;
+    
+        &lt;img src=&#34;https://padlock.io/img/pc-restore.gif&#34; alt=&#34;Restore From Padlock Cloud&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Among other things, you can now restore your Account directly from Padlock
+Cloud when starting the app on a new device!&lt;/p&gt;
+
+&lt;h2 id=&#34;custom-padlock-cloud-server&#34;&gt;Custom Padlock Cloud Server&lt;/h2&gt;
+
+&lt;p&gt;For the power users among you &lt;strong&gt;Padlock now supports pairing with your own,
+custom Padlock Cloud server&lt;/strong&gt;! Openness and transparency have always been a major
+part of our philosophy and even though we make sure that your data never leaves
+your devices unencrypted, we understand if some people don&amp;rsquo;t want to upload
+their data to a server they don&amp;rsquo;t control. If you want to learn more about how
+you can spin up your own Padlock Cloud instance, head over to
+&lt;a href=&#34;https://github.com/maklesoft/padlock-cloud&#34;&gt;Padlock Cloud on Github&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;We hope you like the new version! If you have any feedback, questions or
+concerns, feel free to &lt;a href=&#34;mailto:support@padlock.io&#34;&gt;shoot us an email&lt;/a&gt;!&lt;/p&gt;
+</content:encoded>
+    </item>
+    
+    <item>
+      <title>Update to v1.0 to Keep Using Padlock Cloud!</title>
+      <link>https://padlock.io/news/pc-update-required/</link>
+      <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://padlock.io/news/pc-update-required/</guid>
+      <description>Along with the release of Padlock v1.0 we are also rolling out a major update to the Padlock Cloud service. Unfortunately, this means that Padlock Cloud clients of version 0.12 or earlier will not be able to access Padlock Cloud anymore. When trying to synchronize data or pair new devices, the app will show a generic error message. In addition, users will receive an email reminding them to update to the latest version of Padlock.</description>
+      <content:encoded>&lt;p&gt;Along with the &lt;a href=&#34;https://padlock.io/news/v1.0-released/&#34;&gt;release of Padlock v1.0&lt;/a&gt; we
+are also rolling out a major update to the Padlock Cloud service.
+Unfortunately, this means that &lt;strong&gt;Padlock Cloud clients of version 0.12 or
+earlier will not be able to access Padlock Cloud anymore&lt;/strong&gt;.  When trying to
+synchronize data or pair new devices, the app will show a generic error
+message.&lt;/p&gt;
+
+
+&lt;figure class=&#34;float right&#34;&gt;
+    
+        &lt;img src=&#34;https://padlock.io/img/screen-error.png&#34; alt=&#34;Generic Error Message&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;In addition, users will receive an email reminding them to update to the latest
+version of Padlock. Don&amp;rsquo;t worry, your data is still there! In order to keep
+using Padlock Cloud, simply &lt;strong&gt;update the app to v1.0 or greater&lt;/strong&gt;. Note that
+after updating the app, you will also have to pair your device again. To do
+this, simply go to &lt;strong&gt;Settings &amp;gt; Padlock Cloud&lt;/strong&gt; and select &lt;strong&gt;Connect&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We apologize for any inconvenience this might cause. If you have any questions
+or concerns, don&amp;rsquo;t hesitate to &lt;a href=&#34;mailto:support@padlock.io&#34;&gt;contact us&lt;/a&gt;!&lt;/p&gt;
+</content:encoded>
+    </item>
+    
+  </channel>
+</rss>
