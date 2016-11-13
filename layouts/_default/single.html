@@ -10,6 +10,9 @@
     {{ .Content }}
 </article>
 <section>
+    {{ partial "download-button" . }}
+</section>
+<section>
     {{ partial "newsletter-signup" . }}
 </section>
 {{ end }}
