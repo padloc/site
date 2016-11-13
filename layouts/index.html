@@ -9,9 +9,7 @@
     <div class="hero">
         <h1>Padlock</h1>
         <h2>A minimalist open source password manager.</h2>
-        <div class="get-it">
-            {{ partial "download-links" . }}
-        </div>
+        {{ partial "download-button" }}
         <div class="logo">
             {{ partial "padlock.svg" . }}
         </div>
@@ -39,8 +37,7 @@
         {{ end }}
     </section>
 
-    <div class="get-it">
-        <h2>Get it Now!</h2>
-        {{ partial "download-links" . }}
-    </div>
+    <section>
+    {{ partial "download-button" }}
+    </section>
 {{ end }}

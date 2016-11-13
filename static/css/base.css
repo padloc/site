@@ -269,6 +269,69 @@ figure.float.left {
     margin-bottom: 0;
 }
 
+.download-button {
+    display: inline-block;
+    font-size: 120%;
+    border-radius: 4px;
+    border: solid 2px;
+    padding: 10px 15px 15px 15px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.download-button.beta, .download-button.coming-soon {
+    padding-right: 35px;
+}
+
+.download-button.coming-soon {
+    padding-right: 37px;
+    touch-action: none;
+    opacity: 0.5;
+}
+
+.download-button.beta:after, .download-button.coming-soon:after {
+    display: block;
+    background: #59c6ff;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 58px;
+    width: 59px;
+    text-align: center;
+    transform-origin: 100% 100%;
+    transform: rotate(-90deg);
+}
+
+.download-button.beta:after {
+    content: "beta";
+    font-size: 80%;
+}
+
+.download-button.coming-soon:after {
+    content: "coming soon";
+    font-size: 60%;
+    line-height: 14px;
+}
+
+.download-button span {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.download-button .icon {
+    width: 25px;
+    height: 25px;
+}
+
+.download-button > * {
+    vertical-align: middle;
+}
+
+.downloads .download-button {
+    display: table;
+    margin: 0 0 10px 5px;
+}
+
 @media (max-width: 500px) {
     section, article {
         padding-left: 20px;
