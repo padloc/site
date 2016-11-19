@@ -1,34 +1,50 @@
+{{ define "css" }}
+    {{ template "basecss" . }}
+    <link href="/css/downloads.css" rel="stylesheet" type="text/css">
+{{ end }}
 {{ define "main" }}
 <section class="downloads">
     <h1>Downloads</h1>
     <p>
         <a href="{{ $.Param "iosUrl" }}" class="download-button get-app" data-platform="ios" target="_blank">
-            {{ partial "apple.svg" }}
-            <span>iOS App Store</span>
+            <span class="inner">
+                {{ partial "apple.svg" }}
+                <span>iOS App Store</span>
+            </span>
         </a>
         <a href="{{ $.Param "androidUrl" }}" class="download-button get-app" data-platform="android" target="_blank">
-            {{ partial "android.svg" }}
-            <span>Google Play Store</span>
+            <span class="inner">
+                {{ partial "android.svg" }}
+                <span>Google Play Store</span>
+            </span>
         </a>
         <a href="{{ $.Param "chromeUrl" }}" class="download-button get-app" data-platform="chrome" target="_blank">
-            {{ partial "chrome.svg" }}
-            <span>Chrome Web Store</span>
+            <span class="inner">
+                {{ partial "chrome.svg" }}
+                <span>Chrome Web Store</span>
+            </span>
         </a>
     </p>
     <p>
         <a href="{{ $.Param "macUrl" }}" class="download-button get-app beta" data-platform="mac" target="_blank">
-            {{ partial "apple.svg" }}
-            <span>Download for Mac</span>
+            <span class="inner">
+                {{ partial "apple.svg" }}
+                <span>Download for Mac</span>
+            </span>
         </a>
     </p>
     <p>
         <a href="#" class="download-button get-app coming-soon" data-platform="windows" target="_blank">
-            {{ partial "windows.svg" }}
-            <span>Download for Windows</span>
+            <span class="inner">
+                {{ partial "windows.svg" }}
+                <span>Download for Windows</span>
+            </span>
         </a>
         <a href="#" class="download-button get-app coming-soon" data-platform="linux" target="_blank">
-            {{ partial "linux.svg" }}
-            <span>Download for Linux</span>
+            <span class="inner">
+                {{ partial "linux.svg" }}
+                <span>Download for Linux</span>
+            </span>
         </a>
     </p>
 </section>

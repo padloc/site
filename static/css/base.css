@@ -279,40 +279,6 @@ figure.float.left {
     position: relative;
 }
 
-.download-button.beta, .download-button.coming-soon {
-    padding-right: 35px;
-}
-
-.download-button.coming-soon {
-    padding-right: 37px;
-    touch-action: none;
-    opacity: 0.5;
-}
-
-.download-button.beta:after, .download-button.coming-soon:after {
-    display: block;
-    background: #59c6ff;
-    color: white;
-    position: absolute;
-    right: 0px;
-    bottom: 58px;
-    width: 59px;
-    text-align: center;
-    transform-origin: 100% 100%;
-    transform: rotate(-90deg);
-}
-
-.download-button.beta:after {
-    content: "beta";
-    font-size: 80%;
-}
-
-.download-button.coming-soon:after {
-    content: "coming soon";
-    font-size: 60%;
-    line-height: 14px;
-}
-
 .download-button span {
     display: inline-block;
     margin: 0 5px;
@@ -325,11 +291,6 @@ figure.float.left {
 
 .download-button > * {
     vertical-align: middle;
-}
-
-.downloads .download-button {
-    display: table;
-    margin: 0 0 10px 5px;
 }
 
 @media (max-width: 500px) {

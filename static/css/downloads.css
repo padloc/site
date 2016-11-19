@@ -1,0 +1,59 @@
+h1 {
+    margin-bottom: 30px;
+}
+
+.downloads p {
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    border-radius: 4px;
+    border: solid 2px;
+    padding: 0;
+    margin: 0 0 10px 5px;
+    position: relative;
+    text-align: center;
+    font-size: 110%;
+}
+
+.download-button .inner {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button .icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.download-button.coming-soon {
+    touch-action: none;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.download-button.beta:after, .download-button.coming-soon:after {
+    display: block;
+    background: #59c6ff;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 2px 2px;
+    font-size: 90%;
+    line-height: 30px;
+}
+
+.download-button.beta:after {
+    content: "beta";
+}
+
+.download-button.coming-soon:after {
+    content: "coming soon";
+}
