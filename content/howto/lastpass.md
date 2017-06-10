@@ -1,22 +1,31 @@
-+++
-title = "5 Easy Steps to Move Your Data from LastPass to Padlock"
-date = "2016-09-02T11:52:00+02:00"
+---
+date: 2017-06-09
+publishDate: 2017-06-09
+title: 5 Easy Steps to Move Your Data from LastPass to Padlock
+---
 
-+++
+## 5 Easy Steps to Move Your Data from LastPass to Padlock
 
- ## 5 Easy Steps to Move Your Data from LastPass to Padlock
+Padlock supports importing data directly from a LastPass CSV file, which means
+it is incredibly easy to move your data from LastPass over to Padlock. **Here
+is how to do it in 5 easy steps:**
 
-Starting with version **0.10.1**, Padlock supports importing data directly from a
-LastPass CSV file, which means it is now easier than ever to move your data from LastPass
-over to Padlock. **Here is how to do it in 5 easy steps:**
+1. Export your LastPass data as a CSV file. Details on how to do this can be
+   found [here](https://lastpass.com/support.php?cmd=showfaq&id=1206).
+2. Download Padlock [here](https://padlock.io/downloads/).
+3. Open the app and set up your account.
+4. Click the little gear icon in the header on the top to get to the
+   **Settings** page.
+5. Under the **Import** section, click the icon next to **Select a File** and
+   select the file you exported from LastPass.
 
-- In LastPass, go to **Tools > Advanced Tools > Export To > LastPass CSV file** and store the
-    resulting file somewhere on your computer.
-- Download Padlock [here](http://padlock.io).
-- Open the LastPass CSV file in a text editor and copy its contents to the clipboard.
-- In Padlock, go to **Settings > Import Data** and paste the LastPass CSV data into the text field.
-- Make sure that 'LastPass Data' is selected in the dropdown menu at the top, then hit **import**.
+{{% note %}}
+On iOS and Android, the **Select a File** is not available.
+Instead, you have to copy your data to the clipboard first and then click the
+icon next to **Paste From Clipboard**.
+{{% /note %}}
 
-**That's it!** All of your LastPass data should now be imported into Padlock! If you
-have problems following the above steps or have any other questions, please don't hesitate to contact
-us via [**support@padlock.io**](mailto:support@padlock.io)!
+**That's it!** All of your LastPass data should now be imported into Padlock!
+If you have problems following the above steps or have any other questions,
+please don't hesitate to contact us via
+[**support@padlock.io**](mailto:support@padlock.io)!
