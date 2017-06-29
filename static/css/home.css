@@ -1,5 +1,5 @@
 header {
-    background: #59c6ff;
+    background: transparent;
     border: none;
 }
 
@@ -11,8 +11,14 @@ header .type {
     display: none;
 }
 
+header.header-background {
+    background: #23b4ff;
+    z-index: 0;
+    height: 50px;
+}
+
 .hero {
-    background: #59c6ff;
+    background: linear-gradient(180deg, #59c6ff 0%, #23b4ff 100%);
     height: 550px;
     padding: 100px 20px 50px 20px;
     text-align: center;
