@@ -26,6 +26,7 @@ header.header-background {
     color: #fff;
     position: relative;
     overflow: visible;
+    text-shadow: rgba(0,0,0,0.1) 1px 1px 0;
 }
 
 .hero a {
@@ -35,11 +36,18 @@ header.header-background {
 .hero h1 {
     font-size: 500%;
     margin: 0 0 20px 0;
+    font-weight: 300;
+    text-shadow: rgba(0,0,0,0.1) 2px 2px 0;
 }
 
 .hero h2 {
     font-size: 150%;
     font-weight: 300;
+}
+
+.hero .download-button {
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0;
+    border-radius: 8px;
 }
 
 .hero .logo {
