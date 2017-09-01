@@ -285,6 +285,7 @@ figure.float.left {
     padding: 10px 15px 15px 15px;
     margin: 25px 0;
     position: relative;
+    vertical-align: middle;
 }
 
 .download-button span {
