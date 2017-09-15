@@ -1,0 +1,41 @@
+<html>
+    <head>
+        {{ partial "mixpanel" . }}
+        <script src="/js/analytics.js"></script>
+        <script>
+(() => {
+
+    const params = new URLSearchParams(window.location.search);
+    const platform = params.get("p") || "";
+    const rating = params.get("r");
+    const version = params.get("v");
+
+    mixpanel.track("send feedback", { platform, version, rating });
+
+    let url;
+
+    if (rating === "0") {
+        switch (platform.toLowerCase()) {
+            case "ios":
+                url = '{{ $.Param "iosUrl" }}';
+                break;
+            case "android":
+                url = '{{ $.Param "androidUrl" }}';
+                break;
+            case "chrome":
+                url = '{{ $.Param "chromeUrl" }}';
+                break;
+            default:
+                url = '{{ $.Param "productHuntUrl" }}';
+        }
+    } else {
+        url = "mailto:support@padlock.io?subject=Padlock+Feedback";
+    }
+
+    window.location = url;
+
+})();
+        </script>
+    </head>
+    <body></body>
+</html>

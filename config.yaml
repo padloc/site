@@ -9,6 +9,7 @@ params:
     chromeUrl: https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif
     macUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.0.0/padlock-2.0.0.dmg
     winUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.0.0/padlock-setup-2.0.0.exe
+    productHuntUrl: https://www.producthunt.com/posts/padlock
     githubUrl: https://github.com/maklesoft/padlock/
     twitterUrl: https://twitter.com/padlockapp/
     mixpanelToken: 1e4f4510418f9b490bbc34e70e22cf57
