@@ -1,7 +1,5 @@
 <html>
     <head>
-        {{ partial "mixpanel" . }}
-        <script src="/js/analytics.js"></script>
         <script>
 (() => {
 
@@ -9,8 +7,6 @@
     const platform = params.get("p") || "";
     const rating = params.get("r");
     const version = params.get("v");
-
-    mixpanel.track("send feedback", { platform, version, rating });
 
     let url;
 
@@ -37,5 +33,5 @@
 })();
         </script>
     </head>
-    <body></body>
+    <body>Redirecting...</body>
 </html>
