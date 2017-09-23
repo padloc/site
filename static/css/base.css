@@ -222,6 +222,11 @@ figure.float.left {
     margin: 0 20px 0 0;
 }
 
+.video.float.right {
+    float: right;
+    margin: 20px 0 20px 20px;
+}
+
 .newsletter-signup {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -320,5 +325,12 @@ figure.float.left {
     figure.float.left, figure.float.right {
         float: none;
         margin: 20px;
+    }
+
+    .video.float.right {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 20px auto;
     }
 }

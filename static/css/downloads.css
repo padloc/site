@@ -39,6 +39,10 @@ h1 {
     cursor: default;
 }
 
+.download-button.beta .inner {
+    height: 170px;
+}
+
 .download-button.beta:after, .download-button.coming-soon:after {
     display: block;
     background: #59c6ff;
