@@ -99,6 +99,7 @@ header {
     padding: 0 10px;
     box-sizing: border-box;
     border-bottom: solid 1px #ccc;
+    font-size: 110%;
 }
 
 header .inner {
@@ -125,11 +126,13 @@ header nav ul li {
     margin-left: 10px;
 }
 
-header .icon.padlock {
-    width: 35px;
-    height: 35px;
+header .icon-padlock {
     margin-right: 10px;
     margin-left: 3px;
+}
+
+header [class^="icon-"], header [class*=" icon-"] {
+    font-size: 140%;
 }
 
 header .spacer {
@@ -293,14 +296,12 @@ figure.float.left {
     vertical-align: middle;
 }
 
-.download-button span {
-    display: inline-block;
-    margin: 0 5px;
-}
-
 .download-button .icon {
+    display: inline-block;
+    font-size: 25px;
     width: 25px;
     height: 25px;
+    margin-left: 5px;
 }
 
 .download-button > * {

@@ -1,6 +1,7 @@
 header {
     background: transparent;
     border: none;
+    text-shadow: rgba(0,0,0,0.1) 1px 1px 0;
 }
 
 header, header a {
@@ -54,6 +55,7 @@ header.header-background {
     position: absolute;
     width: 350px;
     height: 350px;
+    font-size: 350px;
     position: absolute;
     right: 0;
     left: 0;
@@ -61,6 +63,7 @@ header.header-background {
     margin: auto;
     background: inherit;
     border-radius: 100%;
+    text-shadow: none;
 }
 
 .get-it {

@@ -5,45 +5,45 @@
 {{ define "main" }}
 <section class="downloads">
     <h1>Downloads</h1>
-    <p>
+    <div>
         <a href="{{ $.Param "iosUrl" }}" class="download-button get-app" data-platform="ios" target="_blank">
-            <span class="inner">
-                {{ partial "apple.svg" }}
-                <span>iOS App Store</span>
-            </span>
+            <div class="inner">
+                <div class="icon icon-apple"></div>
+                <div>iOS App Store</div>
+            </div>
         </a>
         <a href="{{ $.Param "androidUrl" }}" class="download-button get-app" data-platform="android" target="_blank">
-            <span class="inner">
-                {{ partial "android.svg" }}
-                <span>Google Play Store</span>
-            </span>
+            <div class="inner">
+                <div class="icon icon-android"></div>
+                <div>Google Play Store</div>
+            </div>
         </a>
         <a href="{{ $.Param "chromeUrl" }}" class="download-button get-app" data-platform="chrome" target="_blank">
-            <span class="inner">
-                {{ partial "chrome.svg" }}
-                <span>Chrome Web Store</span>
-            </span>
+            <div class="inner">
+                <div class="icon icon-chrome"></div>
+                <div>Chrome Web Store</div>
+            </div>
         </a>
-    </p>
-    <p>
+    </div>
+    <div>
         <a href="{{ $.Param "winUrl" }}" class="download-button get-app" data-platform="windows">
-            <span class="inner">
-                {{ partial "windows.svg" }}
-                <span>Download for Windows</span>
-            </span>
+            <div class="inner">
+                <div class="icon icon-windows"></div>
+                <div>Download for Windows</div>
+            </div>
         </a>
         <a href="{{ $.Param "macUrl" }}" class="download-button get-app" data-platform="mac">
-            <span class="inner">
-                {{ partial "apple.svg" }}
-                <span>Download for Mac</span>
-            </span>
+            <div class="inner">
+                <div class="icon icon-apple"></div>
+                <div>Download for Mac</div>
+            </div>
         </a>
         <a href="{{ $.Param "linuxUrl" }}" class="download-button get-app beta" data-platform="linux" target="_blank">
-            <span class="inner">
-                {{ partial "linux.svg" }}
-                <span>Download for Linux</span>
-            </span>
+            <div class="inner">
+                <div class="icon icon-linux"></div>
+                <div>Download for Linux</div>
+            </div>
         </a>
-    </p>
+    </div>
 </section>
 {{ end }}
