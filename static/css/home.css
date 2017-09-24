@@ -21,7 +21,6 @@ header.header-background {
 .hero {
     background-color: #23b4ff;
     background: linear-gradient(180deg, #59c6ff 0%, #23b4ff 100%);
-    height: 550px;
     padding: 100px 20px 50px 20px;
     text-align: center;
     color: #fff;
@@ -51,19 +50,20 @@ header.header-background {
     border-radius: 8px;
 }
 
-.hero .logo {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    font-size: 350px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -100px;
-    margin: auto;
-    background: inherit;
+.hero .play {
+    display: block;
+    width: 150px;
+    height: 150px;
+    font-size: 150px;
+    text-align: center;
+    margin: 50px auto -110px auto;
+    background: #fff;
+    color: #23b4ff;
     border-radius: 100%;
-    text-shadow: none;
+}
+
+.hero .play:hover {
+    opacity: 1;
 }
 
 .get-it {
@@ -83,21 +83,7 @@ header.header-background {
 
 @media (max-width: 500px) {
     .hero h1 {
-        font-size: 300%;
-    }
-
-    .hero h2 {
-        font-size: 120%;
-    }
-
-    .hero {
-        height: auto;
-        padding: 80px 20px 20px 20px;
-        margin-bottom: -40px;
-    }
-
-    .hero .logo {
-        display: none;
+        font-size: 400%;
     }
 
     .get-it .icon {
