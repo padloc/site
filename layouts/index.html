@@ -1,6 +1,7 @@
 {{ define "css" }}
     {{ template "basecss" . }}
     <link href="/css/home.css" rel="stylesheet" type="text/css">
+    <link href="/css/device.css" rel="stylesheet" type="text/css">
 {{ end }}
 
 {{ define "header" }}
@@ -8,10 +9,18 @@
     <header class="header-background"></header>
 
     <div class="hero">
-        <h1>Padlock</h1>
-        <h2>A minimalist open source password manager.</h2>
-        {{ partial "download-button" }}
-        <a href="https://youtu.be/DkAGo9XoKwU" class="play icon-play-circle" target="_blank"></a>
+        <div class="hero-inner">
+            <h1>Padlock</h1>
+            <h2>A minimalist open source password manager.</h2>
+            <div class="buttons">
+                {{ partial "download-button" }}
+                <a href="#" class="btn">
+                    <span>Watch Video</span>
+                    <span class="icon icon-play-circle"></span>
+                </a>
+            </div>
+            {{ partial "device" (dict "id" "heroDevice") }}
+        </div>
     </div>
 {{ end }}
 
@@ -39,4 +48,7 @@
     <section>
     {{ partial "download-button" }}
     </section>
+{{ end }}
+
+{{ define "float" }}
 {{ end }}

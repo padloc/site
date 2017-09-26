@@ -1,14 +1,24 @@
+html, body {
+    height: 100%;
+}
+
 header {
     background: transparent;
     border: none;
-    text-shadow: rgba(0,0,0,0.1) 1px 1px 0;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
 }
 
 header, header a {
     color: #fff;
 }
 
-header .type {
+header .inner {
+    max-width: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+header .type, header .icon-padlock {
     display: none;
 }
 
@@ -19,14 +29,27 @@ header.header-background {
 }
 
 .hero {
+    position: relative;
     background-color: #23b4ff;
     background: linear-gradient(180deg, #59c6ff 0%, #23b4ff 100%);
-    padding: 100px 20px 50px 20px;
-    text-align: center;
+    /* background: linear-gradient(180deg, #66cbff 0%, #048bd2 100%); */
     color: #fff;
+    overflow: hidden;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.hero-inner {
     position: relative;
-    overflow: visible;
-    text-shadow: rgba(0,0,0,0.1) 1px 1px 0;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
 .hero a {
@@ -35,46 +58,33 @@ header.header-background {
 
 .hero h1 {
     font-size: 500%;
-    margin: 0 0 20px 0;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: -5px;
     font-weight: 300;
-    text-shadow: rgba(0,0,0,0.1) 2px 2px 0;
 }
 
 .hero h2 {
-    font-size: 150%;
-    font-weight: 300;
+    font-size: 130%;
+    margin-bottom: 50px;
 }
 
-.hero .download-button {
-    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0;
-    border-radius: 8px;
+.hero .buttons {
+    margin-bottom: 200px;
 }
 
-.hero .play {
-    display: block;
-    width: 150px;
-    height: 150px;
-    font-size: 150px;
-    text-align: center;
-    margin: 50px auto -110px auto;
-    background: #fff;
-    color: #23b4ff;
-    border-radius: 100%;
+.hero .buttons > * {
+    margin-right: 10px;
 }
 
-.hero .play:hover {
-    opacity: 1;
+.hero button, .hero .btn {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
 }
 
-.get-it {
-    margin: 45px 0;
-    color: inherit;
-    text-align: center;
-}
-
-.get-it .icon {
-    width: 80px;
-    height: 80px;
+.hero .device {
+    left: auto;
+    right: 100px;
+    transform: scale(0.8) rotateY(-40deg) rotateX(20deg);
 }
 
 .about p {

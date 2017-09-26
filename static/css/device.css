@@ -1,0 +1,96 @@
+.device-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 1500px;
+    pointer-events: none;
+}
+
+.device {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 578px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.device > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 20px;
+}
+
+.device > :nth-child(1) {
+    transform: translateZ(2px);
+}
+
+.device > :nth-child(2) {
+    transform: translateZ(4px);
+}
+
+.device > :nth-child(3) {
+    transform: translateZ(6px);
+}
+
+.device > :nth-child(4) {
+    transform: translateZ(8px);
+}
+
+.device > :nth-child(5) {
+    transform: translateZ(10px);
+}
+
+.device > :nth-child(6) {
+    transform: translateZ(12px);
+}
+
+.device > :nth-child(7) {
+    transform: translateZ(14px);
+}
+
+.device > :nth-child(8) {
+    transform: translateZ(16px);
+}
+
+.device > :nth-child(9) {
+    transform: translateZ(18px);
+}
+
+.device > :nth-child(10) {
+    transform: translateZ(20px);
+}
+
+.front {
+    background: #fff !important;
+    padding: 40px 10px 40px 10px;
+    border: solid 1px #aaa;
+}
+
+.back {
+    background: #fff !important;
+    border: solid 1px #aaa;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 1px;
+}
+
+.screen > img {
+    width: 100%;
+}

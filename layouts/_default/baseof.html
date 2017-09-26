@@ -41,6 +41,9 @@
             {{ end }}
         </main>
 
+        {{ block "float" . }}
+        {{ end }}
+
         {{ block "footer" . }}
             {{ partial "footer" . }}
         {{ end }}
