@@ -1,18 +1,50 @@
 <div class="device-wrapper" id="{{ .id }}">
     <div class="device">
         <div class="back"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="body"></div>
+        <div class="body"></div>
+        <div class="body"></div>
+        <div class="body"></div>
+        <div class="body"></div>
+        <div class="body"></div>
+        <div class="body"></div>
+        <div class="body"></div>
         <div class="front">
             <div class="screen">
-                <img src="/img/v2.1-list.png">
+                <video src="{{ .video }}" playsinline oncanplaythrough="console.log('video loaded');"></video>
+                <!-- <img src="{{ .img }}" style="display: none" onload="console.log('loaded'); this.style.display='';"> -->
+                <!-- <img src="/img/v2.1&#45;locked.png" onload="console.log('preloaded')"> -->
+                <!-- <iframe width="276" height="495" frameborder="0" -->
+                <!--     src="https://www.youtube.com/embed/DkAGo9XoKwU?rel=0&#38;amp;controls=0&#38;amp;showinfo=0&#38;autoplay=1" -->
+                <!-- ></iframe> -->
             </div>
         </div>
-    </div>
+        </div>
 </div>
+<script>
+(() => {
+    const deviceWrapper = document.currentScript.previousElementSibling;
+    const device = deviceWrapper.querySelector(".device");
+    const deviceBounds = device.getBoundingClientRect();
+    const video = deviceWrapper.querySelector("video");
+    const scroller = document.scrollingElement;
+    const scrollerHeight = scroller.offsetHeight;
+
+    var hasPlayed = false;
+
+    document.addEventListener("scroll", () => {
+        if (
+            !hasPlayed &&
+            scroller.scrollTop + scrollerHeight > deviceBounds.top + deviceBounds.height/2 &&
+            scroller.scrollTop < deviceBounds.top + deviceBounds.height/2
+        ) {
+            hasPlayed = true;
+            device.style.animationPlayState = "running";
+            video.play();
+        }
+    });
+
+    // video.addEventListener("canplaythrough", () => {
+    // });
+})();
+</script>

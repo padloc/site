@@ -1,8 +1,9 @@
 .device-wrapper {
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
     perspective: 1500px;
     pointer-events: none;
 }
@@ -70,14 +71,14 @@
     transform: translateZ(20px);
 }
 
-.front {
-    background: #fff !important;
+.device > .front {
+    background: #fff;
     padding: 40px 10px 40px 10px;
     border: solid 1px #aaa;
 }
 
 .back {
-    background: #fff !important;
+    background: #fff;
     border: solid 1px #aaa;
 }
 
@@ -91,6 +92,6 @@
     padding: 1px;
 }
 
-.screen > img {
+.screen > img, .screen > video {
     width: 100%;
 }

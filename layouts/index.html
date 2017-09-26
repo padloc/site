@@ -10,21 +10,56 @@
 
     <div class="hero">
         <div class="hero-inner">
-            <h1>Padlock</h1>
-            <h2>A minimalist open source password manager.</h2>
+            <h1>
+                <span class="logo-icon icon-padlock-negative"></span>
+                <span>Padlock</span>
+            </h1>
+            <h2>All your sensitive data in one secure place.</h2>
+            <div class="description">
+                Padlock securely stores all of your passwords and other sensitive information for you
+                so all you have to remember is a single master password!
+            </div>
             <div class="buttons">
                 {{ partial "download-button" }}
-                <a href="#" class="btn">
-                    <span>Watch Video</span>
-                    <span class="icon icon-play-circle"></span>
-                </a>
+                <!-- <a href="#" class="btn"> -->
+                <!--     <span>Watch Video</span> -->
+                <!--     <span class="icon icon&#45;play&#45;circle"></span> -->
+                <!-- </a> -->
             </div>
-            {{ partial "device" (dict "id" "heroDevice") }}
+            {{ partial "device" (dict "video" "/img/v2.1-unlock.mov") }}
         </div>
     </div>
 {{ end }}
 
 {{ define "main" }}
+
+    <section class="showcase right">
+        <h1>Beautifully simple<br>and easy to use.</h1>
+        <p>
+            Padlock is the one, secure place to store all your passwords, pins, credit cards and other sensitive information.
+            Strong encryptions makes sure that nobody other than you can ever access your data, not even we!
+        </p>
+        {{ partial "device" (dict "video" "/img/v2.1-generate.mov") }}
+    </section>
+
+    <section class="showcase left">
+        <h1>Effortlessly synchronize all your devices.</h1>
+        <p>
+            Padlock is the one, secure place to store all your passwords, pins, credit cards and other sensitive information.
+            Strong encryptions makes sure that nobody other than you can ever access your data, not even we!
+        </p>
+        {{ partial "device" (dict "video" "/img/v2.1-generate.mov") }}
+    </section>
+
+    <section class="showcase right">
+        <h1>Padlock <span class="icon-heart"></span> Open Source</h1>
+        <p>
+            Padlock is the one, secure place to store all your passwords, pins, credit cards and other sensitive information.
+            Strong encryptions makes sure that nobody other than you can ever access your data, not even we!
+        </p>
+        {{ partial "device" (dict "video" "/img/v2.1-generate.mov") }}
+    </section>
+
     <section>
         <h1>News</h1>
         <ul class="articles">

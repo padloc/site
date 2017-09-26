@@ -3,6 +3,7 @@ html, body {
 }
 
 header {
+    position: absolute;
     background: transparent;
     border: none;
     text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
@@ -31,8 +32,9 @@ header.header-background {
 .hero {
     position: relative;
     background-color: #23b4ff;
-    background: linear-gradient(180deg, #59c6ff 0%, #23b4ff 100%);
-    /* background: linear-gradient(180deg, #66cbff 0%, #048bd2 100%); */
+/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2359c6ff' fill-opacity='0.16' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjMjNiNGZmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU5YzZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjUiPjwvcGF0aD4KPC9zdmc+");
+    background-size: 30px;
     color: #fff;
     overflow: hidden;
     text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
@@ -40,7 +42,16 @@ header.header-background {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .hero-inner {
@@ -57,16 +68,28 @@ header.header-background {
 }
 
 .hero h1 {
-    font-size: 500%;
-    margin-top: 150px;
+    font-size: 450%;
+    margin-top: 170px;
     margin-bottom: 20px;
     margin-left: -5px;
     font-weight: 300;
 }
 
+.hero .logo-icon {
+    font-size: 100%;
+    position: relative;
+    top: 5px;
+}
+
 .hero h2 {
     font-size: 130%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.hero .description {
+    width: 450px;
+    margin-bottom: 40px;
+    font-size: 110%;
 }
 
 .hero .buttons {
@@ -78,13 +101,99 @@ header.header-background {
 }
 
 .hero button, .hero .btn {
+    font-size: 110%;
     box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+}
+
+@keyframes lazy-spin {
+    from {
+        transform: scale(0.8) rotateY(-60deg) rotateX(20deg);
+    }
+
+    to {
+        transform: scale(0.8) rotateY(-30deg) rotateX(20deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: scale(0.5) rotateY(-100deg) rotateX(20deg);
+    }
+
+    to {
+        transform: scale(0.8) rotateY(-30deg) rotateX(20deg);
+    }
+}
+
+@keyframes spin-right {
+    from {
+        transform: scale(0.5) rotateY(100deg) rotateX(20deg);
+    }
+
+    to {
+        transform: scale(0.8) rotateY(30deg) rotateX(20deg);
+    }
 }
 
 .hero .device {
     left: auto;
-    right: 100px;
-    transform: scale(0.8) rotateY(-40deg) rotateX(20deg);
+    right: 50px;
+    animation: lazy-spin 2s both paused;
+    /* transform: scale(0.8) rotateY(-30deg) rotateX(20deg); */
+    /* animation-iteration-count: infinite; */
+    /* transform: scale(0.8) rotateY(-40deg) rotateX(20deg); */
+}
+
+.showcase {
+    position: relative;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showcase.left {
+    text-align: left;
+    padding-right: 350px;
+}
+
+.showcase.left .device {
+    right: 50px;
+    left: auto;
+    animation: spin 1s both paused cubic-bezier(0.6, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+
+.showcase .device .front, .showcase .device .back {
+    background: currentColor;
+}
+
+.showcase .device .body {
+    background: #444;
+}
+
+.showcase.right > * {
+    text-align: right;
+    padding-left: 350px;
+}
+
+.showcase.right .device {
+    left: 50px;
+    right: auto;
+    animation: spin-right 1s both paused cubic-bezier(0.6, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+
+@keyframes beat {
+    0% { transform: scale(0.9); }
+    5% { transform: scale(1.1); }
+    15% { transform: scale(0.9); }
+    100% { transform: scale(0.9); }
+}
+
+.icon-heart {
+    display: inline-block;
+    animation: beat 5s infinite both;
 }
 
 .about p {
