@@ -1,10 +1,10 @@
 @keyframes lazy-spin {
     from {
-        transform: scale(0.8) rotateY(-60deg) rotateX(20deg);
+        transform: translateX(250px) scale(0.8) rotateY(-60deg) rotateX(20deg);
     }
 
     to {
-        transform: scale(0.8) rotateY(-30deg) rotateX(20deg);
+        transform: translateX(250px) scale(0.8) rotateY(-30deg) rotateX(20deg);
     }
 }
 
@@ -69,6 +69,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    perspective: 2000px;
 }
 
 section:nth-of-type(2n) {
@@ -97,8 +98,10 @@ section .inner {
     box-sizing: border-box;
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 50px;
 }
+
+/* HERO SECTION */
 
 section.hero {
     height: 100vh;
@@ -161,12 +164,34 @@ section.hero {
 }
 
 .hero .device {
-    left: auto;
-    right: 50px;
     animation: lazy-spin 2s both paused;
     /* transform: scale(0.8) rotateY(-30deg) rotateX(20deg); */
     /* animation-iteration-count: infinite; */
     /* transform: scale(0.8) rotateY(-40deg) rotateX(20deg); */
+}
+
+/* CROSS-PLATFORM SECTION */
+
+.cross-platform {
+    text-align: center;
+    justify-content: start;
+    height: 800px;
+}
+
+.cross-platform .device.phone {
+    transform: translate(-250px, 50px) rotateY(20deg) rotateX(10deg) scale(0.7);
+}
+
+.cross-platform .device.phone .front {
+    background: currentColor;
+}
+
+.cross-platform .device.desktop {
+    transform: translate(250px, 50px) rotateY(-20deg) rotateX(10deg) scale(0.7);
+}
+
+.cross-platform .device.desktop .front {
+    background: currentColor;
 }
 
 .showcase.left .inner > * {

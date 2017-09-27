@@ -1,32 +1,33 @@
-<div class="device-wrapper" id="{{ .id }}">
-    <div class="device {{ .type }}">
-        <div class="back"></div>
-        <div class="body"></div>
-        <div class="body"></div>
-        <div class="body"></div>
-        <div class="body"></div>
-        <div class="body"></div>
-        <div class="body"></div>
-        <div class="body"></div>
-        <div class="body"></div>
-        <div class="front">
-            <div class="window-buttons">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="screen">
-                <video src="{{ .video }}" playsinline muted></video>
-                <!-- <img src="{{ .img }}" style="display: none" onload="console.log('loaded'); this.style.display='';"> -->
-            </div>
+<div class="device {{ .type }}">
+    <div class="back"></div>
+    <div class="body"></div>
+    <div class="body"></div>
+    <div class="body"></div>
+    <div class="body"></div>
+    <div class="body"></div>
+    <div class="body"></div>
+    <div class="body"></div>
+    <div class="body"></div>
+    <div class="front">
+        <div class="window-buttons">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+        <div class="screen">
+            {{ with .video }}
+                <video src="{{ . }}" playsinline muted></video>
+            {{ end }}
+            {{ with .img }}
+                <img src="{{ . }}" style="display: none" onload="this.style.display='';">
+            {{ end }}
         </div>
+    </div>
 </div>
 <script>
 (() => {
-    const deviceWrapper = document.currentScript.previousElementSibling;
-    const device = deviceWrapper.querySelector(".device");
-    const video = deviceWrapper.querySelector("video");
+    const device = document.currentScript.previousElementSibling;
+    const video = device.querySelector("video");
     const scroller = document.scrollingElement;
     const deviceBounds = device.getBoundingClientRect();
     const scrollerHeight = scroller.offsetHeight;
@@ -43,9 +44,11 @@
 
     let hasPlayed = false;
 
-    video.addEventListener("playing", () => {
-        device.style.animationPlayState = "running";
-    });
+    if (video) {
+        video.addEventListener("playing", () => {
+            device.style.animationPlayState = "running";
+        });
+    }
 
     const scrollHandler = () => {
         if (
@@ -55,7 +58,9 @@
         ) {
             document.removeEventListener("scroll", scrollHandler);
             hasPlayed = true;
-            video.play();
+            if (video) {
+                video.play();
+            }
         }
     };
 
