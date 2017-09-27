@@ -30,6 +30,7 @@ h1 {
     font-size: 250%;
     font-weight: 100;
     margin: 20px 0;
+    line-height: 1.2em;
 }
 
 h2 {
@@ -126,9 +127,13 @@ header nav ul li {
     margin-left: 10px;
 }
 
-header .icon-padlock {
+header .logo {
     margin-right: 10px;
     margin-left: 3px;
+}
+
+header .type {
+    font-size: 110%;
 }
 
 header [class^="icon-"], header [class*=" icon-"] {
