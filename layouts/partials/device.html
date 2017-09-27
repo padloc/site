@@ -1,5 +1,5 @@
 <div class="device-wrapper" id="{{ .id }}">
-    <div class="device">
+    <div class="device {{ .type }}">
         <div class="back"></div>
         <div class="body"></div>
         <div class="body"></div>
@@ -10,13 +10,14 @@
         <div class="body"></div>
         <div class="body"></div>
         <div class="front">
+            <div class="window-buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <div class="screen">
                 <video src="{{ .video }}" playsinline muted></video>
                 <!-- <img src="{{ .img }}" style="display: none" onload="console.log('loaded'); this.style.display='';"> -->
-                <!-- <img src="/img/v2.1&#45;locked.png" onload="console.log('preloaded')"> -->
-                <!-- <iframe width="276" height="495" frameborder="0" -->
-                <!--     src="https://www.youtube.com/embed/DkAGo9XoKwU?rel=0&#38;amp;controls=0&#38;amp;showinfo=0&#38;autoplay=1" -->
-                <!-- ></iframe> -->
             </div>
         </div>
         </div>
