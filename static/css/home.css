@@ -36,7 +36,7 @@ section {
     padding: 0;
     position: relative;
     z-index: 2;
-    height: 600px;
+    height: 700px;
     perspective: 2000px;
 }
 
@@ -78,16 +78,19 @@ section h2 {
 }
 
 .device {
-    transition: transform 2s;
-    transform: translateX(250px) scale(0.8) rotateY(-60deg) rotateX(20deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    transition: transform 1s;
+    transform: translate(250px, 70px) scale(0.8) rotateY(-60deg) rotateX(20deg);
 }
 
 /* HERO SECTION */
 
 section.hero {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 1000px;
     position: relative;
     background-color: #23b4ff;
     background: linear-gradient(180deg, #59c6ff 0%, #0274af 100%);
@@ -145,7 +148,7 @@ section.hero {
 }
 
 .device.hero {
-    transform: translateX(250px) scale(0.8) rotateY(-30deg) rotateX(20deg);
+    transform: translate(250px, 70px) scale(0.8) rotateY(-30deg) rotateX(20deg);
 }
 
 /* CROSS-PLATFORM SECTION */

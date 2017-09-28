@@ -16,7 +16,7 @@
         </div>
         <div class="screen">
             {{ with .video }}
-                <video src="{{ . }}" playsinline muted></video>
+                <video playsinline muted autoplay></video>
             {{ end }}
             {{ with .img }}
                 <img src="{{ . }}" style="display: none" onload="this.style.display='';">

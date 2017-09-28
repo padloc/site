@@ -11,22 +11,20 @@
 
     const sections = [
         {
-            bounds: [0, 400],
+            bounds: [0, 350],
             in: () => {
                 device.classList.add("hero");
                 video.src = "/img/v2.1-unlock.mp4";
-                video.play();
             },
             out: () => {
                 device.classList.remove("hero");
             }
         },
         {
-            bounds: [400, 1000],
+            bounds: [350, 1050],
             in: () => {
                 device.classList.add("simple");
                 video.src = "/img/v2.1-open-record.mp4";
-                video.play();
             },
             out: () => {
                 device.classList.remove("simple");
