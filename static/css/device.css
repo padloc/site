@@ -55,12 +55,10 @@
 }
 
 .device > .front {
-    background: #fff;
     padding: 40px 10px 40px 10px;
-    border: solid 1px #aaa;
 }
 
-.device > .back {
+.device > .front, .device > .back {
     background: #fff;
     border: solid 1px #aaa;
 }
@@ -77,6 +75,10 @@
 
 .screen > img, .screen > video {
     width: 100%;
+}
+
+.device video {
+    pointer-events: auto !important;
 }
 
 /* DESKTOP */

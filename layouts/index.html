@@ -7,52 +7,63 @@
 {{ define "js" }}
 <script>
 (() => {
-    let scroller, scrollerHeight, device, deviceWrapper, currSection, video;
+    let scroller, scrollerHeight, wrapper, stage, currSection, phoneVideo;
 
     const sections = [
         {
             bounds: [0, 350],
             in: () => {
-                device.classList.add("hero");
-                video.src = "/img/v2.1-unlock.mp4";
+                stage.classList.add("hero");
+                phoneVideo.src = "/img/v2.1-unlock.mp4";
             },
             out: () => {
-                device.classList.remove("hero");
+                stage.classList.remove("hero");
             }
         },
         {
-            bounds: [350, 1050],
+            bounds: [350, 800],
             in: () => {
-                device.classList.add("simple");
-                video.src = "/img/v2.1-open-record.mp4";
+                stage.classList.add("simple");
+                phoneVideo.src = "/img/v2.1-open-record.mp4";
             },
             out: () => {
-                device.classList.remove("simple");
+                stage.classList.remove("simple");
+            }
+        },
+        {
+            bounds: [950, 1300],
+            in: () => {
+                stage.classList.add("cross-platform");
+                desktopVideo.play();
+            },
+            out: () => {
+                stage.classList.remove("cross-platform");
             }
         }
     ];
 
     function scroll() {
-        const originTop = scroller.scrollTop + scrollerHeight / 2;
-        deviceWrapper.style.perspectiveOrigin = `center ${originTop}px`;
-
         const st = scroller.scrollTop;
         const section = sections.find((s) => st >= s.bounds[0] && st < s.bounds[1]);
 
-        if (section != currSection) {
+        if (section && section != currSection) {
             currSection && currSection.out && currSection.out();
             section && section.in && section.in();
+            const originTop = section.bounds[0] + (section.bounds[1] - section.bounds[0]) / 2;
             currSection = section;
         }
     };
 
 
     window.addEventListener("load", () => {
-        device = document.querySelector(".device");
-        deviceWrapper = document.querySelector(".device-wrapper");
+        wrapper = document.querySelector(".device-wrapper");
+        stage = document.querySelector(".device-stage");
         scroller = document.scrollingElement;
         scrollerHeight = scroller.offsetHeight;
-        video = device.querySelector("video");
+        phoneVideo = wrapper.querySelector(".device.phone video");
+        desktopVideo = wrapper.querySelector(".device.desktop video");
+        desktopVideo.autoplay = false;
+        desktopVideo.src = "/img/v2.1-sync-desktop.mp4";
 
         document.addEventListener("scroll", scroll);
         scroll();
@@ -94,12 +105,13 @@
         </div>
     </section>
 
-    <section class="showcase left">
+    <section class="cross-platform">
         <div class="inner">
-            <h1>Effortlessly synchronize all your devices.</h1>
+            <h1>Access Your Data Anywhere</h1>
             <h2>
-                Padlock is the one, secure place to store all your passwords, pins, credit cards and other sensitive information.
-                Strong encryptions makes sure that nobody other than you can ever access your data, not even we!
+                Padlock is available on all major platforms and synchronizing your devices
+                is effortless and fast. Padlock Cloud securely stores your data in the cloud
+                where you can easily access it from anywhere!
             </h2>
         </div>
     </section>
@@ -117,7 +129,10 @@
 {{ end }}
 
 {{ define "float" }}
-    <div class="device-wrapper">
-        {{ partial "device" (dict "video" "/img/v2.1-unlock.mp4") }}
+    <div class="device-stage">
+        <div class="device-wrapper">
+            {{ partial "device" (dict "type" "phone") }}
+            {{ partial "device" (dict "type" "desktop") }}
+        </div>
     </div>
 {{ end }}

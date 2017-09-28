@@ -15,12 +15,10 @@
             <div></div>
         </div>
         <div class="screen">
-            {{ with .video }}
-                <video playsinline muted autoplay></video>
-            {{ end }}
-            {{ with .img }}
-                <img src="{{ . }}" style="display: none" onload="this.style.display='';">
-            {{ end }}
+            <video playsinline muted autoplay></video>
+            <!-- {{ with .img }} -->
+            <!--     <img src="{{ . }}" style="display: none" onload="this.style.display='';"> -->
+            <!-- {{ end }} -->
         </div>
     </div>
 </div>
