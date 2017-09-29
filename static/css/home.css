@@ -31,6 +31,10 @@ main {
     padding: 0;
 }
 
+footer {
+    margin-bottom: 100px;
+}
+
 section {
     margin: 0;
     padding: 0;
@@ -53,10 +57,9 @@ section .inner {
     flex-direction: column;
     justify-content: start;;
     position: relative;
-    width: 100%;
     height: 100%;
     box-sizing: border-box;
-    max-width: 900px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -195,7 +198,6 @@ section.simple .inner > h2 {
 /* CROSS-PLATFORM SECTION */
 
 section.cross-platform .inner {
-    /* background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
     text-align: left;
 }
 
@@ -212,7 +214,7 @@ section.cross-platform .inner > h2 {
 }
 
 .device-stage.cross-platform .device-wrapper {
-    transform: translate3d(350px, -50px, -900px) rotateY(150deg) rotateX(-20deg);
+    transform: translate3d(460px, -30px, -1300px) rotateY(150deg) rotateX(-20deg);
 }
 
 .device-stage.cross-platform .device > div {
@@ -225,6 +227,27 @@ section.cross-platform .inner > h2 {
 }
 
 /* OPEN-SOURCE SECTION */
+
+section.open-source .inner {
+    text-align: right;
+    align-items: flex-end;
+}
+
+section.open-source .inner > h1 {
+    width: 500px;
+}
+
+section.open-source .inner > h2 {
+    width: 500px;
+}
+
+section.open-source .icon-github {
+    display: block;
+    font-size: 250px;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+}
 
 @keyframes beat {
     0% { transform: scale(0.9); }

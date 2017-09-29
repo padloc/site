@@ -6,64 +6,67 @@
 
 {{ define "js" }}
 <script>
-(() => {
-    let scroller, scrollerHeight, wrapper, stage, currSection, phoneVideo;
+(function() {
+    var scroller, scrollerHeight, wrapper, stage, currSection, phoneVideo, desktopVideo, sectionSize;
 
-    const sections = [
+    var sections = [
         {
-            bounds: [0, 350],
-            in: () => {
+            in: function() {
                 stage.classList.add("hero");
                 phoneVideo.src = "/img/v2.1-unlock.mp4";
             },
-            out: () => {
+            out: function() {
                 stage.classList.remove("hero");
             }
         },
         {
-            bounds: [350, 800],
-            in: () => {
+            in: function() {
                 stage.classList.add("simple");
                 phoneVideo.src = "/img/v2.1-open-record.mp4";
             },
-            out: () => {
+            out: function() {
                 stage.classList.remove("simple");
             }
         },
         {
-            bounds: [950, 1300],
-            in: () => {
+            in: function() {
                 stage.classList.add("cross-platform");
                 desktopVideo.play();
             },
-            out: () => {
+            out: function() {
                 stage.classList.remove("cross-platform");
             }
         }
     ];
 
     function scroll() {
-        const st = scroller.scrollTop;
-        const section = sections.find((s) => st >= s.bounds[0] && st < s.bounds[1]);
+        var section;
+        for (var i = 0; i < sections.length; i++) {
+            if (scroller.scrollTop >= i * sectionSize && scroller.scrollTop < (i + 1) * sectionSize) {
+                section = sections[i];
+                break;
+            }
+        }
 
         if (section && section != currSection) {
             currSection && currSection.out && currSection.out();
             section && section.in && section.in();
-            const originTop = section.bounds[0] + (section.bounds[1] - section.bounds[0]) / 2;
             currSection = section;
         }
     };
 
 
-    window.addEventListener("load", () => {
+    window.addEventListener("load", function() {
         wrapper = document.querySelector(".device-wrapper");
         stage = document.querySelector(".device-stage");
-        scroller = document.scrollingElement;
-        scrollerHeight = scroller.offsetHeight;
+        scroller = document.scrollingElement || document.documentElement;
+        scrollerHeight = window.innerHeight;
         phoneVideo = wrapper.querySelector(".device.phone video");
         desktopVideo = wrapper.querySelector(".device.desktop video");
         desktopVideo.autoplay = false;
         desktopVideo.src = "/img/v2.1-sync-desktop.mp4";
+        sectionSize = (scroller.scrollHeight - scrollerHeight) / (sections.length + 1);
+        console.log(scroller.scrollHeight, scrollerHeight, sectionSize);
 
         document.addEventListener("scroll", scroll);
         scroll();
@@ -116,13 +119,16 @@
         </div>
     </section>
 
-    <section class="showcase right">
+    <section class="open-source">
         <div class="inner">
             <h1>Padlock <span class="icon-heart"></span> Open Source</h1>
             <h2>
-                Padlock is the one, secure place to store all your passwords, pins, credit cards and other sensitive information.
-                Strong encryptions makes sure that nobody other than you can ever access your data, not even we!
+                We believe that transparency and openness is the best fundation for trust so
+                we are building Padlock completely out in the open. Our source code is developed
+                under an open source licence so any one can review it, provide feedback and
+                even offer contrubitions at any time!
             </h2>
+            <div class="icon-github"></div>
         </div>
     </section>
 
