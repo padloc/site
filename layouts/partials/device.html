@@ -1,12 +1,6 @@
 <div class="device {{ .type }}">
-    <div class="back"></div>
-    <div class="body"></div>
-    <div class="body"></div>
-    <div class="body"></div>
-    <div class="body"></div>
-    <div class="body"></div>
-    <div class="body"></div>
-    <div class="body"></div>
+    <div class="back" {{ if eq .type "desktop" }}style="display: none;"{{ end }}></div>
+    <div class="body" {{ if eq .type "desktop" }}style="display: none;"{{ end }}></div>
     <div class="body"></div>
     <div class="front">
         <div class="window-buttons">

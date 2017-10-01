@@ -88,7 +88,7 @@ section h2 {
     top: 0; left: 0; right: 0; bottom: 0;
     transform-style: preserve-3d;
     transition: transform 1s;
-    transform: translate3d(300px, -30px, -500px) rotateY(-60deg) rotateX(20deg);
+    transform: translate3d(250px, -30px, 0) rotateY(-60deg) rotateX(20deg);
 }
 
 .device {
@@ -100,8 +100,12 @@ section h2 {
 }
 
 .device.desktop {
-    visibility: hidden;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translateY(-5000px);
+}
+
+.device.desktop > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 /* HERO SECTION */
@@ -169,7 +173,7 @@ section.hero::before {
 }
 
 .device-stage.hero .device-wrapper {
-    transform: translate3d(300px, -30px, -500px) rotateY(-30deg) rotateX(20deg);
+    transform: translate3d(250px, 30px, 0) rotateY(-30deg) rotateX(20deg);
 }
 
 /* SIMPLE SECTION */
@@ -192,7 +196,7 @@ section.simple .inner > h2 {
 }
 
 .device-stage.simple .device-wrapper {
-    transform: translate3d(-350px, -10px, -600px) rotateY(390deg) rotateX(20deg);
+    transform: translate3d(-250px, 30px, 0) rotateY(390deg) rotateX(20deg);
 }
 
 /* CROSS-PLATFORM SECTION */
@@ -214,16 +218,16 @@ section.cross-platform .inner > h2 {
 }
 
 .device-stage.cross-platform .device-wrapper {
-    transform: translate3d(460px, -30px, -1300px) rotateY(150deg) rotateX(-20deg);
+    transform: translate3d(270px, 50px, 0) rotateY(150deg) rotateX(-20deg);
+}
+
+.device-stage.cross-platform .device.desktop {
+    transform: rotateY(180deg);
 }
 
 .device-stage.cross-platform .device > div {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}
-
-.device-stage.cross-platform .device.desktop {
-    visibility: visible;
 }
 
 /* OPEN-SOURCE SECTION */

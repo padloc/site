@@ -1,6 +1,6 @@
 .device {
-    width: 300px;
-    height: 574px;
+    width: 230px;
+    height: 437px;
     transform-style: preserve-3d;
 }
 
@@ -11,54 +11,32 @@
     right: 0;
     bottom: 0;
     background: #ccc;
-    border-radius: 20px;
+    border-radius: 16px;
 }
 
 .device > :nth-child(1) {
-    transform: translateZ(2px);
+    transform: translateZ(0);
 }
 
 .device > :nth-child(2) {
-    transform: translateZ(4px);
+    transform: translateZ(3px);
 }
 
 .device > :nth-child(3) {
-    transform: translateZ(6px);
+    transform: translateZ(9px);
 }
 
 .device > :nth-child(4) {
-    transform: translateZ(8px);
-}
-
-.device > :nth-child(5) {
-    transform: translateZ(10px);
-}
-
-.device > :nth-child(6) {
     transform: translateZ(12px);
 }
 
-.device > :nth-child(7) {
-    transform: translateZ(14px);
-}
-
-.device > :nth-child(8) {
-    transform: translateZ(16px);
-}
-
-.device > :nth-child(9) {
-    transform: translateZ(18px);
-}
-
-.device > :nth-child(10) {
-    transform: translateZ(20px);
-}
-
 .device > .front {
-    padding: 40px 10px 40px 10px;
+    background: #fff;
+    padding: 25px 5px 25px 5px;
+    border: solid 1px #aaa;
 }
 
-.device > .front, .device > .back {
+.device > .back {
     background: #fff;
     border: solid 1px #aaa;
 }
@@ -84,26 +62,26 @@
 /* DESKTOP */
 
 .device.desktop {
-    width: 800px;
-    height: 630px;
+    width: 500px;
+    height: 394px;
 }
 
 .device.desktop > div {
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .device.desktop .front {
-    padding: 30px 5px 5px 5px;
+    padding: 20px 3px 3px 3px;
 }
 
 .device.desktop .screen {
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .window-buttons {
     position: absolute;
-    top: 3px;
-    left: 12px;
+    top: -4px;
+    left: 9px;
 }
 
 .device:not(.desktop) .window-buttons {
@@ -112,12 +90,12 @@
 
 .window-buttons > * {
     display: inline-block;
-    width: 10px;;
-    height: 10px;;
+    width: 7px;;
+    height: 7px;;
     background: #ccc;
     border: solid 1px #aaa;
     border-radius: 100%;
-    margin-right: 4px;
+    margin-right: 3px;
 }
 
 /* TABLET */
