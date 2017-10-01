@@ -7,13 +7,15 @@
 {{ define "js" }}
 <script>
 (function() {
-    var scroller, scrollerHeight, wrapper, stage, currSection, phoneVideo, desktopVideo, sectionSize;
+    var scroller, scrollerHeight, wrapper, stage, currSection, video1, video2, video3, sectionSize;
 
     var sections = [
         {
             in: function() {
                 stage.classList.add("hero");
-                phoneVideo.src = "/img/v2.1-unlock.mp4";
+                video1.style.opacity = "";
+                video2.style.opacity = "0";
+                video1.play();
             },
             out: function() {
                 stage.classList.remove("hero");
@@ -22,7 +24,9 @@
         {
             in: function() {
                 stage.classList.add("simple");
-                phoneVideo.src = "/img/v2.1-open-record.mp4";
+                video2.style.opacity = "";
+                video1.style.opacity = "0";
+                video2.play();
             },
             out: function() {
                 stage.classList.remove("simple");
@@ -31,7 +35,7 @@
         {
             in: function() {
                 stage.classList.add("cross-platform");
-                desktopVideo.play();
+                video3.play();
             },
             out: function() {
                 stage.classList.remove("cross-platform");
@@ -61,10 +65,9 @@
         stage = document.querySelector(".device-stage");
         scroller = document.scrollingElement || document.documentElement;
         scrollerHeight = window.innerHeight;
-        phoneVideo = wrapper.querySelector(".device.phone video");
-        desktopVideo = wrapper.querySelector(".device.desktop video");
-        desktopVideo.autoplay = false;
-        desktopVideo.src = "/img/v2.1-sync-desktop.mp4";
+        video1 = wrapper.querySelectorAll(".device.phone video")[0];
+        video2 = wrapper.querySelectorAll(".device.phone video")[1];
+        video3 = wrapper.querySelector(".device.desktop video");
         sectionSize = (scroller.scrollHeight - scrollerHeight) / (sections.length + 1);
 
         var lastScrollTop;
@@ -140,10 +143,5 @@
 {{ end }}
 
 {{ define "float" }}
-    <div class="device-stage">
-        <div class="device-wrapper">
-            {{ partial "device" (dict "type" "phone") }}
-            {{ partial "device" (dict "type" "desktop") }}
-        </div>
-    </div>
+    {{ partial "device" }}
 {{ end }}

@@ -74,21 +74,15 @@ section h2 {
 }
 
 .device-stage {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    perspective: 2000px;
-    height: 500px;
-    transition: transform 1s;
-    pointer-events: none;
     transform: translate3d(0, 100px, 0);
 }
 
 .device-wrapper {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-    transform: translate3d(250px, -30px, 0) rotateY(-60deg) rotateX(20deg);
+    transform: translate3d(250px, -5px, 0) rotateY(-60deg) rotateX(20deg);
+}
+
+.device-stage:not(.hero):not(.simple):not(.cross-platform) {
+    opacity: 0;
 }
 
 .device {
