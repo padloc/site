@@ -134,6 +134,8 @@ header .logo {
 
 header .type {
     font-size: 110%;
+    position: relative;
+    top: -1px;
 }
 
 header [class^="icon-"], header [class*=" icon-"] {
