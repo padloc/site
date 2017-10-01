@@ -48,7 +48,7 @@
             }
         }
 
-        if (section && section != currSection) {
+        if (section && section !== currSection) {
             currSection && currSection.out && currSection.out();
             section && section.in && section.in();
             currSection = section;
@@ -66,9 +66,14 @@
         desktopVideo.autoplay = false;
         desktopVideo.src = "/img/v2.1-sync-desktop.mp4";
         sectionSize = (scroller.scrollHeight - scrollerHeight) / (sections.length + 1);
-        console.log(scroller.scrollHeight, scrollerHeight, sectionSize);
 
-        document.addEventListener("scroll", scroll);
+        var lastScrollTop;
+        setInterval(function() {
+            if (lastScrollTop !== scroller.scrollTop) {
+                scroll();
+                lastScrollTop = scroller.scrollTop;
+            }
+        }, 200);
         scroll();
     });
 })();
