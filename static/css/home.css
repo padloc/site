@@ -31,10 +31,6 @@ main {
     padding: 0;
 }
 
-footer {
-    margin-bottom: 100px;
-}
-
 section {
     margin: 0;
     padding: 0;
@@ -234,7 +230,7 @@ section.transparent .inner > h2 {
 }
 
 .device-stage.transparent .device-wrapper {
-    transform: translate3d(-250px, 50px, 0) rotateY(390deg) rotateX(20deg);
+    transform: translate3d(-250px, 25px, 0) rotateY(390deg) rotateX(20deg);
 }
 
 .device-stage.transparent .device > div {

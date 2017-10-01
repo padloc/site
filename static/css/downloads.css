@@ -2,6 +2,10 @@ h1 {
     margin-bottom: 30px;
 }
 
+section.downloads {
+    text-align: center;
+}
+
 .downloads p {
     text-align: center;
 }
@@ -14,6 +18,7 @@ h1 {
     margin: 0 0 10px 5px;
     position: relative;
     text-align: center;
+    vertical-align: middle;
     font-size: 110%;
 }
 
