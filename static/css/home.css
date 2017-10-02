@@ -1,15 +1,22 @@
+html, body {
+    overflow-x: hidden;
+}
+
 header {
+    position: absolute;
     background: transparent;
     border: none;
-    text-shadow: rgba(0,0,0,0.1) 1px 1px 0;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
 }
 
 header, header a {
     color: #fff;
 }
 
-header .type {
-    display: none;
+header .inner {
+    max-width: none;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 header.header-background {
@@ -18,76 +25,269 @@ header.header-background {
     height: 50px;
 }
 
-.hero {
-    background-color: #23b4ff;
-    background: linear-gradient(180deg, #59c6ff 0%, #23b4ff 100%);
-    padding: 100px 20px 50px 20px;
-    text-align: center;
-    color: #fff;
+main {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
     position: relative;
-    overflow: visible;
-    text-shadow: rgba(0,0,0,0.1) 1px 1px 0;
+    padding-top: 100px;
+    height: 350px;
+    perspective: 3000px;
+}
+
+section:nth-of-type(2n) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+section:nth-of-type(2n+1) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+section .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    width: 800px;
+    margin: 0 auto;
+}
+
+section h1 {
+    margin: 0 0 30px 0;
+}
+
+section h2 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+}
+
+.device-stage {
+    transform: translate3d(0, 100px, 0);
+}
+
+.device-wrapper {
+    transform: translate3d(250px, -5px, 0) rotateY(-60deg) rotateX(20deg);
+}
+
+.device-stage:not(.hero):not(.simple):not(.portable):not(.transparent):not(.tryit) {
+    opacity: 0;
+}
+
+.device.desktop {
+    transform: rotateY(180deg) translateY(-5000px);
+    transition: transform 0s linear 0.30s;
+}
+
+.device.desktop > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* HERO SECTION */
+
+section.hero {
+    position: relative;
+    padding-top: 0;
+    height: 700px;
+    background-color: #23b4ff;
+    background: linear-gradient(180deg, #59c6ff 0%, #077cb9 100%);
+    color: #fff;
+    overflow: hidden;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+}
+
+section.hero .inner {
+    justify-content: center;
+}
+
+section.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/img/bg.svg");
+    background-size: 28px;
+    opacity: 0.05;
 }
 
 .hero a {
     color: #fff;
 }
 
+.hero .logo-icon {
+    font-size: 100%;
+    position: relative;
+    top: 5px;
+}
+
 .hero h1 {
-    font-size: 500%;
-    margin: 0 0 20px 0;
-    font-weight: 300;
-    text-shadow: rgba(0,0,0,0.1) 2px 2px 0;
+    margin-top: -20px;
 }
 
-.hero h2 {
-    font-size: 150%;
-    font-weight: 300;
+.hero h1, .hero h2 {
+    font-weight: 400;
+    width: 460px;
 }
 
-.hero .download-button {
-    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0;
-    border-radius: 8px;
+section.hero h2 {
+    margin-bottom: 40px;
 }
 
-.hero .play {
-    display: block;
-    width: 150px;
-    height: 150px;
-    font-size: 150px;
-    text-align: center;
-    margin: 50px auto -110px auto;
-    background: #fff;
-    color: #23b4ff;
-    border-radius: 100%;
+.hero .description {
+    width: 450px;
+    margin-bottom: 40px;
+    font-size: 110%;
 }
 
-.hero .play:hover {
-    opacity: 1;
+.hero .buttons > * {
+    margin-right: 10px;
 }
 
-.get-it {
-    margin: 45px 0;
-    color: inherit;
-    text-align: center;
+.hero button, .hero .btn {
+    font-size: 110%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
 }
 
-.get-it .icon {
-    width: 80px;
-    height: 80px;
+.device-stage.hero .device-wrapper {
+    transform: translate3d(250px, 30px, 0) rotateY(-30deg) rotateX(20deg);
 }
 
-.about p {
-    line-height: 1.5em;
+/* SIMPLE SECTION */
+
+section.simple .inner {
+    text-align: right;
+    align-items: flex-end;
 }
 
-@media (max-width: 500px) {
-    .hero h1 {
-        font-size: 400%;
+section.simple .inner > h2 {
+    width: 500px;
+}
+
+.device-stage.simple {
+    transform: translate3d(0, 700px, 0);
+}
+
+.device-stage.simple .device-wrapper {
+    transform: translate3d(-250px, 50px, 0) rotateY(390deg) rotateX(20deg);
+}
+
+/* CROSS-PLATFORM SECTION */
+
+section.portable .inner {
+    text-align: left;
+}
+
+section.portable .inner > h2 {
+    width: 420px;
+}
+
+.device-stage.portable {
+    transform: translate3d(0, 1150px, 0);
+}
+
+.device-stage.portable .device-wrapper {
+    transform: translate3d(270px, 60px, 0) rotateY(150deg) rotateX(-20deg);
+}
+
+.device-stage.portable .device.desktop {
+    transform: rotateY(180deg);
+}
+
+.device-stage.portable .device > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* TRANSPARENCY SECTION */
+
+section.transparent .inner {
+    text-align: right;
+    align-items: flex-end;
+}
+
+section.transparent .inner > h2 {
+    width: 460px;
+}
+
+.device-stage.transparent {
+    transform: translate3d(0, 1600px, 0);
+}
+
+.device-stage.transparent .device-wrapper {
+    transform: translate3d(-250px, 40px, 0) rotateY(390deg) rotateX(20deg);
+}
+
+.device-stage.transparent .device > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* TRY IT SECTION */
+
+section.tryit {
+    padding-bottom: 20px;
+}
+
+section.tryit .inner > h2 {
+    width: 350px;
+}
+
+.device-stage.tryit {
+    transform: translate3d(0, 2000px, 0);
+}
+
+.device-stage.tryit .device-wrapper {
+    transform: translate3d(200px, 80px, 0) rotateY(150deg) rotateX(-20deg);
+}
+
+.device-stage.tryit .device-wrapper:hover {
+    transform: translate3d(200px, 80px, 0) rotateY(160deg) rotateX(-20deg);
+}
+
+.device-stage.tryit .device > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.device-stage.tryit .device.desktop {
+    transform: rotateY(180deg);
+}
+
+body.legacy .device-stage {
+    display: none !important;
+}
+
+@media (max-width: 840px) {
+    .device-stage, .section-icon {
+        display: none !important;
     }
 
-    .get-it .icon {
-        width: 50px;
-        height: 50px;
+    section:not(.hero) {
+        height: auto !important;
+    }
+
+    section .inner {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    section .inner h1, section .inner h2 {
+        width: 100% !important;
+    }
+
+    h1 {
+        font-size: 220%;
     }
 }

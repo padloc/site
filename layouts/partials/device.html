@@ -1,0 +1,44 @@
+<div class="device-stage">
+    <div class="device-wrapper">
+        <div class="device phone">
+            <div class="back"></div>
+            <div class="body"></div>
+            <div class="body"></div>
+            <div class="front">
+                <div class="window-buttons">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="screen">
+                    <video playsinline muted preload src="/img/v2.1-unlock.mp4"></video>
+                    <video playsinline muted preload src="/img/v2.1-open-record.mp4" class="hidden"></video>
+                    <div class="code hidden">
+                        <div class="code-scan">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="device desktop">
+            <div class="back" style="display: none;"></div>
+            <div class="body" style="display: none;"></div>
+            <div class="body"></div>
+            <div class="front">
+                <div class="window-buttons">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="screen">
+                    <video playsinline muted preload src="/img/v2.1-sync-desktop.mp4"></video>
+                    <div class="downloads hidden">
+                        {{ partial "download-links" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

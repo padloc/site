@@ -5,45 +5,6 @@
 {{ define "main" }}
 <section class="downloads">
     <h1>Downloads</h1>
-    <div>
-        <a href="{{ $.Param "iosUrl" }}" class="download-button get-app" data-platform="ios" target="_blank">
-            <div class="inner">
-                <div class="icon icon-apple"></div>
-                <div>iOS App Store</div>
-            </div>
-        </a>
-        <a href="{{ $.Param "androidUrl" }}" class="download-button get-app" data-platform="android" target="_blank">
-            <div class="inner">
-                <div class="icon icon-android"></div>
-                <div>Google Play Store</div>
-            </div>
-        </a>
-        <a href="{{ $.Param "chromeUrl" }}" class="download-button get-app" data-platform="chrome" target="_blank">
-            <div class="inner">
-                <div class="icon icon-chrome"></div>
-                <div>Chrome Web Store</div>
-            </div>
-        </a>
-    </div>
-    <div>
-        <a href="{{ $.Param "winUrl" }}" class="download-button get-app" data-platform="windows">
-            <div class="inner">
-                <div class="icon icon-windows"></div>
-                <div>Download for Windows</div>
-            </div>
-        </a>
-        <a href="{{ $.Param "macUrl" }}" class="download-button get-app" data-platform="mac">
-            <div class="inner">
-                <div class="icon icon-apple"></div>
-                <div>Download for Mac</div>
-            </div>
-        </a>
-        <a href="{{ $.Param "linuxUrl" }}" class="download-button get-app beta" data-platform="linux" target="_blank">
-            <div class="inner">
-                <div class="icon icon-linux"></div>
-                <div>Download for Linux</div>
-            </div>
-        </a>
-    </div>
+    {{ partial "download-links" . }}
 </section>
 {{ end }}

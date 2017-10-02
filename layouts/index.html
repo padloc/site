@@ -1,42 +1,89 @@
 {{ define "css" }}
     {{ template "basecss" . }}
     <link href="/css/home.css" rel="stylesheet" type="text/css">
+    <link href="/css/device.css" rel="stylesheet" type="text/css">
+    <link href="/css/downloads.css" rel="stylesheet" type="text/css">
+{{ end }}
+
+{{ define "js" }}
+<script src="js/modernizr.js"></script>
+<script src="js/home.js"></script>
 {{ end }}
 
 {{ define "header" }}
     {{ partial "header" . }}
-    <header class="header-background"></header>
-
-    <div class="hero">
-        <h1>Padlock</h1>
-        <h2>A minimalist open source password manager.</h2>
-        {{ partial "download-button" }}
-        <a href="https://youtu.be/DkAGo9XoKwU" class="play icon-play-circle" target="_blank"></a>
-    </div>
 {{ end }}
 
 {{ define "main" }}
-    <section>
-        <h1>News</h1>
-        <ul class="articles">
-            {{ range first 2 (where .Data.Pages ".Type" "news") }}
-                {{ .Render "li" }}
-            {{ end }}
-        </ul>
-
-        <a href="/news/"><h2>More News...</h2></a>
-
-        {{ partial "newsletter-signup" . }}
+    <section class="hero">
+        <div class="inner">
+            <h1>All your sensitive data in one secure place.</h1>
+            <h2>
+                Padlock stores all of your passwords and other sensitive
+                information for you so all you have to remember is a single
+                master password!
+            </h2>
+            <div class="buttons">
+                {{ partial "download-button" }}
+            </div>
+        </div>
     </section>
 
-    <section class="about">
-        <h1>About Padlock</h1>
-        {{ range where .Data.Pages "Title" "About Padlock" }}
-            {{ .Content }}
-        {{ end }}
+    <section class="simple">
+        <div class="inner">
+            <h1>Beautifully Simple.</h1>
+            <h2>
+                We know you have better things to do than to spend hours
+                learning how to use new software, so we made Padlock as simple
+                and easy to use as possible. While other apps boast about their
+                long list of shiny cool features, we focus on security,
+                usability and performance instead. No clutter, no distractions!
+            </h2>
+            <a href="/downloads/">Try It Now. It's Free! &raquo;</a>
+        </div>
     </section>
 
-    <section>
-    {{ partial "download-button" }}
+    <section class="portable">
+        <div class="inner">
+            <h1>Effortlessly Portable.</h1>
+            <h2>
+                Padlock is available on all major platforms and synchronizing
+                your devices is fast and easy. Padlock Cloud securely stores
+                your data online where you have access to it from anywhere, any
+                time!
+            </h2>
+            <a href="/downloads/">&raquo; Download Padlock For Your Platform</a>
+            <a href="/about/#what-is-padlock-cloud">&raquo; Learn More About Padlock Cloud</a>
+        </div>
     </section>
+
+    <section class="transparent">
+        <div class="inner">
+            <h1>Completely Transparent.</h1>
+            <h2>
+                We believe that transparency and openness is the best
+                foundation for trust so we are building Padlock completely out
+                in the open. Our source code is developed under an open source
+                licence so any one can review it, provide feedback and even
+                offer contrubitions at any time!
+            </h2>
+            <a href="{{ .Param "githubUrl" }}">Find Padlock On Github &raquo;</a>
+        </div>
+    </section>
+
+    <section class="tryit">
+        <div class="inner">
+            <h1>Go Ahead, Try It!</h1>
+            <h2>
+                Padlock is free and getting started takes only a few seconds.
+                Give it a go, we're sure you'll love it!
+            </h2>
+            <a href="/downloads/">&raquo; Download Padlock</a>
+        </div>
+    </section>
+
+{{ end }}
+
+{{ define "float" }}
+    {{ partial "device" . }}
 {{ end }}
