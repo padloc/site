@@ -77,24 +77,30 @@
         }
     };
 
+    function calcSectionSize() {
+        scrollerHeight = window.innerHeight;
+        sectionSize = (scroller.scrollHeight - scrollerHeight + 400) / (sections.length + 1);
+    }
+
 
     window.addEventListener("load", function() {
         wrapper = document.querySelector(".device-wrapper");
         stage = document.querySelector(".device-stage");
         scroller = document.scrollingElement || document.documentElement;
-        scrollerHeight = window.innerHeight;
         video1 = wrapper.querySelectorAll(".device.phone video")[0];
         video2 = wrapper.querySelectorAll(".device.phone video")[1];
         video3 = wrapper.querySelector(".device.desktop video");
         scanCode = wrapper.querySelector(".device.phone .code");
         downloads = wrapper.querySelector(".device.desktop .downloads");
-        sectionSize = (scroller.scrollHeight - scrollerHeight + 350) / (sections.length + 1);
 
-        var lastScrollTop;
+        var lastScrollTop, lastSectionSize;
         setInterval(function() {
-            if (lastScrollTop !== scroller.scrollTop) {
+            calcSectionSize();
+
+            if (lastScrollTop !== scroller.scrollTop || sectionSize !== lastSectionSize) {
                 scroll();
                 lastScrollTop = scroller.scrollTop;
+                lastSectionSize = sectionSize;
             }
         }, 200);
         scroll();
