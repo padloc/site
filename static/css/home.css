@@ -267,6 +267,9 @@ section.tryit .inner > h2 {
     transform: rotateY(180deg);
 }
 
+body.legacy .device-stage {
+    display: none !important;
+}
 
 @media (max-width: 840px) {
     .device-stage, .section-icon {

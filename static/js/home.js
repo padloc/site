@@ -1,4 +1,17 @@
 (function() {
+    if (
+        !Modernizr.video.h264 ||
+        !Modernizr.cssanimations ||
+        !Modernizr.flexbox ||
+        !Modernizr.nthchild ||
+        !Modernizr.csstransforms3d ||
+        !Modernizr.classlist ||
+        !Modernizr.testProp("animation") ||
+        !Modernizr.testAllProps("backface-visibility")
+    ) {
+        document.body.class = "legacy";
+    }
+
     var scroller, scrollerHeight, wrapper, stage, currSection,
         video1, video2, video3, scanCode, downloads, sectionSize;
 
