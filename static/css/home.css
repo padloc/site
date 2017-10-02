@@ -251,11 +251,11 @@ section.tryit .inner > h2 {
 }
 
 .device-stage.tryit .device-wrapper {
-    transform: translate3d(230px, 80px, 0) rotateY(150deg) rotateX(-20deg);
+    transform: translate3d(200px, 80px, 0) rotateY(150deg) rotateX(-20deg);
 }
 
 .device-stage.tryit .device-wrapper:hover {
-    transform: translate3d(230px, 80px, 0) rotateY(160deg) rotateX(-20deg);
+    transform: translate3d(200px, 80px, 0) rotateY(160deg) rotateX(-20deg);
 }
 
 .device-stage.tryit .device > div {
