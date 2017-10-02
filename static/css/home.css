@@ -51,7 +51,7 @@ section:nth-of-type(2n+1) {
 section .inner {
     display: flex;
     flex-direction: column;
-    justify-content: start;;
+    justify-content: start;
     position: relative;
     height: 100%;
     box-sizing: border-box;
@@ -65,8 +65,12 @@ section h1 {
 
 section h2 {
     font-size: 130%;
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
     font-weight: 300;
+}
+
+section a {
+    font-size: 110%;
 }
 
 .device-stage {
@@ -77,16 +81,8 @@ section h2 {
     transform: translate3d(250px, -5px, 0) rotateY(-60deg) rotateX(20deg);
 }
 
-.device-stage:not(.hero):not(.simple):not(.portable):not(.transparent) {
+.device-stage:not(.hero):not(.simple):not(.portable):not(.transparent):not(.tryit) {
     opacity: 0;
-}
-
-.device {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 .device.desktop {
@@ -106,7 +102,6 @@ section.hero {
     padding-top: 0;
     height: 700px;
     background-color: #23b4ff;
-    background: linear-gradient(180deg, #59c6ff 0%, #0274af 100%);
     background: linear-gradient(180deg, #59c6ff 0%, #077cb9 100%);
     color: #fff;
     overflow: hidden;
@@ -116,7 +111,6 @@ section.hero {
 section.hero .inner {
     justify-content: center;
 }
-
 
 section.hero::before {
     content: "";
@@ -149,6 +143,10 @@ section.hero::before {
     width: 460px;
 }
 
+section.hero h2 {
+    margin-bottom: 40px;
+}
+
 .hero .description {
     width: 450px;
     margin-bottom: 40px;
@@ -176,7 +174,7 @@ section.simple .inner {
 }
 
 section.simple .inner > h2 {
-    width: 500px;
+    width: 485px;
 }
 
 .device-stage.simple {
@@ -184,7 +182,7 @@ section.simple .inner > h2 {
 }
 
 .device-stage.simple .device-wrapper {
-    transform: translate3d(-250px, 50px, 0) rotateY(390deg) rotateX(20deg);
+    transform: translate3d(-250px, 60px, 0) rotateY(390deg) rotateX(20deg);
 }
 
 /* CROSS-PLATFORM SECTION */
@@ -194,7 +192,7 @@ section.portable .inner {
 }
 
 section.portable .inner > h2 {
-    width: 400px;
+    width: 430px;
 }
 
 .device-stage.portable {
@@ -202,7 +200,7 @@ section.portable .inner > h2 {
 }
 
 .device-stage.portable .device-wrapper {
-    transform: translate3d(270px, 50px, 0) rotateY(150deg) rotateX(-20deg);
+    transform: translate3d(270px, 60px, 0) rotateY(150deg) rotateX(-20deg);
 }
 
 .device-stage.portable .device.desktop {
@@ -214,7 +212,7 @@ section.portable .inner > h2 {
     backface-visibility: hidden;
 }
 
-/* OPEN-SOURCE SECTION */
+/* TRANSPARENCY SECTION */
 
 section.transparent .inner {
     text-align: right;
@@ -230,12 +228,39 @@ section.transparent .inner > h2 {
 }
 
 .device-stage.transparent .device-wrapper {
-    transform: translate3d(-250px, 25px, 0) rotateY(390deg) rotateX(20deg);
+    transform: translate3d(-250px, 40px, 0) rotateY(390deg) rotateX(20deg);
 }
 
 .device-stage.transparent .device > div {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+
+/* TRY IT SECTION */
+
+section.tryit {
+    padding-bottom: 20px;
+}
+
+section.tryit .inner > h2 {
+    width: 400px;
+}
+
+.device-stage.tryit {
+    transform: translate3d(0, 2000px, 0);
+}
+
+.device-stage.tryit .device-wrapper {
+    transform: translate3d(230px, 80px, 0) rotateY(150deg) rotateX(-20deg);
+}
+
+.device-stage.tryit .device > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.device-stage.tryit .device.desktop {
+    transform: rotateY(180deg);
 }
 
 

@@ -1,9 +1,40 @@
-<a href="{{ $.Param "chromeUrl" }}" class="get-app" data-platform="chrome" target="_blank">
-    {{ partial "chrome.svg" }}
-</a>
-<a href="{{ $.Param "iosUrl" }}" class="get-app" data-platform="ios" target="_blank">
-    {{ partial "apple.svg" }}
-</a>
-<a href="{{ $.Param "androidUrl" }}" class="get-app" data-platform="android" target="_blank">
-    {{ partial "android.svg" }}
-</a>
+<div>
+    <a href="{{ $.Param "iosUrl" }}" class="download-button get-app" data-platform="ios" target="_blank">
+        <div class="inner">
+            <div class="icon icon-apple"></div>
+            <div>iOS App Store</div>
+        </div>
+    </a>
+    <a href="{{ $.Param "androidUrl" }}" class="download-button get-app" data-platform="android" target="_blank">
+        <div class="inner">
+            <div class="icon icon-android"></div>
+            <div>Google Play</div>
+        </div>
+    </a>
+    <a href="{{ $.Param "chromeUrl" }}" class="download-button get-app" data-platform="chrome" target="_blank">
+        <div class="inner">
+            <div class="icon icon-chrome"></div>
+            <div>Chrome Store</div>
+        </div>
+    </a>
+</div>
+<div>
+    <a href="{{ $.Param "winUrl" }}" class="download-button get-app" data-platform="windows">
+        <div class="inner">
+            <div class="icon icon-windows"></div>
+            <div>Windows</div>
+        </div>
+    </a>
+    <a href="{{ $.Param "macUrl" }}" class="download-button get-app" data-platform="mac">
+        <div class="inner">
+            <div class="icon icon-apple"></div>
+            <div>macOS</div>
+        </div>
+    </a>
+    <a href="{{ $.Param "linuxUrl" }}" class="download-button get-app beta" data-platform="linux" target="_blank">
+        <div class="inner">
+            <div class="icon icon-linux"></div>
+            <div>Linux</div>
+        </div>
+    </a>
+</div>

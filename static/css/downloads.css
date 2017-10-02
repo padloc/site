@@ -10,7 +10,7 @@ section.downloads {
     text-align: center;
 }
 
-.download-button {
+.downloads .download-button {
     display: inline-block;
     border-radius: 4px;
     border: solid 2px;
@@ -22,7 +22,7 @@ section.downloads {
     font-size: 110%;
 }
 
-.download-button .inner {
+.downloads .download-button .inner {
     width: 200px;
     height: 200px;
     display: flex;
@@ -31,7 +31,7 @@ section.downloads {
     justify-content: center;
 }
 
-.download-button .icon {
+.downloads .download-button .icon {
     display: block;
     width: 100px;
     height: 100px;

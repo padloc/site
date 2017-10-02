@@ -12,8 +12,8 @@
                 </div>
                 <div class="screen">
                     <video playsinline muted preload src="/img/v2.1-unlock.mp4"></video>
-                    <video playsinline muted preload src="/img/v2.1-open-record.mp4" style="opacity: 0;"></video>
-                    <div class="code" style="opacity: 0;">
+                    <video playsinline muted preload src="/img/v2.1-open-record.mp4" class="hidden"></video>
+                    <div class="code hidden">
                         <div class="code-scan">
                             <div></div>
                         </div>
@@ -34,6 +34,9 @@
                 </div>
                 <div class="screen">
                     <video playsinline muted preload src="/img/v2.1-sync-desktop.mp4"></video>
+                    <div class="downloads hidden">
+                        {{ partial "download-links" . }}
+                    </div>
                 </div>
             </div>
         </div>

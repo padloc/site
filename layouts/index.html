@@ -2,20 +2,22 @@
     {{ template "basecss" . }}
     <link href="/css/home.css" rel="stylesheet" type="text/css">
     <link href="/css/device.css" rel="stylesheet" type="text/css">
+    <link href="/css/downloads.css" rel="stylesheet" type="text/css">
 {{ end }}
 
 {{ define "js" }}
 <script>
 (function() {
-    var scroller, scrollerHeight, wrapper, stage, currSection, video1, video2, video3, scanCode, sectionSize;
+    var scroller, scrollerHeight, wrapper, stage, currSection,
+        video1, video2, video3, scanCode, downloads, sectionSize;
 
     var sections = [
         {
             in: function() {
                 stage.classList.add("hero");
-                video1.style.opacity = "";
-                video2.style.opacity = "0";
-                scanCode.style.opacity = "0";
+                video1.classList.remove("hidden");
+                video2.classList.add("hidden");
+                scanCode.classList.add("hidden");
                 video1.play();
             },
             out: function() {
@@ -25,9 +27,9 @@
         {
             in: function() {
                 stage.classList.add("simple");
-                video2.style.opacity = "";
-                video1.style.opacity = "0";
-                scanCode.style.opacity = "0";
+                video2.classList.remove("hidden");
+                video1.classList.add("hidden");
+                scanCode.classList.add("hidden");
                 video2.play();
             },
             out: function() {
@@ -37,6 +39,8 @@
         {
             in: function() {
                 stage.classList.add("portable");
+                video3.classList.remove("hidden");
+                downloads.classList.add("hidden");
                 video3.play();
             },
             out: function() {
@@ -46,12 +50,22 @@
         {
             in: function() {
                 stage.classList.add("transparent");
-                video2.style.opacity = "0";
-                video1.style.opacity = "0";
-                scanCode.style.opacity = "";
+                video2.classList.add("hidden");
+                video1.classList.add("hidden");
+                scanCode.classList.remove("hidden");
             },
             out: function() {
                 stage.classList.remove("transparent");
+            }
+        },
+        {
+            in: function() {
+                stage.classList.add("tryit");
+                video3.classList.add("hidden");
+                downloads.classList.remove("hidden");
+            },
+            out: function() {
+                stage.classList.remove("tryit");
             }
         }
     ];
@@ -82,6 +96,7 @@
         video2 = wrapper.querySelectorAll(".device.phone video")[1];
         video3 = wrapper.querySelector(".device.desktop video");
         scanCode = wrapper.querySelector(".device.phone .code");
+        downloads = wrapper.querySelector(".device.desktop .downloads");
         sectionSize = (scroller.scrollHeight - scrollerHeight + 350) / (sections.length + 1);
 
         var lastScrollTop;
@@ -111,10 +126,6 @@
             </h2>
             <div class="buttons">
                 {{ partial "download-button" }}
-                <!-- <a href="#" class="btn"> -->
-                <!--     <span>Watch Video</span> -->
-                <!--     <span class="icon icon&#45;play&#45;circle"></span> -->
-                <!-- </a> -->
             </div>
         </div>
     </section>
@@ -129,6 +140,7 @@
                 long list of shiny, cool features, we focus on security,
                 usability and performance instead. No clutter, no distractions!
             </h2>
+            <a href="/downloads/">Try It Now. It's Free! &raquo;</a>
         </div>
     </section>
 
@@ -136,10 +148,13 @@
         <div class="inner">
             <h1>Effortlessly Portable.</h1>
             <h2>
-                Padlock is available on all major platforms and synchronizing your devices
-                is fast and easy. <a href="https://cloud.padlock.io/">Padlock Cloud</a> securely
-                stores your data online where you have access to it from anywhere, any time!
+                Padlock is available on all major platforms and synchronizing
+                your devices is fast and easy. Padlock Cloud securely stores
+                your data online where you have access to it from anywhere, any
+                time!
             </h2>
+            <a href="/downloads/">&raquo; Download Padlock For Your Platform</a>
+            <a href="https://cloud.padlock.io/">&raquo; Learn More About Padlock Cloud</a>
         </div>
     </section>
 
@@ -147,18 +162,29 @@
         <div class="inner">
             <h1>Completely Transparent.</h1>
             <h2>
-                We believe that transparency and openness is the best foundation for trust so
-                we are building Padlock completely out in the open. Our source code is developed
-                under an open source licence so any one can review it, provide feedback and
-                even offer contrubitions at any time!
-                <!-- <a href="https://github.com/maklesoft/padlock/">Find Padlock on Github &#38;gt;&#38;gt;</a> -->
+                We believe that transparency and openness is the best
+                foundation for trust so we are building Padlock completely out
+                in the open. Our source code is developed under an open source
+                licence so any one can review it, provide feedback and even
+                offer contrubitions at any time!
             </h2>
-            <!-- <div class="section&#45;icon icon&#45;github"></div> -->
+            <a href="{{ .Param "githubUrl" }}">Find Padlock On Github &raquo;</a>
+        </div>
+    </section>
+
+    <section class="tryit">
+        <div class="inner">
+            <h1>Go Ahead, Try It!</h1>
+            <h2>
+                Padlock is free and getting started takes only a few seconds.
+                Give it a go, we're sure you'll love it!
+            </h2>
+            <a href="/downloads/">&raquo; Download Padlock</a>
         </div>
     </section>
 
 {{ end }}
 
 {{ define "float" }}
-    {{ partial "device" }}
+    {{ partial "device" . }}
 {{ end }}

@@ -16,6 +16,11 @@
 }
 
 .device {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 230px;
     height: 437px;
     transform-style: preserve-3d;
@@ -67,15 +72,19 @@
     border-radius: 6px;
     overflow: hidden;
     border: solid 1px #aaa;
+    pointer-events: auto !important;
 }
 
 .screen > video {
-    pointer-events: auto !important;
     position: absolute;
     width: 100%;
     box-sizing: border-box;
     top: 0;
     transition: opacity 0.2s;
+}
+
+.device .hidden {
+    opacity: 0;
 }
 
 /* DESKTOP */
@@ -117,8 +126,6 @@
     margin-right: 3px;
 }
 
-/* TABLET */
-
 @keyframes scan {
     from { transform: translate3d(0, 50px, 0); }
     to { transform: translate3d(0, 220px, 0); }
@@ -154,4 +161,39 @@
     background: url(/img/code.png) no-repeat;
     background-size: 500px;
     animation: scan 2s linear infinite alternate-reverse; 
+}
+
+.downloads {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #59c6ff 0%, #077cb9 100%);
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.downloads .download-button {
+    color: #fff !important;
+}
+
+.device .downloads .download-button .inner {
+    width: 140px;
+    height: 140px;
+    font-size: 90%;
+}
+
+.device .downloads .download-button .icon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 70px;
+}
+
+.device .downloads .download-button.beta::after {
+    display: none;
 }
