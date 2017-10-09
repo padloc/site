@@ -20,7 +20,7 @@ synchronize changes between devices.
 __We want to emphasize that we remain committed to keeping Padlock and Padlock
 Cloud completely open source__. Don't want to pay for Padlock Cloud or simply
 don't trust us with storing your data?  With the [official release of Padlock
-Cloud v1.0](< relref "pc-v1.0-released.md" >}) it is now easier than ever to
+Cloud v1.0]({{< relref "pc-v1.0-released.md" >}}) it is now easier than ever to
 set up your own Padlock Cloud server!  For details on how to do this, check out
 the [code repository on Github](https://github.com/maklesoft/padlock-cloud)!
 Furthermore, __the Padlock app itself will continue to to be completely free__
