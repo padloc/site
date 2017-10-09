@@ -73,6 +73,12 @@
     border-radius: 6px;
     overflow: hidden;
     border: solid 1px #aaa;
+    background-clip: padding-box;
+}
+
+.screen > * {
+    border-radius: 6px;
+    background-clip: padding-box;
 }
 
 .screen > video {
@@ -103,7 +109,7 @@
     padding: 20px 3px 3px 3px;
 }
 
-.device.desktop .screen {
+.device.desktop .screen, .device.desktop .screen > * {
     border-radius: 3px;
 }
 
