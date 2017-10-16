@@ -15,7 +15,7 @@ extension, the Padlock app itself) is more costly and time consuming than many
 people realize.  And with the Padlock app being completely free, income from
 Padlock Cloud subscriptions is the only way to cover these costs.
 
-However, we understand that for many people, $3.99 can be a touch pill to
+However, we understand that for many people, $3.99 can be a hard pill to
 swallow. We believe that applications like Padlock play a vital role in
 protecting peoples privacy in an increasingly digitialized world and should be
 accessible and affordable to as many people as possible. This is why today
