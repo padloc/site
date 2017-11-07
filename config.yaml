@@ -10,7 +10,7 @@ params:
     macUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.2.0/padlock-2.2.0.dmg
     winUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.2.0/padlock-setup-2.2.0.exe
     linuxUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.2.0/padlock-2.2.0-x86_64.AppImage
-    productHuntUrl: https://www.producthunt.com/posts/padlock
+    productHuntUrl: https://www.producthunt.com/posts/padlock-2
     githubUrl: https://github.com/maklesoft/padlock/
     twitterUrl: https://twitter.com/padlockapp/
     mixpanelToken: 1e4f4510418f9b490bbc34e70e22cf57
