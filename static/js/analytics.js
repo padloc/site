@@ -1,3 +1,8 @@
+(function() {
+
+mixpanel.track("start loading page");
+mixpanel.time_event("load page");
+
 window.onload = function() {
     if (typeof mixpanel === "undefined") {
         return;
@@ -29,4 +34,6 @@ window.onload = function() {
     mixpanel.track_links("a.twitter", "visit twitter link");
     mixpanel.track_links("a.maklesoft", "visit maklesoft link");
     mixpanel.track_forms("#mc-embedded-subscribe-form", "subscribe to newsletter");
-}
+};
+
+})();
