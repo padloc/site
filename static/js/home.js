@@ -23,6 +23,7 @@
                 video2.classList.add("hidden");
                 scanCode.classList.add("hidden");
                 video1.play();
+                mixpanel.track("view section", { section: "hero" });
             },
             out: function() {
                 stage.classList.remove("hero");
@@ -35,6 +36,7 @@
                 video1.classList.add("hidden");
                 scanCode.classList.add("hidden");
                 video2.play();
+                mixpanel.track("view section", { section: "simple" });
             },
             out: function() {
                 stage.classList.remove("simple");
@@ -46,6 +48,7 @@
                 video3.classList.remove("hidden");
                 downloads.classList.add("hidden");
                 video3.play();
+                mixpanel.track("view section", { section: "portable" });
             },
             out: function() {
                 stage.classList.remove("portable");
@@ -57,6 +60,7 @@
                 video2.classList.add("hidden");
                 video1.classList.add("hidden");
                 scanCode.classList.remove("hidden");
+                mixpanel.track("view section", { section: "transparent" });
             },
             out: function() {
                 stage.classList.remove("transparent");
@@ -67,6 +71,7 @@
                 stage.classList.add("tryit");
                 video3.classList.add("hidden");
                 downloads.classList.remove("hidden");
+                mixpanel.track("view section", { section: "try it" });
             },
             out: function() {
                 stage.classList.remove("tryit");
