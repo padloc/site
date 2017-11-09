@@ -185,28 +185,28 @@
 
 }
 
-.downloads .download-button {
+.downloads .download-link-direct {
     color: #fff;
     transition: transform 0.5s;
 }
 
-.downloads .download-button:hover {
+.downloads .download-link-direct:hover {
     transform: translateZ(10px);
 }
 
-.device .downloads .download-button .inner {
+.device .downloads .download-link-direct .inner {
     width: 140px;
     height: 140px;
     font-size: 90%;
 }
 
-.device .downloads .download-button .icon {
+.device .downloads .download-link-direct .icon {
     width: 80px;
     height: 80px;
     line-height: 80px;
     font-size: 70px;
 }
 
-.device .downloads .download-button.beta::after {
+.device .downloads .download-link-direct.beta::after {
     display: none;
 }

@@ -16,13 +16,17 @@ window.onload = function() {
         latency: latency,
         rendering_time: renderingTime
     });
-    mixpanel.track_links("a.get-app", "get app", function(node) {
+
+    mixpanel.track_links(".download-link-direct", "get app", function(node) {
         return {
             platform: node.dataset.platform,
-            hero: node.classList.contains("hero-btn")
+            ref: "direct",
+            autodetect: false
         };
     });
+
     mixpanel.track_links("a.padlock-github", "visit github link");
+    mixpanel.track_links("a.twitter", "visit twitter link");
     mixpanel.track_links("a.maklesoft", "visit maklesoft link");
     mixpanel.track_forms("#mc-embedded-subscribe-form", "subscribe to newsletter");
 }

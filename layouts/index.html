@@ -24,7 +24,7 @@
                 master password!
             </h2>
             <div class="buttons">
-                {{ partial "download-button" }}
+                {{ partial "download-button" (dict "ref" "home-hero") }}
             </div>
         </div>
     </section>
@@ -39,7 +39,7 @@
                 long list of shiny cool features, we focus on security,
                 usability and performance instead. No clutter, no distractions!
             </h2>
-            <a href="/downloads/">Try It Now. It's Free! &raquo;</a>
+            <a href="/downloads/" class="download-link" data-ref="home-simple">Try It Now. It's Free! &raquo;</a>
         </div>
     </section>
 
@@ -52,7 +52,7 @@
                 your data online where you have access to it from anywhere, any
                 time!
             </h2>
-            <a href="/downloads/">&raquo; Download Padlock For Your Platform</a>
+            <a href="/downloads/" data-ref="home-portable">&raquo; Download Padlock For Your Platform</a>
             <a href="/about/#what-is-padlock-cloud">&raquo; Learn More About Padlock Cloud</a>
         </div>
     </section>
@@ -78,7 +78,7 @@
                 Padlock is free and getting started takes only a few seconds.
                 Give it a go, we're sure you'll love it!
             </h2>
-            <a href="/downloads/">&raquo; Download Padlock</a>
+            <a href="/downloads/" data-ref="home-tryit">&raquo; Download Padlock</a>
         </div>
     </section>
 

@@ -10,7 +10,7 @@
     {{ .Content }}
 </article>
 <section>
-    {{ partial "download-button" . }}
+    {{ partial "download-button" (dict "ref" "article") }}
 </section>
 <section>
     {{ partial "newsletter-signup" . }}
