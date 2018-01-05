@@ -208,6 +208,9 @@ header .inner, main {
 figure {
     margin: 20px;
     text-align: center;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
 }
 
 figure.center img {
@@ -216,6 +219,24 @@ figure.center img {
 
 figure.rounded img {
     border-radius: 5px;
+}
+
+figure.iphonex {
+    border-radius: 20px;
+    border: solid 4px black;
+}
+
+figure.iphonex::before {
+    content: "";
+    display: block;
+    width: 57%;
+    height: 15px;
+    border-radius: 0 0 13px 13px;
+    margin: 0 auto;
+    position: absolute;
+    background: black;
+    left: 0;
+    right: 0;
 }
 
 figure img {
@@ -305,6 +326,11 @@ button .icon, .btn .icon {
     padding: 20px;
     border: solid 1px #23b4ff;
     clear: both;
+    margin: 20px;
+}
+
+.note p {
+    text-align: left;
 }
 
 .note p:first-child {
