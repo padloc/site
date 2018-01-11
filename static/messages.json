@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "v2.4-released",
+        "text": "Padlock v2.4 is available now, bringing an improved setup process, lots of design and user experience refinements and more!",
+        "link": "https://padlock.io/news/v2.4-released/?ref=app-msg",
+        "version": "<2.4"
+    }
+]
