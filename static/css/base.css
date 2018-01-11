@@ -221,6 +221,11 @@ figure.rounded img {
     border-radius: 5px;
 }
 
+figure.border img {
+    border: solid 1px #ccc;
+    box-sizing: border-box;
+}
+
 figure.iphonex {
     border-radius: 20px;
     border: solid 4px black;
