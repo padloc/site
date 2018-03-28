@@ -7,9 +7,9 @@ params:
     androidUrl: https://play.google.com/store/apps/details?id=com.maklesoft.padlock
     iosUrl: https://itunes.apple.com/app/id871710139
     chromeUrl: https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif
-    macUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.5.0/padlock-2.5.0.dmg
-    winUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.5.0/padlock-setup-2.5.0.exe
-    linuxUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.5.0/padlock-2.5.0-x86_64.AppImage
+    macUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.6.2/padlock-2.6.2.dmg
+    winUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.6.2/padlock-setup-2.6.2.exe
+    linuxUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.6.2/padlock-2.6.2-x86_64.AppImage
     productHuntUrl: https://www.producthunt.com/posts/padlock-2
     githubUrl: https://github.com/maklesoft/padlock/
     twitterUrl: https://twitter.com/padlockapp/
