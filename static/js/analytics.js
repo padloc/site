@@ -34,7 +34,6 @@ window.onload = function() {
     mixpanel.track_links("a.twitter", "visit twitter link");
     mixpanel.track_links("a.maklesoft", "visit maklesoft link");
     mixpanel.track_forms("#mc-embedded-subscribe-form", "subscribe to newsletter");
-    mixpanel.track_forms(".promo-form", "promo signup");
 };
 
 })();
