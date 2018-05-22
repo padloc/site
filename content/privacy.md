@@ -1,6 +1,7 @@
 ---
 title: Padlock Privacy Policy
-date: 2016-09-02T11:52:00+02:00
+date: 2018-05-22
+publishDate: 2018-05-22
 ---
 
 This privacy policy documents how and when Padlock stores, handles and
@@ -20,11 +21,9 @@ and transparency and we employ these principles every step along the way
 when handling your data. As a security-sensitive service, cryptography and
 information security is at the very heart of our product and while these
 topics can be very hard to grasp for non-technical users, we do our best
-to describe the most important principles in simple words. If you're interested
-in a more technical description of our data architecture, please refer to our
-[security whitepaper](#todo).
+to describe the most important principles in simple words.
 
-## What Information Do We Collect And How Do We Use It 
+## Information We Collect And How We Use It 
 
 While we treat all your data with the same high standard of security,
 there are different types of data and it is important to understand
@@ -33,7 +32,7 @@ the distinction between them.
 ### Secure Data
 
 Your secure data is all the information you store within the Padlock app, like
-passwords, credit card details, secure notes or other sensitive (or
+passwords, credit card details, secure notes and other sensitive (or
 non-sensitive) information. By design this data is readable by you and only
 you. Your secure data is encrypted locally on your devices using encryption
 keys that are derived from your master password that only you know and your
@@ -80,8 +79,7 @@ on what device-specific information is gathered, consult the section
 Device-specific information includes:
 
 - Device UUID<sup>1</sup>
-- Platform
-- Platform Version
+- Operating System and OS Version
 - Device Manufacturer (if available)
 - Device Model (if available)
 - Device Name (if available)
@@ -91,7 +89,7 @@ Device-specific information includes:
 
 This information is essential for preventing fraud and to provide you
 fine-grained control of which devices you want to allow (and continue to allow)
-access to your account. Information about your devices manufacturer, operating
+access to your account. Information about your device model, operating
 system and OS version also helps us notifying you in case we are made aware
 of security vulnerabilities specific to your device or operating system.
 
@@ -117,17 +115,16 @@ information.
 ### Server Logs
 
 Like most internet services, we keep internal logs of all requests sent to our
-servers. These logs are an essential tool for identifying and blocking malicious
-traffic and help us detect and prevent break-in attempts. While we do our best
-
-identifiable information like IP or email addresses. As will all the data that
-we collect, we treat these log files with utmost care and restrict access to
-them to key personnel. Log files are only kept as long as absolutely necessary
-after which they are deleted from our servers.
+servers. These logs are an essential tool for identifying and blocking
+malicious traffic and help us detect and prevent break-in attempts. These logs
+may contain some personal identifiable information like IP addresses.
+As with all the data that we collect, we treat these log files with utmost care
+and restrict access to them to key personnel. Log files are only kept as long
+as absolutely necessary after which they are deleted from our servers.
 
 ### Billing Information
 
-If you choose to purchase a paid subscription, you payment data is processed
+If you choose to purchase a paid subscription, your payment data is processed
 and stored securely by our payment provider [Stripe](https://stripe.com). In
 addition to your credit card data, you may choose to provide us with additional
 billing information like your full name, address and, in case of business
@@ -142,12 +139,6 @@ pages that may set cookies on your computer. These are limited to our domains,
 and do not involve cross-service tracking. You may disable cookies in your
 browser and continue to use our services without impact.
 
-Client applications, including web browsers, will store information about your
-account to assist with future sign-ins and keep some information available to
-you when you are not signed in. Users may remove all such information from
-their devices, but doing so will require that they provide complete information
-(account details, Master Password, and Secret Key) on subsequent sign-ins.
-
 ## Where Your Data Is Kept
 
 Your data is held by third party data processors, who provide us with hosting
@@ -158,9 +149,7 @@ and conform to the U.S.-E.U. Privacy Shield Framework.
 
 Your personal information is stored behind secured networks and is only
 accessible by a very limited number of persons who have special access rights
-to such systems, and are required to keep the information confidential. In
-addition, all sensitive information you supply is encrypted via Secure Socket
-Layer (SSL) technology. 
+to such systems and are required to keep the information confidential. 
 
 ## Third Party Disclosure
 
@@ -168,11 +157,7 @@ We do not sell, trade, or otherwise transfer to outside parties your personally
 identifiable information unless we provide you with advance notice. This does
 not include website hosting partners and other parties who assist us in
 operating our website, conducting our business, or servicing you, so long as
-those parties agree to keep this information confidential. We may also release
-your information when we believe release is appropriate to comply with the law,
-enforce our site policies, or protect ours or others' rights, property, or
-safety. Additionally, non-personally identifiable visitor information may be
-provided to other parties for marketing, advertising, or other uses.
+those parties agree to keep this information confidential.
 
 ## Deleting Your Data
 
@@ -182,15 +167,15 @@ can delete your Padlock online account at any time through the [Padlock Online
 Dashboard](https://cloud.padlock.io/dashboard/). Data stored locally within
 the Padlock app can be deleted directly through the app itself.
 
-German tax law requires us to keep payment transaction records and, in case
-of business customers, company and VAT information for 5 years after the last
-transaction. This data does not include your credit or debit card information
-which is deleted instantly after deleting your Padlock online account.
+German tax law requires us to keep payment transaction records and, in case of
+business customers, company and VAT information for up to 10 years. This data
+does not include your credit or debit card information which is deleted
+instantly after deleting your Padlock online account.
 
 Disaster recovery and data availability requirements mean that we have a
 legitimate interest in maintaining secure and immutable backups. Erasure
 requests will leave those backups untouched, and we will only remove data from
-backups if legally compelled to. Backups are permanently deleted after TODO
+backups if legally compelled to. Backups are permanently deleted after 3
 months.
 
 ## Contacting You
@@ -203,7 +188,7 @@ alerts.
 
 ## Contacting Us
 
-If there are any questions regarding this privacy policy you may contact us
+If you have any questions regarding this privacy policy you may contact us
 using the information below.
 
 <table>
@@ -213,7 +198,7 @@ using the information below.
     </tr>
     <tr>
         <th>Email Address</th>
-        <td>contact@padlock.io</td>
+        <td>support@padlock.io</td>
     </tr>
     <tr>
         <th>Postal Address</th>
