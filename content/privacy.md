@@ -23,6 +23,13 @@ information security is at the very heart of our product and while these
 topics can be very hard to grasp for non-technical users, we do our best
 to describe the most important principles in simple words.
 
+## Who We Are
+
+Padlock is maintained and run by **MaKleSoft**, a German company located at
+Meisenstr. 5, 91522 Ansbach, Bavaria. MaKleSoft and all of it's employees are
+bound by EU privacy laws and regulations like the **General Data
+Protection Regulation (GDPR)**.
+
 ## Information We Collect And How We Use It 
 
 While we treat all your data with the same high standard of security,
