@@ -1,6 +1,11 @@
 {{ define "main" }}
 <section>
     <h1>{{ .Title }}</h1>
+</section>
+<section>
+    {{ partial "newsletter-signup" . }}
+</section>
+<section>
     <ul class="articles">
         {{ range .Data.Pages }}
             {{ .Render "li" }}
