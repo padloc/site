@@ -29,7 +29,7 @@ data and can be opened and edited easily by any kind of spreadsheet application 
 Numbers**. Before trying to import this kind of data into Padlock, you first need to make sure it satisfies the
 following requirements:
 
-1. The first line should contain the fiels names for the corresponding columns (e.g.: "name, category, url, username,
+1. The first line should contain the fields names for the corresponding columns (e.g.: "name, category, url, username,
     password"). Each subsequent line represents a single item, with each column containing the value for the
     corresponding field.
 
