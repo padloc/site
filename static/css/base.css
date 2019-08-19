@@ -100,19 +100,29 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
-  padding: 0 10px;
+  z-index: 10;
   box-sizing: border-box;
-  border-bottom: solid 1px #ccc;
   font-size: 110%;
+  padding: 0 10px 0 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
 }
 
-header .inner {
-  height: 50px;
+header .login-button,
+header .signup-button {
+  display: block;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+header .signup-button {
+  background: #23b4ff;
+  color: white;
   display: flex;
-  align-items: stretch;
-  width: 100%;
-  margin: 0 auto;
+  align-items: center;
 }
 
 header .home,
@@ -130,8 +140,11 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
-  margin-left: 10px;
+  margin-right: 20px;
+}
+
+nav a {
+  display: block;
 }
 
 header .logo {
@@ -206,10 +219,6 @@ li article h2 {
 
 main {
   margin: 80px auto;
-}
-
-header .inner,
-main {
   max-width: 700px;
 }
 

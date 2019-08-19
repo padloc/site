@@ -16,15 +16,21 @@
 
 {{ define "main" }}
     <section class="hero">
+        {{ partial "header" . }}
+
         <div class="inner">
+            {{ partial "logo.svg" . }}
             <h1>All your sensitive data in one secure place.</h1>
             <h2>
-                Padlock stores all of your passwords and other sensitive
-                information for you so all you have to remember is a single
-                master password!
+                <strong>The simple, secure password manager you've been looking for.</strong>
+                Lock away all your passwords, documents and other sensitive data
+                with this simple yet powerfull app!
             </h2>
             <div class="buttons">
-                {{ partial "download-button" (dict "ref" "home-hero") }}
+                <a href="https://beta.padloc.app/signup" class="btn">
+                    <span>Get Started</span>
+                    <span class="icon icon-play-circle"></span>
+                </a>
             </div>
         </div>
     </section>
@@ -34,7 +40,7 @@
             <h1>Beautifully Simple.</h1>
             <h2>
                 We know you have better things to do than to spend hours
-                learning how to use new software, so we made Padlock as simple
+                learning how to use new software, so we made <strong>Padloc</strong> as simple
                 and easy to use as possible. While other apps boast about their
                 long list of shiny cool features, we focus on security,
                 usability and performance instead. No clutter, no distractions!
@@ -47,27 +53,27 @@
         <div class="inner">
             <h1>Effortlessly Portable.</h1>
             <h2>
-                Padlock is available on all major platforms and synchronizing
-                your devices is fast and easy. Padlock Cloud securely stores
-                your data online where you have access to it from anywhere, any
-                time!
+                <strong>Padloc</strong> is available on all major platforms and synchronizing
+                your devices is fast and easy. We securely store your data in
+                the cloud so you have access to it from anywhere, any time!
             </h2>
-            <a href="/downloads/" data-ref="home-portable">&raquo; Download Padlock For Your Platform</a>
-            <a href="/about/#what-is-padlock-cloud">&raquo; Learn More About Padlock Cloud</a>
+            <a href="/downloads/" data-ref="home-portable">&raquo; Download Padloc For Your Platform</a>
+            <a href="https://beta.padloc.app/signup">&raquo; Launch Padloc Right From Your Browser</a>
         </div>
     </section>
 
     <section class="transparent">
         <div class="inner">
-            <h1>Completely Transparent.</h1>
+            <h1>Transparently Secure.</h1>
             <h2>
                 We believe that transparency and openness are the best
-                foundation for trust so we are building Padlock completely out
+                foundation for trust so we are building <strong>Padloc</strong> completely out
                 in the open. Our source code is developed under an open source
                 licence so anyone can review it, provide feedback and even
                 offer contributions at any time!
             </h2>
-            <a href="{{ .Param "githubUrl" }}" class="padlock-github">Find Padlock On Github &raquo;</a>
+            <a href="{{ .Param "githubUrl" }}" class="padlock-github">Find Padloc On Github &raquo;</a>
+            <a href="{{ .Param "githubUrl" }}" class="padlock-github">Read The Security Whitepaper &raquo;</a>
         </div>
     </section>
 
@@ -75,10 +81,10 @@
         <div class="inner">
             <h1>Better Together.</h1>
             <h2>
-                Want to share your passwords and documents with your family or team members?
-                No problem! Padlocs powerful organizations feature allows you to share and
-                manage your sensitive data within your Family, Business or any other kind of
-                Organization.
+                Want to share your passwords and documents with your family or
+                team members? No problem! <strong>Padloc</strong> makes it easy to share and
+                manage your sensitive data within your Family, Business or any
+                other kind of Organization.
             </h2>
             <a href="{{ .Param "githubUrl" }}" class="padlock-github">Check Out Plans &raquo;</a>
         </div>
@@ -88,10 +94,10 @@
         <div class="inner">
             <h1>Go Ahead, Try It!</h1>
             <h2>
-                Padlock is free and getting started takes only a few seconds.
+                <strong>Padloc</strong> is free and getting started takes only a few seconds.
                 Give it a go, we're sure you'll love it!
             </h2>
-            <a href="/downloads/" data-ref="home-tryit">&raquo; Download Padlock</a>
+            <a href="/downloads/" data-ref="home-tryit">&raquo; Download Padloc</a>
         </div>
     </section>
 
@@ -101,7 +107,7 @@
                 <img src="/img/product-hunt.png">
                 <div class="ph-promo-text">
                     <strong>Greetings, Product Hunter.</strong> We have a special offer for you! Sign up now and get
-                    the first <strong>6 months</strong> of <strong>Padlock Pro</strong> for <strong>free</strong>!
+                    the first <strong>6 months</strong> of <strong>Padloc Pro</strong> for <strong>free</strong>!
                 </div>
                 <div class="ph-promo-close-button">x</div>
             </div>

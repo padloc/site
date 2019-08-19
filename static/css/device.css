@@ -101,28 +101,28 @@
 
 .device.desktop {
   width: 500px;
-  height: 380px;
+  height: 382px;
 }
 
 .device.desktop > div {
-  border-radius: 4px;
-  background: #ccc;
+  border-radius: 6px;
+  background: #ddd;
 }
 
 .device.desktop .front {
   background: #fff;
-  border: solid 1px #ccc;
-  padding: 20px 3px 3px 3px;
+  border: solid 1px #ddd;
+  padding: 22px 4px 4px 4px;
 }
 
 .device.desktop .screen,
 .device.desktop .screen > * {
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .window-buttons {
   position: absolute;
-  top: -4px;
+  top: -2px;
   left: 9px;
 }
 
@@ -134,8 +134,8 @@
   display: inline-block;
   width: 7px;
   height: 7px;
-  background: #ccc;
-  border: solid 1px #aaa;
+  background: #ddd;
+  border: solid 1px #ccc;
   border-radius: 100%;
   margin-right: 3px;
 }

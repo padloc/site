@@ -1,17 +1,18 @@
 <header>
-    <div class="inner">
-        <a href="/" class="home">
-            <div class="logo icon-padlock-negative"></div>
-            <div class="type">Padlock</div>
+    <nav>
+        <ul>
+            <li><a href="/"><div class="icon-padlock"></div></a></li>
+            <li><a href="/pricing/">Pricing</a></li>
+            <li><a href="/pricing/">Business</a></li>
+            <li><a href="/news/">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="spacer"></div>
+    <nav>
+        <a href="https://beta.padloc.app/login" class="login-button">Login</a>
+        <a href="https://beta.padloc.app/signup" class="signup-button btn">
+            <span>Try For Free</span>
+            <span class="icon icon-play-circle"></span>
         </a>
-        <div class="spacer"></div>
-        <div class="links">
-            {{ partial "social-links" . }}
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/news/">News</a></li>
-            </ul>
-        </nav>
-    </div>
+    </nav>
 </header>
