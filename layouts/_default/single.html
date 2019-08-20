@@ -1,18 +1,37 @@
 {{ define "main" }}
-<article>
-    {{ with .Section }}
-    <a href="/{{ . }}">&hookleftarrow; Back to {{ humanize . }}</a>
-    {{ end }}
-    <h1>
-        <span>{{ .Title }}</span>
-    </h1>
-    <div class="publish-date">{{ dateFormat "Monday, Jan 2, 2006" .PublishDate }}</div>
-    {{ .Content }}
-</article>
-<section>
-    {{ partial "download-button" (dict "ref" "article") }}
+<section class="hero">
+    {{ partial "header" . }}
+
+    <div class="inner">
+
+        {{ with .Section }}
+        <div>
+            <a href="/{{ . }}">&hookleftarrow; Back to {{ humanize . }}</a>
+        </div>
+        {{ end }}
+
+        <h1>{{ .Title }}</h1>
+    </div>
 </section>
+
 <section>
-    {{ partial "newsletter-signup" . }}
+    <div class="inner">
+        <article>
+            <div class="publish-date">{{ dateFormat "Monday, Jan 2, 2006" .PublishDate }}</div>
+            {{ .Content }}
+        </article>
+    </div>
+</section>
+
+<section>
+    <div class="inner">
+        {{ partial "download-button" (dict "ref" "article") }}
+    </div>
+</section>
+
+<section>
+    <div class="inner">
+        {{ partial "newsletter-signup" . }}
+    </div>
 </section>
 {{ end }}

@@ -1,21 +1,37 @@
 {{ define "main" }}
-<section>
-    <h1>{{ .Title }}</h1>
+<section class="hero">
+    {{ partial "header" . }}
+
+    <div class="inner">
+        <h1>{{ .Title }}</h1>
+    </div>
 </section>
+
 <section>
-    {{ partial "newsletter-signup" . }}
+    <div class="inner">
+        {{ partial "newsletter-signup" . }}
+    </div>
 </section>
+
 <section>
-    <ul class="articles">
-        {{ range .Data.Pages }}
-            {{ .Render "li" }}
-        {{ end }}
-    </ul>
+    <div class="inner">
+        <ul class="articles">
+            {{ range .Data.Pages }}
+                {{ .Render "li" }}
+            {{ end }}
+        </ul>
+    </div>
 </section>
+
 <section>
-    {{ partial "download-button" (dict "ref" "article-list") }}
+    <div class="inner">
+        {{ partial "download-button" (dict "ref" "article-list") }}
+    </div>
 </section>
+
 <section>
-    {{ partial "newsletter-signup" . }}
+    <div class="inner">
+        {{ partial "newsletter-signup" . }}
+    </div>
 </section>
 {{ end }}

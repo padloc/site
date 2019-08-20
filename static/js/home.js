@@ -1,17 +1,4 @@
 (function() {
-  if (
-    !Modernizr.video.h264 ||
-    !Modernizr.cssanimations ||
-    !Modernizr.flexbox ||
-    !Modernizr.nthchild ||
-    !Modernizr.csstransforms3d ||
-    !Modernizr.classlist ||
-    !Modernizr.testProp('animation') ||
-    !Modernizr.testAllProps('backface-visibility')
-  ) {
-    document.body.class = 'legacy';
-  }
-
   var scroller,
     scrollerHeight,
     wrapper,
@@ -131,6 +118,20 @@
   }
 
   window.addEventListener('load', function() {
+    if (
+      !Modernizr.video.h264 ||
+      !Modernizr.cssanimations ||
+      !Modernizr.flexbox ||
+      !Modernizr.nthchild ||
+      !Modernizr.csstransforms3d ||
+      !Modernizr.classlist ||
+      !Modernizr.testProp('animation') ||
+      !Modernizr.testAllProps('backface-visibility')
+    ) {
+      document.body.class = 'legacy';
+      return;
+    }
+
     wrapper = document.querySelector('.device-wrapper');
     stage = document.querySelector('.device-stage');
     scroller = document.scrollingElement || document.documentElement;

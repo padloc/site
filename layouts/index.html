@@ -2,16 +2,11 @@
     {{ template "basecss" . }}
     <link href="/css/home.css" rel="stylesheet" type="text/css">
     <link href="/css/device.css" rel="stylesheet" type="text/css">
-    <link href="/css/downloads.css" rel="stylesheet" type="text/css">
 {{ end }}
 
 {{ define "js" }}
 <script src="js/modernizr.js"></script>
 <script src="js/home.js"></script>
-{{ end }}
-
-{{ define "header" }}
-    {{ partial "header" . }}
 {{ end }}
 
 {{ define "main" }}
@@ -20,7 +15,6 @@
 
         <div class="inner">
             {{ partial "logo.svg" . }}
-            <h1>All your sensitive data in one secure place.</h1>
             <h2>
                 <strong>The simple, secure password manager you've been looking for.</strong>
                 Lock away all your passwords, documents and other sensitive data

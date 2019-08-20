@@ -1,4 +1,6 @@
+html,
 body {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -18,7 +20,7 @@ input,
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: 0;
+  border-radius: 8px;
 }
 
 button {
@@ -54,12 +56,6 @@ a {
 
 a:hover {
   opacity: 0.7;
-}
-
-section {
-  padding: 0 40px;
-  margin: 40px 0;
-  clear: both;
 }
 
 footer {
@@ -115,7 +111,7 @@ header .signup-button {
   display: block;
   font-weight: bold;
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 header .signup-button {
@@ -125,10 +121,8 @@ header .signup-button {
   align-items: center;
 }
 
-header .home,
-header .links,
-header nav,
-header nav ul {
+header nav ul,
+footer nav ul {
   display: flex;
   align-items: center;
 }
@@ -139,8 +133,8 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  margin-right: 20px;
+nav ul li:not(:last-child) {
+  margin-right: 1em;
 }
 
 nav a {
@@ -177,6 +171,25 @@ header .links .icon {
   height: 23px;
 }
 
+main {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  clear: both;
+  margin-bottom: 50px;
+}
+
+section > .inner {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 ul.articles {
   list-style: none;
   margin: 0;
@@ -188,7 +201,6 @@ ul.articles li {
 }
 
 article {
-  padding: 0 40px;
   margin: 40px 0;
   box-sizing: border-box;
   clear: both;
@@ -215,11 +227,6 @@ li article .title {
 li article h2 {
   flex: 1;
   margin: 0;
-}
-
-main {
-  margin: 80px auto;
-  max-width: 700px;
 }
 
 figure {
@@ -323,7 +330,7 @@ button .icon,
   font-size: 110%;
   font-family: inherit;
   padding: 10px;
-  margin: 0;
+  margin: 0 10px 0 0;
   -webkit-flex: 1;
   flex: 1;
 }

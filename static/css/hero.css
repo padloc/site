@@ -1,0 +1,108 @@
+@keyframes reveal {
+  from {
+    transform: translate(0, 30px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal2 {
+  from {
+    transform: translate(0, 30px);
+  }
+}
+
+section.hero {
+  position: relative;
+  color: #fff;
+  overflow: visible;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+  z-index: 10;
+}
+
+section.hero::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  background-color: #23b4ff;
+  background: linear-gradient(180deg, #59c6ff 0%, #077cb9 100%);
+  transform-origin: center center;
+  transform: translate(0, -38%) rotate(-3deg);
+  border-radius: 100%;
+  animation: reveal2 2.5s -1s backwards;
+}
+
+section.hero header,
+section.hero .inner > *,
+section:not(.hero) {
+  animation: reveal 1s backwards;
+}
+
+section.hero > .inner :nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+section.hero > .inner :nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+section.hero > .inner :nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+section:not(.hero) {
+  animation-delay: 0.4s;
+}
+
+section.hero header {
+  position: static;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+}
+
+section.hero .inner {
+  padding: 50px;
+}
+
+section.hero header .signup-button {
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+}
+
+section.hero a {
+  color: #fff;
+}
+
+section.hero .inner .logo {
+  height: 60px;
+  width: 200px;
+  stroke: currentColor;
+  fill: currentColor;
+  stroke-width: 7;
+  margin-bottom: 30px;
+}
+
+section.hero .inner h2 {
+  font-weight: 300;
+  width: 420px;
+  margin-bottom: 40px;
+}
+
+section.hero .inner h2 strong {
+  font-weight: 700;
+}
+
+.hero .inner button,
+.hero .inner .btn {
+  font-size: 110%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+}
