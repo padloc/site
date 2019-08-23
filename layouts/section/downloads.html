@@ -3,8 +3,50 @@
     <link href="/css/downloads.css" rel="stylesheet" type="text/css">
 {{ end }}
 {{ define "main" }}
+
+<section class="hero">
+    {{ partial "header" . }}
+
+    <div class="inner">
+
+        <h1>
+            {{ partial "logo.svg" . }}
+            <span>Downloads</span>
+        </h1>
+
+        <h3>
+            Access your data from anywhere with the <strong>Padloc app</strong>,
+            available on all major platforms!
+        </h3>
+
+    </div>
+</section>
+
 <section class="downloads">
-    <h1>Downloads</h1>
-    {{ partial "download-links" . }}
+    <div class="inner">
+        <h2>Desktop</h2>
+        <ul class="downloads-list">
+            {{ range where (.Param "downloads") "type" "desktop" }}
+                <li>
+                    <a href={{ .url }}>
+                        <div class="icon icon-{{ .icon }}"></div>
+                        <div class="download-title">{{ .title }}</div>
+                    </a>
+                </li> 
+            {{ end }}
+        </ul>
+
+        <h2>Mobile</h2>
+        <ul class="downloads-list">
+            {{ range where (.Param "downloads") "type" "mobile" }}
+                <li>
+                    <a href={{ .url }}>
+                        <div class="icon icon-{{ .icon }}"></div>
+                        <div class="download-title">{{ .title }}</div>
+                    </a>
+                </li> 
+            {{ end }}
+        </ul>
+    </div>
 </section>
 {{ end }}

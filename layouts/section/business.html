@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<style>
+    section.hero > .inner {
+        max-width: 1100px;
+        padding: 40px 0px 100px 80px;
+    }
+
+    section.hero img {
+        width: 500px;
+        float: right;
+        margin: 80px 20px 0 20px;
+    }
+</style>
+
+<section class="hero">
+    {{ partial "header" . }}
+
+    <div class="inner">
+        <img src="/img/illustrations/team2.svg">
+
+        <h1>
+            {{ partial "logo.svg" . }}
+            <span>for Business</span>
+        </h1>
+
+        <h3>
+            <strong>Padloc is the perfect password manager for your business</strong>,
+            be it a small team or a full sized company! Want to host Padloc on your
+            own servers? No problem, we've got you cover fot that, too!
+        </h3>
+    </div>
+</section>
+
+<section class="plans">
+    <div class="inner">
+        <div class="plans-list">
+            <div>
+                {{ partial "plan" (.Param "plans").team }}
+            </div>
+            <div>
+                {{ partial "plan" (.Param "plans").business }}
+            </div>
+            <div>
+                {{ partial "plan" (.Param "plans").enterprise }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

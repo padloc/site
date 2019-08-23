@@ -1,0 +1,105 @@
+{{ define "main" }}
+
+<style>
+    section.hero > .inner {
+    }
+
+    section.hero img {
+        width: 230px;
+        float: right;
+        margin-top: 100px;
+    }
+
+    form {
+        width: 25em;
+    }
+
+    form .field {
+      margin: 0.7em 0;
+    }
+
+    form .field > * {
+        vertical-align: middle;
+    }
+
+    form .field label {
+      display: inline-block;
+      width: 8em;
+      text-align: right;
+      margin-right: 1em;
+      font-weight: bold;
+    }
+
+    form .optional.field label {
+        font-weight: normal;
+    }
+
+    form button {
+        margin-left: 9.2em;
+    }
+
+</style>
+
+<section class="hero">
+    {{ partial "header" . }}
+
+    <div class="inner">
+        <img src="/img/illustrations/beta.svg">
+
+        <h1>
+            {{ partial "logo.svg" . }}
+            <span>Beta</span>
+        </h1>
+
+        <h3>
+            Padloc is almost ready for prime time but there are still some rough
+            edges that need smoothing out. Can't wait? <strong>Apply as a beta tester and
+            get access right away!</strong> Or you an just leave your email here
+            and we'll let you know when it's ready. 😉
+        </h3>
+    </div>
+</section>
+
+<section>
+    <div class="inner">
+        <form action="https://padlock.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b" method="post">
+            <div class="field">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required/>
+            </div>
+
+            <div class="optional field">
+                <label for="mce-FNAME">First Name</label>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" />
+            </div>
+
+            <div class="optional field">
+                <label for="mce-LNAME">Last Name</label>
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" />
+            </div>
+
+            <div class="field">
+                <label for="radio1">I want to be a beta tester! 👷</label>
+                <input type="radio" required value="1" name="group[27913][1]" id="radio1" />
+            </div>
+
+            <div class="field">
+                <label for="radio2">Just let me know when it's ready.</label>
+                <input type="radio" required value="0" name="group[27913][1]" id="radio2" />
+            </div>
+
+            <input type="hidden" name="b_156fa42cf0f141436c20b06b2_58a9450e8b" tabindex="-1" value="" />
+
+            <input type="hidden" name="PLAN" id="plan" />
+
+            <button>Submit</button>
+        </form>
+
+    </div>
+</section>
+
+<script>
+    document.querySelector("#plan").value = new URLSearchParams(location.search).get("plan");
+</script>
+
+{{ end }}

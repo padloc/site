@@ -70,11 +70,12 @@ section.hero header {
 }
 
 section.hero .inner {
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
 }
 
 section.hero header .signup-button {
   background: transparent;
+  border: solid 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
 }
 
@@ -88,21 +89,26 @@ section.hero .inner .logo {
   stroke: currentColor;
   fill: currentColor;
   stroke-width: 7;
-  margin-bottom: 30px;
 }
 
-section.hero .inner h2 {
+section.hero h1 > * {
+  vertical-align: middle;
+}
+
+section.hero .inner h3 {
   font-weight: 300;
   width: 420px;
   margin-bottom: 40px;
 }
 
-section.hero .inner h2 strong {
+section.hero .inner h3 strong {
   font-weight: 700;
 }
 
 .hero .inner button,
 .hero .inner .btn {
+  background: transparent;
+  border: solid 2px;
   font-size: 110%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
 }

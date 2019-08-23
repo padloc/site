@@ -3,7 +3,10 @@
     {{ partial "header" . }}
 
     <div class="inner">
-        <h1>{{ .Title }}</h1>
+        <h1>
+            {{ partial "logo.svg" . }}
+            <span>{{ .Title }}</span>
+        </h1>
     </div>
 </section>
 

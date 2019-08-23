@@ -14,7 +14,11 @@
   }
 }
 
-section:not(.hero) {
+section .inner {
+  max-width: 900px;
+}
+
+section:not(.hero):not(.plans) {
   position: relative;
   padding-top: 100px;
   height: 350px;
@@ -22,20 +26,19 @@ section:not(.hero) {
   margin: 0;
 }
 
-section:not(.hero) > .inner {
+section:not(.hero):not(.plans) > .inner {
   display: flex;
   flex-direction: column;
   justify-content: start;
   position: relative;
   height: 100%;
-  max-width: 900px;
 }
 
 section h1 {
   margin: 0 0 30px 0;
 }
 
-section h2 {
+section h3 {
   margin: 0 0 20px 0;
   font-weight: 300;
 }
@@ -72,7 +75,6 @@ section.hero {
 
 section.hero .inner {
   padding: 100px 50px;
-  max-width: 900px;
 }
 
 .device-stage.hero .device-wrapper {
@@ -87,7 +89,7 @@ section.simple .inner {
   align-items: flex-end;
 }
 
-section.simple .inner > h2 {
+section.simple .inner > h3 {
   width: 500px;
 }
 
@@ -105,7 +107,7 @@ section.portable .inner {
   text-align: left;
 }
 
-section.portable .inner > h2 {
+section.portable .inner > h3 {
   width: 420px;
 }
 
@@ -134,7 +136,7 @@ section.transparent .inner {
   align-items: flex-end;
 }
 
-section.transparent .inner > h2 {
+section.transparent .inner > h3 {
   width: 460px;
 }
 
@@ -158,7 +160,7 @@ section.together {
   padding-bottom: 20px;
 }
 
-section.together .inner > h2 {
+section.together .inner > h3 {
   width: 350px;
 }
 
@@ -179,6 +181,19 @@ section.together .inner > h2 {
 .device-stage.together .device.desktop {
   transform: rotateY(180deg);
 }
+
+/* PLANS SECTION */
+
+section.plans {
+  margin-top: 100px;
+  text-align: center;
+}
+
+section.plans > .inner {
+  max-width: 1000px;
+}
+
+/* MISC */
 
 body.legacy .device-stage {
   display: none !important;
@@ -203,7 +218,7 @@ body.legacy .device-stage {
   }
 
   section .inner h1,
-  section .inner h2 {
+  section .inner h3 {
     width: 100% !important;
   }
 

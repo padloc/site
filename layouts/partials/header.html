@@ -4,7 +4,7 @@
       <li>
         <a href="/"><div class="icon-padlock"></div></a>
       </li>
-      <li><a href="/pricing/">Pricing</a></li>
+      <li><a href="/business/">Business</a></li>
       <li><a href="/news/">Blog</a></li>
     </ul>
   </nav>
@@ -14,10 +14,10 @@
   <nav class="login-signup">
     <ul>
       <li>
-        <a href="https://beta.padloc.app/login" class="">Login</a>
+          <a href="{{ .Param "login_url" }}" class="">Login</a>
       </li>
       <li>
-        <a href="https://beta.padloc.app/signup" class="signup-button btn">
+        <a href="{{ .Param "get_started_url" }}" class="signup-button btn">
           <span>Try For Free</span>
           <span class="icon icon-play-circle"></span>
         </a>

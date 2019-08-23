@@ -1,5 +1,5 @@
 ---
-title: Padlock Privacy Policy
+title: Padloc Privacy Policy
 date: 2018-05-22
 publishDate: 2018-05-22
 ---
@@ -30,7 +30,7 @@ Meisenstr. 5, 91522 Ansbach, Bavaria. MaKleSoft and all of it's employees are
 bound by EU privacy laws and regulations like the **General Data
 Protection Regulation (GDPR)**.
 
-## Information We Collect And How We Use It 
+## Information We Collect And How We Use It
 
 While we treat all your data with the same high standard of security,
 there are different types of data and it is important to understand
@@ -71,7 +71,7 @@ order to "log in" to your Padlock online account, you provide your email
 address which is sent to our servers and a "login request" request is created.
 An email is then sent to your address containing either a "login code" or an
 "login link", depending on what version of the app you're using. Both
-serve the same purpose - to verify that you are in fact the owner of the 
+serve the same purpose - to verify that you are in fact the owner of the
 email account in question. Once you've successfully completed this verification
 step, your device will be paired with your Padlock online account, allowing
 you to upload your secure data into the cloud and share it with your other devices.
@@ -102,7 +102,7 @@ of security vulnerabilities specific to your device or operating system.
 
 <sup>1</sup> Your devices "Universal Unique Identifier" is a unique, random
 string of characters used to uniquely identify a given device in our systems.
-This string is generated automatically and is *not* directly tied to your devices 
+This string is generated automatically and is _not_ directly tied to your devices
 serial number, mac address or other immutable identifiers unique to your device.
 In other words, this is only useful for our internal use and is not considered
 personal identifiable information.
@@ -156,7 +156,7 @@ and conform to the U.S.-E.U. Privacy Shield Framework.
 
 Your personal information is stored behind secured networks and is only
 accessible by a very limited number of persons who have special access rights
-to such systems and are required to keep the information confidential. 
+to such systems and are required to keep the information confidential.
 
 ## Third Party Disclosure
 

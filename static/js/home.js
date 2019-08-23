@@ -9,7 +9,8 @@
     screen3,
     screen4,
     scanCode,
-    sectionSize;
+    sectionSize,
+    plans;
 
   var sections = [
     {
@@ -20,6 +21,7 @@
         screen3.classList.add('hidden');
         screen4.classList.add('hidden');
         scanCode.classList.add('hidden');
+        plans.classList.add('hidden');
       },
       out: function() {
         stage.classList.remove('hero');
@@ -33,6 +35,7 @@
         screen3.classList.add('hidden');
         screen4.classList.add('hidden');
         scanCode.classList.add('hidden');
+        plans.classList.add('hidden');
       },
       out: function() {
         stage.classList.remove('simple');
@@ -46,6 +49,7 @@
         screen3.classList.remove('hidden');
         screen4.classList.add('hidden');
         scanCode.classList.add('hidden');
+        plans.classList.add('hidden');
       },
       out: function() {
         stage.classList.remove('portable');
@@ -59,6 +63,7 @@
         screen2.classList.add('hidden');
         screen3.classList.add('hidden');
         screen4.classList.add('hidden');
+        plans.classList.add('hidden');
       },
       out: function() {
         stage.classList.remove('transparent');
@@ -72,6 +77,7 @@
         screen2.classList.add('hidden');
         screen3.classList.add('hidden');
         screen4.classList.remove('hidden');
+        plans.classList.add('hidden');
       },
       out: function() {
         stage.classList.remove('together');
@@ -85,6 +91,7 @@
         screen2.classList.add('hidden');
         screen3.classList.add('hidden');
         screen4.classList.remove('hidden');
+        plans.classList.remove('hidden');
       },
       out: function() {
         stage.classList.remove('together');
@@ -97,7 +104,7 @@
     for (var i = 0; i < sections.length; i++) {
       if (
         scroller.scrollTop >= i * sectionSize &&
-        scroller.scrollTop < (i + 1) * sectionSize
+        (i == sections.length - 1 || scroller.scrollTop < (i + 1) * sectionSize)
       ) {
         section = sections[i];
         break;
@@ -141,6 +148,7 @@
     screen3 = screens[2];
     screen4 = screens[3];
     scanCode = wrapper.querySelector('.device.phone .code');
+    plans = document.querySelector('section.plans');
 
     var lastScrollTop, lastSectionSize;
     setInterval(function() {
@@ -155,6 +163,8 @@
         lastSectionSize = sectionSize;
       }
     }, 200);
+
+    calcSectionSize();
     scroll();
   });
 })();

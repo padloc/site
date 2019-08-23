@@ -1,0 +1,45 @@
+<a class="plan" href="{{ .link }}">
+    <div class="plan-header" style="background: {{ .color_bg }}; color: {{ .color_fg  }};">
+        <div class="plan-name">
+            {{ .name }}
+        </div>
+
+        <div class="plan-description">
+            {{ .description }}
+        </div>
+
+        {{ with .price  }}
+            <div class="plan-price">
+                <div class="plan-price-currency">
+                    $
+                </div>
+                <div class="plan-price-dollars">
+                    {{ .dollars }}
+                </div>
+                <div class="plan-price-cents">
+                    .{{ .cents }}
+                </div>
+            </div>
+            <div class="plan-unit">
+                per user / month
+            </div>
+            <div class="plan-fineprint">
+                USD, billed annually
+            </div>
+        {{ end }}
+    </div>
+
+    <ul class="features">
+        {{ range .features }}
+        <li>
+            {{ . }}
+        </li>
+        {{ end }}
+    </ul>
+
+    <div class="spacer"></div>
+
+    <button style="background: {{ .color_bg }}; color: {{ .color_fg  }};">
+        {{ .button_label | default "Try For Free" }}
+    </button>
+</a>

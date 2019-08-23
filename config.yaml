@@ -4,6 +4,36 @@ title: "Padlock - A Minimalist Password Manager"
 languageCode: "en-us"
 metaDataFormat: "yaml"
 params:
+    get_started_url: /#plans
+    login_url: /#plans
+
+    downloads:
+        - title: Padloc for Mac
+          type: desktop
+          icon: apple
+          url: /beta
+        - title: Padloc for Windows
+          type: desktop
+          icon: windows
+          url: /beta
+        - title: Padloc for Linux
+          type: desktop
+          icon: linux
+          url: /beta
+        - title: Padloc for ChromeOS
+          type: desktop
+          icon: chrome
+          url: /beta
+
+        - title: Padloc for iOS
+          type: mobile
+          icon: apple
+          url: /beta
+        - title: Padloc for Android
+          type: mobile
+          icon: android
+          url: /beta
+
     androidUrl: https://play.google.com/store/apps/details?id=com.maklesoft.padlock
     iosUrl: https://itunes.apple.com/app/id871710139
     chromeUrl: https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif
@@ -15,3 +45,83 @@ params:
     twitterUrl: https://twitter.com/padlockapp/
     mixpanelToken: 1e4f4510418f9b490bbc34e70e22cf57
     mailchimpSignupUrl: https://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b
+    plans:
+        free:
+            name: Free
+            description: All basic features and up to 50 items for free.
+            button_label: Get Started
+            link: /beta?plan=free
+            color_fg: "#444"
+            color_bg: "#eee"
+            features:
+                - Up to 50 vault items
+                - Up to 3 connected devices
+                - Totally free!
+        premium:
+            name: Premium
+            description: This is a very very cool plan! Check it out!
+            price:
+                dollars: 2
+                cents: 99
+            link: /beta?plan=premium
+            color_fg: "#fff"
+            color_bg: "#23b4ff"
+            features:
+                - Unlimited vault items
+                - Unlimited devices
+                - 1GB of encrypted file storage
+                - Advanced features like two-factor authentication,
+                  something else and more!
+        family:
+            name: Family
+            description: This is a very very cool plan! Check it out!
+            price:
+                dollars: 0
+                cents: 99
+            link: /beta?plan=family
+            color_fg: "#fff"
+            color_bg: "#ff6666"
+            features:
+                - Share data between your entire family
+                - Unlimited items
+                - Unlimited devices
+                - 1GB of encrypted file storage
+        team:
+            name: Teams
+            description: This is a very very cool plan! Check it out!
+            price:
+                dollars: 0
+                cents: 99
+            link: /beta?plan=teams
+            color_fg: "#fff"
+            color_bg: "#23b4ff"
+            features:
+                - Share data between your entire family
+                - Unlimited items
+                - Unlimited devices
+                - 1GB of encrypted file storage
+        business:
+            name: Business
+            description: This is a very very cool plan! Check it out!
+            price:
+                dollars: 3
+                cents: 99
+            link: /beta?plan=business
+            color_fg: "#fff"
+            color_bg: "#ff6666"
+            features:
+                - Share data between your entire family
+                - Unlimited items
+                - Unlimited devices
+                - 1GB of encrypted file storage
+        enterprise:
+            name: Enterprise
+            description: >-
+                The perfect solution for your advanced business needs,
+                with optional on-premise hosting, advanced permission
+                management and more. Contact us for more information!
+            button_label: Get Custom Quote
+            link: mailto:sales@padloc.app?title=Padloc+Enterprise
+            color_fg: "#fff"
+            color_bg: "#444"
+            features:
