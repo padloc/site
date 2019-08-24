@@ -87,32 +87,32 @@
         }
     }
 
-    var platform = getPlatform();
-    var downloadLink = getDownloadUrl();
-    var downloadButtons = document.querySelectorAll(".download-link");
-
-    for (var i = 0; i < downloadButtons.length; i++) {
-        downloadButtons[i].addEventListener("click", function(e) {
-            e.preventDefault();
-            var href = this.getAttribute("href");
-
-            function redirect() {
-                window.location = href;
-                window.focus();
-            }
-
-            if (downloadLink) {
-                window.open(downloadLink);
-                mixpanel.track("get app", {
-                    platform: platform,
-                    ref: this.dataset.ref,
-                    autodetect: true
-                }, redirect);
-            } else {
-                redirect();
-            }
-        });
-    };
+    // var platform = getPlatform();
+    // var downloadLink = getDownloadUrl();
+    // var downloadButtons = document.querySelectorAll(".download-link");
+    //
+    // for (var i = 0; i < downloadButtons.length; i++) {
+    //     downloadButtons[i].addEventListener("click", function(e) {
+    //         e.preventDefault();
+    //         var href = this.getAttribute("href");
+    //
+    //         function redirect() {
+    //             window.location = href;
+    //             window.focus();
+    //         }
+    //
+    //         if (downloadLink) {
+    //             window.open(downloadLink);
+    //             mixpanel.track("get app", {
+    //                 platform: platform,
+    //                 ref: this.dataset.ref,
+    //                 autodetect: true
+    //             }, redirect);
+    //         } else {
+    //             redirect();
+    //         }
+    //     });
+    // };
 })();
         </script>
     </body>

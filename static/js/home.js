@@ -162,7 +162,7 @@
         lastScrollTop = scroller.scrollTop;
         lastSectionSize = sectionSize;
       }
-    }, 200);
+    }, 100);
 
     calcSectionSize();
     scroll();

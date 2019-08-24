@@ -3,6 +3,7 @@ baseurl: "https://padlock.io/"
 title: "Padlock - A Minimalist Password Manager"
 languageCode: "en-us"
 metaDataFormat: "yaml"
+pluralizelisttitles: false
 params:
     get_started_url: /#plans
     login_url: /#plans
