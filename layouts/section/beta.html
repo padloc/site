@@ -1,9 +1,6 @@
 {{ define "main" }}
 
 <style>
-    section.hero > .inner {
-    }
-
     section.hero img {
         width: 230px;
         float: right;
@@ -11,7 +8,8 @@
     }
 
     form {
-        width: 25em;
+        width: 100%;
+        max-width: 25em;
     }
 
     form .field {
@@ -23,19 +21,23 @@
     }
 
     form .field label {
-      display: inline-block;
-      width: 8em;
-      text-align: right;
-      margin-right: 1em;
-      font-weight: bold;
+        font-weight: bold;
+        margin: 0 0.4em;
+    }
+
+    form .field input[name="EMAIL"] {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     form .optional.field label {
         font-weight: normal;
     }
 
-    form button {
-        margin-left: 9.2em;
+    @media (max-width: 700px) {
+        section.hero img {
+            display: none;
+        }
     }
 
 </style>
@@ -52,9 +54,9 @@
         </h1>
 
         <h3>
-            Padloc is almost ready for prime time but there are still some rough
-            edges that need smoothing out. Can't wait? <strong>Apply as a beta tester and
-            get access right away!</strong> Or you an just leave your email here
+            <strong>Padloc is almost ready for prime time</strong> but there are still some rough
+            edges that need smoothing out. Can't wait? Apply as a beta tester and
+            get access right away! Or you an just leave your email here
             and we'll let you know when it's ready. 😉
         </h3>
     </div>
@@ -64,18 +66,7 @@
     <div class="inner">
         <form action="https://padlock.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b" method="post">
             <div class="field">
-                <label for="mce-EMAIL">Email Address</label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required/>
-            </div>
-
-            <div class="optional field">
-                <label for="mce-FNAME">First Name</label>
-                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" />
-            </div>
-
-            <div class="optional field">
-                <label for="mce-LNAME">Last Name</label>
-                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" />
+                <input type="email" value="" name="EMAIL" placeholder="Email Address" required/>
             </div>
 
             <div class="field">

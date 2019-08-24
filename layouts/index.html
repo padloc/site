@@ -10,18 +10,22 @@
 {{ end }}
 
 {{ define "main" }}
-    <section class="hero">
+    <section class="hero" id="hero">
         {{ partial "header" . }}
 
         <div class="inner">
-            {{ partial "logo.svg" . }}
+            <h1>
+                {{ partial "logo.svg" . }}
+            </h1>
             <h2>
-                <strong>The simple, secure password manager you've been looking for.</strong>
-                Lock away all your passwords, documents and other sensitive data
-                with this simple yet powerfull app!
+                <strong>All your sensitive data in one secure place.</strong>
             </h2>
+            <h3>
+                Lock away all your passwords, documents and other important information
+                with this refreshingly simple password manager!
+            </h3>
             <div class="buttons">
-                <a href="https://beta.padloc.app/signup" class="btn">
+                <a href="{{ .Param "get_started_url" }}" class="btn">
                     <span>Get Started</span>
                     <span class="icon icon-play-circle"></span>
                 </a>
@@ -29,189 +33,78 @@
         </div>
     </section>
 
-    <section class="simple">
+    <section class="simple" id="simple">
         <div class="inner">
             <h1>Beautifully Simple.</h1>
-            <h2>
+            <h3>
                 We know you have better things to do than to spend hours
                 learning how to use new software, so we made <strong>Padloc</strong> as simple
                 and easy to use as possible. While other apps boast about their
                 long list of shiny cool features, we focus on security,
                 usability and performance instead. No clutter, no distractions!
-            </h2>
+            </h3>
             <a href="/downloads/" class="download-link" data-ref="home-simple">Try It Now. It's Free! &raquo;</a>
         </div>
     </section>
 
-    <section class="portable">
+    <section class="portable" id="portable">
         <div class="inner">
             <h1>Effortlessly Portable.</h1>
-            <h2>
+            <h3>
                 <strong>Padloc</strong> is available on all major platforms and synchronizing
                 your devices is fast and easy. We securely store your data in
                 the cloud so you have access to it from anywhere, any time!
-            </h2>
+            </h3>
             <a href="/downloads/" data-ref="home-portable">&raquo; Download Padloc For Your Platform</a>
-            <a href="https://beta.padloc.app/signup">&raquo; Launch Padloc Right From Your Browser</a>
+            <a href="{{ .Param "get_started_url" }}">&raquo; Launch Padloc Right From Your Browser</a>
         </div>
     </section>
 
-    <section class="transparent">
+    <section class="transparent" id="transparent">
         <div class="inner">
             <h1>Transparently Secure.</h1>
-            <h2>
+            <h3>
                 We believe that transparency and openness are the best
                 foundation for trust so we are building <strong>Padloc</strong> completely out
                 in the open. Our source code is developed under an open source
                 licence so anyone can review it, provide feedback and even
                 offer contributions at any time!
-            </h2>
+            </h3>
             <a href="{{ .Param "githubUrl" }}" class="padlock-github">Find Padloc On Github &raquo;</a>
-            <a href="{{ .Param "githubUrl" }}" class="padlock-github">Read The Security Whitepaper &raquo;</a>
+            <a href="{{ .Param "whitepaper_url" }}" class="padlock-github">Read The Security Whitepaper &raquo;</a>
         </div>
     </section>
 
-    <section class="together">
+    <section class="together" id="together">
         <div class="inner">
             <h1>Better Together.</h1>
-            <h2>
+            <h3>
                 Want to share your passwords and documents with your family or
                 team members? No problem! <strong>Padloc</strong> makes it easy to share and
-                manage your sensitive data within your Family, Business or any
-                other kind of Organization.
-            </h2>
-            <a href="{{ .Param "githubUrl" }}" class="padlock-github">Check Out Plans &raquo;</a>
+                manage your sensitive data within your family, business or any
+                other kind of organization.
+            </h3>
+            <a href="/business" class="padlock-github">Padloc For Business &raquo;</a>
         </div>
     </section>
 
-    <section class="tryit">
+    <section class="plans" id="plans">
         <div class="inner">
-            <h1>Go Ahead, Try It!</h1>
-            <h2>
-                <strong>Padloc</strong> is free and getting started takes only a few seconds.
-                Give it a go, we're sure you'll love it!
-            </h2>
-            <a href="/downloads/" data-ref="home-tryit">&raquo; Download Padloc</a>
+            <h1>Choose Your Plan!</h1>
+
+            <div class="plans-list">
+                <div>
+                    {{ partial "plan" (.Param "plans").free }}
+                </div>
+                <div>
+                    {{ partial "plan" (.Param "plans").premium }}
+                </div>
+                <div>
+                    {{ partial "plan" (.Param "plans").family }}
+                </div>
+            </div>
         </div>
     </section>
-
-    <div class="ph-promo-wrapper">
-        <div class="ph-promo">
-            <div class="ph-promo-header">
-                <img src="/img/product-hunt.png">
-                <div class="ph-promo-text">
-                    <strong>Greetings, Product Hunter.</strong> We have a special offer for you! Sign up now and get
-                    the first <strong>6 months</strong> of <strong>Padloc Pro</strong> for <strong>free</strong>!
-                </div>
-                <div class="ph-promo-close-button">x</div>
-            </div>
-            <form action="https://cloud.padlock.io/login/" method="post" class="promo-form" target="_blank">
-                <input name="type" type="hidden" value="web" required>
-                <input name="api_version" type="hidden" value="1" required>
-                <input name="redirect" type="hidden" value="/dashboard/?coupon=ph-promo&ref=product-hunt">
-                <input name="email" type="email" required placeholder="Enter Email Address">
-                <button>Sign Up</button>
-            </form>
-        </div>
-    </div>
-
-    <style>
-        .ph-promo-wrapper {
-            padding: 15px;
-            box-sizing: border-box;
-            width: 100%;
-            max-width: 500px;
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
-            display: none;
-        }
-
-        .ph-promo {
-            border-radius: 8px;
-            background: linear-gradient(180deg, #f49300 0%, #f25b00 100%);
-            text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
-            box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
-            color: white;
-            position: relative;
-        }
-
-        .ph-promo-close-button {
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 30px;
-            height: 30px;
-            line-height: 25px;
-            text-align: center;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .ph-promo-header {
-            display: flex;
-            align-items: center;
-            padding: 15px;
-        }
-
-        .ph-promo-header img {
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
-        }
-
-        .ph-promo-text {
-            flex: 1;
-        }
-
-        .promo-form {
-            display: flex;
-            background: rgba(0, 0, 0, 0.05);
-        }
-
-        .promo-form input[name="email"] {
-            flex: 1;
-        }
-
-        .promo-form input,
-        .promo-form button{
-            background: none;
-            border: none;
-            font-size: inherit;
-            font-family: inherit;
-            text-shadow: inherit;
-            color: inherit;
-            padding: 15px;
-        }
-
-        ::placeholder,
-        /* ::-moz-placeholder, */
-        /* :-ms-input-placeholder, */
-        ::-webkit-input-placeholder {
-            color: inherit;
-            text-shadow: inherit;
-            opacity: 0.5;
-        }
-    </style>
-
-    <script>
-        (function() {
-            var phPromoWrapper = document.querySelector(".ph-promo-wrapper");
-            var phCloseButton = document.querySelector(".ph-promo-close-button");
-            if (
-                window.location.search.indexOf("product-hunt") !== -1 ||
-                window.location.search.indexOf("producthunt") !== -1 ||
-                document.referrer.indexOf("producthunt.com") !== -1
-            ) {
-                phPromoWrapper.style.display = "block";
-            }
-            phCloseButton.addEventListener("click", function() {
-                phPromoWrapper.style.display = "none";
-            });
-        })();
-    </script>
 
 {{ end }}
 

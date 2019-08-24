@@ -6,6 +6,7 @@ metaDataFormat: "yaml"
 params:
     get_started_url: /#plans
     login_url: /#plans
+    whitepaper_url: ""
 
     downloads:
         - title: Padloc for Mac

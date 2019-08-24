@@ -16,7 +16,7 @@ button {
   -webkit-font-smoothing: antialiased;
 }
 
-input:not([type=radio]):not([type=checkbox]),
+input:not([type='radio']):not([type='checkbox']),
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -27,11 +27,11 @@ button {
 input {
   background: white;
   border: solid 1px rgba(0, 0, 0, 0.1);
-  padding: 0.3em 0.7em;
+  padding: 0.5em 0.8em;
 }
 
 input:focus {
-  border-color:  #23b4ff;
+  border-color: #23b4ff;
 }
 
 button {
@@ -65,21 +65,27 @@ a {
   font-weight: 400;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   opacity: 0.7;
 }
 
 footer {
   display: block;
-  padding: 20px 10px;
   text-align: center;
   font-size: 80%;
-  border-top: solid 1px #ccc;
+  border-top: solid 1px rgba(0, 0, 0, 0.05);
+}
+
+footer nav ul {
+  justify-content: center;
+  padding: 20px 10px;
 }
 
 footer .copyright {
-  float: right;
-  color: #ccc;
+  background: #333;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 1em;
 }
 
 footer a {
@@ -389,8 +395,11 @@ button .icon,
 }
 
 @media (max-width: 500px) {
-  section,
-  article {
+  .wide {
+    display: none;
+  }
+
+  section .inner {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -415,5 +424,13 @@ button .icon,
     float: none;
     width: 100%;
     margin: 20px auto;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+  }
+
+  footer nav ul > li {
+    margin: 0 !important;
   }
 }

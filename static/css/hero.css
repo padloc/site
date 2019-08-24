@@ -35,7 +35,7 @@ section.hero::after {
   background: linear-gradient(180deg, #59c6ff 0%, #077cb9 100%);
   transform-origin: center center;
   transform: translate(0, -38%) rotate(-3deg);
-  border-radius: 100%;
+  /* border-radius: 100%; */
   animation: reveal2 2.5s -1s backwards;
 }
 
@@ -55,6 +55,10 @@ section.hero > .inner :nth-child(2) {
 
 section.hero > .inner :nth-child(3) {
   animation-delay: 0.6s;
+}
+
+section.hero > .inner :nth-child(4) {
+  animation-delay: 0.8s;
 }
 
 section:not(.hero) {
@@ -95,6 +99,11 @@ section.hero h1 > * {
   vertical-align: middle;
 }
 
+section.hero .inner h2 {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
 section.hero .inner h3 {
   font-weight: 300;
   width: 420px;
@@ -111,4 +120,17 @@ section.hero .inner h3 strong {
   border: solid 2px;
   font-size: 110%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+}
+
+@media (max-width: 500px) {
+  section.hero > .inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  section.hero > .inner h1,
+  section.hero > .inner h2,
+  section.hero > .inner h3 {
+    width: 100% !important;
+  }
 }

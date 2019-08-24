@@ -74,7 +74,11 @@ section.hero {
 }
 
 section.hero .inner {
-  padding: 100px 50px;
+  padding: 80px 50px 100px 50px;
+}
+
+section.hero h2 {
+  margin-top: 0;
 }
 
 .device-stage.hero .device-wrapper {
@@ -200,29 +204,28 @@ body.legacy .device-stage {
 }
 
 @media (max-width: 840px) {
-  .device-stage,
-  .section-icon {
+  .device-stage {
     display: none !important;
   }
 
-  section:not(.hero) {
+  section {
     height: auto !important;
   }
 
   section .inner {
     width: 100%;
-    padding: 0 20px;
     box-sizing: border-box;
     align-items: center !important;
     text-align: center !important;
   }
 
   section .inner h1,
+  section .inner h2,
   section .inner h3 {
     width: 100% !important;
   }
 
-  h1 {
-    font-size: 220%;
+  section.hero > .inner {
+    padding-top: 50px;
   }
 }
