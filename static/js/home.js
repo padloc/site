@@ -101,10 +101,12 @@
 
   function scroll() {
     var section;
+    var scrollTop = scroller.scrollTop + 150;
+
     for (var i = 0; i < sections.length; i++) {
       if (
-        scroller.scrollTop >= i * sectionSize &&
-        (i == sections.length - 1 || scroller.scrollTop < (i + 1) * sectionSize)
+        scrollTop >= i * sectionSize &&
+        (i == sections.length - 1 || scrollTop < (i + 1) * sectionSize)
       ) {
         section = sections[i];
         break;

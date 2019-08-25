@@ -1,6 +1,6 @@
 .plans-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
 }
 
@@ -138,6 +138,7 @@
   padding: 0.5em 0.7em;
   border: none;
   border-radius: 0;
+  font-size: 0.9em;
 }
 
 .features > :not(:last-child) {

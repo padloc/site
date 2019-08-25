@@ -83,7 +83,7 @@ section.hero h2 {
 
 .device-stage.hero .device-wrapper {
   transform: translate3d(250px, 40px, 0) rotateY(-30deg) rotateX(20deg)
-    scale(1.2);
+    scale(1.1);
 }
 
 /* SIMPLE SECTION */
@@ -94,7 +94,7 @@ section.simple .inner {
 }
 
 section.simple .inner > h3 {
-  width: 500px;
+  width: 435px;
 }
 
 .device-stage.simple {
@@ -102,7 +102,7 @@ section.simple .inner > h3 {
 }
 
 .device-stage.simple .device-wrapper {
-  transform: translate3d(-250px, 50px, 0) rotateY(390deg) rotateX(20deg);
+  transform: translate3d(-220px, 50px, 0) rotateY(390deg) rotateX(20deg);
 }
 
 /* CROSS-PLATFORM SECTION */
@@ -165,7 +165,7 @@ section.together {
 }
 
 section.together .inner > h3 {
-  width: 350px;
+  width: 340px;
 }
 
 .device-stage.together {
@@ -194,7 +194,12 @@ section.plans {
 }
 
 section.plans > .inner {
-  max-width: 1000px;
+  max-width: 1100px;
+}
+
+section.plans > .inner h3 {
+  max-width: 550px;
+  margin: -10px auto 30px auto;
 }
 
 /* MISC */

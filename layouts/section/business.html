@@ -9,7 +9,27 @@
     section.hero img {
         width: 500px;
         float: right;
-        margin: 40px 20px 0 20px;
+        margin-top: 30px;
+    }
+
+    section.hero > .inner h3 {
+        width: 460px;
+    }
+
+    section.plans > .inner {
+        max-width: 1200px
+    }
+
+    section.plans p {
+        max-width: 500px;
+        margin: -1em auto 2em auto;
+        text-align: center;
+    }
+
+    @media (max-width: 1000px) {
+        section.hero img {
+            display: none;
+        }
     }
 </style>
 
@@ -25,15 +45,21 @@
         </h1>
 
         <h3>
-            <strong>Padloc is the perfect password manager for your business</strong>,
-            be it a small team or a full sized company! Want to host Padloc on your
-            own servers? No problem, we've got you cover fot that, too!
+            <strong>Padloc is the perfect password manager for your business</strong>
+            whether you're a small team, large company or any other kind of organization!
+            Easily share passwords, documents and more while being in full control
+            over who can see, access and edit your data!
         </h3>
     </div>
 </section>
 
 <section class="plans">
     <div class="inner">
+        <p>
+            Are you an educational institution or non-profit organization?
+            <a href="sales@padloc.app">Ask us about our special discounts!</a>
+        </p>
+
         <div class="plans-list">
             <div>
                 {{ partial "plan" (.Param "plans").team }}

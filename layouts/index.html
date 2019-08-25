@@ -18,7 +18,7 @@
                 {{ partial "logo.svg" . }}
             </h1>
             <h2>
-                <strong>All your sensitive data in one secure place.</strong>
+                <strong>All your sensitive data<br>in one secure place.</strong>
             </h2>
             <h3>
                 Lock away all your passwords, documents and other important information
@@ -35,15 +35,15 @@
 
     <section class="simple" id="simple">
         <div class="inner">
-            <h1>Beautifully Simple.</h1>
+            <h1>Delightfully Simple.</h1>
             <h3>
-                We know you have better things to do than to spend hours
-                learning how to use new software, so we made <strong>Padloc</strong> as simple
-                and easy to use as possible. While other apps boast about their
-                long list of shiny cool features, we focus on security,
-                usability and performance instead. No clutter, no distractions!
+                As important as it is, we know that worrying about data
+                security and password hygiene is about as much fun as doing
+                your taxes. That's why we made <strong>Padloc</strong> as
+                beautiful, intuitive and dead simple to use as possible.<br>
+                No clutter, no distractions!
             </h3>
-            <a href="/downloads/" class="download-link" data-ref="home-simple">Try It Now. It's Free! &raquo;</a>
+            <a href="{{ .Param "get_started_url" }}" class="download-link" data-ref="home-simple">Try Padloc for free! &raquo;</a>
         </div>
     </section>
 
@@ -91,6 +91,11 @@
     <section class="plans" id="plans">
         <div class="inner">
             <h1>Choose Your Plan!</h1>
+
+            <h3>
+                Looking to use Padloc in your company or organization? Check
+                out our <a href="/business">team and business plans</a>!
+            </h3>
 
             <div class="plans-list">
                 <div>
