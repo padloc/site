@@ -29,7 +29,7 @@ well as the mitigations and fixes performed by our team, can be found in the rep
 prepared by NCC Group, which is available publicly on their
 website:
 
-[ Link Coming Soon ]
+[Padloc Cryptography Review by NCC Group](https://www.nccgroup.trust/contentassets/1366cb3c70a3488f9ac4aa4cdbbef833/ncc_group_opentechnologyfund_padloccryptoreview_report_2019-08-23_v1.1.pdf)
 
 We'd like to thank the [Open Tech Fund](https://www.opentech.fund/) for
 generously funding this audit as well as NCC Group for their thorough and
