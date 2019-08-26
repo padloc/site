@@ -24,27 +24,73 @@
 
 <section class="downloads">
     <div class="inner">
-        <h2>Desktop</h2>
+        <h2>Padloc 3 (beta)</h2>
+
+        <h3>Desktop</h3>
+
         <ul class="downloads-list">
             {{ range where (.Param "downloads") "type" "desktop" }}
                 <li>
                     <a href={{ .url }}>
                         <div class="icon icon-{{ .icon }}"></div>
-                        <div class="download-title">{{ .title }}</div>
+                        <div>
+                            <div class="download-title">{{ .title }}</div>
+                            <div class="download-version">v{{ .version }}</div>
+                        </div>
                     </a>
                 </li> 
             {{ end }}
         </ul>
 
-        <h2>Mobile</h2>
+        <h3>Mobile</h3>
+
         <ul class="downloads-list">
             {{ range where (.Param "downloads") "type" "mobile" }}
                 <li>
                     <a href={{ .url }}>
                         <div class="icon icon-{{ .icon }}"></div>
-                        <div class="download-title">{{ .title }}</div>
+                        <div>
+                            <div class="download-title">{{ .title }}</div>
+                            <div class="download-version">v{{ .version }}</div>
+                        </div>
                     </a>
                 </li> 
+            {{ end }}
+        </ul>
+    </div>
+</section>
+
+<section class="downloads">
+    <div class="inner">
+        <h2>Padlock v2.7</h2>
+
+        <h3>Desktop</h3>
+        <ul class="downloads-list">
+            {{ range where (.Param "downloads_v2") "type" "desktop" }}
+                <li>
+                    <a href={{ .url }}>
+                        <div class="icon icon-{{ .icon }}"></div>
+                        <div>
+                            <div class="download-title">{{ .title }}</div>
+                            <div class="download-version">v{{ .version }}</div>
+                        </div>
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+
+        <h3>Mobile</h3>
+        <ul class="downloads-list">
+            {{ range where (.Param "downloads_v2") "type" "mobile" }}
+                <li>
+                    <a href={{ .url }}>
+                        <div class="icon icon-{{ .icon }}"></div>
+                        <div>
+                            <div class="download-title">{{ .title }}</div>
+                            <div class="download-version">v{{ .version }}</div>
+                        </div>
+                    </a>
+                </li>
             {{ end }}
         </ul>
     </div>

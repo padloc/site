@@ -15,38 +15,70 @@ params:
           type: desktop
           icon: apple
           url: /beta
+          version: 3.0.0 (beta)
         - title: Padloc for Windows
           type: desktop
           icon: windows
           url: /beta
+          version: 3.0.0 (beta)
         - title: Padloc for Linux
           type: desktop
           icon: linux
           url: /beta
+          version: 3.0.0 (beta)
         - title: Padloc for ChromeOS
           type: desktop
           icon: chrome
           url: /beta
-
+          version: 3.0.0 (beta)
         - title: Padloc for iOS
           type: mobile
           icon: apple
           url: /beta
+          version: 3.0.0 (beta)
         - title: Padloc for Android
           type: mobile
           icon: android
           url: /beta
+          version: 3.0.0 (beta)
 
-    androidUrl: https://play.google.com/store/apps/details?id=com.maklesoft.padlock
-    iosUrl: https://itunes.apple.com/app/id871710139
-    chromeUrl: https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif
-    macUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-2.7.2.dmg
-    winUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-setup-2.7.2.exe
-    linuxUrl: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-2.7.2-x86_64.AppImage
+    downloads_v2:
+        - title: Padloc for Mac
+          type: desktop
+          icon: apple
+          url: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-2.7.2.dmg
+          version: 2.7.2
+        - title: Padloc for Windows
+          type: desktop
+          icon: windows
+          url: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-setup-2.7.2.exe
+          version: 2.7.2
+        - title: Padloc for Linux
+          type: desktop
+          icon: linux
+          url: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-2.7.2-x86_64.AppImage
+          version: 2.7.2
+        - title: Padloc for ChromeOS
+          type: desktop
+          icon: chrome
+          url: https://chrome.google.com/webstore/detail/padlock/npkoefjfcjbknoeadfkbcdpbapaamcif
+          version: 2.7.2
+        - title: Padloc for iOS
+          type: mobile
+          icon: apple
+          url: https://itunes.apple.com/app/id871710139
+          version: 2.7.2
+        - title: Padloc for Android
+          type: mobile
+          icon: android
+          url: https://play.google.com/store/apps/details?id=com.maklesoft.padlock
+          version: 2.7.2
+
     productHuntUrl: https://www.producthunt.com/posts/padlock-2
     githubUrl: https://github.com/maklesoft/padlock/
     twitterUrl: https://twitter.com/padlockapp/
     mailchimpSignupUrl: https://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b
+
     plans:
         free:
             name: Free
