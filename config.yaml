@@ -46,7 +46,6 @@ params:
     productHuntUrl: https://www.producthunt.com/posts/padlock-2
     githubUrl: https://github.com/maklesoft/padlock/
     twitterUrl: https://twitter.com/padlockapp/
-    mixpanelToken: 1e4f4510418f9b490bbc34e70e22cf57
     mailchimpSignupUrl: https://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b
     plans:
         free:
