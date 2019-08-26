@@ -7,7 +7,8 @@ pluralizelisttitles: false
 params:
     get_started_url: /#plans
     login_url: /#plans
-    whitepaper_url: ""
+    security_whitepaper_url: https://github.com/padloc/padloc/blob/master/security.md
+    github_url: https://github.com/padloc/padloc
 
     downloads:
         - title: Padloc for Mac
