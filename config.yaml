@@ -1,6 +1,6 @@
 ---
-baseurl: "https://padlock.io/"
-title: "Padlock - A Minimalist Password Manager"
+baseurl: "https://padloc.app/"
+title: "Padloc - A Modern Password Manager For Individuals And Teams"
 languageCode: "en-us"
 metaDataFormat: "yaml"
 pluralizelisttitles: false
@@ -46,17 +46,17 @@ params:
         - title: Padloc for Mac
           type: desktop
           icon: apple
-          url: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-2.7.2.dmg
+          url: https://github.com/padloc/padloc/releases/download/v2.7.2/padlock-2.7.2.dmg
           version: 2.7.2
         - title: Padloc for Windows
           type: desktop
           icon: windows
-          url: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-setup-2.7.2.exe
+          url: https://github.com/padloc/padloc/releases/download/v2.7.2/padlock-setup-2.7.2.exe
           version: 2.7.2
         - title: Padloc for Linux
           type: desktop
           icon: linux
-          url: https://github.com/MaKleSoft/padlock/releases/download/v2.7.2/padlock-2.7.2-x86_64.AppImage
+          url: https://github.com/padloc/padloc/releases/download/v2.7.2/padlock-2.7.2-x86_64.AppImage
           version: 2.7.2
         - title: Padloc for ChromeOS
           type: desktop
