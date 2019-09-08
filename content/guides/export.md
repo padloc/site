@@ -2,7 +2,7 @@
 title: 'How To Export Data From Padlock'
 date: 2017-08-30
 publishDate: 2017-08-30
-draft: true
+archived: true
 ---
 
 Padlock supports two different output formats for exporting your data.
@@ -22,9 +22,7 @@ file.
 4. If you selected the option to export to a file, choose the desired file
    location and confirm.
 
-{{< figure src="/img/export.gif" alt="Encrypted Export" class="center rounded"
-
-> }}
+{{< figure src="/img/export.gif" alt="Encrypted Export" class="center rounded" >}}
 
 ## Comma-Separated Values (CSV)
 

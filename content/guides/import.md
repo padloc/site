@@ -2,7 +2,7 @@
 date: 2017-06-09
 publishDate: 2017-06-09
 title: How to Import Data Into Padlock
-draft: true
+archived: true
 ---
 
 Padlock provides an easy way to import data from other applications. Supported formats are:

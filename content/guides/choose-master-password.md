@@ -2,7 +2,7 @@
 title: 'How To Choose a Good Master Password'
 date: 2017-12-30
 publishDate: 2017-12-30
-draft: true
+archived: true
 ---
 
 Remembering passwords is hard. Thankfully there is Padlock to remember
@@ -24,10 +24,7 @@ indicating the strength of you password. Possible results are **weak**,
 password that Padlock considers "weak", you will be presented with a warning
 but may proceed at your own risk.
 
-{{< figure src="/img/choose-password.png" alt="Choosing A Master Password"
-class="center"
-
-> }}
+{{< figure src="/img/choose-password.png" alt="Choosing A Master Password" class="center" >}}
 
 ## The Longer The Better
 

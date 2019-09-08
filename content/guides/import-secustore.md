@@ -2,7 +2,7 @@
 date: 2017-06-09
 publishDate: 2017-06-09
 title: How to Import Your SecuStore Data Into Padlock
-draft: true
+archived: true
 ---
 
 Here is how to easily migrate your data from SecuStore to Padlock. Only one Set

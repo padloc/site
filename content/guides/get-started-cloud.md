@@ -2,7 +2,7 @@
 title: 'Get Started With Padlock Cloud'
 date: 2018-01-11
 publishDate: 2018-01-11
-draft: true
+archived: true
 ---
 
 **Padlock Cloud** is an online storage service for Padlock that allows you to

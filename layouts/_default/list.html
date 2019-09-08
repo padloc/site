@@ -19,7 +19,7 @@
 <section>
     <div class="inner">
         <ul class="articles">
-            {{ range .Data.Pages }}
+            {{ range where .Data.Pages "Params.archived" "!=" "true" }}
                 {{ .Render "li" }}
             {{ end }}
         </ul>
