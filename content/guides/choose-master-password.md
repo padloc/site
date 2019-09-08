@@ -1,7 +1,8 @@
 ---
-title: "How To Choose a Good Master Password"
+title: 'How To Choose a Good Master Password'
 date: 2017-12-30
 publishDate: 2017-12-30
+draft: true
 ---
 
 Remembering passwords is hard. Thankfully there is Padlock to remember
@@ -19,13 +20,14 @@ But how do you know if your password is secure enough? When you first enter
 your master password during the setup process, the app will show a small hint
 indicating the strength of you password. Possible results are **weak**,
 **medium** and **strong**. Obviously, the most desirable result here is
-"strong", but you should at least go for "medium".  If you choose a
+"strong", but you should at least go for "medium". If you choose a
 password that Padlock considers "weak", you will be presented with a warning
 but may proceed at your own risk.
 
 {{< figure src="/img/choose-password.png" alt="Choosing A Master Password"
 class="center"
->}}
+
+> }}
 
 ## The Longer The Better
 
@@ -48,14 +50,14 @@ You should avoid patterns like "12345" or "abcd". Words are ok as long as they
 are not obviously related to your person in any way. Coming up with something
 truly random by yourself is hard, so it's a good idea to use some kind of tool
 to choose for you. **Do not use any kind of software to generate your master
-password!** Instead, you should use something physical like simple dice.  More
+password!** Instead, you should use something physical like simple dice. More
 about this [below](#a-simple-way-to-choose-your-password).
 
 ## Remember It
 
 Because your master password is the only key to access your vault, and because
 we don't keep a copy of it anywhere, it is very important that you don't lose
-it.  We recommend writing down your password on a piece of paper and keeping it
+it. We recommend writing down your password on a piece of paper and keeping it
 somewhere safe. **Do NOT keep a digital copy of your master password
 anywhere!**
 

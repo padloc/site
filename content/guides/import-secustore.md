@@ -2,6 +2,7 @@
 date: 2017-06-09
 publishDate: 2017-06-09
 title: How to Import Your SecuStore Data Into Padlock
+draft: true
 ---
 
 Here is how to easily migrate your data from SecuStore to Padlock. Only one Set
@@ -22,8 +23,8 @@ of your Sets.
 1. [Download Padlock](/downloads/)
 2. Click the little gear icon in the header on the top to get to the **Settings** page.
 3. Under the **Import** section, click the icon next to **Paste From Clipboard**.
-6. You'll be asked for the password for this Set. Enter the correct one.
-7. Done! Repeat the above steps for any additional Sets you may have. Padlock
+4. You'll be asked for the password for this Set. Enter the correct one.
+5. Done! Repeat the above steps for any additional Sets you may have. Padlock
    does not have individual "Sets", or folders but instead allows you to
    organize your records into categories. The name of your Set will automatically
    be added as the category to each of its records.

@@ -1,7 +1,8 @@
 ---
-title: "Get Started With Padlock Cloud"
+title: 'Get Started With Padlock Cloud'
 date: 2018-01-11
 publishDate: 2018-01-11
+draft: true
 ---
 
 **Padlock Cloud** is an online storage service for Padlock that allows you to
@@ -33,7 +34,7 @@ little cloud icon in the header bar).
 When you finish the setup process, Padlock will send an email to the address
 you provided. Check your inbox and open the link enclosed in the
 email. It'll take you to the **Padlock Cloud Dashboard** where you'll be shown
-a success message. 
+a success message.
 
 {{< figure src="/img/get-started-cloud-2.png" alt="Device Paired Success Message" class="center rounded border" >}}
 

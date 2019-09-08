@@ -2,6 +2,7 @@
 date: 2017-08-30
 publishDate: 2017-08-30
 title: How To Synchronize Your Data With Padlock Cloud
+draft: true
 ---
 
 [Padlock Cloud](https://cloud.padlock.io) allows you to securely store your
@@ -9,8 +10,7 @@ data in the cloud and provides an easy and comfortable way to keep all of your
 devices in sync. Pairing devices with you Padlock Cloud account is a breeze
 and all you need is an email address! Here is how it works:
 
-{{< figure src="/img/connect-cloud.gif" alt="Connect To Padlock Cloud" class="center"
->}}
+{{< figure src="/img/connect-cloud.gif" alt="Connect To Padlock Cloud" class="center" >}}
 
 1. Go to the Padlock Cloud screen by clicking on the cloud icon in the top.
 2. Enter your email address in the corresponding field.
@@ -27,6 +27,6 @@ and all you need is an email address! Here is how it works:
    button!
 7. You're all set! By default, Padlock will synchronize your data with your
    Padlock Cloud account every time you make a change. You can change this
-   behavior by toggling the "Auto Sync" option in the Padlock Cloud screen.  To
+   behavior by toggling the "Auto Sync" option in the Padlock Cloud screen. To
    trigger a sync manually, go to the Padlock Cloud screen and click
    "Synchronize".

@@ -2,24 +2,25 @@
 date: 2017-06-09
 publishDate: 2017-06-09
 title: How to Import Data Into Padlock
+draft: true
 ---
 
 Padlock provides an easy way to import data from other applications. Supported formats are:
 
 - **Comma Separated Values (CSV)** - Many applications support exporting data in this format. In order to import
-    data like this into Padlock, you need to make sure it is structured in a specific way.
-    More about this under [Importing From CSV](#importing-from-csv).
+  data like this into Padlock, you need to make sure it is structured in a specific way.
+  More about this under [Importing From CSV](#importing-from-csv).
 
 - **LastPass Export** - LastPass exports your data in a specific format that can be recognized and parsed
-    by Padlock automatically. See [this article]({{< relref "lastpass.md" >}}) for details.
+  by Padlock automatically. See [this article]({{< relref "lastpass.md" >}}) for details.
 
 - **SecuStore Backup** - SecuStore backups are supported and regognized automatically by Padlock. These files
-    are protected by a password which you'll have to provide during the import process.
-    See [this article]({{< relref "import-secustore.md" >}}) for details.
+  are protected by a password which you'll have to provide during the import process.
+  See [this article]({{< relref "import-secustore.md" >}}) for details.
 
 - **Encrypted Padlock Export** - Lastly, Padlock has its own, encrypted export format which naturally is
-    supported and regonized automatically. Encrypted Padlock Exports are protected by a password which you'll
-    have to provide during the import process. See [Importing Padlock Exports](#importing-padlock-export)
+  supported and regonized automatically. Encrypted Padlock Exports are protected by a password which you'll
+  have to provide during the import process. See [Importing Padlock Exports](#importing-padlock-export)
 
 # Importing from CSV
 
@@ -30,17 +31,17 @@ Numbers**. Before trying to import this kind of data into Padlock, you first nee
 following requirements:
 
 1. The first line should contain the fiels names for the corresponding columns (e.g.: "name, category, url, username,
-    password"). Each subsequent line represents a single item, with each column containing the value for the
-    corresponding field.
+   password"). Each subsequent line represents a single item, with each column containing the value for the
+   corresponding field.
 
 2. The column containing item names should be labeled "name". If no "name" column is found, the first column is
-    used for item names.
+   used for item names.
 
-3. Padlock supports the concept of *categories* which are used to group related items together and make discovery
-    easier. Other applications may support a similar concept under different names like "folders", "groups" or "tags".
-    If your exported data contains a column representing something like a category or group, make sure that column
-    is labeled "category". If no "category" column is found, the category for all imported items will be left
-    empty.
+3. Padlock supports the concept of _categories_ which are used to group related items together and make discovery
+   easier. Other applications may support a similar concept under different names like "folders", "groups" or "tags".
+   If your exported data contains a column representing something like a category or group, make sure that column
+   is labeled "category". If no "category" column is found, the category for all imported items will be left
+   empty.
 
 ## Example CSV file
 
