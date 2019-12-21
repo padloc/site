@@ -124,16 +124,11 @@ header {
 }
 
 header .login-button,
-header .signup-button {
+header .btn {
   display: block;
   font-weight: bold;
   padding: 6px 12px;
   border-radius: 8px;
-}
-
-header .signup-button {
-  display: flex;
-  align-items: center;
 }
 
 header nav ul,
@@ -199,10 +194,10 @@ section {
 
 section > .inner {
   width: 100%;
-  max-width: 800px;
   padding: 0 50px;
   box-sizing: border-box;
   margin: 0 auto;
+  position: relative;
 }
 
 section.plans > .inner {
@@ -323,10 +318,16 @@ button,
   border: none;
 }
 
-button .icon,
 .btn .icon {
-  font-size: 25px;
-  margin-left: 12px;
+  font-size: 1.1em;
+}
+
+.btn .icon:first-child {
+  margin-right: 0.5em;
+}
+
+.btn .icon:last-child {
+  margin-left: 0.5em;
 }
 
 .video.float.right {

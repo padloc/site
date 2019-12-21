@@ -14,34 +14,105 @@
   }
 }
 
-section.hero {
-  position: relative;
-  color: #fff;
-  overflow: visible;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
-  z-index: 10;
+@keyframes drop {
+  from {
+    transform: translate(0, -200px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-section.hero::after {
-  content: '';
-  display: block;
+section.hero {
+  position: relative;
+  color: #444444;
+  overflow: visible;
+  text-shadow: none;
+}
+
+.white {
+  --color-bg: linear-gradient(180deg, #fafafa 0%, #d8d8d8 100%);
+  --color-fg: #444;
+  --color-highlight: #ff6666;
+}
+
+.red {
+  --color-bg: #ff6666;
+  --color-fg: #fff;
+  --color-highlight: #444;
+}
+
+.blue {
+  --color-bg: #23b4ff;
+  --color-fg: #fff;
+  --color-highlight: #444;
+}
+
+.black {
+  --color-bg: #444444;
+  --color-fg: #fff;
+  --color-highlight: #ff6666;
+}
+
+section {
+  color: var(--color-fg);
+}
+
+section a {
+  color: var(--color-highlight);
+}
+
+section .bg,
+section .bg > * {
   position: absolute;
+  z-index: -2;
   top: 0;
-  z-index: -1;
-  left: -25%;
-  width: 150%;
-  height: 150%;
-  background-color: #23b4ff;
-  background: linear-gradient(180deg, #59c6ff 0%, #077cb9 100%);
-  transform-origin: center center;
-  transform: translate(0, -38%) rotate(-3deg);
-  /* border-radius: 100%; */
-  animation: reveal2 2.5s -1s backwards;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section .bg > * {
+  background: var(--color-bg);
+}
+
+section .bg > :nth-child(1) {
+  transform: skew(0, 2deg);
+  transform-origin: 30%;
+}
+
+section .bg > :nth-child(2) {
+  opacity: 0.5;
+  transform: skew(0, -2deg);
+  transform-origin: 80%;
+}
+
+section .bg > :nth-child(3) {
+  opacity: 0.3;
+  transform: skew(0, 4deg);
+  transform-origin: 40%;
+}
+
+section.right .bg > :nth-child(1) {
+  transform: skew(0, -2deg);
+  transform-origin: 80%;
+}
+
+section.right .bg > :nth-child(2) {
+  opacity: 0.5;
+  transform: skew(0, 1deg);
+  transform-origin: -20%;
+}
+
+section.right .bg > :nth-child(3) {
+  opacity: 0.3;
+  transform: skew(0, -4deg);
+  transform-origin: 70%;
 }
 
 section.hero header,
-section.hero .inner > *,
-section:not(.hero) {
+section.hero .inner > * {
   animation: reveal 1s backwards;
 }
 
@@ -70,21 +141,14 @@ section.hero header {
   background: transparent;
   box-shadow: none;
   border: none;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
 }
 
-section.hero .inner {
-  padding: 20px 50px 50px 50px;
+section.hero a:not(.btn) {
+  color: #444;
 }
 
 section.hero header .signup-button {
-  background: transparent;
-  border: solid 2px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
-}
-
-section.hero a {
-  color: #fff;
+  background: #ff6666;
 }
 
 section.hero .inner .logo {
@@ -95,13 +159,13 @@ section.hero .inner .logo {
   stroke-width: 7;
 }
 
-section.hero h1 > * {
+section.hero h1 {
   vertical-align: middle;
 }
 
 section.hero .inner h2 {
   width: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 section.hero .inner h3 {
@@ -116,10 +180,8 @@ section.hero .inner h3 strong {
 
 .hero .inner button,
 .hero .inner .btn {
-  background: transparent;
-  border: solid 2px;
-  font-size: 110%;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+  font-size: 120%;
+  background: #ff6666;
 }
 
 @media (max-width: 500px) {
@@ -133,4 +195,49 @@ section.hero .inner h3 strong {
   section.hero > .inner h3 {
     width: 100% !important;
   }
+}
+
+.section-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bg-hero-1 {
+  background: url('/img/landing/hero.png') no-repeat calc(100% + 100px) center;
+  background-size: 600px 600px;
+  animation: reveal 2s backwards 0.5s !important;
+}
+
+.bg-simple-1 {
+  background: url('/img/landing/simple_1.png') no-repeat -100px 70px;
+  background-size: 600px 600px;
+  animation: reveal 2s backwards 0s !important;
+}
+
+.bg-simple-2 {
+  background: url('/img/landing/simple_2.png') no-repeat -100px 70px;
+  background-size: 600px 600px;
+  animation: reveal 2s backwards 0.5s !important;
+}
+
+.bg-portable-1 {
+  background: url('/img/landing/portable_1.png') no-repeat right center;
+  background-size: 600px 600px;
+  animation: drop 1.5s backwards 0s !important;
+}
+
+.bg-portable-2 {
+  background: url('/img/landing/portable_2.png') no-repeat right center;
+  background-size: 600px 600px;
+  animation: drop 1.5s backwards 0.2s !important;
+}
+
+.bg-portable-3 {
+  background: url('/img/landing/portable_3.png') no-repeat right center;
+  background-size: 600px 600px;
+  animation: drop 1.5s backwards 0.4s !important;
 }
