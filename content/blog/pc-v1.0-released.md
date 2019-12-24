@@ -1,10 +1,11 @@
 ---
 date: 2016-11-02
 publishdate: 2016-11-02
-title: "Padlock Cloud v1.0 Released"
+title: 'Padlock Cloud v1.0 Released'
+archived: true
 ---
 
-__We're excited to announce the official release of Padlock Cloud v1.0!__ For
+**We're excited to announce the official release of Padlock Cloud v1.0!** For
 those who are not yet familiar with it, Padlock Cloud is an online storage
 service for the Padlock app that provides a secure and convenient way to back
 up your data in the cloud and seamlessly synchronize changes between devices.

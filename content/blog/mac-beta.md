@@ -2,6 +2,7 @@
 date: 2016-11-13
 publishDate: 2016-11-13
 title: Announcing Padlock for Mac (Beta)
+archived: true
 ---
 
 Today we're happy to announce the first beta release of **Padlock for Mac**! The

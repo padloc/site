@@ -1,13 +1,14 @@
 ---
 date: 2016-09-08
 publishdate: 2016-09-08
-title: "Update to v1.0 to Keep Using Padlock Cloud!"
+title: 'Update to v1.0 to Keep Using Padlock Cloud!'
+archived: true
 ---
 
 Along with the [release of Padlock v1.0]({{< relref "v1.0-released.md" >}}) we
 are also rolling out a major update to the Padlock Cloud service.
 Unfortunately, this means that **Padlock Cloud clients of version 0.12 or
-earlier will not be able to access Padlock Cloud anymore**.  When trying to
+earlier will not be able to access Padlock Cloud anymore**. When trying to
 synchronize data or pair new devices, the app will show a generic error
 message.
 

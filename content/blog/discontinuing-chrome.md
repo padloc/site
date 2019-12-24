@@ -3,6 +3,7 @@ title: 'Discontinuing Padlock For Chrome'
 date: 2017-09-01
 publishDate: 2017-09-01
 weight: 2
+archived: true
 ---
 
 In August 2016, [Google

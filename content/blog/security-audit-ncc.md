@@ -3,6 +3,7 @@ title: 'Security Audit By NCC Group'
 date: 2019-08-25
 publishDate: 2019-08-26
 weight: 1
+thumbnail: https://www.nccgroup.trust/globalassets/placeholder-square.gif
 ---
 
 As a user of Padloc, you entrust us with some of your most sensitive and

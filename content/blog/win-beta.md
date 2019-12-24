@@ -2,6 +2,7 @@
 date: 2016-11-27
 publishDate: 2016-11-27
 title: Announcing Padlock for Windows (Beta)
+archived: true
 ---
 
 Two weeks ago we [announced]({{< relref "mac-beta.md" >}}) the first beta

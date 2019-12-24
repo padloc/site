@@ -1,9 +1,9 @@
-
 ---
 title: GDPR Compliance And Updated Privacy Policy
 date: 2018-05-22
 publishDate: 2018-05-22
 weight: 1
+thumbnail: https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg
 ---
 
 On May 25 2018, the new **General Data Protection Regulation (GDPR)** comes
