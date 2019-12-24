@@ -1,6 +1,30 @@
+section.hero .inner .content {
+  padding-top: 0;
+}
+
+section.hero .images {
+  width: 400px;
+  height: 400px;
+}
+
+section.hero .images :nth-child(1) {
+  background-image: url('/img/landing/portable_1.png');
+  animation: drop 1.5s backwards 0s;
+}
+
+section.hero .images :nth-child(2) {
+  background-image: url('/img/landing/portable_2.png');
+  animation: drop 1.5s backwards 0.2s;
+}
+
+section.hero .images :nth-child(3) {
+  background-image: url('/img/landing/portable_3.png');
+  animation: drop 1.5s backwards 0.4s;
+}
+
 ul.downloads-list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 1em 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -15,14 +39,15 @@ ul.downloads-list li a {
   display: flex;
   align-items: center;
   border-radius: 8px;
-  border: solid 1px rgba(0, 0, 0, 0.1);
   padding: 1em;
+  background: #fff;
   color: #444;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 }
 
-ul.downloads-list .icon {
-  font-size: 2em;
-  margin-right: 0.5em;
+ul.downloads-list .brand-icon {
+  font-size: 2.2em;
+  margin: 0 0.6em 0 0.2em;
 }
 
 .download-title {
@@ -32,4 +57,9 @@ ul.downloads-list .icon {
 
 .download-version {
   opacity: 0.8;
+}
+
+section.downloads .inner {
+  flex-direction: column;
+  padding: 0 50px 100px 50px;
 }

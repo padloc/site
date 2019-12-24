@@ -1,28 +1,53 @@
 {{ define "main" }}
-<section class="hero">
+
+<style>
+    @media (max-width: 700px) {
+      section .inner {
+        flex-direction: column !important;
+        padding: 0 20px !important;
+      }
+
+      section .inner .content {
+        align-items: flex-start !important;
+        text-align: left !important;
+        padding: 30px 10px 50px 10px !important;
+      }
+    }
+</style>
+
+<section class="hero blue">
     {{ partial "header" . }}
 
     <div class="inner">
-        <h1>
+        <div class="content">
             {{ partial "logo.svg" . }}
-            <span>{{ .Title }}</span>
-        </h1>
+
+            <h1>
+                {{ .Title }}
+            </h1>
+        </div>
+    </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </section>
 
-<section>
-    <div class="inner">
-        {{ partial "newsletter-signup" . }}
-    </div>
-</section>
-
-<section>
+<section class="white">
     <div class="inner">
         <ul class="articles">
             {{ range where .Data.Pages "Params.archived" "!=" "true" }}
                 {{ .Render "li" }}
             {{ end }}
         </ul>
+    </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </section>
 

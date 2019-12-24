@@ -4,25 +4,40 @@
 {{ end }}
 {{ define "main" }}
 
-<section class="hero">
+<section class="left white hero">
     {{ partial "header" . }}
 
     <div class="inner">
 
-        <h1>
-            {{ partial "logo.svg" . }}
-            <span>Downloads</span>
-        </h1>
+        <div class="content">
 
-        <h3>
-            Access your data from anywhere with the <strong>Padloc app</strong>,
-            available on all major platforms!
-        </h3>
+            <h1>
+                <span>Downloads</span>
+            </h1>
 
+            <h3>
+                Access your data from anywhere with the <strong>Padloc</strong> app,
+                available on all major platforms!
+            </h3>
+
+        </div>
+
+        <div class="images">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </section>
 
-<section class="downloads">
+<section class="downloads blue">
     <div class="inner">
         <h2>Padloc 3 (beta)</h2>
 
@@ -32,7 +47,7 @@
             {{ range where (.Param "downloads") "type" "desktop" }}
                 <li>
                     <a href={{ .url }}>
-                        <div class="icon icon-{{ .icon }}"></div>
+                        <div class="brand-icon icon-{{ .icon }}"></div>
                         <div>
                             <div class="download-title">{{ .title }}</div>
                             <div class="download-version">v{{ .version }}</div>
@@ -48,7 +63,7 @@
             {{ range where (.Param "downloads") "type" "mobile" }}
                 <li>
                     <a href={{ .url }}>
-                        <div class="icon icon-{{ .icon }}"></div>
+                        <div class="brand-icon icon-{{ .icon }}"></div>
                         <div>
                             <div class="download-title">{{ .title }}</div>
                             <div class="download-version">v{{ .version }}</div>
@@ -58,9 +73,15 @@
             {{ end }}
         </ul>
     </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </section>
 
-<section class="downloads" id="legacy">
+<section class="downloads black" id="legacy">
     <div class="inner">
         <h2>Padlock v2.7</h2>
 
@@ -69,7 +90,7 @@
             {{ range where (.Param "downloads_v2") "type" "desktop" }}
                 <li>
                     <a href={{ .url }}>
-                        <div class="icon icon-{{ .icon }}"></div>
+                        <div class="brand-icon icon-{{ .icon }}"></div>
                         <div>
                             <div class="download-title">{{ .title }}</div>
                             <div class="download-version">v{{ .version }}</div>
@@ -84,7 +105,7 @@
             {{ range where (.Param "downloads_v2") "type" "mobile" }}
                 <li>
                     <a href={{ .url }}>
-                        <div class="icon icon-{{ .icon }}"></div>
+                        <div class="brand-icon icon-{{ .icon }}"></div>
                         <div>
                             <div class="download-title">{{ .title }}</div>
                             <div class="download-version">v{{ .version }}</div>
@@ -93,6 +114,12 @@
                 </li>
             {{ end }}
         </ul>
+    </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </section>
 {{ end }}

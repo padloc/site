@@ -1,185 +1,5 @@
-@keyframes reveal {
-  from {
-    transform: translate(0, 30px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes reveal2 {
-  from {
-    transform: translate(0, 30px);
-  }
-}
-
-@keyframes drop {
-  from {
-    transform: translate(0, -200px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.white {
-  --background: linear-gradient(180deg, #fafafa 0%, #d8d8d8 100%);
-  --color-bg: #fff;
-  --color-fg: #444;
-  --color-highlight: #ff6666;
-}
-
-.red {
-  --color-bg: #ff6666;
-  --color-fg: #fff;
-  --color-highlight: #444;
-}
-
-.blue {
-  --color-bg: #23b4ff;
-  --color-fg: #fff;
-  --color-highlight: #444;
-}
-
-.black {
-  --color-bg: #444444;
-  --color-fg: #fff;
-  --color-highlight: #ff6666;
-}
-
-section {
-  margin: 0;
-  position: relative;
-  z-index: 1;
-  color: var(--color-fg);
-}
-
-section .inner {
-  max-width: 1000px;
-  display: flex;
-  padding: 0 50px;
-}
-
 section .inner .content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  padding: 150px 0;
-}
-
-section.right .inner {
-  flex-direction: row-reverse;
-}
-
-section.right .inner .content {
-  align-items: flex-end;
-  text-align: right;
-}
-
-section .buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -4px;
-}
-
-section.right .buttons {
-  justify-content: flex-end;
-}
-
-section .buttons > * {
-  display: inline-block;
-  margin: 4px;
-}
-
-section h1 {
-  margin: 0 0 0.5em 0;
-}
-
-section h3 {
-  margin: 0 0 1em 0;
-  font-weight: 300;
-}
-
-section .btn {
-  background: var(--color-fg);
-  color: var(--color-bg);
-}
-
-section .btn.primary {
-  background: var(--color-highlight);
-}
-
-section .bg-color,
-section .bg-color > * {
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-section .bg-color > * {
-  background: var(--background, var(--color-bg));
-}
-
-section .bg-color > :nth-child(1) {
-  transform: skew(0, 2deg);
-  transform-origin: 30%;
-}
-
-section .bg-color > :nth-child(2) {
-  opacity: 0.5;
-  transform: skew(0, -2deg);
-  transform-origin: 80%;
-}
-
-section .bg-color > :nth-child(3) {
-  opacity: 0.3;
-  transform: skew(0, 4deg);
-  transform-origin: 40%;
-}
-
-section.right .bg-color > :nth-child(1) {
-  transform: skew(0, -2deg);
-  transform-origin: 80%;
-}
-
-section.right .bg-color > :nth-child(2) {
-  opacity: 0.5;
-  transform: skew(0, 1deg);
-  transform-origin: -20%;
-}
-
-section.right .bg-color > :nth-child(3) {
-  opacity: 0.3;
-  transform: skew(0, -4deg);
-  transform-origin: 70%;
-}
-
-section .images {
-  width: 400px;
-  position: relative;
-}
-
-section .images > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: none no-repeat center center;
-  background-size: contain;
-}
-
-section.hidden * {
-  animation-play-state: paused !important;
+  padding: 100px 0 150px 0;
 }
 
 /* HERO SECTION */
@@ -209,28 +29,16 @@ section.hero .inner .content :nth-child(4) {
   animation-delay: 0.8s;
 }
 
-section.hero header {
-  position: static;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-}
-
 section.hero header a {
   color: var(--color-fg);
 }
 
 section.hero header .btn {
-  background: #444;
-  color: #fff;
+  background: var(--color-fg);
+  color: var(--color-bg);
 }
 
 section.hero .inner .logo {
-  height: 60px;
-  width: 200px;
-  stroke: currentColor;
-  fill: currentColor;
-  stroke-width: 7;
   margin-bottom: 40px;
 }
 
@@ -268,7 +76,8 @@ section.hero .images :nth-child(1) {
 /* SIMPLE SECTION */
 
 section.simple .images {
-  top: 50px;
+  top: 30px;
+  width: 500px;
 }
 
 section.simple .images :nth-child(1) {
@@ -353,50 +162,7 @@ section.plans > .inner h3 {
   margin: -10px auto 30px auto;
 }
 
-@media (max-width: 900px) {
-  section h1 {
-    font-size: 210%;
-  }
-
-  section .inner .content {
-    padding: 80px 0;
-  }
-
-  section .inner .images {
-    width: 300px;
-  }
-}
-
 @media (max-width: 700px) {
-  section .inner {
-    flex-direction: column !important;
-  }
-
-  section .inner .content {
-    align-items: center !important;
-    text-align: center !important;
-    padding: 80px 10px 0 10px;
-  }
-
-  section .inner .buttons {
-    justify-content: center !important;
-  }
-
-  section .inner .images {
-    width: auto;
-    height: 400px;
-  }
-
-  section h1 {
-    font-size: 200%;
-  }
-
-  section .inner h1,
-  section .inner h2,
-  section .inner h3 {
-    width: 100% !important;
-  }
-
   section.hero .inner .content {
     padding-top: 40px;
     padding-bottom: 20px;
@@ -404,10 +170,6 @@ section.plans > .inner h3 {
 
   section .hero .logo {
     margin-bottom: 20px;
-  }
-
-  section.portable .images {
-    top: 30px;
   }
 
   section.transparent .images {

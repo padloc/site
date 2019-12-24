@@ -35,8 +35,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-padlock-negative:before {
+.brand-icon {
   font-family: 'padlock' !important;
+}
+
+.icon-padlock-negative:before {
   content: '\e900';
 }
 .icon-padlock:before {

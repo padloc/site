@@ -73,7 +73,6 @@ a:hover {
 footer {
   display: block;
   text-align: center;
-  font-size: 80%;
   border-top: solid 1px rgba(0, 0, 0, 0.05);
 }
 
@@ -109,18 +108,13 @@ svg.icon {
 }
 
 header {
-  background: #ffffff;
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 10;
   box-sizing: border-box;
   font-size: 110%;
   padding: 0 10px 0 20px;
   height: 60px;
   display: flex;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
 }
 
 header .login-button,
@@ -190,6 +184,7 @@ main {
 section {
   clear: both;
   margin-bottom: 50px;
+  box-sizing: border-box;
 }
 
 section > .inner {
@@ -206,48 +201,76 @@ section.plans > .inner {
 
 ul.articles {
   list-style: none;
-  margin: 0;
+  margin: 20px 0 50px 0;
   padding: 0;
 }
 
 ul.articles li {
-  margin: 20px 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+  margin: 30px 0;
+  overflow: hidden;
+  --color-highlight: #23b4ff;
 }
 
 article {
-  margin: 40px 0;
+  margin: 70px 0;
   box-sizing: border-box;
   clear: both;
-}
-
-article p {
-  text-align: justify;
 }
 
 article .publish-date {
   color: #aaa;
 }
 
-li article {
-  padding: 0;
-  margin: 0;
-}
-
-li article .title {
+ul.articles li > a {
   display: flex;
-  align-items: center;
+  color: #444 !important;
 }
 
-li article h3 {
+li > a .thumbnail {
+  width: 250px;
+  background: none no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+li > a .body {
   flex: 1;
-  margin: 0;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+li > a .body::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: skew(-5deg, 0);
+  transform-origin: 0 0;
+  background: #fff;
+  z-index: -1;
+}
+
+li > a h3 {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+li > a .publish-date {
+  color: var(--color-highlight);
+  margin-bottom: 0.5em;
 }
 
 figure {
-  margin: 40px;
+  margin: 40px 0;
   text-align: center;
   line-height: 0;
-  overflow: hidden;
   position: relative;
 }
 
@@ -256,7 +279,8 @@ figure.center img {
 }
 
 figure.rounded img {
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
 }
 
 figure.border img {
@@ -289,11 +313,12 @@ figure img {
 
 figure.float img {
   max-width: 300px;
+  max-height: none;
 }
 
 figure.float.right {
   float: right;
-  margin: 0 0 0 20px;
+  margin: 10px 0 10px 30px;
 }
 
 figure.float.left {
@@ -330,12 +355,252 @@ button,
   margin-left: 0.5em;
 }
 
+@keyframes reveal {
+  from {
+    transform: translate(0, 30px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal2 {
+  from {
+    transform: translate(0, 30px);
+  }
+}
+
+@keyframes drop {
+  from {
+    transform: translate(0, -200px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.white {
+  --background: linear-gradient(180deg, #fafafa 0%, #d8d8d8 100%);
+  --color-bg: #fff;
+  --color-fg: #444;
+  --color-highlight: #ff6666;
+}
+
+.red {
+  --background: linear-gradient(180deg, #ff6e6e 0%, #ff5151 100%);
+  --color-bg: #ff6666;
+  --color-fg: #fff;
+  --color-highlight: #444;
+}
+
+.blue {
+  --background: linear-gradient(180deg, #59c6ff 0%, #077cb9 100%);
+  --color-bg: #23b4ff;
+  --color-fg: #fff;
+  --color-highlight: #444;
+}
+
+.black {
+  --background: linear-gradient(180deg, #555 0%, #333 100%);
+  --color-bg: #444444;
+  --color-fg: #fff;
+  --color-highlight: #ff6666;
+}
+
+section {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  color: var(--color-fg);
+}
+
+section .inner {
+  max-width: 1000px;
+  display: flex;
+  padding: 0 50px;
+}
+
+section.left .inner {
+  padding-right: 0;
+}
+
+section.right .inner {
+  padding-left: 0;
+}
+
+section .inner .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 50px 0;
+}
+
+section.right .inner {
+  flex-direction: row-reverse;
+}
+
+section.right .inner .content {
+  align-items: flex-end;
+  text-align: right;
+}
+
+section .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+section.right .buttons {
+  justify-content: flex-end;
+}
+
+section .buttons > * {
+  margin: 4px;
+}
+
+section h1 {
+  margin: 0 0 0.5em 0;
+}
+
+section h3 {
+  margin: 0 0 1em 0;
+  font-weight: 300;
+}
+
+section .btn {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
+section a:not(.btn) {
+  color: var(--color-highlight, #23b4ff);
+}
+
+section .btn.primary {
+  background: var(--color-highlight);
+}
+
+section .bg-color,
+section .bg-color > * {
+  position: absolute;
+  z-index: -2;
+  top: -10px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+
+section .bg-color > * {
+  background: var(--background, var(--color-bg));
+}
+
+section .bg-color > :nth-child(1) {
+  transform: skew(0, 2deg);
+  transform-origin: 30%;
+}
+
+section .bg-color > :nth-child(2) {
+  opacity: 0.8;
+  transform: skew(0, -2deg);
+  transform-origin: 80%;
+}
+
+section .bg-color > :nth-child(3) {
+  opacity: 0.6;
+  transform: skew(0, 4deg);
+  transform-origin: 40%;
+}
+
+section.right .bg-color > :nth-child(1) {
+  transform: skew(0, -2deg);
+  transform-origin: 80%;
+}
+
+section.right .bg-color > :nth-child(2) {
+  opacity: 0.8;
+  transform: skew(0, 1deg);
+  transform-origin: -20%;
+}
+
+section.right .bg-color > :nth-child(3) {
+  opacity: 0.6;
+  transform: skew(0, -4deg);
+  transform-origin: 70%;
+}
+
+section .images {
+  width: 400px;
+  position: relative;
+}
+
+section .images > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: none no-repeat center center;
+  background-size: contain;
+}
+
+section.hidden * {
+  animation-play-state: paused !important;
+}
+
+section:not(.hero),
+section.hero header,
+section.hero .inner .content > *,
+section.hero .bg-color {
+  animation: reveal 1s backwards;
+}
+
+section.hero .inner .content :nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+section.hero .inner .content :nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+section.hero .inner .content :nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+section.hero .inner .content :nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+section.hero header a {
+  color: var(--color-fg);
+}
+
+section.hero header .btn {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
+section.hero .inner .logo {
+  height: 60px;
+  width: 200px;
+  stroke: currentColor;
+  fill: currentColor;
+  stroke-width: 7;
+  margin-bottom: 20px;
+}
+
 .video.float.right {
   float: right;
   margin: 20px 0 20px 20px;
 }
 
 .newsletter-signup {
+  margin: 50px auto;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
@@ -380,7 +645,8 @@ button,
   padding: 20px;
   border: solid 1px #23b4ff;
   clear: both;
-  margin: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 .note p {
@@ -395,6 +661,65 @@ button,
   margin-bottom: 0;
 }
 
+.back-button-wrapper {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 210%;
+  }
+
+  section .inner .content {
+    padding: 80px 0 !important;
+  }
+
+  section .inner .images {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  section.left .inner,
+  section.right .inner {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  section .inner .content {
+    align-items: center !important;
+    text-align: center !important;
+    padding: 50px 10px !important;
+  }
+
+  section .inner .buttons {
+    justify-content: center !important;
+  }
+
+  section .inner .images {
+    width: auto !important;
+    height: 400px;
+  }
+
+  section h1 {
+    font-size: 200%;
+  }
+
+  section .inner h1,
+  section .inner h2,
+  section .inner h3 {
+    width: 100% !important;
+  }
+
+  li > a .thumbnail {
+    display: none;
+  }
+
+  article {
+    margin: 50px 0;
+  }
+}
+
 @media (max-width: 500px) {
   .wide {
     display: none;
@@ -403,11 +728,6 @@ button,
   section .inner {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  li article .title {
-    flex-direction: column;
-    align-items: stretch;
   }
 
   figure.float img {
@@ -433,5 +753,6 @@ button,
 
   footer nav ul > li {
     margin: 0 !important;
+    padding: 5px;
   }
 }

@@ -1,64 +1,98 @@
 {{ define "main" }}
 
 <style>
-    section.hero > .inner {
+    section.hero .inner {
         max-width: 1100px;
-        padding: 40px 0px 100px 80px;
     }
 
-    section.hero img {
-        width: 500px;
-        float: right;
-        margin-top: 30px;
+    section.hero .inner .content {
+        padding: 80px 20px;
     }
 
-    section.hero > .inner h3 {
-        width: 460px;
+    section.hero .inner .logo {
+        margin-bottom: 20px;
     }
 
-    section.plans > .inner {
-        max-width: 1200px
+    section.hero .images {
+      width: 450px;
     }
 
-    section.plans p {
-        max-width: 500px;
-        margin: -1em auto 2em auto;
-        text-align: center;
+    section.hero .images :nth-child(1) {
+      background-image: url('/img/landing/together_1.png');
+      animation: drop 1.5s backwards 0s;
     }
 
-    @media (max-width: 1000px) {
-        section.hero img {
-            display: none;
-        }
+    section.hero .images :nth-child(2) {
+      background-image: url('/img/landing/together_2.png');
+      animation: drop 1.5s backwards 0.2s;
+    }
+
+    section.hero .images :nth-child(3) {
+      background-image: url('/img/landing/together_3.png');
+      animation: drop 1.5s backwards 0.4s;
+    }
+
+    section.plans {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    section.plans .inner {
+        max-width: 1200px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 20px;
+    }
+
+    section.plans .inner .content {
+      padding: 100px 0 30px 0;
+      max-width: 500px;
+      align-self: center;
     }
 </style>
 
-<section class="hero">
+<section class="left hero red">
     {{ partial "header" . }}
 
     <div class="inner">
-        <img src="/img/illustrations/team.svg" class="wide">
-
-        <h1>
+        <div class="content">
             {{ partial "logo.svg" . }}
-            <span>for Business</span>
-        </h1>
 
-        <h3>
-            <strong>Padloc is the perfect password manager for your business</strong>
-            whether you're a small team, large company or any other kind of organization!
-            Easily share passwords, documents and more while being in full control
-            over who can see, edit and manage your data!
-        </h3>
+            <h1>
+                for Business
+            </h1>
+
+            <h3>
+                <strong>Padloc is the perfect password manager for your business</strong>
+                whether you're a small team, large company or any other kind of organization!
+                Easily share passwords, documents and more while being in full control
+                over who can see, edit and manage your data!
+            </h3>
+        </div>
+
+        <div class="images">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
 </section>
 
 <section class="plans">
     <div class="inner">
-        <p>
-            Are you an educational institution or non-profit organization?
-            <a href="mailto:sales@padloc.app">Ask us about our special discounts!</a>
-        </p>
+        <div class="content">
+            <h3>
+                Are you an educational institution or non-profit organization?
+                <a href="mailto:sales@padloc.app">Ask us about our special discounts!</a>
+            </h3>
+        </div>
 
         <div class="plans-list">
             <div>

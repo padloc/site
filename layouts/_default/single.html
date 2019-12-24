@@ -1,16 +1,52 @@
 {{ define "main" }}
-<section class="hero">
+
+<style>
+    section .inner {
+        max-width: 900px;
+    }
+
+    @media (max-width: 700px) {
+      section .inner {
+        flex-direction: column !important;
+        padding: 0 20px !important;
+      }
+
+      section .inner .content {
+        align-items: flex-start !important;
+        text-align: left !important;
+        padding: 30px 10px 50px 10px !important;
+      }
+
+      article {
+          margin: 50px 0;
+      }
+    }
+</style>
+
+<section class="blue hero">
     {{ partial "header" . }}
 
     <div class="inner">
 
-        {{ with .Section }}
-        <div>
-            <a href="/{{ . }}">&hookleftarrow; Back to {{ humanize . }}</a>
-        </div>
-        {{ end }}
+        <div class="content">
+            {{ with .Section }}
+            <div class="back-button-wrapper">
+                <a class="btn" href="/{{ . }}">
+                    <span class="icon icon-arrow-left"></span>
+                    <span>Back to {{ humanize . }}</span>
+                </a>
+            </div>
+            {{ end }}
 
-        <h1>{{ .Title }}</h1>
+            <h1>{{ .Title }}</h1>
+
+        </div>
+    </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </section>
 
