@@ -61,5 +61,13 @@ ul.downloads-list .brand-icon {
 
 section.downloads .inner {
   flex-direction: column;
-  padding: 0 50px 100px 50px;
+  padding-bottom: 70px;
+}
+
+section.downloads .inner h2 {
+  margin-bottom: 20px;
+}
+
+section.downloads .inner .note {
+  margin-top: 0;
 }

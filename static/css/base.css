@@ -74,6 +74,7 @@ footer {
   display: block;
   text-align: center;
   border-top: solid 1px rgba(0, 0, 0, 0.05);
+  font-size: 0.8em;
 }
 
 footer nav ul {
@@ -137,7 +138,8 @@ nav ul {
   padding: 0;
 }
 
-nav ul li:not(:last-child) {
+header nav ul li:not(:last-child),
+footer nav ul li:not(:last-child) {
   margin-right: 1em;
 }
 
@@ -665,6 +667,58 @@ section.hero .inner .logo {
   margin-bottom: 1em;
 }
 
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 150%;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  overscroll-behavior: contain;
+  transition: opacity 0.5s;
+}
+
+.fullscreen-menu::before {
+  content: '';
+  background: var(--background, #fff);
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  border-radius: 100%;
+  transition: transform cubic-bezier(1, 0, 0.8, 0.5) 0.3s;
+}
+
+.fullscreen-menu a {
+  padding: 10px 15px;
+  color: var(--color-highlight, #444);
+}
+
+.fullscreen-menu .close-menu {
+  position: absolute;
+  display: block;
+  padding: 15px 22px;
+  top: 0;
+  left: 0;
+}
+
+body:not(.menu-open) .fullscreen-menu {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.menu-open .fullscreen-menu::before {
+  transform: scale(20);
+}
+
 @media (max-width: 900px) {
   section h1 {
     font-size: 210%;
@@ -699,6 +753,7 @@ section.hero .inner .logo {
   section .inner .images {
     width: auto !important;
     height: 400px;
+    margin-top: -50px;
   }
 
   section h1 {
@@ -718,13 +773,19 @@ section.hero .inner .logo {
   article {
     margin: 50px 0;
   }
-}
 
-@media (max-width: 500px) {
   .wide {
     display: none;
   }
+}
 
+@media (min-width: 700px) {
+  .narrow {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
   section .inner {
     padding-left: 20px;
     padding-right: 20px;

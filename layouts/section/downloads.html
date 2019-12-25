@@ -39,7 +39,7 @@
 
 <section class="downloads blue">
     <div class="inner">
-        <h2>Padloc 3 (beta)</h2>
+        <h2>Padloc 3</h2>
 
         <h3>Desktop</h3>
 
@@ -83,9 +83,17 @@
 
 <section class="downloads black" id="legacy">
     <div class="inner">
-        <h2>Padlock v2.7</h2>
+        <h2>Padlock v2.7 (legacy)</h2>
+
+        <div class="note">
+            <strong>Note:</strong> While we'll be providing downloads for older versions for
+            a while longer, we strongly recommend upgrading to Padloc 3 as soon
+            as possible. Check out <a href="/guides/migrate-v3">this guide</a> on how to
+            migrate from older versions to Padloc 3!
+        </div>
 
         <h3>Desktop</h3>
+
         <ul class="downloads-list">
             {{ range where (.Param "downloads_v2") "type" "desktop" }}
                 <li>
@@ -122,4 +130,6 @@
         <div></div>
     </div>
 </section>
+
+{{ partial "menu" "white" }}
 {{ end }}

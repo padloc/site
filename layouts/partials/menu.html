@@ -1,0 +1,28 @@
+<nav class="fullscreen-menu {{ . }}">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/business/">Business</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/downloads/">Downloads</a></li>
+    </ul>
+
+    <a href="#" class="close-menu"><div class="icon-times"></div></a>
+</nav>
+
+<script>
+  (() => {
+    const openButton = document.querySelector(".open-menu");
+    const closeButton = document.querySelector(".close-menu");
+
+    openButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.body.classList.add("menu-open");
+    });
+
+    closeButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.body.classList.remove("menu-open");
+    });
+  })();
+</script>
