@@ -6,7 +6,7 @@ metaDataFormat: "yaml"
 pluralizelisttitles: false
 params:
     get_started_url: /#plans
-    login_url: /#plans
+    login_url: https://web.padloc.app
     security_whitepaper_url: https://github.com/padloc/padloc/blob/master/security.md
     github_url: https://github.com/padloc/padloc
 
@@ -75,8 +75,8 @@ params:
           version: 2.7.2
 
     productHuntUrl: https://www.producthunt.com/posts/padlock-2
-    githubUrl: https://github.com/maklesoft/padlock/
-    twitterUrl: https://twitter.com/padlockapp/
+    githubUrl: https://github.com/padloc/padloc/
+    twitterUrl: https://twitter.com/padlocapp/
     mailchimpSignupUrl: https://maklesoft.us3.list-manage.com/subscribe/post?u=156fa42cf0f141436c20b06b2&amp;id=58a9450e8b
 
     plans:
@@ -84,7 +84,7 @@ params:
             name: Free
             description: All basic features and up to 50 items for free.
             button_label: Get Started
-            link: /beta?plan=free
+            link: https://web.padloc.app/signup
             color_fg: "#444"
             color_bg: "#eee"
             features:
@@ -99,7 +99,7 @@ params:
             price:
                 dollars: 2
                 cents: 99
-            link: /beta?plan=premium
+            link: https://web.padloc.app/signup?plan=premium
             color_fg: "#fff"
             color_bg: "#23b4ff"
             features:
@@ -115,7 +115,7 @@ params:
             price:
                 dollars: 0
                 cents: 99
-            link: /beta?plan=family
+            link: https://web.padloc.app/signup?plan=family
             color_fg: "#fff"
             color_bg: "#ff6666"
             features:
@@ -130,7 +130,7 @@ params:
             price:
                 dollars: 2
                 cents: 99
-            link: /beta?plan=teams
+            link: https://web.padloc.app/signup?plan=team
             color_fg: "#fff"
             color_bg: "#23b4ff"
             features:
@@ -146,7 +146,7 @@ params:
             price:
                 dollars: 5
                 cents: 99
-            link: /beta?plan=business
+            link: https://web.padloc.app/signup?plan=business
             color_fg: "#fff"
             color_bg: "#ff6666"
             features:
