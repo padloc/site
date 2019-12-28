@@ -73,6 +73,16 @@ section.hero .images :nth-child(1) {
   animation: reveal 2s backwards 0.5s;
 }
 
+section.upgrade .inner .content {
+  padding: 10px 0 40px 0 !important;
+  text-align: center;
+}
+
+section.upgrade .inner .content a {
+  color: inherit !important;
+  font-weight: bold !important;
+}
+
 /* SIMPLE SECTION */
 
 section.simple .images {

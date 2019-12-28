@@ -719,6 +719,10 @@ body.menu-open .fullscreen-menu::before {
   transform: scale(20);
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   section h1 {
     font-size: 210%;
