@@ -14,33 +14,33 @@ params:
         - title: Padloc for Mac
           type: desktop
           icon: apple
-          url: /beta
-          version: 3.0.0 (beta)
+          url: https://github.com/padloc/padloc/releases/download/v3.0.13/Padloc-3.0.13.dmg
+          version: 3.0.12
         - title: Padloc for Windows
           type: desktop
           icon: windows
-          url: /beta
-          version: 3.0.0 (beta)
+          url: https://github.com/padloc/padloc/releases/download/v3.0.13/Padloc-Setup-3.0.13.exe
+          version: 3.0.12
         - title: Padloc for Linux
           type: desktop
           icon: linux
-          url: /beta
-          version: 3.0.0 (beta)
-        - title: Padloc for ChromeOS
+          url: https://github.com/padloc/padloc/releases/download/v3.0.13/Padloc-3.0.13.AppImage
+          version: 3.0.12
+        - title: ChromeOS (Coming Soon)
           type: desktop
           icon: chrome
-          url: /beta
-          version: 3.0.0 (beta)
+          url:
+          version: 3.0.12
         - title: Padloc for iOS
           type: mobile
           icon: apple
-          url: /beta
-          version: 3.0.0 (beta)
+          url: https://itunes.apple.com/app/id1478877043
+          version: 3.0.12
         - title: Padloc for Android
           type: mobile
           icon: android
-          url: /beta
-          version: 3.0.0 (beta)
+          url: https://play.google.com/store/apps/details?id=app.padloc
+          version: 3.0.12
 
     downloads_v2:
         - title: Padloc for Mac
@@ -99,7 +99,7 @@ params:
             price:
                 dollars: 2
                 cents: 99
-            link: https://web.padloc.app/signup?plan=premium
+            link: https://web.padloc.app/signup?next=plan%2F1
             color_fg: "#fff"
             color_bg: "#23b4ff"
             features:
@@ -115,7 +115,7 @@ params:
             price:
                 dollars: 0
                 cents: 99
-            link: https://web.padloc.app/signup?plan=family
+            link: https://web.padloc.app/signup?next=plan%2F2
             color_fg: "#fff"
             color_bg: "#ff6666"
             features:
@@ -130,13 +130,13 @@ params:
             price:
                 dollars: 2
                 cents: 99
-            link: https://web.padloc.app/signup?plan=team
+            link: https://web.padloc.app/signup?next=plan%2F3
             color_fg: "#fff"
             color_bg: "#23b4ff"
             features:
                 - Securely share passwords, documents, access keys and more
                 - Up to 20 shared vaults with unlimited items
-                - Up to 5 user groups for finegrained access control
+                - Up to 10 user groups for finegrained access control
                 - 5GB of encrypted file storage
                 - Free Apps for Mac, iOS, Windows, Android, Linux, and Chrome OS
                 - Fast and easy data access through our web interface
@@ -146,7 +146,7 @@ params:
             price:
                 dollars: 5
                 cents: 99
-            link: https://web.padloc.app/signup?plan=business
+            link: https://web.padloc.app/signup?next=plan%2F4
             color_fg: "#fff"
             color_bg: "#ff6666"
             features:
