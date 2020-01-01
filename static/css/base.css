@@ -221,6 +221,7 @@ article {
   margin: 70px 0;
   box-sizing: border-box;
   clear: both;
+  max-width: 100%;
 }
 
 article .publish-date {
@@ -722,6 +723,12 @@ body.menu-open .fullscreen-menu::before {
 
 .underline {
   text-decoration: underline;
+}
+
+pre {
+  max-width: 100%;
+  overflow: auto;
+  font-size: 90%;
 }
 
 @media (max-width: 900px) {
