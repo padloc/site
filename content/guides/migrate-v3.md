@@ -10,9 +10,10 @@ to Padloc 3:
 ## Step 1: Export Your Data
 
 Let's start by exporting your existing data. To do this, start the old Padlock
-app (Padlock v2.7) and go to the settings screen. Click **"Export..."** and select
-the option to export your data as an encrypted file. Choose a password and save
-the file to your computer.
+desktop app app (Padlock v2.7). If you currently don't have it installed, you
+can download it from our [downloads page](/downloads/#legacy). No go go the settings screen,
+click **"Export..."** and select the option to export your data as an encrypted
+file. Choose a password and save the file to your computer.
 
 {{< figure src="/img/guides/export-legacy.png" alt="Encrypted Export" class="center rounded" >}}
 
