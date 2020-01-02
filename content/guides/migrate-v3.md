@@ -39,3 +39,16 @@ If you have an existing [Padlock Cloud](https://cloud.padlock.io) account, we
 recommend deleting it after you have migrated your data. To do this, log into
 the [Padlock Cloud Dashboard](https://cloud.padlock.io/dashboard) and select
 **"Advanced Options > Delete Account"**.
+
+## Step 5: Install Padloc 3 On All Your Devices
+
+Now that you have successfully migrated to Padloc 3, you want to make sure that
+you have the correct version installed on all your devices (the "legacy"
+version of the app is still available in the app stores but can't be used to
+log into your Padloc 3 account). You can find links for all platforms on our
+[download page](/downloads/).
+
+## Step 6. Enjoy Using Padloc 3
+
+That's it! 🎉 We hope you'll enjoy using Padloc 3. If you have any questions, please
+don't hesitate to contact us at [support@padloc.app](mailto:support@padloc.app)!
