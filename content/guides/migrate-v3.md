@@ -9,9 +9,22 @@ to Padloc 3:
 
 ## Step 1: Export Your Data
 
-Let's start by exporting your existing data. To do this, start the old Padlock
-desktop app app (Padlock v2.7). If you currently don't have it installed, you
-can download it from our [downloads page](/downloads/#legacy). No go go the settings screen,
+Let's start by exporting your existing data from your "old" version 2 account. There are two ways to do this:
+
+### From the Padlock Cloud dashboard
+
+The easiest way to export your data is to download an encrypted backup from the
+[Padlock Cloud Dashboard](https://cloud.padlock.io/dashboard). Simply log in
+with your email address, click "Advanced Options..." and then click "Download Encrypted Backup".
+Store the file somewhere on your hard drive where you'll find it later!
+
+{{< figure src="/img/guides/migrate-1.png" alt="Choose Advanced Options" class="center rounded" >}}
+{{< figure src="/img/guides/migrate-2.png" alt="Download Encrypted Export" class="center rounded" >}}
+
+### From the Desktop App
+
+To do this, start the old Padlock desktop app (Padlock v2.7). If you currently don't have it installed, you
+can download it from our [downloads page](/downloads/#legacy). No go to the settings screen,
 click **"Export..."** and select the option to export your data as an encrypted
 file. Choose a password and save the file to your computer.
 
