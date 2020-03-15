@@ -207,7 +207,7 @@ ul.articles {
   padding: 0;
 }
 
-ul.articles li {
+ul.articles > li {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0px 10px rgba(154, 160, 185, 0.05),
@@ -228,7 +228,7 @@ article .publish-date {
   color: #aaa;
 }
 
-ul.articles li > a {
+ul.articles > li > a {
   display: flex;
   color: #444 !important;
 }

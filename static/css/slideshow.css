@@ -1,0 +1,220 @@
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+main.slides {
+    background: linear-gradient(180deg, #59c6ff 0%, #077cb9 100%);
+    width: 1104px;
+    height: 621px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/img/bg.svg");
+    background-size: 28px;
+    opacity: 0.05;
+}
+
+main {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    overflow: hidden;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+    perspective: 3000px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    transform: translate3d(0, 0, 0);
+}
+
+section .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    width: 800px;
+    margin: 0 auto;
+}
+
+section h1 {
+    margin: 0 0 30px 0;
+}
+
+section h2 {
+    font-size: 130%;
+    margin: 0 0 40px 0;
+    font-weight: 300;
+}
+
+.device {
+    bottom: 0;
+}
+
+.device-stage {
+    top: 0;
+    bottom: 0;
+    height: auto;
+}
+
+.device-wrapper {
+    transform: translate3d(250px, -30px, 0) rotateY(-60deg) rotateX(20deg);
+}
+
+body:not([slide="1"]):not([slide="2"]):not([slide="3"]):not([slide="4"]) .device-stage {
+    opacity: 0;
+}
+
+.device.desktop {
+    transform: rotateY(180deg) translateY(-5000px);
+    transition: transform 0s linear 0.30s;
+}
+
+section h1, section h2 {
+    font-weight: 400;
+    width: 460px;
+}
+
+body[slide="1"] section.hero,
+body[slide="2"] section.simple,
+body[slide="3"] section.portable,
+body[slide="4"] section.transparent {
+    opacity: 1;
+}
+
+body[slide="1"] .device-stage .device-wrapper {
+    transform: translate3d(250px, 0, 0) rotateY(-30deg) rotateX(20deg);
+}
+
+/* SIMPLE SECTION */
+
+section.simple .inner {
+    text-align: right;
+    align-items: flex-end;
+}
+
+section.simple .inner > h2 {
+    width: 430px;
+}
+
+body[slide="2"] .device-wrapper {
+    transform: translate3d(-250px, 0, 0) rotateY(390deg) rotateX(20deg);
+}
+
+/* CROSS-PLATFORM SECTION */
+
+section.portable .inner {
+    text-align: left;
+    position: relative;
+    left: -80px;
+}
+
+section.portable .inner > h2 {
+    width: 400px;
+}
+
+body[slide="3"] .device-wrapper {
+    transform: translate3d(210px, 0, 0) rotateY(150deg) rotateX(-20deg);
+}
+
+body[slide="3"] .device.desktop {
+    transform: rotateY(180deg);
+}
+
+body[slide="3"] .device > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* OPEN-SOURCE SECTION */
+
+section.transparent .inner {
+    text-align: right;
+    align-items: flex-end;
+}
+
+section.transparent .inner > h1,
+section.transparent .inner > h2 {
+    width: 500px;
+}
+
+body[slide="4"] .device-wrapper {
+    transform: translate3d(-250px, 0, 0) rotateY(390deg) rotateX(20deg);
+}
+
+body[slide="4"] .device > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* TRY IT SECTION */
+/* section.tryit .inner { */
+/*     position: relative; */
+/*     left: -40px; */
+/* } */
+/*  */
+/* section.tryit .inner > h2 { */
+/*     width: 370px; */
+/* } */
+
+/* body[slide="5"] .device-wrapper { */
+/*     transform: translate3d(200px, 0, 0) rotateY(150deg) rotateX(-20deg); */
+/* } */
+/*  */
+/* body[slide="5"] .device > div { */
+/*     -webkit-backface-visibility: hidden; */
+/*     backface-visibility: hidden; */
+/* } */
+/*  */
+/* body[slide="5"] .device.desktop { */
+/*     transform: rotateY(180deg); */
+/* } */
+
+/* WEBSITE LINK */
+
+section.website {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: opacity 1s, transform 2s;
+}
+
+body[slide="5"] section.website {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+section.website .inner {
+    align-items: center;
+    text-align: center;
+}
+
+body[slide="5"] .device-wrapper {
+    transform: translate3d(-250px, 50px, 0) rotateY(450deg) rotateX(20deg);
+}
+
+body[slide="5"] .device > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}

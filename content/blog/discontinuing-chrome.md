@@ -38,7 +38,7 @@ data from Padlock for Chrome to the native app.
 
 The easiest way to migrate your data is to synchronize it via [Padlock
 Cloud](https://cloud.padlock.io). If you haven't used Padlock Cloud before,
-check out [this article]({{< relref "guides/sync.md" >}}) on how to
+check out [this article]({{< relref "help/sync.md" >}}) on how to
 synchronize your data with Padlock Cloud!
 
 ### Via Export / Import
@@ -47,6 +47,6 @@ A slighly more pedestrian way to move your data is to export it from
 Padlock for Chrome first, and then import the same file to the native app.
 The following articles explain how to use Padlocks import and export features:
 
-[How To Export Data From Padlock]({{< relref "guides/export.md" >}})
+[How To Export Data From Padlock]({{< relref "help/export.md" >}})
 
-[How To Import Data Into Padlock]({{< relref "guides/import.md#importing-padlock-export" >}})
+[How To Import Data Into Padlock]({{< relref "help/import.md#importing-padlock-export" >}})

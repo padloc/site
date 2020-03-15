@@ -2,7 +2,9 @@
 date: 2017-06-09
 publishDate: 2017-06-09
 title: 5 Easy Steps to Move Your Data from LastPass to Padlock
-archived: true
+menu:
+  help:
+    parent: 'migration'
 ---
 
 ## 5 Easy Steps to Move Your Data from LastPass to Padlock

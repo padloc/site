@@ -3,6 +3,8 @@ title: 'How To Choose a Good Master Password'
 date: 2017-12-30
 publishDate: 2017-12-30
 archived: true
+aliases:
+  - /guides/choose-master-password/
 ---
 
 Remembering passwords is hard. Thankfully there is Padlock to remember

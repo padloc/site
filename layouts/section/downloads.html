@@ -46,8 +46,8 @@
         <ul class="downloads-list">
             {{ range where (.Param "downloads") "type" "desktop" }}
                 <li>
-                    <a href={{ .url }}>
-                        <div class="brand-icon icon-{{ .icon }}"></div>
+                    <a href={{ .url }} target="_blank">
+                        <div class="icon fab fa-{{ .icon }}"></div>
                         <div>
                             <div class="download-title">{{ .title }}</div>
                             <div class="download-version">v{{ .version }}</div>
@@ -62,8 +62,24 @@
         <ul class="downloads-list">
             {{ range where (.Param "downloads") "type" "mobile" }}
                 <li>
-                    <a href={{ .url }}>
-                        <div class="brand-icon icon-{{ .icon }}"></div>
+                    <a href={{ .url }} target="_blank">
+                        <div class="icon fab fa-{{ .icon }}"></div>
+                        <div>
+                            <div class="download-title">{{ .title }}</div>
+                            <div class="download-version">v{{ .version }}</div>
+                        </div>
+                    </a>
+                </li> 
+            {{ end }}
+        </ul>
+
+        <h3>Browser Extensions</h3>
+
+        <ul class="downloads-list">
+            {{ range where (.Param "downloads") "type" "extension" }}
+                <li>
+                    <a href={{ .url }} target="_blank">
+                        <div class="icon fab fa-{{ .icon }}"></div>
                         <div>
                             <div class="download-title">{{ .title }}</div>
                             <div class="download-version">v{{ .version }}</div>
@@ -97,8 +113,8 @@
         <ul class="downloads-list">
             {{ range where (.Param "downloads_v2") "type" "desktop" }}
                 <li>
-                    <a href={{ .url }}>
-                        <div class="brand-icon icon-{{ .icon }}"></div>
+                    <a href={{ .url }} target="_blank">
+                        <div class="icon fab fa-{{ .icon }}"></div>
                         <div>
                             <div class="download-title">{{ .title }}</div>
                             <div class="download-version">v{{ .version }}</div>
@@ -112,8 +128,8 @@
         <ul class="downloads-list">
             {{ range where (.Param "downloads_v2") "type" "mobile" }}
                 <li>
-                    <a href={{ .url }}>
-                        <div class="brand-icon icon-{{ .icon }}"></div>
+                    <a href={{ .url }} target="_blank">
+                        <div class="icon fab fa-{{ .icon }}"></div>
                         <div>
                             <div class="download-title">{{ .title }}</div>
                             <div class="download-version">v{{ .version }}</div>

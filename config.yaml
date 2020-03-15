@@ -14,33 +14,43 @@ params:
         - title: Padloc for Mac
           type: desktop
           icon: apple
-          url: https://github.com/padloc/padloc/releases/download/v3.0.13/Padloc-3.0.13.dmg
-          version: 3.0.12
+          url: https://github.com/padloc/padloc/releases/download/v3.0.14/Padloc-3.0.14.dmg
+          version: 3.0.14
         - title: Padloc for Windows
           type: desktop
           icon: windows
-          url: https://github.com/padloc/padloc/releases/download/v3.0.13/Padloc-Setup-3.0.13.exe
-          version: 3.0.12
+          url: https://github.com/padloc/padloc/releases/download/v3.0.14/Padloc-Setup-3.0.14.exe
+          version: 3.0.14
         - title: Padloc for Linux
           type: desktop
           icon: linux
-          url: https://github.com/padloc/padloc/releases/download/v3.0.13/Padloc-3.0.13.AppImage
-          version: 3.0.12
+          url: https://github.com/padloc/padloc/releases/download/v3.0.14/Padloc-3.0.14.AppImage
+          version: 3.0.14
         - title: ChromeOS (Coming Soon)
           type: desktop
           icon: chrome
           url:
-          version: 3.0.12
+          version: 3.0.14
         - title: Padloc for iOS
           type: mobile
           icon: apple
           url: https://itunes.apple.com/app/id1478877043
-          version: 3.0.12
+          version: 3.0.14
         - title: Padloc for Android
           type: mobile
           icon: android
           url: https://play.google.com/store/apps/details?id=app.padloc
-          version: 3.0.12
+          version: 3.0.14
+        - title: Google Chrome
+          type: extension
+          icon: chrome
+          url: https://chrome.google.com/webstore/detail/padloc/bjpblhcipjjiobljnniifeoaapgdflnc
+          version: 3.0.14
+        - title: Firefox
+          type: extension
+          icon: firefox
+          url: https://addons.mozilla.org/en-US/firefox/addon/padloc/
+          version: 3.0.14
 
     downloads_v2:
         - title: Padloc for Mac

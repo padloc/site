@@ -3,6 +3,8 @@ date: 2017-08-30
 publishDate: 2017-08-30
 title: How To Synchronize Your Data With Padlock Cloud
 archived: true
+aliases:
+  - /guides/sync/
 ---
 
 [Padlock Cloud](https://cloud.padlock.io) allows you to securely store your

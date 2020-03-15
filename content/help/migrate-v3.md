@@ -2,6 +2,8 @@
 title: 'How to Migrate Your Data to Padloc 3 From Previous Versions'
 date: 2019-09-07
 publishDate: 2019-09-07
+aliases:
+  - /guides/migrate-v3/
 ---
 
 Here is how to migrate your data from previous versions of Padloc (v2.7 or older)

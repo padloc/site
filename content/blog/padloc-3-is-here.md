@@ -17,7 +17,7 @@ from the old "Padlock Cloud" accounts, so you'll have to create a new account
 for Padloc 3. Don't worry though, your billing info and any active subscriptions
 will be transferred automatically and migrating your data is super easy. For
 detailed instructions on how to migrate to Padloc 3, check out
-[this article]({{< relref "guides/migrate-v3.md" >}}). Or if you'd rather keep
+[this article]({{< relref "help/migrate-v3.md" >}}). Or if you'd rather keep
 using version 2 for a while, you can still find the legacy apps in the [downloads section](/downloads/#legacy)!
 {{< /note >}}
 

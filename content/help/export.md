@@ -3,6 +3,8 @@ title: 'How To Export Data From Padlock'
 date: 2017-08-30
 publishDate: 2017-08-30
 archived: true
+aliases:
+  - /guides/export/
 ---
 
 Padlock supports two different output formats for exporting your data.
