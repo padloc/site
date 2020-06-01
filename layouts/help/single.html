@@ -67,12 +67,12 @@
 
         <div class="content">
             {{ with .Section }}
-            <!--<div class="back-button-wrapper">
+            <div class="back-button-wrapper">
                 <a class="btn" href="/{{ . }}">
                     <span class="icon fas fa-arrow-left"></span>
                     <span>Back to {{ humanize . }}</span>
                 </a>
-            </div>-->
+            </div>
             {{ end }}
 
             <h1>{{ .Title }}</h1>
@@ -107,7 +107,6 @@
             {{ end}}
         </article>
 
-        <!--
         <nav class="side-menu">
             <ul>
                 {{ range .Site.Menus.help }}
@@ -130,7 +129,6 @@
                 {{ end }}
             </ul>
         </nav>
-        -->
     </div>
 </section>
 
