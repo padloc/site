@@ -1,117 +1,103 @@
 {{ define "css" }}
-    {{ template "basecss" . }}
-    <link href="/css/home.css" rel="stylesheet" type="text/css">
-    <link href="/css/device.css" rel="stylesheet" type="text/css">
+    {{ template "basecss" }}
+    <link href="/css/home.css" rel="stylesheet" type="text/css" />
 {{ end }}
 
 {{ define "js" }}
-<script src="js/modernizr.js"></script>
 <script src="js/home.js"></script>
-{{ end }}
+{{ end }} {{ define "main" }}
 
-{{ define "main" }}
-    <section class="left white hero" id="hero">
+<section class="left white hero" id="hero">
+    <div class="animation-reveal">
         {{ partial "header" . }}
+    </div>
 
-        <div class="inner">
+    <div class="inner">
+        <div class="content">
+            <h1>
+                The last <br> <strong>password manager</strong> <br> you'll ever want to use.
+            </h1>
 
-            <div class="content">
-                <!--
-                <h1>
-                    Simple. Portable. Secure.
-                </h1>
+            <h2>
+                Just try it. Seriously.
+            </h2>
 
-                <h2>
-                    Padloc ist the last password manager you'll ever want to use.
-                    Just try it. Seriously.
-                </h2>
-                -->
-                {{ partial "logo.svg" . }}
-
-                <h1>
-                    The last password manager you'll ever want to use.
-                </h1>
-
-                <div class="buttons">
-                    <a href="{{ .Param "get_started_url" }}" class="btn primary">
-                        <span>Get Started</span>
-                        <span class="icon fas fa-play-circle"></span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="images">
-                <div></div>
-            </div>
-
-        </div>
-
-        <div class="bg-color">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </section>
-
-    <section class="red hidden upgrade">
-        <div class="inner">
-            <div class="content">
-                <div>
-                    <a href="/blog/padloc-3-is-here">Padloc 3 is here!</a> Looking to upgrade from version 2? Check out our <a href="/guides/migrate-v3" class="underline">migration guide</a>!
-                </div>
+            <div class="buttons">
+                <a href='{{ .Param "get_started_url" }}' class="btn highlight">
+                    <span>Get Started</span>
+                    <span class="icon fas fa-play-circle"></span>
+                </a>
             </div>
         </div>
 
-        <div class="bg-color">
-            <div></div>
+        <div class="images">
             <div></div>
         </div>
-    </section>
+    </div>
 
-    <section class="blue right simple hidden" id="simple">
-        <div class="inner">
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
 
-            <div class="content">
-                <h1>Delightfully Simple.</h1>
-
-                <h3>
-                    As important as it is, we know that worrying about data
-                    security and password hygiene is about as much fun as doing
-                    your taxes. That's why we made <strong>Padloc</strong> as
-                    beautiful, intuitive and dead simple to use as possible.
-                    No clutter, no distractions!
-                </h3>
-
-                <div class="buttons">
-                    <a href="{{ .Param "get_started_url" }}" class="btn">
-                        <span class="icon fas fa-play-circle"></span>
-                        <span>Try It For Free</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="images">
-                <div></div>
-                <div></div>
+<section class="red animation-pause upgrade animation-reveal">
+    <div class="inner">
+        <div class="content">
+            <div>
+                <a href="/blog/padloc-3-is-here">Padloc 3 is here!</a> Looking to upgrade from version 2? Check out our
+                <a href="/guides/migrate-v3" class="underline">migration guide</a>!
             </div>
         </div>
+    </div>
 
-        <div class="bg-color">
-            <div></div>
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<section class="blue right simple animation-pause animation-reveal" id="simple">
+    <div class="inner">
+        <div class="content">
+            <h1>Delightfully Simple.</h1>
+
+            <h3>
+                As important as it is, we know that worrying about data security and password hygiene is about as much
+                fun as doing your taxes. That's why we made <strong>Padloc</strong> as beautiful, intuitive and dead
+                simple to use as possible.<br><strong>No clutter, no distractions!</strong>
+            </h3>
+
+            <div class="buttons">
+                <a href='{{ .Param "get_started_url" }}' class="btn">
+                    <span class="icon fas fa-play-circle"></span>
+                    <span>Try It For Free</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="images">
             <div></div>
             <div></div>
         </div>
-    </section>
+    </div>
 
-    <section class="left black portable hidden" id="portable">
-        <div class="inner">
-            <div class="content">
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<section class="left black portable animation-pause" id="portable">
+    <div class="inner">
+        <div class="content">
             <h1>Effortlessly Portable.</h1>
 
             <h3>
-                <strong>Padloc</strong> is available on all major platforms and synchronizing
-                your devices is fast and easy. We securely store your data in
-                the cloud so you have access to it from anywhere, any time!
+                <strong>Padloc</strong> is available on all major platforms and synchronizing your devices is fast and
+                easy. We securely store your data in the cloud so you have access to it from anywhere, any time!
             </h3>
 
             <div class="buttons">
@@ -120,118 +106,114 @@
                     <span>Download The App</span>
                 </a>
             </div>
-            </div>
-
-            <div class="images">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
         </div>
 
-        <div class="bg-color">
+        <div class="images">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </section>
+    </div>
 
-    <section class="right red transparent hidden" id="transparent">
-        <div class="inner">
-            <div class="content">
-                <h1>Transparently Secure.</h1>
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
 
-                <h3>
-                    We believe that transparency and openness are the best
-                    foundation for trust so we are building <strong>Padloc</strong> completely out
-                    in the open. Our source code is developed under an open source
-                    licence so anyone can review it, provide feedback and even
-                    offer contributions at any time!
-                </h3>
+<section class="right red transparent animation-pause" id="transparent">
+    <div class="inner">
+        <div class="content">
+            <h1>Transparently Secure.</h1>
 
-                <div class="buttons">
-                    <a href="{{ .Param "github_url" }}" class="btn">
-                        <span class="icon fab fa-github"></span>
-                        <span>Padloc On Github</span>
-                    </a>
-                </div>
-            </div>
+            <h3>
+                We believe that transparency and openness are the best foundation for trust so we are building
+                <strong>Padloc</strong> completely out in the open. Our source code is developed under an open source
+                licence so anyone can review it, provide feedback and even offer contributions at any time!
+            </h3>
 
-            <div class="images">
-                <div></div>
-            </div>
-        </div>
-
-        <div class="bg-color">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </section>
-
-    <section class="left white together hidden" id="together">
-        <div class="inner">
-            <div class="content">
-                <h1>Better Together.</h1>
-
-                <h3>
-                    Want to share your passwords and documents with your family or
-                    team members? No problem! <strong>Padloc</strong> makes it easy to share and
-                    manage your sensitive data within your family, business or any
-                    other kind of organization.
-                </h3>
-
-                <div class="buttons">
-                    <a href="{{ (.Param "plans").family.link }}" class="btn">
-                        <span class="icon fas fa-users"></span>
-                        <span>Try The Family Plan</span>
-                    </a>
-
-                    <a href="/business/" class="btn primary">
-                        <span class="icon fas fa-suitcase"></span>
-                        <span>Padloc For Business</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="images">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="buttons">
+                <a href='{{ .Param "github_url" }}' class="btn">
+                    <span class="icon fab fa-github"></span>
+                    <span>Padloc On Github</span>
+                </a>
             </div>
         </div>
 
-        <div class="bg-color">
+        <div class="images">
+            <div></div>
+        </div>
+    </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<section class="left white together animation-pause" id="together">
+    <div class="inner">
+        <div class="content">
+            <h1>Better Together.</h1>
+
+            <h3>
+                Want to share your passwords and documents with your family or team members? No problem!
+                <strong>Padloc</strong> makes it easy to share and manage your sensitive data within your family,
+                business or any other kind of organization.
+            </h3>
+
+            <div class="buttons">
+                <a href='{{ (.Param "plans").family.link }}' class="btn">
+                    <span class="icon fas fa-users"></span>
+                    <span>Try The Family Plan</span>
+                </a>
+
+                <a href="/business/" class="btn primary">
+                    <span class="icon fas fa-suitcase"></span>
+                    <span>Padloc For Business</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="images">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </section>
+    </div>
 
-    <section class="plans hidden" id="plans">
-        <div class="inner">
-            <div class="content">
-                <h1>Choose Your Plan!</h1>
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
 
-                <h3>
-                    Looking to use Padloc in your company or organization? Check
-                    out our <a href="/business">team and business plans</a>!
-                </h3>
+<section class="plans animation-pause" id="plans">
+    <div class="inner">
+        <div class="content">
+            <h1>Choose Your Plan!</h1>
+
+            <h3>
+                Looking to use Padloc in your company or organization? Check out our
+                <a href="/business">team and business plans</a>!
+            </h3>
+        </div>
+
+        <div class="plans-list">
+            <div>
+                {{ partial "plan" (.Param "plans").free }}
             </div>
-
-            <div class="plans-list">
-                <div>
-                    {{ partial "plan" (.Param "plans").free }}
-                </div>
-                <div>
-                    {{ partial "plan" (.Param "plans").premium }}
-                </div>
-                <div>
-                    {{ partial "plan" (.Param "plans").family }}
-                </div>
+            <div>
+                {{ partial "plan" (.Param "plans").premium }}
+            </div>
+            <div>
+                {{ partial "plan" (.Param "plans").family }}
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    {{ partial "menu" "white" }}
 {{ end }}

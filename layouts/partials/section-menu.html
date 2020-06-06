@@ -1,0 +1,27 @@
+<link href="/css/section-menu.css" rel="stylesheet" type="text/css" />
+
+{{ $currPage := . }}
+
+{{ with .Parent }}
+
+<nav class="section-menu">
+    <ul class="animation-reveal-children animation-fast">
+        <li class="back {{ if eq . $currPage }}active{{ end }}">
+            <a href="{{ .RelPermalink }}">
+                <i class="fas fa-arrow-left"></i>
+                {{ .Title }}
+            </a>
+        </li>
+
+        {{ range .Pages }}
+            <li class="{{ if eq . $currPage }}active{{ end }}">
+                <a href="{{ .RelPermalink }}">
+                    <i class='fas fa-{{ (default (default "scroll" .Parent.Params.icon) .Params.icon) }}'></i>
+                    {{ .Title }}
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>
+
+{{ end }}

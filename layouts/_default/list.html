@@ -1,62 +1,97 @@
+{{ define "css" }}
+    {{ template "basecss" }}
+    <link href="/css/list.css" rel="stylesheet" type="text/css" />
+{{ end }}
+
 {{ define "main" }}
 
-<style>
-    @media (max-width: 700px) {
-      section .inner {
-        flex-direction: column !important;
-        padding: 0 20px !important;
-      }
+{{ partial "header" . }}
 
-      section .inner .content {
-        align-items: flex-start !important;
-        text-align: left !important;
-        padding: 30px 10px 50px 10px !important;
-      }
-    }
-</style>
+<div class="main-layout">
 
-<section class="hero blue">
-    {{ partial "header" . }}
+    <div>
+        {{ if not (eq .Parent.Kind "home") }}
+        <div class="side-menu">
+            <div class="animation-reveal">
+                {{ partial "search" . }}
+            </div>
 
-    <div class="inner">
-        <div class="content">
-            {{ partial "logo.svg" . }}
+            {{ partial "section-menu" . }}
+        </div>
+        {{ end }}
+    </div>
+
+    <div class="main">
+        {{ if (eq .Parent.Kind "home") }}
+        <div class="animation-reveal">
+            {{ partial "search" . }}
+        </div>
+        {{ else }}
+
+        <div class="content animation-reveal">
+            {{ with .Resources.GetMatch "thumbnail.*" }}
+            <div class="image">
+                <img src='{{ .Permalink }}' />
+            </div>
+            {{ else }} {{ with .Params.thumbnail}}
+            <div class="image">
+                <img src='{{ . }}' />
+            </div>
+            {{ else }}
+            <div class="image">
+                {{ partial "icon" (default "scroll" (default .Parent.Params.icon .Params.icon)) }}
+            </div>
+            {{ end }} {{ end }}
 
             <h1>
                 {{ .Title }}
             </h1>
+
+            {{ .Content }}
         </div>
-    </div>
 
-    <div class="bg-color">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</section>
+        {{ end }}
 
-<section class="white">
-    <div class="inner">
         <ul class="articles">
-            {{ range where .Data.Pages "Params.archived" "!=" "true" }}
-                {{ .Render "li" }}
+            {{ range $index, $page := .Data.Pages }}
+            <li class="animation-reveal animation-fast animation-delay-{{ add $index 1 }}">
+                <a href="{{ .RelPermalink }}">
+                    <article>
+                        {{ with $page.Resources.GetMatch "thumbnail.*" }}
+                        <div class="image">
+                            <img src='{{ .Permalink }}' />
+                        </div>
+                        {{ else }} {{ with $page.Params.thumbnail}}
+                        <div class="image">
+                            <img src='{{ . }}' />
+                        </div>
+                        {{ else }}
+                        <div class="image">
+                            {{ partial "icon" (default "scroll" (default .Parent.Params.icon .Params.icon)) }}
+                        </div>
+                        {{ end }} {{ end }}
+
+                        <div class="title">{{ .Title }}</div>
+
+                        <div class="subtitle">
+                            {{ if eq $page.Kind "page" }}
+                                {{ with .PublishDate }}
+                                    {{ dateFormat "Monday, Jan 2, 2006" . }}
+                                {{ end }}
+                            {{ else }}
+                                {{ len $page.Pages }} Articles
+                            {{ end }}
+                        </div>
+
+                        <div class="text">
+                            {{ $page.Summary | truncate 200 }}...
+                        </div>
+                    </article>
+                </a>
+            </li>
             {{ end }}
         </ul>
     </div>
-
-    <div class="bg-color">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</section>
-
-<section>
-    <div class="inner">
-        {{ partial "newsletter-signup" . }}
-    </div>
-</section>
-
-{{ partial "menu" "blue" }}
+</div>
 
 {{ end }}

@@ -1,188 +1,183 @@
 section .inner .content {
-  padding: 100px 0 150px 0;
+    padding: 100px 0 150px 0;
 }
 
 /* HERO SECTION */
 
 section.hero {
-  margin-bottom: -10px;
+    margin-bottom: -10px;
 }
 
 section.hero header,
 section.hero .inner .content > * {
-  animation: reveal 1s backwards;
+    animation: reveal 1s backwards;
 }
 
 section.hero .inner .content :nth-child(1) {
-  animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 section.hero .inner .content :nth-child(2) {
-  animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 section.hero .inner .content :nth-child(3) {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 section.hero .inner .content :nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-section.hero header a {
-  color: var(--color-fg);
-}
-
-section.hero header .btn {
-  background: var(--color-fg);
-  color: var(--color-bg);
+    animation-delay: 0.8s;
 }
 
 section.hero .inner .logo {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 section.hero h1 {
-  margin-bottom: 50px;
+    margin-bottom: 0.3em;
 }
 
 section.hero h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 section.hero .inner h3 {
-  font-weight: 300;
-  width: 420px;
-  margin-bottom: 40px;
+    font-weight: 300;
+    width: 420px;
+    margin-bottom: 40px;
 }
 
 section.hero .inner h3 strong {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 section.hero .inner .btn {
-  font-size: 120%;
+    font-size: 120%;
 }
 
 section.hero .images {
-  width: 500px;
+    width: 50%;
+    margin: -1em;
 }
 
 section.hero .images :nth-child(1) {
-  background-image: url('/img/landing/hero.png');
-  animation: reveal 2s backwards 0.5s;
+    background-image: url("/img/landing/hero.png");
+    animation: reveal 2s backwards 0.5s;
 }
 
 section.upgrade .inner .content {
-  padding: 10px 0 40px 0 !important;
-  text-align: center;
+    padding: 10px 0 40px 0 !important;
+    text-align: center;
 }
 
 section.upgrade .inner .content a {
-  color: inherit !important;
-  font-weight: bold !important;
+    color: inherit !important;
+    font-weight: bold !important;
 }
 
 /* SIMPLE SECTION */
 
 section.simple .images {
-  top: 30px;
-  width: 500px;
+    width: 600px;
+    margin: 0 -6em -3em -6em;
 }
 
 section.simple .images :nth-child(1) {
-  background-image: url('/img/landing/simple_1.png');
-  animation: reveal 2s backwards 0s;
+    background-image: url("/img/landing/simple_1.png");
+    animation: reveal 2s backwards 0s;
 }
 
 section.simple .images :nth-child(2) {
-  background-image: url('/img/landing/simple_2.png');
-  animation: reveal 2s backwards 0.5s;
+    background-image: url("/img/landing/simple_2.png");
+    animation: reveal 2s backwards 0.5s;
 }
 
 /* CROSS-PLATFORM SECTION */
 
 section.portable .images {
-  width: 500px;
+    width: 600px;
+    margin: -4em;
 }
 
 section.portable .images :nth-child(1) {
-  background-image: url('/img/landing/portable_1.png');
-  animation: drop 1.5s backwards 0s;
+    background-image: url("/img/landing/portable_1.png");
+    animation: drop 1.5s backwards 0s;
 }
 
 section.portable .images :nth-child(2) {
-  background-image: url('/img/landing/portable_2.png');
-  animation: drop 1.5s backwards 0.2s;
+    background-image: url("/img/landing/portable_2.png");
+    animation: drop 1.5s backwards 0.2s;
 }
 
 section.portable .images :nth-child(3) {
-  background-image: url('/img/landing/portable_3.png');
-  animation: drop 1.5s backwards 0.4s;
+    background-image: url("/img/landing/portable_3.png");
+    animation: drop 1.5s backwards 0.4s;
 }
 
 /* TRANSPARENCY SECTION */
 
 section.transparent .images :nth-child(1) {
-  background-image: url('/img/landing/transparent.png');
-  animation: reveal 1s backwards;
+    background-image: url("/img/landing/transparent.png");
+    animation: reveal 1s backwards;
 }
 
 /* TOGETHER SECTION */
 
 section.together .images {
-  width: 450px;
+    width: 500px;
+    margin: -4em -4em -4em 2em;
 }
 
 section.together .images :nth-child(1) {
-  background-image: url('/img/landing/together_1.png');
-  animation: drop 1.5s backwards 0s;
+    background-image: url("/img/landing/together_1.png");
+    animation: drop 1.5s backwards 0s;
 }
 
 section.together .images :nth-child(2) {
-  background-image: url('/img/landing/together_2.png');
-  animation: drop 1.5s backwards 0.2s;
+    background-image: url("/img/landing/together_2.png");
+    animation: drop 1.5s backwards 0.2s;
 }
 
 section.together .images :nth-child(3) {
-  background-image: url('/img/landing/together_3.png');
-  animation: drop 1.5s backwards 0.4s;
+    background-image: url("/img/landing/together_3.png");
+    animation: drop 1.5s backwards 0.4s;
 }
 
 /* PLANS SECTION */
 
 section.plans {
-  margin-bottom: 50px;
-  text-align: center;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 section.plans .inner {
-  max-width: 1100px;
-  flex-direction: column;
-  align-items: stretch;
-  padding: 0 20px;
+    max-width: 1100px;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 20px;
 }
 
 section.plans .inner .content {
-  padding: 100px 0 30px 0;
+    padding: 2em 1em 0 1em;
 }
 
 section.plans > .inner h3 {
-  max-width: 550px;
-  margin: -10px auto 30px auto;
+    max-width: 550px;
+    margin: -10px auto 30px auto;
 }
 
 @media (max-width: 700px) {
-  section.hero .inner .content {
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
+    section .inner .content {
+        padding: 2em 1em 4em 1em !important;
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
 
-  section .hero .logo {
-    margin-bottom: 20px;
-  }
+    section.plans .inner .content {
+        padding: 1em !important;
+    }
 
-  section.transparent .images {
-    top: 50px;
-  }
+    section .inner .buttons {
+        justify-content: flex-start !important;
+    }
 }

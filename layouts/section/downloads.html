@@ -2,6 +2,7 @@
     {{ template "basecss" . }}
     <link href="/css/downloads.css" rel="stylesheet" type="text/css">
 {{ end }}
+
 {{ define "main" }}
 
 <section class="left white hero">
@@ -9,7 +10,7 @@
 
     <div class="inner">
 
-        <div class="content">
+        <div class="content animation-reveal-children">
 
             <h1>
                 <span>Downloads</span>
@@ -37,7 +38,7 @@
     </div>
 </section>
 
-<section class="downloads blue">
+<section class="downloads blue animation-reveal">
     <div class="inner">
         <h2>Padloc 3</h2>
 
@@ -147,5 +148,4 @@
     </div>
 </section>
 
-{{ partial "menu" "white" }}
 {{ end }}

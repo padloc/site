@@ -1,0 +1,42 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0 1em;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.side-menu {
+    width: 15em;
+    box-sizing: border-box;
+    position: sticky;
+    top: 3em;
+    margin-right: 1em;
+    max-height: 100vh;
+    overflow: visible;
+}
+
+.side-menu .search-wrapper {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.page-menu {
+    margin-top: 2em;
+}
+
+article {
+    margin: 2em 0;
+}
+
+@media (max-width: 55em) {
+    .side-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 55em) {
+    .breadcrumbs {
+        display: none;
+    }
+}

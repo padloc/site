@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{ block "title" . }}
-            {{ .Site.Title }}
-        {{ end }}</title>
+        <title>
+            {{ block "title" . }}
+                {{ .Site.Title }}
+            {{ end }}
+        </title>
 
         {{ block "meta" . }}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
@@ -17,27 +19,24 @@
 
         {{ define "basecss" }}
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
-        <link href="/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/vars.css" rel="stylesheet" type="text/css">
         <link href="/css/base.css" rel="stylesheet" type="text/css">
+        <link href="/css/header.css" rel="stylesheet" type="text/css">
+        <link href="/css/animation.css" rel="stylesheet" type="text/css">
         <link href="/css/plans.css" rel="stylesheet" type="text/css">
         {{ end }}
 
         {{ block "css" . }}
-            {{ template "basecss" . }}
-        {{ end }}
-
-        {{ define "basejs" }}
+            {{ template "basecss" }}
         {{ end }}
 
         {{ block "js" . }}
-            {{ template "basejs" . }}
         {{ end }}
     </head>
     <body>
-        <main>
-            {{ block "main" . }}
-            {{ end }}
-        </main>
+        {{ block "main" . }}
+        {{ end }}
 
         {{ block "float" . }}
         {{ end }}

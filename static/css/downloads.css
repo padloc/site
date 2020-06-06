@@ -3,8 +3,9 @@ section.hero .inner .content {
 }
 
 section.hero .images {
-  width: 400px;
-  height: 400px;
+    width: 450px;
+    height: 450px;
+    margin: -2em 0 -3em 0;
 }
 
 section.hero .images :nth-child(1) {

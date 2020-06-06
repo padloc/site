@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<style>
+    section.hero .inner {
+        max-width: 900px;
+    }
+
+    @media (max-width: 700px) {
+      section .inner {
+        flex-direction: column !important;
+        padding: 0 20px !important;
+      }
+
+      section .inner .content {
+        align-items: flex-start !important;
+        text-align: left !important;
+        padding: 30px 10px 50px 10px !important;
+      }
+
+      article {
+          margin: 50px 0;
+      }
+    }
+</style>
+
+<section class="blue hero">
+    {{ partial "header" . }}
+
+    <div class="inner">
+        <div class="content">
+        </div>
+    </div>
+
+    <div class="bg-color">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div class="inner">
+        {{ partial "sidemenu" . }}
+
+        <article>
+            {{ partial "breadcrumbs" . }}
+            <h1>{{ .Title }}</h1>
+
+            {{ .Content }}
+        </article>
+    </div>
+</section>
+
+<section>
+    <div class="inner">
+        {{ partial "newsletter-signup" . }}
+    </div>
+</section>
+
+{{ partial "menu" "blue" }}
+
+{{ end }}

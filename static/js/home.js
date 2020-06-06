@@ -1,31 +1,15 @@
-(function() {
-  function scroll() {
-    const section = document
-      .elementsFromPoint(
-        document.documentElement.clientWidth / 2,
-        document.documentElement.clientHeight / 2,
-      )
-      .find(el => el.tagName === 'SECTION');
+window.addEventListener("load", function() {
+    const observer = new IntersectionObserver(
+        entries => {
+            for (const entry of entries) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove("animation-pause");
+                }
+            }
+        },
+        { threshold: 0.5 }
+    );
 
-    section && section.classList.remove('hidden');
-  }
-
-  window.addEventListener('load', function() {
-    if (
-      !Modernizr.video.h264 ||
-      !Modernizr.cssanimations ||
-      !Modernizr.flexbox ||
-      !Modernizr.nthchild ||
-      !Modernizr.csstransforms3d ||
-      !Modernizr.classlist ||
-      !Modernizr.testProp('animation') ||
-      !Modernizr.testAllProps('backface-visibility')
-    ) {
-      document.body.class = 'legacy';
-      return;
-    }
-
-    window.addEventListener('scroll', scroll);
-    scroll();
-  });
-})();
+    const sections = document.querySelectorAll("section");
+    sections.forEach(section => observer.observe(section));
+});

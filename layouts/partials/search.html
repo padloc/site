@@ -1,0 +1,75 @@
+<div class="search-wrapper">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.0.4"></script>
+    <link href="/css/search.css" rel="stylesheet" type="text/css" />
+
+    <input type="search" placeholder="Search Articles..."></input>
+
+    <div class="search-results" hidden>
+        <ul>
+            {{ range where (where .Site.AllPages "Section" .Section) ".IsPage" true }}
+                <li data-url="{{ .RelPermalink }}" hidden>
+                    <a href="{{ .RelPermalink }}">
+                        <div class="search-result-section">
+                            <i class='fas fa-{{ (default (default "scroll" .Parent.Params.icon) .Params.icon) }}'></i>
+                            {{ .Parent.Title }}
+                        </div>
+                        <div class="search-result-title">
+                            {{ .Title }}
+                        </div>
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <script>
+        (() => {
+            const searchWrapper = document.currentScript.parentElement;
+            const input = searchWrapper.querySelector("input");
+            const resultsContainer = searchWrapper.querySelector(".search-results");
+            const resultsList = searchWrapper.querySelector(".search-results ul");
+            const resultsElements = [...searchWrapper.querySelectorAll("li")];
+
+            const index = [
+                {{ range where (where .Site.AllPages "Section" .Section) ".IsPage" true }}
+                {
+                    title: "{{ .Title }}",
+                    summary: "{{ .Summary }}",
+                    url: "{{ .RelPermalink }}",
+                    section: "{{ .Parent.Title }}",
+                },
+                {{ end }}
+            ];
+
+            const fuse = new Fuse(index, {
+                keys: ["title", "summary", "url", "section"],
+                includeScore: true
+            });
+
+            input.addEventListener("input", () => {
+                const results = fuse.search(input.value);
+
+                for (const el of resultsElements) {
+                    const match = results.find(r => r.item.url === el.dataset.url);
+                    if (match) {
+                        el.removeAttribute("hidden");
+                        el.score = match.score;
+                    } else {
+                        el.setAttribute("hidden", "");
+                        el.score = 2;
+                    }
+                }
+
+                resultsElements
+                    .sort((a, b) => a.score - b.score)
+                    .forEach(el => resultsList.appendChild(el));
+
+                if (input.value) {
+                    resultsContainer.removeAttribute("hidden");
+                } else {
+                    resultsContainer.setAttribute("hidden", "");
+                }
+            });
+        })()
+    </script>
+</div>

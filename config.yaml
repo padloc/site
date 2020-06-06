@@ -4,6 +4,7 @@ title: "Padloc - A Modern Password Manager For Individuals And Teams"
 languageCode: "en-us"
 metaDataFormat: "yaml"
 pluralizelisttitles: false
+ignoreFiles: "archive/*"
 params:
     get_started_url: /#plans
     login_url: https://web.padloc.app

@@ -1,0 +1,19 @@
+<div class="breadcrumbs">
+    <nav>
+        <ul>
+          {{ template "breadcrumbpath" .Parent }}
+        </ul>
+    </nav>
+</div>
+
+{{ define "breadcrumbpath" }}
+    {{ with .Parent }}
+        {{ if not .IsHome }}
+            {{ template "breadcrumbpath" . }}
+        {{ end }}
+    {{ end }}
+
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a><span class="subtle">&nbsp;/&nbsp;</span>
+    </li>
+{{ end }}

@@ -1,70 +1,42 @@
+{{ define "css" }}
+    {{ template "basecss" }}
+    <link href="/css/single.css" rel="stylesheet" type="text/css" />
+{{ end }}
+
 {{ define "main" }}
 
-<style>
-    section .inner {
-        max-width: 900px;
-    }
+{{ partial "header" . }}
 
-    @media (max-width: 700px) {
-      section .inner {
-        flex-direction: column !important;
-        padding: 0 20px !important;
-      }
-
-      section .inner .content {
-        align-items: flex-start !important;
-        text-align: left !important;
-        padding: 30px 10px 50px 10px !important;
-      }
-
-      article {
-          margin: 50px 0;
-      }
-    }
-</style>
-
-<section class="blue hero">
-    {{ partial "header" . }}
-
-    <div class="inner">
-
-        <div class="content">
-            {{ with .Section }}
-            <div class="back-button-wrapper">
-                <a class="btn" href="/{{ . }}">
-                    <span class="icon fas fa-arrow-left"></span>
-                    <span>Back to {{ humanize . }}</span>
-                </a>
+<div class="main-layout">
+    <div>
+        <div class="side-menu">
+            <div class="animation-reveal">
+                {{ partial "search" . }}
             </div>
-            {{ end }}
 
-            <h1>{{ .Title }}</h1>
+            {{ partial "section-menu" . }}
 
+            {{ partial "page-menu" . }}
         </div>
     </div>
 
-    <div class="bg-color">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</section>
+    <div>
+        <article class="animation-reveal-children animation-fast">
+            <div class="narrow">
+                {{ partial "breadcrumbs" . }}
+            </div>
 
-<section>
-    <div class="inner">
-        <article>
-            <div class="publish-date">{{ dateFormat "Monday, Jan 2, 2006" .PublishDate }}</div>
-            {{ .Content }}
+            <h1>{{ .Title }}</h1>
+
+            {{ with .PublishDate }}
+            <div class="subtle">{{ dateFormat "Monday, Jan 2, 2006" . }}</div>
+            {{ end }}
+
+            <div>
+                {{ .Content }}
+            </div>
         </article>
     </div>
-</section>
-
-<section>
-    <div class="inner">
-        {{ partial "newsletter-signup" . }}
-    </div>
-</section>
-
-{{ partial "menu" "blue" }}
+</div>
 
 {{ end }}

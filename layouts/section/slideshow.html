@@ -1,0 +1,134 @@
+<html>
+    <head>
+        {{ template "basecss" . }}
+        <link href="/css/downloads.css" rel="stylesheet" type="text/css">
+        <link href="/css/device.css" rel="stylesheet" type="text/css">
+        <link href="/css/slideshow.css" rel="stylesheet" type="text/css">
+
+        <script>
+(function() {
+    var video1, video2, video3, scanCode, downloads;
+    var slide = 0;
+
+    window.addEventListener("load", function() {
+        video1 = document.querySelectorAll(".device.phone video")[0];
+        video2 = document.querySelectorAll(".device.phone video")[1];
+        video3 = document.querySelector(".device.desktop video");
+        scanCode = document.querySelector(".device.phone .code");
+        downloads = document.querySelector(".device.desktop .downloads");
+    });
+
+    function nextSlide() {
+        slide++;
+        update();
+    }
+
+    function prevSlide() {
+        slide--;
+        update();
+    }
+
+    function update() {
+        document.body.setAttribute("slide", slide);
+
+        if (slide === 1) {
+            video1.play();
+        }
+
+        if (slide === 2) {
+            video1.classList.add("hidden");
+            video2.classList.remove("hidden");
+            video2.play();
+        }
+
+        if (slide === 3) {
+            video3.play();
+        }
+
+        if (slide === 4) {
+            video2.classList.add("hidden");
+            scanCode.classList.remove("hidden");
+        }
+    }
+
+
+
+    document.addEventListener("click", nextSlide);
+    document.addEventListener("keyup", function(e) {
+        switch (e.code) {
+            case "Space":
+            case "ArrowRight":
+                nextSlide();
+                break;
+            case "ArrowLeft":
+                prevSlide();
+                break;
+        }
+    });
+})();
+        </script>
+    </head>
+    <body>
+        <main class="slides">
+        <section class="hero">
+            <div class="inner">
+                <h1>All your sensitive data in one secure place.</h1>
+                <h2>
+                    Padlock stores all of your passwords and other sensitive
+                    information for you so all you have to remember is a single
+                    password!
+                </h2>
+            </div>
+        </section>
+
+        <section class="simple">
+            <div class="inner">
+                <h1>Beautifully Simple.</h1>
+                <h2>
+                    Sometimes less is more. Padlock focuses on security,
+                    usability and performance. No clutter, no distractions!
+                </h2>
+            </div>
+        </section>
+
+        <section class="portable">
+            <div class="inner">
+                <h1>Effortlessly Portable.</h1>
+                <h2>
+                    Padlock is available on all major platforms and
+                    synchronizing your devices is fast and easy.
+                </h2>
+            </div>
+        </section>
+
+        <section class="transparent">
+            <div class="inner">
+                <h1>Completely Transparent.</h1>
+                <h2>
+                    We believe that transparency and openness is the best
+                    foundation for trust so we are building Padlock completely
+                    out in the open.
+                </h2>
+            </div>
+        </section>
+
+        <section class="tryit">
+            <div class="inner">
+                <h1>Go Ahead, Try It!</h1>
+                <h2>
+                    Padlock is free and getting started takes only a few seconds.
+                    Give it a go, we're sure you'll love it!
+                </h2>
+            </div>
+        </section>
+
+        <section class="website">
+            <div class="inner">
+                <h1>padlock.io</h1>
+            </div>
+        </section>
+    </main>
+
+        {{ partial "device" }}
+    </body>
+</html>

@@ -1,0 +1,44 @@
+.section-menu {
+    position: sticky;
+    font-size: 0.9em;
+}
+
+.section-menu ul {
+    position: relative;
+}
+
+.section-menu li.back a {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.section-menu a {
+    padding: 0.4em 0.6em;
+    margin: 0.3em 0;
+    color: var(--color-fg);
+    border-radius: 0.5em;
+    display: block;
+}
+
+.section-menu a:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.section-menu a .title {
+    flex: 1;
+}
+
+.section-menu .active a {
+    background: var(--color-highlight);
+    color: var(--color-bg);
+}
+
+.section-menu .section-menu-sub {
+    font-size: 0.8em;
+    margin-left: 2em;
+}
+
+.section-menu .search-wrapper {
+  margin-bottom: 1em;
+}

@@ -1,31 +1,80 @@
 <header>
-  <nav>
-    <ul>
-      <li class="wide">
-        <a href="/"><div class="brand-icon icon-padlock wide"></div></a>
-      </li>
-      <li class="narrow">
-        <a href="#" class="open-menu"><div class="icon-bars"></div></a>
-      </li>
-      <li class="wide"><a href="/business/">Business</a></li>
-      <li class="wide"><a href="/blog/">Blog</a></li>
-      <li class="wide"><a href="/help/">Help</a></li>
-      <li class="wide"><a href="/downloads/">Downloads</a></li>
-    </ul>
-  </nav>
+    <div class="header-inner">
+        <nav class="sections">
+            <ul>
+                <li>
+                    <a href="/">{{ partial "logo.svg" }}</a>
+                </li>
+                <li class='section-item{{ if eq .Section "business" }} active{{end}}'>
+                    <a href="/business/">Business</a>
+                </li>
+                <li class='section-item{{ if eq .Section "blog" }} active{{end}}'><a href="/blog/">Blog</a></li>
+                <li class='section-item{{ if eq .Section "help" }} active{{end}}'><a href="/help/">Help</a></li>
+                <li class='section-item{{ if eq .Section "downloads" }} active{{end}}'>
+                    <a href="/downloads/">Downloads</a>
+                </li>
+            </ul>
+        </nav>
 
-  <div class="spacer"></div>
+        <div class="spacer"></div>
 
-  <nav class="login-signup">
-    <ul>
-      <li>
-          <a href="{{ .Param "login_url" }}" class="">Login</a>
-      </li>
-      <li>
-        <a href="{{ .Param "get_started_url" }}" class="btn">
-          <span>Sign Up</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+        <nav class="login-signup">
+            <ul>
+                <li>
+                    <a href='{{ .Param "login_url" }}' class="">Login</a>
+                </li>
+                <li>
+                    <a href='{{ .Param "get_started_url" }}' class="btn">
+                        <span>Sign Up</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu">
+            <button class="btn menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="menu-inner" hidden>
+                <nav class="menu-login-signup">
+                    <ul>
+                        <li>
+                            <a href='{{ .Param "login_url" }}' class="login-button">Login</a>
+                        </li>
+                        <li>
+                            <a href='{{ .Param "get_started_url" }}' class="btn">
+                                <span>Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="menu-sections">
+                    <ul>
+                      <li><a href="/business/"><i class="fas fa-suitcase"></i> Business</a></li>
+                        <li><a href="/blog/"><i class="fas fa-scroll"></i> Blog</a></li>
+                        <li><a href="/help/"><i class="fas fa-life-ring"></i> Help</a></li>
+                        <li><a href="/downloads/"><i class="fas fa-download"></i> Downloads</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
+
+<script>
+    (() => {
+        const menuButton = document.querySelector(".menu-button");
+        const menu = document.querySelector(".menu-inner");
+
+        menuButton.addEventListener("click", e => {
+            e.stopPropagation();
+            menu.removeAttribute("hidden");
+        });
+
+        document.addEventListener("click", () => {
+            menu.setAttribute("hidden", "");
+        });
+    })();
+</script>

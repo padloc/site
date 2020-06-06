@@ -1,0 +1,53 @@
+<link href="/css/page-menu.css" rel="stylesheet" type="text/css" />
+
+<nav class="page-menu animation-reveal-children">
+    <ul id="backToTop" style="visibility: hidden">
+        <li>
+            <a href="{{ .RelPermalink }}#">
+                Back To Top
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </li>
+    </ul>
+{{ with .Params.anchors }}
+    <div class="on-this-page">On this page...</div>
+    <ul>
+        {{ range . }}
+            <li data-anchor="{{ .hash }}">
+                <a href="{{ .RelPermalink }}#{{ .hash }}">
+                    {{ .title }}
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}
+</nav>
+
+<script>
+    window.addEventListener('load', () => {
+        const anchorItems = document.querySelectorAll(".page-menu li");
+
+        const observer = new IntersectionObserver((entries) => {
+            console.log(entries);
+            const firstVisible = entries.find(e => e.isIntersecting);
+            if (firstVisible) {
+                const id = firstVisible.target.id;
+                anchorItems.forEach(item => item.classList.toggle("active", item.dataset.anchor === id))
+            }
+        });
+
+        for (const item of anchorItems) {
+            const anchor = document.querySelector("#" + item.dataset.anchor);
+            if (anchor) {
+                observer.observe(anchor);
+            }
+        }
+
+        const backToTop = document.querySelector("#backToTop");
+        const scroll = () => {
+            backToTop.style.visibility = window.scrollY < window.innerHeight ? "hidden" : "";
+        }
+        window.addEventListener("scroll", scroll);
+        scroll();
+    });
+</script>

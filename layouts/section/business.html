@@ -5,12 +5,18 @@
         max-width: 1100px;
     }
 
+    section.hero .inner h1 {
+        display: flex;
+        align-items: center;
+    }
+
     section.hero .inner .content {
         padding: 80px 20px;
     }
 
     section.hero .inner .logo {
-        margin-bottom: 20px;
+        margin-bottom: 0;
+        margin-right: 0.3em;
     }
 
     section.hero .images {
@@ -49,17 +55,25 @@
       max-width: 500px;
       align-self: center;
     }
+
+    @media (max-width: 700px) {
+        section.hero .inner h1 {
+            display:block;
+        }
+    }
 </style>
 
 <section class="left hero red">
     {{ partial "header" . }}
 
-    <div class="inner">
+    <div class="inner animation-reveal-children">
         <div class="content">
-            {{ partial "logo.svg" . }}
 
             <h1>
-                for Business
+                {{ partial "logo.svg" . }}
+                <div>
+                    for Business
+                </div>
             </h1>
 
             <h3>
@@ -107,7 +121,5 @@
         </div>
     </div>
 </section>
-
-{{ partial "menu" "red" }}
 
 {{ end }}
