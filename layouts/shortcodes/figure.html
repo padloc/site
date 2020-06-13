@@ -1,0 +1,11 @@
+<figure class='{{ .Get "class" }}'>
+    {{ .Inner }}
+
+    {{ with .Get "src" }}
+    <img src="{{ . }}" />
+    {{ end }}
+
+    {{ with .Get "caption" }}
+    <figcaption>{{ . }}</figcaption>
+    {{ end }}
+</figure>

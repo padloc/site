@@ -11,10 +11,10 @@
 }
 
 .side-menu {
-    width: 15em;
+    width: 14em;
     box-sizing: border-box;
     position: sticky;
-    top: 3em;
+    top: 2em;
     margin-right: 1em;
     max-height: 100vh;
     overflow: visible;
@@ -27,8 +27,7 @@
 
 ul.articles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     list-style: none;
     margin: 1.5em auto;
     padding: 0;
@@ -45,6 +44,10 @@ section .inner .content {
     margin: 0 auto;
 }
 
+.content .cover-image {
+    color: var(--color-blue);
+}
+
 article {
     border-radius: 0.5em;
     padding: 0.5em;
@@ -57,42 +60,11 @@ article:hover {
     box-shadow: 0 0px 10px rgba(154, 160, 185, 0.05), 0 0px 40px rgba(166, 173, 201, 0.2);
 }
 
-.image {
-    position: relative;
-    background: var(--color-bg);
-    overflow: hidden;
-    border-radius: 0.5em;
-}
-
-.image::before {
-    content: "";
-    display: block;
-    padding-top: 61.8%;
-}
-
-.image img {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.image .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    width: 100%;
-    height: 80%;
-    color: var(--color-red);
-}
-
-.content .image {
-    max-width: 400px;
+article .cover-image {
+    width: 90%;
+    max-width: 200px;
     margin: 0 auto;
+    color: var(--color-red);
 }
 
 .content {

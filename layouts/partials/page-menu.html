@@ -1,6 +1,6 @@
 <link href="/css/page-menu.css" rel="stylesheet" type="text/css" />
 
-<nav class="page-menu animation-reveal-children">
+<nav class="page-menu animation-reveal-children animation-fast">
     <ul id="backToTop" style="visibility: hidden">
         <li>
             <a href="{{ .RelPermalink }}#">
@@ -11,7 +11,7 @@
     </ul>
 {{ with .Params.anchors }}
     <div class="on-this-page">On this page...</div>
-    <ul>
+    <ul class="animation-reveal-children animation-fast">
         {{ range . }}
             <li data-anchor="{{ .hash }}">
                 <a href="{{ .RelPermalink }}#{{ .hash }}">

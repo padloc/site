@@ -38,7 +38,7 @@ body {
 }
 
 .animation-fast {
-    --animation-base-duration: 0.1s;
+    --animation-base-duration: 0.05s;
 }
 
 .animation-reveal-children :nth-child(1),
@@ -93,5 +93,10 @@ body {
 
 .animation-reveal-children :nth-child(11),
 .animation-delay-11 {
-    animation-delay: calc(10 * var(--animation-base-duration));
+    animation-delay: calc(11 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(12),
+.animation-delay-12 {
+    animation-delay: calc(12 * var(--animation-base-duration));
 }

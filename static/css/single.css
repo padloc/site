@@ -1,8 +1,8 @@
 .main-layout {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     padding: 0 1em;
-    max-width: 60em;
+    max-width: 70em;
     margin: 0 auto;
 }
 
@@ -10,10 +10,15 @@
     width: 15em;
     box-sizing: border-box;
     position: sticky;
-    top: 3em;
+    top: 2em;
     margin-right: 1em;
     max-height: 100vh;
     overflow: visible;
+}
+
+.side-menu.right {
+    text-align: right;
+    font-size: 0.8em;
 }
 
 .side-menu .search-wrapper {
@@ -25,8 +30,34 @@
     margin-top: 2em;
 }
 
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0.4em 0.6em;
+}
+
 article {
     margin: 2em 0;
+}
+
+p {
+    margin: 0.5em 1em;
+}
+
+.cover-image {
+    color: var(--color-red);
+}
+
+.content {
+    text-align: center;
+}
+
+@media (max-width: 70em) {
+    .side-menu.right {
+        display: none;
+    }
 }
 
 @media (max-width: 55em) {

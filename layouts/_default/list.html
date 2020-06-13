@@ -29,19 +29,7 @@
         {{ else }}
 
         <div class="content animation-reveal">
-            {{ with .Resources.GetMatch "thumbnail.*" }}
-            <div class="image">
-                <img src='{{ .Permalink }}' />
-            </div>
-            {{ else }} {{ with .Params.thumbnail}}
-            <div class="image">
-                <img src='{{ . }}' />
-            </div>
-            {{ else }}
-            <div class="image">
-                {{ partial "icon" (default "scroll" (default .Parent.Params.icon .Params.icon)) }}
-            </div>
-            {{ end }} {{ end }}
+            {{ partial "cover-image" . }}
 
             <h1>
                 {{ .Title }}
@@ -57,19 +45,7 @@
             <li class="animation-reveal animation-fast animation-delay-{{ add $index 1 }}">
                 <a href="{{ .RelPermalink }}">
                     <article>
-                        {{ with $page.Resources.GetMatch "thumbnail.*" }}
-                        <div class="image">
-                            <img src='{{ .Permalink }}' />
-                        </div>
-                        {{ else }} {{ with $page.Params.thumbnail}}
-                        <div class="image">
-                            <img src='{{ . }}' />
-                        </div>
-                        {{ else }}
-                        <div class="image">
-                            {{ partial "icon" (default "scroll" (default .Parent.Params.icon .Params.icon)) }}
-                        </div>
-                        {{ end }} {{ end }}
+                        {{ partial "cover-image" . }}
 
                         <div class="title">{{ .Title }}</div>
 

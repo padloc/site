@@ -192,18 +192,20 @@ section.plans > .inner {
 
 figure {
     margin: 40px 0;
-    text-align: center;
-    line-height: 0;
     position: relative;
+    text-align: center;
 }
 
-figure.center img {
-    max-height: 500px;
+figure figcaption {
+    text-align: center;
+    color: var(--color-subtle);
+    font-size: 0.8em;
 }
 
-figure.rounded img {
+figure img {
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
+    overflow: hidden;
 }
 
 figure.border img {
@@ -247,6 +249,47 @@ figure.float.right {
 figure.float.left {
     float: left;
     margin: 0 20px 0 0;
+}
+
+blockquote {
+    margin: 1em;
+    padding-left: 1em;
+    border-left: solid 2px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.cover-image {
+    position: relative;
+    background: var(--color-bg);
+    overflow: hidden;
+    border-radius: 0.5em;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.cover-image::before {
+    content: "";
+    display: block;
+    padding-top: 61.8%;
+}
+
+.cover-image img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-image .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 80%;
 }
 
 .white {
@@ -461,6 +504,18 @@ pre {
     max-width: 100%;
     overflow: auto;
     font-size: 90%;
+}
+
+.colored-text-blue {
+    color: var(--color-blue);
+}
+
+.colored-text-red {
+    color: var(--color-red);
+}
+
+.colored-text-purple {
+    color: #a333c8;
 }
 
 @media (max-width: 1000px) {

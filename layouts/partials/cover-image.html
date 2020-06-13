@@ -1,0 +1,13 @@
+{{ with .Resources.GetMatch "thumbnail.*" }}
+<div class="cover-image">
+    <img src='{{ .Permalink }}' />
+</div>
+{{ else }} {{ with .Params.thumbnail}}
+<div class="cover-image">
+    <img src='{{ . }}' />
+</div>
+{{ else }}
+<div class="cover-image">
+    {{ partial "icon" (default "scroll" (default .Parent.Params.icon .Params.icon)) }}
+</div>
+{{ end }} {{ end }}

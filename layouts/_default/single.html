@@ -15,8 +15,6 @@
             </div>
 
             {{ partial "section-menu" . }}
-
-            {{ partial "page-menu" . }}
         </div>
     </div>
 
@@ -26,16 +24,24 @@
                 {{ partial "breadcrumbs" . }}
             </div>
 
+            {{ partial "cover-image" . }}
+
             <h1>{{ .Title }}</h1>
 
             {{ with .PublishDate }}
-            <div class="subtle">{{ dateFormat "Monday, Jan 2, 2006" . }}</div>
+            <p class="subtle">{{ dateFormat "Monday, Jan 2, 2006" . }}</p>
             {{ end }}
 
             <div>
                 {{ .Content }}
             </div>
         </article>
+    </div>
+
+    <div>
+        <div class="side-menu right">
+            {{ partial "page-menu" . }}
+        </div>
     </div>
 </div>
 
