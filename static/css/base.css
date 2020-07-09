@@ -251,6 +251,13 @@ figure.float.left {
     margin: 0 20px 0 0;
 }
 
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 blockquote {
     margin: 1em;
     padding-left: 1em;

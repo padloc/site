@@ -47,6 +47,11 @@ first need to make sure you actually own it. To do this, we will send you an
 email with 6-digit confirmation code. To proceed, simply enter this code in
 the provided field and click **Continue**.
 
+{{< note >}}
+Note that email may take a few minutes before it shows up in your mailbox. You may
+also want to check your spam folder!
+{{< /note >}}
+
 {{< figure caption="Confirm your email address by entering the confirmation code we'll send you." >}}
 {{< img src="signup_verify.png" >}}
 {{< /figure >}}
