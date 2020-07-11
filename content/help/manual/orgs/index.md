@@ -21,6 +21,8 @@ anchors:
       title: Updating Billing Info
     - hash: rotating-cryptographic-keys
       title: Rotating Cryptographic Keys
+    - hash: deleting-an-organization
+      title: Deleting An Organization
 ---
 
 Organizations are a great way to organize, manage and share data between Padloc
@@ -307,3 +309,16 @@ been compromised in any way, you can generate a new set of keys via the
 After rotating your organization's cryptographic keys, all the organization's
 members except the owner will be suspended and will have to be reconfirmed (see
 [Suspending and Un-suspending Members](#suspending-and-un-suspending-members)).
+
+## Deleting An Organization
+
+{{< note >}}
+**Note:** Deleting an organization will **not** delete the accounts of its
+members - they will merely loose access to all data owned by it. The private
+vaults of the organization's members are also not affected.
+{{< /note >}}
+
+To delete an organization, click the button labeled **Delete Organization** at the
+very bottom of the settings tab, then type out the word "DELETE" to confirm your choice. **Deleting an organization
+will cancel any active subscriptions and permanently erase all the organization's data from
+Padloc, including all shared vaults owned by it. This action is not reversible!**

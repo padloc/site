@@ -2,6 +2,19 @@
 title: Searching & Filtering
 weight: 5
 icon: search
+anchors:
+    - hash: filtering-by-vaults
+      title: Filtering By Vaults
+    - hash: filtering-by-tags
+      title: Filtering By Tags
+    - hash: favorites
+      title: Favorites
+    - hash: recently-used-items
+      title: Recently Used Items
+    - hash: attachments
+      title: Attachments
+    - hash: searching
+      title: Searching
 ---
 
 Searching and filtering is is easily one of the most overlooked aspects of a
@@ -79,7 +92,8 @@ you can also combine your search with one of the filters mention above!
 
 -   **⌘ + F**: Search in current context/filter (selected vault, tag etc.)
 -   **⌘ + ⇧ + F**: Search all items, ignoring any filters
-    {{< /note >}}
+
+{{< /note >}}
 
 {{< figure caption="Searching is usually the fastest way to find what you need." >}}
 {{< img src="searching.png" >}}
