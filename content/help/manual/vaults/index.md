@@ -201,9 +201,7 @@ To attach a file to a vault item, simply click the {{< icon "paperclip" >}}
 {{< /figure >}}
 
 You can store any kind of file within Padloc as long as it is within the **5
-MB** size limit and you can add as many as many attachments as you want! For
-more information on how to store, browse and manage files, check out the
-[Storing Files]({{< relref "files" >}}) section of the manual!
+MB** size limit and you can add as many as many attachments as you want!
 
 ## Creating New Vaults
 
