@@ -57,8 +57,21 @@ irresponsible.
 
 ## There's an app for that.
 
-Of course, there is an app for that. Quite few in fact. Password managers exist in all shapes and colors,
+Of course, there is an app for that. Quite few in fact. Password managers exist
+in all shapes and colors, and have become an important part of many peoples
+digital lives. You've never heard of password managers, or are you not quite
+clear on how they work? The amazing people at the [Electronic Frontier
+Foundation](https://ssd.eff.org/en/module/animated-overview-using-password-managers-stay-safe-online)
+explain it much better than we ever could:
 
 {{< figure caption="What is a password manager? Credit: https://eff.org" >}}
 {{< iframe src="https://archive.org/embed/using-password-managers-to-stay-safe-online" width="640" height="350" >}}
 {{< /figure >}}
+
+## Enter Padloc
+
+As we've mentioned before, there are quite a few password managers out there
+and many of them are quite good! So why should you choose Padloc over other
+password managers? Well, there are lots of reasons, but instead of listing a bunch
+of dry arguments we'd rather just show you! So why don't you go ahead and just
+[give it a try]({{< relref "../create_account" >}})?
