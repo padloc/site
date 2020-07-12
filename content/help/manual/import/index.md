@@ -4,6 +4,11 @@ weight: 7
 icon: file-import
 aliases:
     - /guides/import/
+anchors:
+    - hash: from-csv
+      title: From CSV
+    - hash: from-padloc-export
+      title: From Padloc Export
 ---
 
 Padloc provides an easy way to import data from other applications. Supported formats are:
@@ -16,7 +21,7 @@ Padloc provides an easy way to import data from other applications. Supported fo
     supported and regonized automatically. Encrypted Padloc Exports are protected by a password which you'll
     have to provide during the import process. See [Importing Padloc Exports](#importing-padlock-export)
 
-# Importing from CSV
+## From CSV
 
 [Comma Separated Values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) is a common format for exporting
 structured data in a way that can be recognized by other applications. CSV files essentially contain tabular
@@ -36,7 +41,7 @@ following requirements:
    If your exported data contains a column representing something like a tags or group, make sure that column
    is labeled "tags". Multiple tags should be separated by a comma and the value wrapped in quotes (see example below).
 
-## Example CSV file
+### Example CSV file
 
 Here is an example of how a valid CSV file could look like:
 
@@ -44,34 +49,39 @@ Here is an example of how a valid CSV file could look like:
     Facebook,social,https://facebook.com/,john.doe@gmail.com,3kjaf93,"Some note..."
     Github,"work,coding",https://github.com,john.doe@gmail.com,129lskdf93
 
-## Prepare your data for import
+### Prepare your data for import
 
 Even though the contain simple tabular data, CSV files can be hard to read and edit by hand. We recommend
 using a spreadsheet application like **Microsoft Word** or **Apple Numbers** to review your data and make
 changes if required. Here is how the example from above looks in **Apple Numbers**:
 
-{{< figure src="/img/guides/csv-example.png" alt="Sample Data in Apple Numbers" class="rounded" >}}
+{{< figure caption="Here is how an CSV file should look like before it can be imported." >}}
+{{< img src="csv-example.png" >}}
+{{< /figure >}}
 
-# Import the data
+### Import the data
 
 Once you've made sure your CSV file satisfies Padloc's requirements, you can go ahead and import your data:
 
 1. Go to the **Settings** page via the menu.
-2. Under the **Import** section, click "Import..."
+2. Under the **Import / Export** section, click the button labeled **Import...**
 3. Select the file you want to import
-4. Click **Import**.
-5. Done!
+4. Choose which vault to import the data into.
+5. Click **Import**.
+6. Done!
 
-{{< figure src="/img/guides/import-settings.png" alt="Select Import" class="rounded" >}}
-{{< figure src="/img/guides/import-dialog.png" alt="Import Dialog" class="rounded" >}}
+{{< figure caption="After choosing the file to import, you can select which vault to import it into." >}}
+{{< img src="import-dialog.png" >}}
+{{< /figure >}}
 
-# Importing Padloc Export
+## From Padloc Export
 
 Importing data exported via Padloc's "Encrypted Export" feature is easy as well:
 
 1. Go to the **Settings** page via the menu.
-2. Under the **Import** section, click "Import..."
+2. Under the **Import / Export** section, click the button labeled **Import...**
 3. Select the file you want to import
 4. Enter the password you used when you exported the data.
-5. Click **Import**.
-6. Done!
+5. Choose which vault to import the data into.
+6. Click **Import**.
+7. Done!
