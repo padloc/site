@@ -208,6 +208,10 @@ figure img {
     overflow: hidden;
 }
 
+figure img.no-shadow {
+    box-shadow: none;
+}
+
 figure.border img {
     border: solid 1px #ccc;
     box-sizing: border-box;

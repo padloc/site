@@ -1,15 +1,14 @@
 ---
-title: 'Migrating from Padlock (v2) to Padloc (v3)'
-date: 2019-09-07
-publishDate: 2019-09-07
+title: "Migrating from Padlock (v2) to Padloc (v3)"
+icon: hiking
 aliases:
-  - /guides/migrate-v3/
-  - /help/migrate-v3/
+    - /guides/migrate-v3/
+    - /help/migrate-v3/
 anchors:
-  - title: Via Padlock Cloud
-    hash: via-padlock-cloud
-  - title: Through Export/Import
-    hash: through-exportimport
+    - title: Via Padlock Cloud
+      hash: via-padlock-cloud
+    - title: Through Export/Import
+      hash: through-exportimport
 ---
 
 With the [release of Padloc 3]({{< relref "blog/padloc-3-is-here.md" >}}) we have
@@ -43,14 +42,18 @@ see you accounts email address and the time of your last synchronization. Optima
 the latter should say "a few seconds ago". If it doesn't, just click the sync icon
 on the right to trigger a new sync.
 
-{{< figure src="/img/help/migrate-v3/cloud-step1.png" alt="Make sure your Padloc Cloud account is up to date." class="center rounded" >}}
+{{< figure caption="Make sure your Padloc Cloud account is up to date.">}}
+{{< img src="/img/help/migrate-v3/cloud-step1.png" >}}
+{{< /figure >}}
 
 ### Step 2: Download/Start Padloc 3
 
 To access the new version, you can either go to [https://web.padloc.app](https://web.padloc.app) or download
 one of our native apps from our [downloads page](/downloads/).
 
-{{< figure src="/img/help/migrate-v3/cloud-step2.png" alt="Open the Padloc 3 app" class="center rounded" >}}
+{{< figure >}}
+{{< img src="/img/help/migrate-v3/cloud-step2.png" >}}
+{{< /figure >}}
 
 ### Step 3: Log in with your email and password
 
@@ -63,7 +66,9 @@ which email address you used previously by going to the **My Account** page in t
 (see the screenshot from the previous step). After you've confirmed your email address
 (you'll be sent a confirmation code) you should see the following dialog:
 
-{{< figure src="/img/help/migrate-v3/cloud-step3.png" alt="Log in with your email and password" class="center rounded" >}}
+{{< figure caption="Log in with your email and password." >}}
+{{< img src="/img/help/migrate-v3/cloud-step3.png" >}}
+{{< /figure >}}
 
 Click **Migrate** and follow the instructions (you may be asked for your password again if you mistyped it previously).
 
@@ -109,7 +114,9 @@ To do this, start the app and go to the settings screen. There, click **"Export.
 and select the option to export your data as an encrypted file. Choose a
 password and save the file to your device.
 
-{{< figure src="/img/guides/export-legacy.png" alt="Encrypted Export" class="center rounded" >}}
+{{< figure caption="Export your data" >}}
+{{< img src="/img/guides/export-legacy.png" >}}
+{{< /figure >}}
 
 ### Step 2: Download/Start Padloc 3
 
@@ -121,7 +128,9 @@ the native app from our [downloads page](/downloads/).
 If you don't have a Padloc 3 account yet, create one now. To do this, simply
 click on **"Sign Up Now"** and follow the instructions.
 
-{{< figure src="/img/help/migrate-v3/signup.png" alt="Create a Padloc 3 account" class="center rounded" >}}
+{{< figure caption="Create a Padloc 3 account" >}}
+{{< img src="/img/help/migrate-v3/signup.png" >}}
+{{< /figure >}}
 
 ### Step 4: Import Your Data
 
@@ -129,7 +138,9 @@ Now you're ready to import your data into your Padloc 3 account! Go
 to settings and click **"Import..."**. Select the file you created in step 1 and follow
 the instructions.
 
-{{< figure src="/img/guides/import.png" alt="Encrypted Export" class="center rounded" >}}
+{{< figure alt="Encrypted Export" >}}
+{{< img src="/img/guides/import.png" >}}
+{{< /figure >}}
 
 ### Step 5: Make sure you have the latest version installed on all your devices
 

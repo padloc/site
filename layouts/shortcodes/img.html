@@ -1,8 +1,8 @@
 {{ if .Get "href" }}
 <a href='{{ .Get "href" }}' target="_blank">
-    <img src='{{ .Get "src" }}' width='{{ .Get "width" }}' height='{{ .Get "height" }}' />
+    <img src='{{ .Get "src" }}' width='{{ .Get "width" }}' height='{{ .Get "height" }}' class='{{ .Get "class" }}' />
 </a>
 {{ else }}
-    <img src='{{ .Get "src" }}' width='{{ .Get "width" }}' height='{{ .Get "height" }}' />
+    <img src='{{ .Get "src" }}' width='{{ .Get "width" }}' height='{{ .Get "height" }}' class='{{ .Get "class" }}' />
 {{ end }}
 

@@ -17,7 +17,7 @@ from the old "Padlock Cloud" accounts, so you'll have to create a new account
 for Padloc 3. Don't worry though, your billing info and any active subscriptions
 will be transferred automatically and migrating your data is super easy. For
 detailed instructions on how to migrate to Padloc 3, check out
-[this article]({{< relref "help/migration/migrate-v3.md" >}}). Or if you'd rather keep
+[this article]({{< relref "/help/guides/migrate-v3.md" >}}). Or if you'd rather keep
 using version 2 for a while, you can still find the legacy apps in the [downloads section](/downloads/#legacy)!
 {{< /note >}}
 
@@ -29,7 +29,9 @@ of version 3.0 we decided to also introduce a minor rebranding. We've dropped th
 "k" from the name making it a little less generic, more memorable and frankly easier
 to recognize by search engines. Also, we love how it looks in our new logo! 😌
 
-{{< figure src="logo.svg" alt="New Padloc Logo" class="center" >}}
+{{< figure caption="The new Padloc logo!" >}}
+{{< img src="logo.svg" class="no-shadow" >}}
+{{< /figure >}}
 
 ## Introducing Organizations And Shared Vaults
 
@@ -44,11 +46,15 @@ signifies a considerable increase in complexity, we've worked hard to retain
 the same simple and intuitive user experience that our users have come to love
 in Padloc!
 
-{{< figure src="orgs.png" alt="Organizations" class="center rounded" >}}
+{{< figure caption="Introducing Organizations & Shared Vaults" >}}
+{{< img src="orgs.png" >}}
+{{< /figure >}}
 
 ## Store And Share Files With Attachments
 
-{{< figure src="attachments.png" alt="Attachments" class="float right rounded" >}}
+{{< figure caption="Store encrypted files along your vault items with attachments!" >}}
+{{< img src="attachments.png" >}}
+{{< /figure >}}
 
 Storing passwords, credit card numbers and notes is not enough for you? We get
 it! After all, a lot of sensitive information is stored within pdf documents,
@@ -77,7 +83,9 @@ browser technology to protect you when browsing your data and as always,
 everything is protected by strong end-to-end encryption so nobody (not even us)
 has a chance to steal your data.
 
-{{< figure src="item-desktop.png" alt="Organizations" class="center rounded" >}}
+{{< figure caption="Access your data from anywhere with the new web interface!" >}}
+{{< img src="item-desktop.png" >}}
+{{< /figure >}}
 
 ## And Much, Much More...
 
