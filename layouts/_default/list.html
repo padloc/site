@@ -60,7 +60,7 @@
                         </div>
 
                         <div class="text">
-                            {{ $page.Summary | truncate 200 }}...
+                            {{ default ($page.Summary | truncate 200) (.Param "description") }}...
                         </div>
                     </article>
                 </a>

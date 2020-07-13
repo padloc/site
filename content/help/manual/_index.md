@@ -4,4 +4,4 @@ weight: 2
 icon: book
 ---
 
-This sections contains a comprehensive description of all basic and advanced features in Padloc.
+A comprehensive description of all basic and advanced features in Padloc.
