@@ -1,5 +1,9 @@
 <figure class='{{ .Get "class" }}'>
-    {{ .Inner }}
+    {{ if eq (.Get "mode") "md" }}
+        {{ markdownify .Inner }}
+    {{ else }}
+        {{ .Inner }}
+    {{ end }}
 
     {{ with .Get "src" }}
     <img src="{{ . }}" />

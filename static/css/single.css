@@ -42,8 +42,22 @@ h3 {
     margin: 1em 0.8em 0.4em 0.8em;
 }
 
+h4 {
+    margin: 1em 0.8em 0.4em 0.8em;
+}
+
 article {
     margin: 2em 0;
+}
+
+article table {
+    border-collapse: collapse;
+    margin: 0.6em;
+}
+
+article table td {
+    padding: 0.3em;
+    vertical-align: top;
 }
 
 p {

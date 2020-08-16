@@ -58,6 +58,11 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    font-size: 100%;
+    font-weight: 600;
+}
+
 a {
     color: var(--color-highlight);
     text-decoration: none;
@@ -132,8 +137,6 @@ footer a {
 }
 
 table {
-    margin-bottom: 100px;
-    font-size: 90%;
 }
 
 th {
@@ -509,6 +512,13 @@ section.hero .inner .logo {
 
 .underline {
     text-decoration: underline;
+}
+
+.highlight pre {
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 0.7em;
+    text-align: left;
 }
 
 pre {
