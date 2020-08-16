@@ -331,7 +331,7 @@ PL_EMAIL_SECURE=false
 # The path to your ssl certificate
 PL_SSL_CERT=./ssl/cert.pem
 # The path to your ssl private key
-PL_SSL_PRIVKEY=./ssl/privkey.pem
+PL_SSL_KEY=./ssl/key.pem
 # Advanced configuration file
 # PL_SSL_CONF=./ssl/ssl.conf
 ```
