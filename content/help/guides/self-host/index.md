@@ -84,7 +84,6 @@ services:
         volumes:
             - ${PL_DB_DIR:-./db}:/data
             - ${PL_ATTACHMENTS_DIR:-./attachments}:/docs
-            - ${PL_LOGS_DIR:-./logs}:/logs
         environment:
             - PL_PWA_URL
             - PL_EMAIL_SERVER
@@ -118,9 +117,9 @@ Congratulations, you're now running your very own Padloc server and web app!
 They're listening on ports `3000` and `8080`, respectively, which is the
 default configuration.
 
-By default, this will also create folders for the database
-files, attachments, logs and the static web app code in the same directory you
-ran the command from. We'll talk about how you can configure these things in a bit.
+By default, this will also create folders for the database files, attachments
+and web app code in the same directory you ran the command from. We'll talk
+about how you can configure these things in a bit.
 
 Go ahead and open `http://[your_ip_address]:8080` in your browser. You should
 see the following (you may need to wait a minute until the PWA is built):
@@ -168,7 +167,6 @@ services:
         volumes:
             - ${PL_DB_DIR:-./db}:/data
             - ${PL_ATTACHMENTS_DIR:-./attachments}:/docs
-            - ${PL_LOGS_DIR:-./logs}:/logs
         environment:
             - PL_PWA_URL
             - PL_EMAIL_SERVER
@@ -295,9 +293,9 @@ like this:
 # GENERAL SETTINGS
 # ================
 # URL that will resolve to the server instance
-PL_SERVER_URL=https://example.com/
+PL_PWA_URL=https://example.com/
 # URL that will resolve to the web app
-PL_PWA_URL=https://example.com/server/
+PL_SERVER_URL=https://example.com/server/
 
 # SERVER SETTINGS
 # ===============
@@ -307,8 +305,6 @@ PL_SERVER_PORT=3000
 PL_DB_DIR=./db
 # Directory where attachment files will be stored
 PL_ATTACHMENTS_DIR=./attachments
-# Directory where logs files will be stored
-PL_LOGS_DIR=./logs
 
 # PWA SETTINGS
 # ============
@@ -384,7 +380,6 @@ change the appropriate value in your `.env` file:
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `PL_DB_DIR`          | This is where the Padloc database files are stored.                                                                                                                                                                                                                                                                                                                                                   |
 | `PL_ATTACHMENTS_DIR` | This is where attachment files are stored (see [Attachments]({{< relref "/help/manual/vaults#attachments" >}})).                                                                                                                                                                                                                                                                                      |
-| `PL_LOGS_DIR`        | This is where log files are stored.                                                                                                                                                                                                                                                                                                                                                                   |
 | `PL_PWA_DIR`         | This is where the `pwa` service will put the static files for the web app. This doesn't actually need to be persistent since Padloc will always rebuild this if necessary but keeping these files around can speed up container startup in the future. This is also useful if you want to serve the static files through different means instead of having them served by the `pwa` service directly. |
 
 To learn more about data management in Docker, check out [this link](https://docs.docker.com/storage/).
