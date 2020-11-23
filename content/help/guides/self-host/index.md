@@ -245,7 +245,7 @@ http {
         # This will resolve to the web app
         location / {
             proxy_pass http://padloc_pwa:8080;
-            rewrite ^/padloc_server(.*)$ $1 break;
+            rewrite ^/padloc_pwa(.*)$ $1 break;
         }
 
         # SSL certificate
