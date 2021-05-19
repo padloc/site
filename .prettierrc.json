@@ -3,5 +3,19 @@
     "tabWidth": 4,
     "semi": true,
     "singleQuote": false,
-    "bracketSpacing": true
+    "bracketSpacing": true,
+    "overrides": [
+        {
+            "files": ["*.html"],
+            "options": {
+                "parser": "go-template"
+            }
+        },
+        {
+            "files": ["content/**/*.md", ".forestry/**/*.yml"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }

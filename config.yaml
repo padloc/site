@@ -11,6 +11,8 @@ params:
     security_whitepaper_url: https://github.com/padloc/padloc/blob/master/security.md
     github_url: https://github.com/padloc/padloc
 
+    stripePublicKey: ""
+
     downloads:
         - title: Padloc for Mac
           type: desktop

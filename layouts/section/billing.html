@@ -1,0 +1,13 @@
+{{ define "css" }}
+    {{ template "basecss" . }}
+{{ end }}
+
+{{ define "js" }}
+    {{ $js := resources.Get "js/billing.js" | js.Build (dict "params" (dict "stripePublicKey" .Site.Params.stripePublicKey )) }}
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{{ $js.RelPermalink }}"></script>
+{{ end }}
+
+{{ define "main" }}
+    <section style="padding: 10em; text-align: center;">Redirecting you to the checkout page...</section>
+{{ end }}
