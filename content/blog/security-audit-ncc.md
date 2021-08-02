@@ -16,7 +16,7 @@ principles can be very hard to grasp for non-technical users and even though
 our source code is open and [available publicly]({{< param "github_url" >}}),
 we understand that few people actually have the technical knowledge and
 expertise to assess the security of an application like Padloc. That is why
-independent security audits and penetration test by reputable third parties are
+independent security audits and penetration tests by reputable third parties are
 an essential part of our security practices.
 
 **In Spring 2019, the security experts at [NCC Group](https://www.nccgroup.trust)
