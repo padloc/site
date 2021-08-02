@@ -1,5 +1,5 @@
 ---
-title: 'Security Audit By NCC Group'
+title: "Security Audit By NCC Group"
 date: 2019-08-25
 publishDate: 2019-08-26
 weight: 1
@@ -27,10 +27,9 @@ problems within the core components used throughout the application.
 We're happy to announce that no critical issues were discovered and all relevant
 problems were addressed immediately and have since been fixed. All findings, as
 well as the mitigations and fixes performed by our team, can be found in the report
-prepared by NCC Group, which is available publicly on their
-website:
+prepared by NCC Group:
 
-[Padloc Cryptography Review by NCC Group](https://www.nccgroup.trust/contentassets/1366cb3c70a3488f9ac4aa4cdbbef833/ncc_group_opentechnologyfund_padloccryptoreview_report_2019-08-23_v1.1.pdf)
+[Padloc Cryptography Review by NCC Group](/docs/NCC_Group_OpenTechnologyFund_PadlocCryptoReview_Report_2019-08-23_v1.1.pdf)
 
 We'd like to thank the [Open Tech Fund](https://www.opentech.fund/) for
 generously funding this audit as well as NCC Group for their thorough and
