@@ -4,45 +4,45 @@
 {{ end }}
 
 {{ define "main" }}
+    {{ partial "header" . }}
 
-{{ partial "header" . }}
+    <div class="main-layout">
+        <div>
+            <div class="side-menu">
+                {{ if not .Params.hide_menu }}
+                    <div class="animation-reveal">
+                        {{ partial "search" . }}
+                    </div>
 
-<div class="main-layout">
-    <div>
-        <div class="side-menu">
-            <div class="animation-reveal">
-                {{ partial "search" . }}
+                    {{ partial "section-menu" . }}
+                {{ end }}
             </div>
+        </div>
 
-            {{ partial "section-menu" . }}
+        <div>
+            <article class="animation-reveal-children animation-fast">
+                <div class="narrow">
+                    {{ partial "breadcrumbs" . }}
+                </div>
+
+                {{ partial "cover-image" . }}
+
+                <h1>{{ .Title }}</h1>
+
+                {{ with .PublishDate }}
+                    <p class="subtle">{{ dateFormat "Monday, Jan 2, 2006" . }}</p>
+                {{ end }}
+
+                <div>
+                    {{ .Content }}
+                </div>
+            </article>
+        </div>
+
+        <div>
+            <div class="side-menu right">
+                {{ partial "page-menu" . }}
+            </div>
         </div>
     </div>
-
-    <div>
-        <article class="animation-reveal-children animation-fast">
-            <div class="narrow">
-                {{ partial "breadcrumbs" . }}
-            </div>
-
-            {{ partial "cover-image" . }}
-
-            <h1>{{ .Title }}</h1>
-
-            {{ with .PublishDate }}
-            <p class="subtle">{{ dateFormat "Monday, Jan 2, 2006" . }}</p>
-            {{ end }}
-
-            <div>
-                {{ .Content }}
-            </div>
-        </article>
-    </div>
-
-    <div>
-        <div class="side-menu right">
-            {{ partial "page-menu" . }}
-        </div>
-    </div>
-</div>
-
 {{ end }}
