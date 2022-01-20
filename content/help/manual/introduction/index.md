@@ -41,7 +41,7 @@ weight: 1
 {{< /blockquote >}}
 {{< /figure >}}
 
-This is my first edit!
+This is my first edit.
 
 We've all been there. There is just so many accounts, passwords and other information to keep track of
 it seems impossible not get confused and overwhelmed. And to make things worse, every website and app has
