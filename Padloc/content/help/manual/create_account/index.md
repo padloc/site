@@ -3,41 +3,29 @@ title: Creating An Account
 weight: 2
 icon: user-plus
 anchors:
-    - hash: step-1-enter-your-name-and-email-address
-      title: Enter Your Name And Email
-    - hash: step-2-confirm-your-email-address
-      title: Confirm Your Email Address
-    - hash: step-3-choose-your-master-password
-      title: Choose Your Master Password
+  hash: Step-1-enter-your-email-address
+  title: Enter Your email address
+  
+  hash: Step-2-email-authentication
+  title: Email Authentication
+  
+  hash: Step-3-create-your-master-password
+  title: Choose Your Master Password
 ---
 
-Creating a Padloc account is simple and takes only a few moments. To get
-started, you can either open the Padloc web app by going to
-https://web.padloc.app or by downloading and installing the app. The first
-thing you'll see is a login screen. Since you don't have an account yet, you
-can't login at this point. Instead, click on **Sign Up Now**.
+Creating a Padloc account is as easy as 1-2-3.  
 
-## Step 1: Enter your name and email address
+To get started please download and install the [app](https://padloc.app/downloads/) or visit the [signup page](https://web.padloc.app/signup).
 
-First, you'll be asked for an **email address** and your **name**.
+## Step 1: Enter Your email address
 
-{{< figure caption="Start by entering your email address and name." >}}
-{{< img src="signup_start.png" >}}
-{{< /figure >}}
+First, you'll be asked to enter your **email address**.
 
-Your **email address** is used as a username for logging into your account, as well
-as as the standard delivery method for 2-factor authentication. We'll also use
-this address to send you important updates about your account, organizations
-you are a member of and various other things. For more information about how we
-handle your email and other personal information, please refer to our [privacy
+{{< figure caption="Start by entering your email address." >}} {{< img src="signup_email.png" >}} {{< /figure >}}
+
+Your **email address** is used as a username for logging into your account, as well as as the standard delivery method for 2-factor authentication. We'll also use this address to send you important updates about your account, organizations you are a member of, and various other things. For more information about how we handle your email and other personal information, please refer to our [privacy
 policy](/privacy).
 
-You may also enter a **display name** that will tell us how you'd like to be
-referred to. This is especially useful in case you join any organizations (like
-your shared Family account or Company) as it will make it easier for others to
-identify you. This doesn't have to be your full or even your real name and can
-be changed at any time later on. It is also completely optional so you can just
-leave this empty for now if you want.
 
 ## Step 2: Confirm your email address
 
