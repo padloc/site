@@ -3,14 +3,14 @@ title: Creating An Account
 weight: 2
 icon: user-plus
 anchors:
-  hash: Step-1-enter-your-email-address
-  title: Enter Your email address
+  - hash: Step-1-enter-your-email-address
+    title: Enter Your email address
   
-  hash: Step-2-email-authentication
-  title: Email Authentication
+  - hash: Step-2-email-authentication
+    title: Email Authentication
   
-  hash: Step-3-create-your-master-password
-  title: Choose Your Master Password
+  - hash: Step-3-create-your-master-password
+    title: Choose Your Master Password
 ---
 
 Creating a Padloc account is as easy as 1-2-3.  
