@@ -45,6 +45,9 @@ We’ve all been there. There are so many accounts, passwords and other informat
 
 This problem has existed for ages, but the situation seems to be getting worse by the minute.  At work we have digital workspaces, employee portals, and websites, that we need to interact with.  At home the online systems and apps we use are meant to make our life easier but is it easy remembering a bazillion user names and passwords?  Also, we should point out, that it is exceedingly unsafe to be using that same old password or a variation of it, over and over.  Hackers everyday are looking to get access to your life, money, and personal data.
 
+{{< figure caption="Password Reuse. Credit: https://xkcd.com/" >}}
+{{< img src="password_reuse.png" class="center" href="https://xkcd.com/792/" height="300px" >}}
+{{< /figure >}}
 
 ## **There's an app for that.**
 
