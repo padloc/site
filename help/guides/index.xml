@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guides &amp; Recipes on Padloc - A Modern Password Manager For Individuals And Teams</title>
+    <link>https://padloc.app/help/guides/</link>
+    <description>Recent content in Guides &amp; Recipes on Padloc - A Modern Password Manager For Individuals And Teams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://padloc.app/help/guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Host Your Own Padloc Instance</title>
+      <link>https://padloc.app/help/guides/self-host/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/guides/self-host/</guid>
+      <description>As a cloud-based password manager, Padloc allows you to access your data anywhere, anytime, be it from our desktop client, our Android or iOS app or directly through the browser. While our online-first approach brings a lot of advantages like convenience, portability and reduced risk of data loss, it also comes with potential security and privacy implications.
+As custodians of your most sensitive and private data and we recognise the immense responsibility that comes with this, and Padloc is built from the ground up with a focus on security, privacy and transparency.</description>
+    </item>
+    
+    <item>
+      <title>Migrating from Padlock (v2) to Padloc (v3)</title>
+      <link>https://padloc.app/help/guides/migrate-v3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/guides/migrate-v3/</guid>
+      <description>With the release of Padloc 3 we have made a major step forward in the development of our product, introducing powerful new features like shared vaults, two-factor authentication and more! Since the development of these new features required some major changes in Padloc&amp;rsquo;s application architecture, automatically updating our existing apps would have been quite complicated, which is why we decided to release Padloc 3 as a new, separate app instead. Luckily, upgrading to Padloc 3 is quite easy!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Padloc - A Modern Password Manager For Individuals And Teams</title>
+    <link>https://padloc.app/</link>
+    <description>Recent content on Padloc - A Modern Password Manager For Individuals And Teams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://padloc.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interview with Safety Detectives</title>
+      <link>https://padloc.app/blog/interview-safety-detectives/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/interview-safety-detectives/</guid>
+      <description>This summer, our very own Martin Kleinschrodt sat down with Aviva Zacks from Safety Detectives to talk about why he started Padloc, how Padloc is different from other password managers and why password managers in general play such an important role in our digital lives.
+Head over to the Savety Detectives blog to read the full interview!</description>
+    </item>
+    
+    <item>
+      <title>Releasing The Padloc Browser Extension</title>
+      <link>https://padloc.app/blog/browser-extension-released/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/browser-extension-released/</guid>
+      <description>We&amp;rsquo;ve made you wait for way too long, but now it is finally here! The Padloc browser extension gives you fast and convenient access to you Padloc account directly from your browser!
+Filling forms via drag &amp;amp; drop  In addition to being a full-featured Padloc client (you can do almost everything you can do with the native apps), the extensions nicely integrates with the browser it lives in, giving you a few extra features.</description>
+    </item>
+    
+    <item>
+      <title>Padloc 3 Is Here!</title>
+      <link>https://padloc.app/blog/padloc-3-is-here/</link>
+      <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/padloc-3-is-here/</guid>
+      <description>After months of hard work, we&amp;rsquo;re thrilled to announce another major update: Padloc 3.0! This is the most significant update in quite some time and we can&amp;rsquo;t wait to tell you about all the improvements and exciting new features we have in store for you!
+Are you an existing Padloc user? Padloc 3 accounts are handled separately from the old &amp;ldquo;Padlock Cloud&amp;rdquo; accounts, so you&amp;rsquo;ll have to create a new account for Padloc 3.</description>
+    </item>
+    
+    <item>
+      <title>Security Audit By NCC Group</title>
+      <link>https://padloc.app/blog/security-audit-ncc/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/security-audit-ncc/</guid>
+      <description>As a user of Padloc, you entrust us with some of your most sensitive and private data and we recognise the immense responsibility that comes with this. Padloc is built from the ground up with a focus on security, privacy and transparency and we employ these principles every step along the way when handling your data. As a security-sensitive service, cryptography and information security is at the very heart of our product.</description>
+    </item>
+    
+    <item>
+      <title>GDPR Compliance And Updated Privacy Policy</title>
+      <link>https://padloc.app/blog/gdpr/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/gdpr/</guid>
+      <description>On May 25 2018, the new General Data Protection Regulation (GDPR) comes into effect. The GDPR is a new, EU-wide privacy and data protection law that marks the most important change in data privacy regulation in decades. It calls for more granular privacy guardrails in an organization’s systems, more nuanced data protection agreements, and more consumer-friendly and detailed disclosures about an organization’s privacy and data protection practices.
+Naturally, as custodians of your most sensitive and private data we value privacy, security and transparency above anything else and we support and welcome the GDPR and the new protections and rights it ensures for our users.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://padloc.app/help/manual/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/introduction/</guid>
+      <description>Me: Hi Reddit, I&amp;rsquo;d like to see some pictures of cute kittens please!   Reddit: Your session has expired. Please log in again!   Me: Sure thing! Wait, what&amp;rsquo;s my password again? It had my pets name I think? And probably my birthday? A I think I got it.   Reddit: Incorrect username or password. Please try again!   Me: Hm. Ok maybe it was my mothers birtday?</description>
+    </item>
+    
+    <item>
+      <title>Creating An Account</title>
+      <link>https://padloc.app/help/manual/create_account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/create_account/</guid>
+      <description>Creating a Padloc account is simple and takes only a few moments. To get started, you can either open the Padloc web app by going to https://web.padloc.app or by downloading and installing the app. The first thing you&amp;rsquo;ll see is a login screen. Since you don&amp;rsquo;t have an account yet, you can&amp;rsquo;t login at this point. Instead, click on Sign Up Now.
+Step 1: Enter your name and email address First, you&amp;rsquo;ll be asked for an email address and your name.</description>
+    </item>
+    
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>https://padloc.app/help/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/faq/</guid>
+      <description>What is a password manager? We&amp;rsquo;ll let our friends at the Electronic Frontier Foundation take this one:
+Animated Overview: Using Password Managers to Stay Safe Online
+What&amp;rsquo;s so special about Padloc? We believe that software should not only be useful but also simple and fun to use. Padloc is all about simplicity and usability. We deliberately left out features that make other password managers unnecessarily complex and potentially confusing. Padloc focuses only on the most essential functionality.</description>
+    </item>
+    
+    <item>
+      <title>Vaults &amp; Vault Items</title>
+      <link>https://padloc.app/help/manual/vaults/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/vaults/</guid>
+      <description>Vaults are where all your data is stored within Padloc. You can imagine them as secure folders that can hold an arbitrary number of entries (called Vault Items, more about those below). Vaults are protected by strong, state of the art encryption and can only accessed by you (and other Padloc users you explicitly give access). Not even we can read what&amp;rsquo;s inside, even if we wanted to!
+After creating your Padloc account, you&amp;rsquo;ll start off with a single Vault called &amp;ldquo;My Vault&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Organizations &amp; Shared Vaults</title>
+      <link>https://padloc.app/help/manual/orgs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/orgs/</guid>
+      <description>Organizations are a great way to organize, manage and share data between Padloc users. Use cases range from simple family accounts to teams, companies or any other kind of institution or group that has the need store store and share sensitive information between multiple people. Using organizations, you have fine-grained control of who can access, edit and share certain information. Padloc achieves this without requiring you to explicitly trust our servers, your network provider or anyone who might be listening in on the connection.</description>
+    </item>
+    
+    <item>
+      <title>Searching &amp; Filtering</title>
+      <link>https://padloc.app/help/manual/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/search/</guid>
+      <description>Searching and filtering is is easily one of the most overlooked aspects of a password manager. Over time a lot of data will be accumulating in your vaults and being able to quickly and easily find the data you need at any given moment is essential for a productive workflow and will save you a lot of time in the long run. Luckily this is one of the areas where Padloc really shines!</description>
+    </item>
+    
+    <item>
+      <title>Settings</title>
+      <link>https://padloc.app/help/manual/settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/settings/</guid>
+      <description>The Settings screen contains options for managing your account, your subscription and billing info and various other things.
+Changing Your Display Name Your display name is what other Padloc users will see next to your email address if your are a member of any organizations. To change your display name, simply click the  icon in the Profile section, then enter the desired name and click Save.
+Logging Out To log out of your account, click the button labeled Log Out under in the Security section.</description>
+    </item>
+    
+    <item>
+      <title>Importing Data</title>
+      <link>https://padloc.app/help/manual/import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/import/</guid>
+      <description>Padloc provides an easy way to import data from other applications. Supported formats are:
+  Comma Separated Values (CSV) - Many applications support exporting data in this format. In order to import data like this into Padloc, you need to make sure it is structured in a specific way. More about this under Importing From CSV.
+  Encrypted Padloc Export - Lastly, Padloc has its own, encrypted export format which naturally is supported and regonized automatically.</description>
+    </item>
+    
+    <item>
+      <title>Exporting Data</title>
+      <link>https://padloc.app/help/manual/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/export/</guid>
+      <description>Encrypted Export The recommended way to export your data is as a encrypted, password protected file.
+ Go to the Settings screen In the Import / Export section, click the button labeled Export&amp;hellip; Choose the vault you&amp;rsquo;d like to export. Under Format, select Encrypted Container. The button at the bottom of the dialog will indicate how many items will be exported. Click it to continue. Choose a password to protect your data.</description>
+    </item>
+    
+    <item>
+      <title>Browser Extensions</title>
+      <link>https://padloc.app/help/manual/extensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/extensions/</guid>
+      <description>The Padloc browser extension is a convenient and secure way to access your data right were you most often need it - in your web browser.
+Getting Started The Padloc extension is currently only available for Firefox and Chrome. Support for Safari, Edge and other browsers coming soon!  To get started using the Padloc extension in your browser, simply download and install it from the extension store of your browser.</description>
+    </item>
+    
+    <item>
+      <title>Business</title>
+      <link>https://padloc.app/business/business/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/business/business/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Padloc Privacy Policy</title>
+      <link>https://padloc.app/privacy/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/privacy/</guid>
+      <description>This privacy policy documents how and when Padloc stores, handles and processes user data, specifically your sensitive, private and &amp;lsquo;personal identifiable&amp;rsquo; information as well as your rights regarding this data. Since this document is meant to inform you, the user, it is written in plain, easily understandable language. We will try to communicate to you all the most important facts without going into too much technical detail or overwhelming you with too much information.</description>
+    </item>
+    
+    <item>
+      <title>Billing</title>
+      <link>https://padloc.app/billing/billing/</link>
+      <pubDate>Sun, 13 Nov 2016 20:17:39 +0100</pubDate>
+      
+      <guid>https://padloc.app/billing/billing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>downloads</title>
+      <link>https://padloc.app/downloads/downloads/</link>
+      <pubDate>Sun, 13 Nov 2016 20:17:39 +0100</pubDate>
+      
+      <guid>https://padloc.app/downloads/downloads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>feedback</title>
+      <link>https://padloc.app/feedback/feedback/</link>
+      <pubDate>Sun, 13 Nov 2016 20:17:39 +0100</pubDate>
+      
+      <guid>https://padloc.app/feedback/feedback/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slide show</title>
+      <link>https://padloc.app/slideshow/</link>
+      <pubDate>Sun, 13 Nov 2016 20:17:39 +0100</pubDate>
+      
+      <guid>https://padloc.app/slideshow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security Audit by Cure53</title>
+      <link>https://padloc.app/blog/pentest-1604/</link>
+      <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/pentest-1604/</guid>
+      <description>Password managers like Padlock are different from most other applications in that they deal with personal and sensitive data and therefore require a significant level of trust from their users and have to be held to a much higher standard when it comes to security and privacy. We believe that the best foundation for trust is transparency which is one of the reasons why we&amp;rsquo;re so strongly committed to the idea of Open Source.</description>
+    </item>
+    
+    <item>
+      <title>Security Audit by Cure53 - Notes</title>
+      <link>https://padloc.app/pentest-1604-notes/</link>
+      <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/pentest-1604-notes/</guid>
+      <description>Below are our notes on the Penetration Test report performed by Cure53 in April 2016. You can download the full test report here.
+PIO-01-001 Android, iOS and Extension: Insecure PRNG usage Fixed: https://github.com/MaKleSoft/padlock/commit/22bffa5232b0
+PIO-01-002 API: Email enumeration and unauthenticated reset initiation Fixed at time of pentest (as stated in the report).
+PIO-01-003 Android: Lack of screen capture protections Found a Cordova plugin that handles this and adds some additional protection on iOS as well: https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://padloc.app/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Host Your Own Padloc Instance</title>
+      <link>https://padloc.app/help/guides/self-host/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/guides/self-host/</guid>
+      <description>As a cloud-based password manager, Padloc allows you to access your data anywhere, anytime, be it from our desktop client, our Android or iOS app or directly through the browser. While our online-first approach brings a lot of advantages like convenience, portability and reduced risk of data loss, it also comes with potential security and privacy implications.
+As custodians of your most sensitive and private data and we recognise the immense responsibility that comes with this, and Padloc is built from the ground up with a focus on security, privacy and transparency.</description>
+    </item>
+    
+    <item>
+      <title>Migrating from Padlock (v2) to Padloc (v3)</title>
+      <link>https://padloc.app/help/guides/migrate-v3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/guides/migrate-v3/</guid>
+      <description>With the release of Padloc 3 we have made a major step forward in the development of our product, introducing powerful new features like shared vaults, two-factor authentication and more! Since the development of these new features required some major changes in Padloc&amp;rsquo;s application architecture, automatically updating our existing apps would have been quite complicated, which is why we decided to release Padloc 3 as a new, separate app instead. Luckily, upgrading to Padloc 3 is quite easy!</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://padloc.app/help/trouble/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/trouble/</guid>
+      <description>Having trouble? we&amp;rsquo;ve compiled solutions to a few common problems.
+The Firefox extension doesn&amp;rsquo;t display correctly. On some systems, Firefox&#39; hardware acceleration feature may cause rendering problems in the extension user interface. If you&amp;rsquo;re seeing flashing white squares or any other display problems, please try disabling hardware acceleration. For details, see:
+https://support.mozilla.org/en-US/kb/troubleshoot-extensions-themes-to-fix-problems#w_turn-off-hardware-acceleration
+The Firefox extension may have display issues.  </description>
+    </item>
+    
+  </channel>
+</rss>

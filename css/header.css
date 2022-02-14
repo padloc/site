@@ -1,0 +1,110 @@
+header {
+    width: 100%;
+    font-size: 110%;
+    position: relative;
+    z-index: 10;
+}
+
+header .header-inner {
+    max-width: var(--max-inner-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px 0 20px;
+    box-sizing: border-box;
+}
+
+header .login-button,
+header .btn {
+    display: block;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav.sections ul li:not(:last-child),
+header nav.login-signup ul li:not(:last-child) {
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: var(--color-fg);
+    display: block;
+}
+
+header nav ul li.active a {
+    color: var(--color-highlight);
+    font-weight: bold;
+}
+
+header .logo {
+    height: 1.5em;
+    width: 5em;
+    stroke-width: 7;
+}
+
+header .spacer {
+    flex: 1;
+}
+
+header .menu-button {
+    background: transparent;
+    color: var(--color-fg);
+}
+
+header .menu {
+    position: relative;
+}
+
+header .menu-inner {
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0px 10px rgba(154, 160, 185, 0.05), 0 0px 40px rgba(166, 173, 201, 0.2);
+    z-index: 10;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 12em;
+    --color-bg: var(--color-white);
+    --color-fg: var(--color-black);
+    background: var(--color-bg);
+}
+
+header .menu-sections ul {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header .menu-sections ul li a {
+    margin-top: 0.8em;
+    padding: 0 0.5em;
+    font-weight: 600;
+}
+
+header .menu-login-signup {
+    padding-bottom: 0.5em;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+header .menu-login-signup ul > * {
+    flex: 1;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-item,
+    .login-signup {
+        display: none;
+    }
+}

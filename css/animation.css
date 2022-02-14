@@ -1,0 +1,102 @@
+@keyframes reveal {
+    from {
+        transform: translate(0, 30px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes reveal2 {
+    from {
+        transform: translate(0, 30px);
+    }
+}
+
+@keyframes drop {
+    from {
+        transform: translate(0, -200px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    --animation-base-duration: 0.2s;
+}
+
+.animation-pause * {
+    animation-play-state: paused !important;
+}
+
+.animation-reveal-children > *,
+.animation-reveal {
+    animation: reveal calc(5 * 0.2s) backwards;
+}
+
+.animation-fast {
+    --animation-base-duration: 0.05s;
+}
+
+.animation-reveal-children :nth-child(1),
+.animation-delay-1 {
+    animation-delay: calc(1 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(2),
+.animation-delay-2 {
+    animation-delay: calc(2 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(3),
+.animation-delay-3 {
+    animation-delay: calc(3 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(4),
+.animation-delay-4 {
+    animation-delay: calc(4 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(5),
+.animation-delay-5 {
+    animation-delay: calc(5 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(6),
+.animation-delay-6 {
+    animation-delay: calc(6 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(7),
+.animation-delay-7 {
+    animation-delay: calc(7 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(8),
+.animation-delay-8 {
+    animation-delay: calc(8 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(9),
+.animation-delay-9 {
+    animation-delay: calc(9 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(10),
+.animation-delay-10 {
+    animation-delay: calc(10 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(11),
+.animation-delay-11 {
+    animation-delay: calc(11 * var(--animation-base-duration));
+}
+
+.animation-reveal-children :nth-child(12),
+.animation-delay-12 {
+    animation-delay: calc(12 * var(--animation-base-duration));
+}

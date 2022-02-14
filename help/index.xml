@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Help on Padloc - A Modern Password Manager For Individuals And Teams</title>
+    <link>https://padloc.app/help/</link>
+    <description>Recent content in Help on Padloc - A Modern Password Manager For Individuals And Teams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://padloc.app/help/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>https://padloc.app/help/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/faq/</guid>
+      <description>What is a password manager? We&amp;rsquo;ll let our friends at the Electronic Frontier Foundation take this one:
+Animated Overview: Using Password Managers to Stay Safe Online
+What&amp;rsquo;s so special about Padloc? We believe that software should not only be useful but also simple and fun to use. Padloc is all about simplicity and usability. We deliberately left out features that make other password managers unnecessarily complex and potentially confusing. Padloc focuses only on the most essential functionality.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://padloc.app/help/trouble/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/trouble/</guid>
+      <description>Having trouble? we&amp;rsquo;ve compiled solutions to a few common problems.
+The Firefox extension doesn&amp;rsquo;t display correctly. On some systems, Firefox&#39; hardware acceleration feature may cause rendering problems in the extension user interface. If you&amp;rsquo;re seeing flashing white squares or any other display problems, please try disabling hardware acceleration. For details, see:
+https://support.mozilla.org/en-US/kb/troubleshoot-extensions-themes-to-fix-problems#w_turn-off-hardware-acceleration
+The Firefox extension may have display issues.  </description>
+    </item>
+    
+  </channel>
+</rss>

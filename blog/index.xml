@@ -1,0 +1,347 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Padlock Newsletter</title>
+    <link>https://padloc.app/blog/</link>
+    <description>Recent news about Padlock and Padlock Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Interview with Safety Detectives</title>
+      <link>https://padloc.app/blog/interview-safety-detectives/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/interview-safety-detectives/</guid>
+      <description>This summer, our very own Martin Kleinschrodt sat down with Aviva Zacks from Safety Detectives to talk about why he started Padloc, how Padloc is different from other password managers and why password managers in general play such an important role in our digital lives.
+Head over to the Savety Detectives blog to read the full interview!</description>
+      <content:encoded>&lt;p&gt;This summer, our very own Martin Kleinschrodt sat down with Aviva Zacks from Safety Detectives to talk about why he started Padloc, how Padloc is different from other password managers and why password managers in general play such an important role in our digital lives.&lt;/p&gt;
+&lt;p&gt;Head over to the &lt;a href=&#34;https://www.safetydetectives.com/blog/interview-martin-kleinschrodt-padloc/&#34;&gt;Savety Detectives blog&lt;/a&gt; to read the full interview!&lt;/p&gt;
+</content:encoded>
+    </item>
+    
+    <item>
+      <title>Releasing The Padloc Browser Extension</title>
+      <link>https://padloc.app/blog/browser-extension-released/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/browser-extension-released/</guid>
+      <description>We&amp;rsquo;ve made you wait for way too long, but now it is finally here! The Padloc browser extension gives you fast and convenient access to you Padloc account directly from your browser!
+Filling forms via drag &amp;amp; drop  In addition to being a full-featured Padloc client (you can do almost everything you can do with the native apps), the extensions nicely integrates with the browser it lives in, giving you a few extra features.</description>
+      <content:encoded>&lt;p&gt;We&amp;rsquo;ve made you wait for way too long, but now it is finally here! The &lt;a href=&#34;https://padloc.app/downloads/#browser-extensions&#34;&gt;Padloc
+browser extension&lt;/a&gt; gives you fast and
+convenient access to you Padloc account directly from your browser!&lt;/p&gt;
+&lt;figure class=&#39;&#39;&gt;
+    
+        
+
+    &lt;img src=&#39;extension-1.png&#39; width=&#39;&#39; height=&#39;&#39; class=&#39;&#39; /&gt;
+
+
+
+
+    
+
+    
+
+    
+    &lt;figcaption&gt;Filling forms via drag &amp;amp; drop&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+&lt;p&gt;In addition to being a full-featured Padloc client (you can do almost
+everything you can do with the native apps), the extensions nicely integrates
+with the browser it lives in, giving you a few extra features. Here are just
+some of the things the Padloc Extension can do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Access and manage your vaults and organizations directly from the browser.&lt;/li&gt;
+&lt;li&gt;Automatically finds relevant entries for you based on the site your visiting.&lt;/li&gt;
+&lt;li&gt;Fill out form elements with an intuitive drag &amp;amp; drop interaction.&lt;/li&gt;
+&lt;li&gt;Conveniently fill forms directly from the context menu (right click on any
+form element).&lt;/li&gt;
+&lt;li&gt;All the other features you know from our other apps, like a powerful password
+generator, file previews and more!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#39;&#39;&gt;
+    
+        
+
+    &lt;img src=&#39;extension-2.png&#39; width=&#39;&#39; height=&#39;&#39; class=&#39;&#39; /&gt;
+
+
+
+
+    
+
+    
+
+    
+    &lt;figcaption&gt;Filling forms via context menu&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+&lt;p&gt;The Padloc Browser extension is available now for Firefox and Chrome via the
+respective extension stores. Check out our &lt;a href=&#34;https://padloc.app/downloads/#browser-extensions&#34;&gt;download
+section&lt;/a&gt; for the links!&lt;/p&gt;
+&lt;p&gt;Oh and one more thing: The drag &amp;amp; drop feature is also available in the latest
+version of our desktop apps and the web client and it doesn&amp;rsquo;t just
+work with web pages! Go ahead, try it! 😉&lt;/p&gt;
+</content:encoded>
+    </item>
+    
+    <item>
+      <title>Padloc 3 Is Here!</title>
+      <link>https://padloc.app/blog/padloc-3-is-here/</link>
+      <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/padloc-3-is-here/</guid>
+      <description>After months of hard work, we&amp;rsquo;re thrilled to announce another major update: Padloc 3.0! This is the most significant update in quite some time and we can&amp;rsquo;t wait to tell you about all the improvements and exciting new features we have in store for you!
+Are you an existing Padloc user? Padloc 3 accounts are handled separately from the old &amp;ldquo;Padlock Cloud&amp;rdquo; accounts, so you&amp;rsquo;ll have to create a new account for Padloc 3.</description>
+      <content:encoded>&lt;p&gt;After months of hard work, we&amp;rsquo;re thrilled to announce another major update:
+&lt;strong&gt;Padloc 3.0&lt;/strong&gt;! This is the most significant update in quite some time and
+we can&amp;rsquo;t wait to tell you about all the improvements and exciting new
+features we have in store for you!&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+    &lt;strong&gt;Are you an existing Padloc user?&lt;/strong&gt; Padloc 3 accounts are handled separately
+from the old &amp;ldquo;Padlock Cloud&amp;rdquo; accounts, so you&amp;rsquo;ll have to create a new account
+for Padloc 3. Don&amp;rsquo;t worry though, your billing info and any active subscriptions
+will be transferred automatically and migrating your data is super easy. For
+detailed instructions on how to migrate to Padloc 3, check out
+&lt;a href=&#34;https://padloc.app/help/guides/migrate-v3/&#34;&gt;this article&lt;/a&gt;. Or if you&amp;rsquo;d rather keep
+using version 2 for a while, you can still find the legacy apps in the &lt;a href=&#34;https://padloc.app/downloads/#legacy&#34;&gt;downloads section&lt;/a&gt;!
+&lt;/div&gt;
+
+&lt;h2 id=&#34;padlock-becomes-padloc&#34;&gt;Padlock Becomes Padloc&lt;/h2&gt;
+&lt;p&gt;First off, if you&amp;rsquo;ve been following the projects development, you probably noticed
+something weird about the title. No, it&amp;rsquo;s not a typo! Along with the release
+of version 3.0 we decided to also introduce a minor rebranding. We&amp;rsquo;ve dropped the
+&amp;ldquo;k&amp;rdquo; from the name making it a little less generic, more memorable and frankly easier
+to recognize by search engines. Also, we love how it looks in our new logo! 😌&lt;/p&gt;
+&lt;figure class=&#39;&#39;&gt;
+    
+        
+
+    &lt;img src=&#39;logo.svg&#39; width=&#39;&#39; height=&#39;&#39; class=&#39;no-shadow&#39; /&gt;
+
+
+
+
+    
+
+    
+
+    
+    &lt;figcaption&gt;The new Padloc logo!&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;introducing-organizations-and-shared-vaults&#34;&gt;Introducing Organizations And Shared Vaults&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with the most significant new feature introduced in Padloc 3:
+&lt;strong&gt;Organizations and Shared Vaults&lt;/strong&gt;. While previous versions of Padloc only
+supported storing data in your own, private store, Padloc 3 now allows you to
+create &amp;ldquo;shared vaults&amp;rdquo; that can be used to securely share passwords, documents
+and other items among multiple users! These shared vaults are managed as part
+of &amp;ldquo;organizations&amp;rdquo;, which can represent anything from small teams and
+families to large companies and institutions. While under the hood this
+signifies a considerable increase in complexity, we&amp;rsquo;ve worked hard to retain
+the same simple and intuitive user experience that our users have come to love
+in Padloc!&lt;/p&gt;
+&lt;figure class=&#39;&#39;&gt;
+    
+        
+
+    &lt;img src=&#39;orgs.png&#39; width=&#39;&#39; height=&#39;&#39; class=&#39;&#39; /&gt;
+
+
+
+
+    
+
+    
+
+    
+    &lt;figcaption&gt;Introducing Organizations &amp;amp; Shared Vaults&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;store-and-share-files-with-attachments&#34;&gt;Store And Share Files With Attachments&lt;/h2&gt;
+&lt;figure class=&#39;&#39;&gt;
+    
+        
+
+    &lt;img src=&#39;attachments.png&#39; width=&#39;&#39; height=&#39;&#39; class=&#39;&#39; /&gt;
+
+
+
+
+    
+
+    
+
+    
+    &lt;figcaption&gt;Store encrypted files along your vault items with attachments!&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+&lt;p&gt;Storing passwords, credit card numbers and notes is not enough for you? We get
+it! After all, a lot of sensitive information is stored within pdf documents,
+Excel tables, photos and all kinds of other files. Well, fret not, we&amp;rsquo;ve
+got you covered! Padloc 3 introduces &lt;strong&gt;Attachments&lt;/strong&gt;, a simple and intuitive
+way to store sensitive documents along with your other data. Just like
+everything else stored in Padloc, attachments are encrypted and protected by
+your master password. And best of all, they can be shared with other Padloc users
+via the new &lt;a href=&#34;#introducing-organizations-and-shared-vaults&#34;&gt;shared vaults feature&lt;/a&gt;!
+Perfect for storing digital copies of important documents, managing RSA keys
+for your team, or sharing juicy photos with your loved ones (we won&amp;rsquo;t judge
+😉).&lt;/p&gt;
+&lt;h2 id=&#34;new-web-interface&#34;&gt;New Web Interface&lt;/h2&gt;
+&lt;p&gt;Having an app remember your passwords is useless if you don&amp;rsquo;t have access to
+them when you most need them, which is why portability is key in any good
+password manager. Our cross-platform app has always made it easy to access your
+data from all your favorite devices, but what about those times when you&amp;rsquo;re on
+somebody else&amp;rsquo;s computer and want to check your email? Or if you&amp;rsquo;re phone&amp;rsquo;s
+battery dies and you desperately need your credit card details? Well, we&amp;rsquo;ve got
+good news! With our new web interface, you can now access your data directly
+from the browser! Simply go to &lt;a href=&#34;https://web.padloc.app&#34;&gt;https://web.padloc.app&lt;/a&gt; and log
+in using your email and master password! Our web interface uses the latest
+browser technology to protect you when browsing your data and as always,
+everything is protected by strong end-to-end encryption so nobody (not even us)
+has a chance to steal your data.&lt;/p&gt;
+&lt;figure class=&#39;&#39;&gt;
+    
+        
+
+    &lt;img src=&#39;item-desktop.png&#39; width=&#39;&#39; height=&#39;&#39; class=&#39;&#39; /&gt;
+
+
+
+
+    
+
+    
+
+    
+    &lt;figcaption&gt;Access your data from anywhere with the new web interface!&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;and-much-much-more&#34;&gt;And Much, Much More&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;These are only some of the new features included in Padloc 3! Other changes
+include an improved user interface, a new &amp;ldquo;favorites&amp;rdquo; feature, biometric unlock
+via fingerprint or FaceID and lots of other cool things! What are you waiting for?
+&lt;a href=&#34;https://padloc.app/#plans&#34;&gt;Try Padloc 3 now for free&lt;/a&gt;!&lt;/p&gt;
+</content:encoded>
+    </item>
+    
+    <item>
+      <title>Security Audit By NCC Group</title>
+      <link>https://padloc.app/blog/security-audit-ncc/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/security-audit-ncc/</guid>
+      <description>As a user of Padloc, you entrust us with some of your most sensitive and private data and we recognise the immense responsibility that comes with this. Padloc is built from the ground up with a focus on security, privacy and transparency and we employ these principles every step along the way when handling your data. As a security-sensitive service, cryptography and information security is at the very heart of our product.</description>
+      <content:encoded>&lt;p&gt;As a user of Padloc, you entrust us with some of your most sensitive and
+private data and we recognise the immense responsibility that comes with this.
+Padloc is built from the ground up with a focus on security, privacy and
+transparency and we employ these principles every step along the way when
+handling your data. As a security-sensitive service, cryptography and
+information security is at the very heart of our product. Unfortunately, these
+principles can be very hard to grasp for non-technical users and even though
+our source code is open and &lt;a href=&#34;https://github.com/padloc/padloc&#34;&gt;available publicly&lt;/a&gt;,
+we understand that few people actually have the technical knowledge and
+expertise to assess the security of an application like Padloc. That is why
+independent security audits and penetration tests by reputable third parties are
+an essential part of our security practices.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In Spring 2019, the security experts at &lt;a href=&#34;https://www.nccgroup.trust&#34;&gt;NCC Group&lt;/a&gt;
+performed a cryptographic review of the Padloc 3 application.&lt;/strong&gt; The
+goal of the audit was to identify any potential design flaws and implementation
+problems within the core components used throughout the application.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re happy to announce that no critical issues were discovered and all relevant
+problems were addressed immediately and have since been fixed. All findings, as
+well as the mitigations and fixes performed by our team, can be found in the report
+prepared by NCC Group:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://padloc.app/docs/NCC_Group_OpenTechnologyFund_PadlocCryptoReview_Report_2019-08-23_v1.1.pdf&#34;&gt;Padloc Cryptography Review by NCC Group&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d like to thank the &lt;a href=&#34;https://www.opentech.fund/&#34;&gt;Open Tech Fund&lt;/a&gt; for
+generously funding this audit as well as NCC Group for their thorough and
+professional work!&lt;/p&gt;
+&lt;p&gt;As the custodians of some of your most sensitive and private data, we are committed to
+the highest security standards and will continue to work with independent
+security experts to make sure Padloc lives up the high expectations and trust
+our users place in us. If you&amp;rsquo;d like to know more about Padlocs security design
+and the underlying cryptographic principles, you can find detailed explanations
+and specifications in our &lt;a href=&#34;https://github.com/padloc/padloc/blob/master/security.md&#34;&gt;security whitepaper&lt;/a&gt;.
+And of course, if you&amp;rsquo;d like to dig even deeper, the entire source code is
+publicly available on &lt;a href=&#34;https://github.com/padloc/padloc&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+    </item>
+    
+    <item>
+      <title>GDPR Compliance And Updated Privacy Policy</title>
+      <link>https://padloc.app/blog/gdpr/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/gdpr/</guid>
+      <description>On May 25 2018, the new General Data Protection Regulation (GDPR) comes into effect. The GDPR is a new, EU-wide privacy and data protection law that marks the most important change in data privacy regulation in decades. It calls for more granular privacy guardrails in an organization’s systems, more nuanced data protection agreements, and more consumer-friendly and detailed disclosures about an organization’s privacy and data protection practices.
+Naturally, as custodians of your most sensitive and private data we value privacy, security and transparency above anything else and we support and welcome the GDPR and the new protections and rights it ensures for our users.</description>
+      <content:encoded>&lt;p&gt;On May 25 2018, the new &lt;strong&gt;General Data Protection Regulation (GDPR)&lt;/strong&gt; comes
+into effect. The GDPR is a new, EU-wide privacy and data protection law that
+marks the most important change in data privacy regulation in decades. It calls
+for more granular privacy guardrails in an organization’s systems, more nuanced
+data protection agreements, and more consumer-friendly and detailed disclosures
+about an organization’s privacy and data protection practices.&lt;/p&gt;
+&lt;p&gt;Naturally, as custodians of your most sensitive and private data we value
+privacy, security and transparency above anything else and we support and
+welcome the GDPR and the new protections and rights it ensures for our users.&lt;/p&gt;
+&lt;p&gt;For you as a Padlock user, not much will change on May 25. We have always been
+committed to treating your data with the utmost care and respect and will
+continue to do so whether the law compels us or not. While we are introducing
+some changes to our software and infrastructure to fully comply with the new
+regulations, Padlock will continue to work the same way without any actions
+required on your side.&lt;/p&gt;
+&lt;p&gt;We have updated our &lt;a href=&#34;https://padloc.app/privacy/&#34;&gt;Privacy Policy&lt;/a&gt; to better document how we
+collect, process and protect your personal information. It is written in plain,
+easily understandable language and we encourage you to review it and approach
+us with any questions you may have.&lt;/p&gt;
+</content:encoded>
+    </item>
+    
+    <item>
+      <title>Security Audit by Cure53</title>
+      <link>https://padloc.app/blog/pentest-1604/</link>
+      <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/blog/pentest-1604/</guid>
+      <description>Password managers like Padlock are different from most other applications in that they deal with personal and sensitive data and therefore require a significant level of trust from their users and have to be held to a much higher standard when it comes to security and privacy. We believe that the best foundation for trust is transparency which is one of the reasons why we&amp;rsquo;re so strongly committed to the idea of Open Source.</description>
+      <content:encoded>&lt;p&gt;Password managers like Padlock are different from most other applications in
+that they deal with personal and sensitive data and therefore require a
+significant level of trust from their users and have to be held to a much
+higher standard when it comes to security and privacy. We believe that the best
+foundation for trust is transparency which is one of the reasons why we&amp;rsquo;re so
+strongly committed to the idea of Open Source. We greatly appreciate the faith
+our users put into our intentions and skills but we we also want to encourage
+people to be sceptical and to be able to convince themselves of the security
+and integrity of our application.&lt;/p&gt;
+&lt;p&gt;However, while it is theoretically possible for anyone to inspect our source
+code, only very few people actually have the knowledge and experience required
+to assess the security of an application. This is why we&amp;rsquo;re happy to announce
+that we&amp;rsquo;ve been working with the &lt;a href=&#34;https://www.opentech.fund/&#34;&gt;Open Technology
+Fund&lt;/a&gt; and the security experts at
+&lt;a href=&#34;https://cure53.de/&#34;&gt;cure53&lt;/a&gt; to identify and eliminate possible vulnerabilities
+and further strengthen the security of the app! Earlier this year, Mario
+Heiderich and his team performed a full penetration test on Padlock for iOS,
+Android and Google Chrome as well as the online storage service Padlock Cloud.
+During their tests, they managed to identify a series of non-critical but
+important security vulnerabilities and risks which we&amp;rsquo;ve since been able to
+fix. The full report is available for download
+&lt;a href=&#34;https://padloc.app/docs/padlock-pentest-1604.pdf&#34;&gt;here&lt;/a&gt;. Our notes on the report outlining the
+concrete steps taken to mitigate the identified issues can be found
+&lt;a href=&#34;https://padloc.app/pentest-1604-notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our sincerest thanks to the &lt;a href=&#34;https://www.opentech.fund/&#34;&gt;Open Technology Fund&lt;/a&gt;,
+who generously funded the test and to the &lt;a href=&#34;https://cure53.de/&#34;&gt;cure53&lt;/a&gt; team,
+who it&amp;rsquo;s been a pleasure to work with!&lt;/p&gt;
+</content:encoded>
+    </item>
+    
+  </channel>
+</rss>

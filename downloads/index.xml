@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Downloads on Padloc - A Modern Password Manager For Individuals And Teams</title>
+    <link>https://padloc.app/downloads/</link>
+    <description>Recent content in Downloads on Padloc - A Modern Password Manager For Individuals And Teams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Nov 2016 20:17:39 +0100</lastBuildDate><atom:link href="https://padloc.app/downloads/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>downloads</title>
+      <link>https://padloc.app/downloads/downloads/</link>
+      <pubDate>Sun, 13 Nov 2016 20:17:39 +0100</pubDate>
+      
+      <guid>https://padloc.app/downloads/downloads/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

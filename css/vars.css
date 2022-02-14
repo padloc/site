@@ -1,0 +1,11 @@
+body {
+  --color-red: #ff6666;
+  --color-blue: #23b4ff;
+  --color-black: #444;
+  --color-white: #fff;
+  --color-fg: var(--color-black);
+  --color-bg: var(--color-white);
+  --max-inner-width: 1000px;
+  --color-highlight: var(--color-blue);
+  --color-subtle: rgba(0, 0, 0, 0.3);
+}

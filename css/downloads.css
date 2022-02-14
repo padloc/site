@@ -1,0 +1,74 @@
+section.hero .inner .content {
+  padding-top: 0;
+}
+
+section.hero .images {
+    width: 450px;
+    height: 450px;
+    margin: -2em 0 -3em 0;
+}
+
+section.hero .images :nth-child(1) {
+  background-image: url('/img/landing/portable_1.png');
+  animation: drop 1.5s backwards 0s;
+}
+
+section.hero .images :nth-child(2) {
+  background-image: url('/img/landing/portable_2.png');
+  animation: drop 1.5s backwards 0.2s;
+}
+
+section.hero .images :nth-child(3) {
+  background-image: url('/img/landing/portable_3.png');
+  animation: drop 1.5s backwards 0.4s;
+}
+
+ul.downloads-list {
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+ul.downloads-list li {
+  /* margin: 1em 0; */
+}
+
+ul.downloads-list li a {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 1em;
+  background: #fff;
+  color: #444;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+}
+
+ul.downloads-list .icon {
+  font-size: 2.2em;
+  margin: 0 0.6em 0 0.2em;
+}
+
+.download-title {
+  font-size: 1.2em;
+  color: #23b4ff;
+}
+
+.download-version {
+  opacity: 0.8;
+}
+
+section.downloads .inner {
+  flex-direction: column;
+  padding-bottom: 70px;
+}
+
+section.downloads .inner h2 {
+  margin-bottom: 20px;
+}
+
+section.downloads .inner .note {
+  margin-top: 0;
+}

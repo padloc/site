@@ -1,0 +1,157 @@
+.plans-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.plans-list > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: reveal 1s backwards;
+}
+
+.hidden .plans-list > * {
+  animation-play-state: paused;
+}
+
+.plans-list > :nth-child(1) {
+  animation-delay: 0s;
+}
+
+.plans-list > :nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.plans-list > :nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.plans-list > *::before {
+  content: '';
+  display: block;
+  flex: 1;
+}
+
+.plans-list > *::after {
+  content: '';
+  display: block;
+  flex: 6;
+}
+
+.plan {
+  white-space: normal;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  cursor: pointer;
+  scroll-snap-align: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 20px;
+  transition: transform 0.5s, box-shadow 0.5s;
+  color: #444;
+}
+
+.plan:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 50px;
+  opacity: 1;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.plan-header {
+  text-align: center;
+  padding: 20px;
+  background: #444;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.plan-name {
+  font-size: 1.7em;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+
+.plan-description {
+  font-size: 1.1em;
+  margin: 0.2em 0.5em;
+}
+
+.plan-free {
+  font-size: 2em;
+}
+
+.plan-price {
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0.4em;
+}
+
+.plan-price-currency {
+  line-height: 1em;
+  margin-top: 0.4em;
+}
+
+.plan-price-dollars {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.plan-price-cents {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-top: 0.2em;
+}
+
+.plan-unit {
+  font-size: 0.9em;
+}
+
+.plan-fineprint {
+  font-size: 0.75em;
+  opacity: 0.8;
+}
+
+.features {
+  font-size: 0.9em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #444;
+}
+
+.features > * {
+  margin: 0;
+  padding: 0.5em 0.7em;
+  border: none;
+  border-radius: 0;
+  font-size: 0.9em;
+}
+
+.features > :not(:last-child) {
+  border-bottom: solid 1px #eee;
+}
+
+.plan button {
+  margin: 6px;
+  padding: 0.7em;
+  background: #444;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}

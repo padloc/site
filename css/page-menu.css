@@ -1,0 +1,26 @@
+.on-this-page {
+    color: var(--color-subtle);
+    margin: 0.3em 0.6em;
+}
+
+.page-menu ul {
+    position: relative;
+}
+
+.page-menu a {
+    padding: 0.3em 0.6em;
+    margin: 0.1em 0;
+    color: var(--color-fg);
+    border-radius: 0.5em;
+    display: block;
+}
+
+.page-menu a:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.page-menu .active a {
+    color: var(--color-highlight);
+    font-weight: bold;
+}

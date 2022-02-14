@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>User Manual on Padloc - A Modern Password Manager For Individuals And Teams</title>
+    <link>https://padloc.app/help/manual/</link>
+    <description>Recent content in User Manual on Padloc - A Modern Password Manager For Individuals And Teams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://padloc.app/help/manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://padloc.app/help/manual/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/introduction/</guid>
+      <description>Me: Hi Reddit, I&amp;rsquo;d like to see some pictures of cute kittens please!   Reddit: Your session has expired. Please log in again!   Me: Sure thing! Wait, what&amp;rsquo;s my password again? It had my pets name I think? And probably my birthday? A I think I got it.   Reddit: Incorrect username or password. Please try again!   Me: Hm. Ok maybe it was my mothers birtday?</description>
+    </item>
+    
+    <item>
+      <title>Creating An Account</title>
+      <link>https://padloc.app/help/manual/create_account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/create_account/</guid>
+      <description>Creating a Padloc account is simple and takes only a few moments. To get started, you can either open the Padloc web app by going to https://web.padloc.app or by downloading and installing the app. The first thing you&amp;rsquo;ll see is a login screen. Since you don&amp;rsquo;t have an account yet, you can&amp;rsquo;t login at this point. Instead, click on Sign Up Now.
+Step 1: Enter your name and email address First, you&amp;rsquo;ll be asked for an email address and your name.</description>
+    </item>
+    
+    <item>
+      <title>Vaults &amp; Vault Items</title>
+      <link>https://padloc.app/help/manual/vaults/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/vaults/</guid>
+      <description>Vaults are where all your data is stored within Padloc. You can imagine them as secure folders that can hold an arbitrary number of entries (called Vault Items, more about those below). Vaults are protected by strong, state of the art encryption and can only accessed by you (and other Padloc users you explicitly give access). Not even we can read what&amp;rsquo;s inside, even if we wanted to!
+After creating your Padloc account, you&amp;rsquo;ll start off with a single Vault called &amp;ldquo;My Vault&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Organizations &amp; Shared Vaults</title>
+      <link>https://padloc.app/help/manual/orgs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/orgs/</guid>
+      <description>Organizations are a great way to organize, manage and share data between Padloc users. Use cases range from simple family accounts to teams, companies or any other kind of institution or group that has the need store store and share sensitive information between multiple people. Using organizations, you have fine-grained control of who can access, edit and share certain information. Padloc achieves this without requiring you to explicitly trust our servers, your network provider or anyone who might be listening in on the connection.</description>
+    </item>
+    
+    <item>
+      <title>Searching &amp; Filtering</title>
+      <link>https://padloc.app/help/manual/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/search/</guid>
+      <description>Searching and filtering is is easily one of the most overlooked aspects of a password manager. Over time a lot of data will be accumulating in your vaults and being able to quickly and easily find the data you need at any given moment is essential for a productive workflow and will save you a lot of time in the long run. Luckily this is one of the areas where Padloc really shines!</description>
+    </item>
+    
+    <item>
+      <title>Settings</title>
+      <link>https://padloc.app/help/manual/settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/settings/</guid>
+      <description>The Settings screen contains options for managing your account, your subscription and billing info and various other things.
+Changing Your Display Name Your display name is what other Padloc users will see next to your email address if your are a member of any organizations. To change your display name, simply click the  icon in the Profile section, then enter the desired name and click Save.
+Logging Out To log out of your account, click the button labeled Log Out under in the Security section.</description>
+    </item>
+    
+    <item>
+      <title>Importing Data</title>
+      <link>https://padloc.app/help/manual/import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/import/</guid>
+      <description>Padloc provides an easy way to import data from other applications. Supported formats are:
+  Comma Separated Values (CSV) - Many applications support exporting data in this format. In order to import data like this into Padloc, you need to make sure it is structured in a specific way. More about this under Importing From CSV.
+  Encrypted Padloc Export - Lastly, Padloc has its own, encrypted export format which naturally is supported and regonized automatically.</description>
+    </item>
+    
+    <item>
+      <title>Exporting Data</title>
+      <link>https://padloc.app/help/manual/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/export/</guid>
+      <description>Encrypted Export The recommended way to export your data is as a encrypted, password protected file.
+ Go to the Settings screen In the Import / Export section, click the button labeled Export&amp;hellip; Choose the vault you&amp;rsquo;d like to export. Under Format, select Encrypted Container. The button at the bottom of the dialog will indicate how many items will be exported. Click it to continue. Choose a password to protect your data.</description>
+    </item>
+    
+    <item>
+      <title>Browser Extensions</title>
+      <link>https://padloc.app/help/manual/extensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://padloc.app/help/manual/extensions/</guid>
+      <description>The Padloc browser extension is a convenient and secure way to access your data right were you most often need it - in your web browser.
+Getting Started The Padloc extension is currently only available for Firefox and Chrome. Support for Safari, Edge and other browsers coming soon!  To get started using the Padloc extension in your browser, simply download and install it from the extension store of your browser.</description>
+    </item>
+    
+  </channel>
+</rss>

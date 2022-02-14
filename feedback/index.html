@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+(() => {
+
+    const params = new URLSearchParams(window.location.search);
+    const platform = params.get("p") || "";
+    const rating = params.get("r");
+    const version = params.get("v");
+
+    let url;
+
+    if (rating === "0") {
+        switch (platform.toLowerCase()) {
+            case "ios":
+                url = '';
+                break;
+            case "android":
+                url = '';
+                break;
+            case "chrome":
+                url = '';
+                break;
+            default:
+                url = 'https:\/\/www.producthunt.com\/posts\/padlock-2';
+        }
+    } else {
+        url = "mailto:support@padlock.io?subject=Padlock+Feedback";
+    }
+
+    window.location = url;
+
+})();
+        </script>
+    </head>
+    <body>Redirecting...</body>
+</html>
