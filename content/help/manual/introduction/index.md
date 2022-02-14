@@ -68,4 +68,4 @@ much better than we ever could:
 {{< figure caption="What is a password manager? Credit: <https://eff.org>" >}} {{< iframe
 src="https://archive.org/embed/using-password-managers-to-stay-safe-online" width="640" height="350" >}} {{< /figure >}}
 
-Start your journey [here ]({{< relref "../create_account" >}}) you'll be glad you did.
+Start your journey [here]({{< relref "../create_account" >}}) - you'll be glad you did.
