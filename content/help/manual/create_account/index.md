@@ -63,7 +63,7 @@ Click **continue**.
 {{< note >}}
 **READ ME:**
 
-**Should you forget your Master Password you will need to recreate the account which will reset your portal and you will lose all previously stored information, so chose a password that is easy to remember, but hard enough for someone to guess.**
+**Should you forget your Master Password you will need to recreate the account which will reset your portal and you will lose all previously stored information, so choose a password that is easy to remember, but hard enough for someone to guess.**
 
 * Until you have memorized your Master Password, we recommend writing it down.  
 
